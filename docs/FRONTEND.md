@@ -21,7 +21,7 @@ Noto Sans Telugu and Noto Sans Devanagari loaded via `next/font`; transliteratio
 | `/lexicon`, `/lexicon/[id]` | Lexical Explorer: morphology segmentation, atoms, etymology, aligned forms, generated explanation with expandable trace |
 | `/affixes`, `/affixes/[id]` | Affix Atlas: filter by language and function; **matrix view** (function × language); affix page shows role, function, register, productivity, examples, cross-lingual equivalents |
 | `/atoms`, `/atoms/[id]` | Semantic Atom Explorer (carries the interlingua disclaimer verbatim) |
-| `/etymology/[entryId]` | lineage DAG rendered as plain SVG with d3-hierarchy layout; families as swimlane hues, drift labels on edges, sources + confidence, contested badges |
+| `/etymology/[entryId]` | lineage DAG rendered as plain SVG with a hand-rolled longest-path layered layout (no graph library); families as node hues, drift labels on edges, sources + confidence, contested badges |
 | `/docs` | renders `docs/*.md` |
 | `/about` | principle, epistemic key, data statement, licences |
 

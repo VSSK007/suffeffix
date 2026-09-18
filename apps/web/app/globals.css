@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-paper text-ink;
+}
+
+h1, h2, h3 {
+  @apply font-serif;
+}
+
+.prose-doc h1 { @apply text-2xl mt-6 mb-3; }
+.prose-doc h2 { @apply text-xl mt-5 mb-2; }
+.prose-doc h3 { @apply text-lg mt-4 mb-2; }
+.prose-doc p { @apply my-2 leading-relaxed; }
+.prose-doc ul { @apply list-disc ml-6 my-2; }
+.prose-doc ol { @apply list-decimal ml-6 my-2; }
+.prose-doc code { @apply font-mono text-sm bg-neutral-100 px-1 rounded; }
+.prose-doc pre { @apply font-mono text-xs bg-neutral-100 p-3 rounded overflow-x-auto my-3; }
+.prose-doc table { @apply text-sm border-collapse my-3; }
+.prose-doc th, .prose-doc td { @apply border border-neutral-300 px-2 py-1 text-left align-top; }
+.prose-doc blockquote { @apply border-l-4 border-accent pl-3 italic my-3; }
+.prose-doc a { @apply text-accent underline; }

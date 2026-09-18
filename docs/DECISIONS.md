@@ -26,4 +26,4 @@ Objections to the build prompt, corrections to seed data, and dependency justifi
 
 Python (core): **pydantic** (schema + validation, the backbone). API: **fastapi**, **uvicorn**. Dev: **pytest**. Nothing else — no networkx (traversals are trivial), no ORM (no DB), no requests (no outbound calls).
 
-Web: **next**, **react**, **react-dom**, **typescript**, **tailwindcss** (+postcss/autoprefixer), **openapi-typescript** (dev, generates API types), **d3-hierarchy** (tiny, layout math only for the etymology tree). No component library, no state manager, no graph library.
+Web: **next**, **react**, **react-dom**, **typescript**, **tailwindcss** (+postcss/autoprefixer), **openapi-typescript** (dev, generates API types), No component library, no state manager, no graph library. d3-hierarchy was planned for the etymology view but removed: the lineage graph is a DAG, not a tree, and a ~30-line longest-path layered layout fit better than forcing hierarchy tooling.

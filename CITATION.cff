@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Suffeffix, please cite it as below."
+title: "Suffeffix: an explainable lexical knowledge graph for morphology, semantic decomposition, etymology, and affix alignment"
+version: 0.1.0
+date-released: "2026-09-17"
+authors:
+  - name: "Suffeffix contributors"
+license: Apache-2.0
+repository-code: "https://github.com/kar2k23/suffeffix"
+keywords:
+  - morphology
+  - etymology
+  - Telugu
+  - Hindi
+  - English
+  - lexical knowledge graph
