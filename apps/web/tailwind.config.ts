@@ -4,11 +4,21 @@ export default {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      colors: { accent: "#3b3bb3", ink: "#16161a", paper: "#faf9f6" },
+      colors: {
+        paper: "var(--paper)",
+        card: "var(--card)",
+        ink: "var(--ink)",
+        muted: "var(--muted)",
+        line: "var(--line)",
+        accent: "var(--accent)",
+        "accent-soft": "var(--accent-soft)",
+        code: "var(--code)",
+      },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
+      maxWidth: { page: "68rem" },
     },
   },
   plugins: [],

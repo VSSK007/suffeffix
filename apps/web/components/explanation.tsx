@@ -2,33 +2,36 @@ import Link from "next/link";
 import type { Explanation, TraceItem } from "@/lib/api";
 
 function traceHref(t: TraceItem): string | null {
-  if (t.kind === "affix") return `/affixes/${encodeURIComponent(t.ref)}`;
-  if (t.kind === "atom") return `/atoms/${encodeURIComponent(t.ref)}`;
+  if (t.kind === "affix") return `/affixes/${t.ref.split(":").slice(1).join("/")}/`;
+  if (t.kind === "atom") return `/atoms/${t.ref.replace(/^atom:/, "")}/`;
   return null;
 }
 
 export function ExplanationBlock({ explanation, notes }: { explanation: Explanation; notes?: string }) {
   return (
     <section>
-      <h2 className="text-lg mb-1">Generated explanation</h2>
-      <p className="text-xs text-neutral-500 mb-3">
-        Assembled deterministically from the graph; expand each sentence for its trace. Not authoritative.
-      </p>
-      <ol className="space-y-2">
+      <div className="flex items-baseline gap-3 flex-wrap mb-1">
+        <h2 className="text-xl">Generated explanation</h2>
+        <span className="text-[11px] text-muted">deterministic · traced · not authoritative</span>
+      </div>
+      <ol className="mt-3 space-y-2.5">
         {explanation.sentences.map((s, i) => (
           <li key={i}>
-            <details className="group">
-              <summary className="cursor-pointer leading-relaxed marker:text-accent">
-                {s.text}
+            <details className="group border-l-2 hairline pl-4 open:border-l-accent transition-colors">
+              <summary className="cursor-pointer leading-relaxed list-none">
+                <span className="text-[15px]">{s.text}</span>
+                <span className="font-mono text-[10px] text-muted ml-2 group-open:hidden">
+                  trace ({s.trace.length})
+                </span>
               </summary>
-              <ul className="mt-1 ml-4 border-l border-neutral-300 pl-3 space-y-0.5">
+              <ul className="mt-1.5 mb-1 space-y-0.5">
                 {s.trace.map((t, j) => {
                   const href = traceHref(t);
-                  const label = `${t.kind}: ${t.ref}${t.confidence < 1 ? ` (conf ${t.confidence.toFixed(2)})` : ""}`;
+                  const label = `${t.kind} · ${t.ref}${t.confidence < 1 ? ` · conf ${t.confidence.toFixed(2)}` : ""}`;
                   return (
-                    <li key={j} className="font-mono text-[11px] text-neutral-600">
+                    <li key={j} className="font-mono text-[11px] text-muted">
                       {href ? (
-                        <Link className="underline hover:text-accent" href={href}>
+                        <Link className="underline underline-offset-2 hover:text-accent" href={href}>
                           {label}
                         </Link>
                       ) : (
@@ -43,9 +46,9 @@ export function ExplanationBlock({ explanation, notes }: { explanation: Explanat
         ))}
       </ol>
       {notes && (
-        <div className="mt-4 border border-dashed border-neutral-400 rounded p-3 bg-neutral-50">
-          <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-wide mb-1">Annotator note (freehand)</p>
-          <p className="text-sm">{notes}</p>
+        <div className="mt-5 border border-dashed hairline rounded-md p-4 bg-card">
+          <p className="eyebrow mb-1">Annotator note — freehand</p>
+          <p className="text-sm leading-relaxed">{notes}</p>
         </div>
       )}
     </section>

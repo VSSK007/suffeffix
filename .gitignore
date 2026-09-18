@@ -5,3 +5,6 @@ node_modules/
 .env
 .venv/
 *.egg-info/
+apps/web/.sitedata/
+apps/web/public/search-index.json
+apps/web/out/

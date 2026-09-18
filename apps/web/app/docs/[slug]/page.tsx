@@ -3,9 +3,17 @@ import { promises as fs } from "fs";
 import path from "path";
 import { renderMarkdown } from "@/lib/markdown";
 
-export const dynamic = "force-dynamic";
-
 const DOCS_DIR = path.join(process.cwd(), "..", "..", "docs");
+
+export async function generateStaticParams() {
+  const files = (await fs.readdir(DOCS_DIR)).filter((f) => f.endsWith(".md"));
+  return files.map((f) => ({ slug: f.replace(/\.md$/, "") }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  return { title: slug };
+}
 
 export default async function DocPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -16,5 +24,5 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
   } catch {
     notFound();
   }
-  return <article className="prose-doc max-w-3xl" dangerouslySetInnerHTML={{ __html: renderMarkdown(md) }} />;
+  return <article className="prose-doc" dangerouslySetInnerHTML={{ __html: renderMarkdown(md) }} />;
 }

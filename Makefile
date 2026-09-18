@@ -19,5 +19,12 @@ schema:
 stats:
 	$(PY) scripts/build_stats.py
 
+site-data:
+	$(PY) scripts/export_site.py
+
+site: site-data
+	cd apps/web && pnpm build
+
 dev:
 	@echo "Run 'make api' and 'make web' in two terminals."
+

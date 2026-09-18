@@ -23,6 +23,10 @@ jobs:
         with: { version: 11 }
       - uses: actions/setup-node@v4
         with: { node-version: 24, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install "pydantic>=2.7,<3" fastapi uvicorn httpx
+      - run: python scripts/export_site.py
       - run: pnpm install --frozen-lockfile
         working-directory: apps/web
       - run: pnpm typecheck

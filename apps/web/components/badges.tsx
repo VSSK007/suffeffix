@@ -1,14 +1,15 @@
-const EPI_STYLE: Record<string, string> = {
-  ESTABLISHED: "bg-emerald-50 text-emerald-800 border-emerald-300",
-  ENGINEERING: "bg-sky-50 text-sky-800 border-sky-300",
-  HYPOTHESIS: "bg-amber-50 text-amber-800 border-amber-300",
-  FUTURE: "bg-neutral-100 text-neutral-600 border-neutral-300",
+const EPI_VARS: Record<string, string> = {
+  ESTABLISHED: "var(--est)", ENGINEERING: "var(--eng)", HYPOTHESIS: "var(--hyp)", FUTURE: "var(--muted)",
+};
+const EPI_BG: Record<string, string> = {
+  ESTABLISHED: "var(--est-bg)", ENGINEERING: "var(--eng-bg)", HYPOTHESIS: "var(--hyp-bg)", FUTURE: "var(--code)",
 };
 
 export function EpiBadge({ status }: { status: string }) {
   return (
     <span
-      className={`inline-block border rounded px-1.5 py-0.5 text-[10px] font-mono tracking-wide ${EPI_STYLE[status] ?? EPI_STYLE.FUTURE}`}
+      className="inline-block rounded px-1.5 py-0.5 text-[10px] font-mono tracking-wider align-middle"
+      style={{ color: EPI_VARS[status] ?? "var(--muted)", background: EPI_BG[status] ?? "var(--code)" }}
       title="Epistemic status"
     >
       {status}
@@ -18,10 +19,8 @@ export function EpiBadge({ status }: { status: string }) {
 
 export function ReviewBadge({ status }: { status: string }) {
   return (
-    <span
-      className="inline-block border border-neutral-300 rounded px-1.5 py-0.5 text-[10px] font-mono text-neutral-600"
-      title="Review status"
-    >
+    <span className="inline-block border hairline rounded px-1.5 py-0.5 text-[10px] font-mono text-muted align-middle"
+      title="Review status">
       {status}
     </span>
   );
@@ -29,7 +28,8 @@ export function ReviewBadge({ status }: { status: string }) {
 
 export function ContestedBadge() {
   return (
-    <span className="inline-block border border-red-300 bg-red-50 text-red-800 rounded px-1.5 py-0.5 text-[10px] font-mono">
+    <span className="inline-block rounded px-1.5 py-0.5 text-[10px] font-mono align-middle"
+      style={{ color: "var(--con)", background: "var(--con-bg)" }}>
       contested
     </span>
   );
@@ -37,20 +37,21 @@ export function ContestedBadge() {
 
 export function Confidence({ value }: { value: number }) {
   return (
-    <span className="font-mono text-[11px] text-neutral-600" title="Confidence in [0,1]">
-      conf {value.toFixed(2)}
+    <span className="font-mono text-[11px] text-muted tnum" title="Confidence in [0,1]">
+      {value.toFixed(2)}
     </span>
   );
 }
 
+const REG_NAME: Record<string, string> = {
+  N: "native", S: "Sanskritic", P: "Perso-Arabic", E: "learned stratum", mixed: "mixed",
+};
+
 export function RegisterBadge({ register }: { register: string }) {
-  const names: Record<string, string> = {
-    N: "native", S: "Sanskritic", P: "Perso-Arabic", E: "learned/loan", mixed: "mixed",
-  };
   return (
-    <span className="inline-block border border-neutral-300 rounded px-1.5 py-0.5 text-[10px] font-mono text-neutral-700"
-      title="Register">
-      {register} · {names[register] ?? register}
+    <span className="inline-block border hairline rounded px-1.5 py-0.5 text-[10px] font-mono text-muted align-middle"
+      title={`Register: ${REG_NAME[register] ?? register}`}>
+      {REG_NAME[register] ?? register}
     </span>
   );
 }
