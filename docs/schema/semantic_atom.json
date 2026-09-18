@@ -1,0 +1,111 @@
+{
+  "$defs": {
+    "AtomExponents": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "title": "En",
+          "type": "string"
+        },
+        "te": {
+          "title": "Te",
+          "type": "string"
+        },
+        "hi": {
+          "title": "Hi",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "te",
+        "hi"
+      ],
+      "title": "AtomExponents",
+      "type": "object"
+    },
+    "AtomRelation": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_id": {
+          "title": "Atom Id",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "opposite",
+            "broader",
+            "narrower",
+            "co-occurs"
+          ],
+          "title": "Relation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "atom_id",
+        "relation"
+      ],
+      "title": "AtomRelation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A member of the bounded (<=50) engineering interlingua.\n\nSemantic atoms are an engineering interlingua, not a theory of human cognition.\nNSM primes carry nsm_prime=True and ESTABLISHED status (as NSM inventory items).",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "FOUNDATIONAL",
+        "RELATIONAL",
+        "ACTION",
+        "STATE",
+        "EMOTIONAL",
+        "SOCIAL"
+      ],
+      "title": "Category",
+      "type": "string"
+    },
+    "definition": {
+      "title": "Definition",
+      "type": "string"
+    },
+    "epistemic_status": {
+      "enum": [
+        "ESTABLISHED",
+        "ENGINEERING",
+        "HYPOTHESIS",
+        "FUTURE"
+      ],
+      "title": "Epistemic Status",
+      "type": "string"
+    },
+    "nsm_prime": {
+      "default": false,
+      "title": "Nsm Prime",
+      "type": "boolean"
+    },
+    "exponents": {
+      "$ref": "#/$defs/AtomExponents"
+    },
+    "related": {
+      "items": {
+        "$ref": "#/$defs/AtomRelation"
+      },
+      "title": "Related",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "category",
+    "definition",
+    "epistemic_status",
+    "exponents"
+  ],
+  "title": "SemanticAtom",
+  "type": "object"
+}

@@ -1,0 +1,122 @@
+{
+  "$defs": {
+    "AtomRef": {
+      "additionalProperties": false,
+      "properties": {
+        "atom": {
+          "title": "Atom",
+          "type": "string"
+        }
+      },
+      "required": [
+        "atom"
+      ],
+      "title": "AtomRef",
+      "type": "object"
+    },
+    "OpNode": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "enum": [
+            "STATE_OF",
+            "CAUSE",
+            "BECOME",
+            "NEG",
+            "HAVE",
+            "AGENT_OF",
+            "EVENT_OF",
+            "PLACE_OF",
+            "DEGREE"
+          ],
+          "title": "Op",
+          "type": "string"
+        },
+        "args": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/OpNode"
+              },
+              {
+                "$ref": "#/$defs/AtomRef"
+              }
+            ]
+          },
+          "title": "Args",
+          "type": "array"
+        }
+      },
+      "required": [
+        "op"
+      ],
+      "title": "OpNode",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "gloss": {
+      "title": "Gloss",
+      "type": "string"
+    },
+    "ili": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ili"
+    },
+    "structure": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/OpNode"
+        },
+        {
+          "$ref": "#/$defs/AtomRef"
+        }
+      ],
+      "title": "Structure"
+    },
+    "atoms": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Atoms",
+      "type": "array"
+    },
+    "structure_status": {
+      "default": "ENGINEERING",
+      "enum": [
+        "ESTABLISHED",
+        "ENGINEERING",
+        "HYPOTHESIS",
+        "FUTURE"
+      ],
+      "title": "Structure Status",
+      "type": "string"
+    },
+    "partial_coverage": {
+      "default": false,
+      "title": "Partial Coverage",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "gloss",
+    "structure",
+    "atoms"
+  ],
+  "title": "Concept",
+  "type": "object"
+}

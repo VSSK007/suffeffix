@@ -14,6 +14,7 @@ from .schema import (
 )
 
 _LANG_NAME = {"en": "English", "te": "Telugu", "hi": "Hindi"}
+_ART = {"en": "an", "te": "a", "hi": "a"}
 _REL_TEXT = {
     "TRANSLATION": "translation equivalent",
     "COGNATE": "cognate",
@@ -56,13 +57,13 @@ def explain(index: GraphIndex, entry_id: str) -> Explanation:
         joined = " and ".join(parts)
         trace.append(TraceItem(kind="rule", ref=f"rule:segmentation-confidence:{e.morphology.segmentation_confidence}"))
         sentences.append(ExplanationSentence(
-            text=(f"{_display(e)} is a {_LANG_NAME[e.lang]} {e.pos} formed from the stem "
+            text=(f"{_display(e)} is {_ART[e.lang]} {_LANG_NAME[e.lang]} {e.pos} formed from the stem "
                   f"{e.morphology.stem_form} with {joined}."),
             trace=trace,
         ))
     else:
         sentences.append(ExplanationSentence(
-            text=f"{_display(e)} is a {_LANG_NAME[e.lang]} {e.pos} with no productive affixal segmentation (simplex).",
+            text=f"{_display(e)} is {_ART[e.lang]} {_LANG_NAME[e.lang]} {e.pos} with no productive affixal segmentation (simplex).",
             trace=[TraceItem(kind="rule", ref="rule:simplex")],
         ))
 

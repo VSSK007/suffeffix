@@ -1,0 +1,33 @@
+{
+  "additionalProperties": false,
+  "description": "Functional (not distributional) cross-lingual grouping — ENGINEERING.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "function_id": {
+      "title": "Function Id",
+      "type": "string"
+    },
+    "members": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Members",
+      "type": "array"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "function_id",
+    "members",
+    "notes"
+  ],
+  "title": "EquivalenceClass",
+  "type": "object"
+}

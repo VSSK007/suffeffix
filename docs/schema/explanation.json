@@ -1,0 +1,77 @@
+{
+  "$defs": {
+    "ExplanationSentence": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "trace": {
+          "items": {
+            "$ref": "#/$defs/TraceItem"
+          },
+          "title": "Trace",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text",
+        "trace"
+      ],
+      "title": "ExplanationSentence",
+      "type": "object"
+    },
+    "TraceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "affix",
+            "atom",
+            "edge",
+            "rule",
+            "source"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "ref": {
+          "title": "Ref",
+          "type": "string"
+        },
+        "confidence": {
+          "default": 1.0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "kind",
+        "ref"
+      ],
+      "title": "TraceItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "entry_id": {
+      "title": "Entry Id",
+      "type": "string"
+    },
+    "sentences": {
+      "items": {
+        "$ref": "#/$defs/ExplanationSentence"
+      },
+      "title": "Sentences",
+      "type": "array"
+    }
+  },
+  "required": [
+    "entry_id",
+    "sentences"
+  ],
+  "title": "Explanation",
+  "type": "object"
+}

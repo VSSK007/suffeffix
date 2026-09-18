@@ -1,0 +1,632 @@
+{
+ "lex:te:mancitanam": {
+  "entry_id": "lex:te:mancitanam",
+  "sentences": [
+   {
+    "text": "మంచితనం (mañcitanaṁ) is a Telugu noun formed from the stem మంచి with the suffix -తనం (-tanaṁ) (abstract state).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:te:-tanam",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('the state of being good') is represented as STATE_OF(GOOD) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:GOOD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English goodness (translation equivalent); Hindi अच्छाई (acchāī) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:hi:bacpan": {
+  "entry_id": "lex:hi:bacpan",
+  "sentences": [
+   {
+    "text": "बचपन (bacpan) is a Hindi noun formed from the stem बच्चा with the suffix -पन (-pan) (abstract state).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:hi:-pan",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('the state or period of being a child') is represented as STATE_OF(CHILD) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:CHILD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "बचपन is derived from Sanskrit -त्व -tva ‘abstract-state suffix’ (confidence 0.60).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:etymology-hop",
+      "confidence": 1.0
+     },
+     {
+      "kind": "edge",
+      "ref": "edge:pan-skt-hi",
+      "confidence": 0.6
+     },
+     {
+      "kind": "source",
+      "ref": "cdial",
+      "confidence": 0.6
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English childhood (translation equivalent); Telugu పిల్లతనం (pillatanaṁ) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:en:hopeless": {
+  "entry_id": "lex:en:hopeless",
+  "sentences": [
+   {
+    "text": "hopeless is an English adjective formed from the stem hope with the suffix -less (privative).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:en:-less",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('without hope') can be approximated as NEG(HAVE(HAVE(WANT, HAVE(GOOD, AFTER)))) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:WANT",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:GOOD",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:AFTER",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: Hindi निराश (nirāś) (translation equivalent); Telugu ఆశలేని (āśalēni) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:hi:cini": {
+  "entry_id": "lex:hi:cini",
+  "sentences": [
+   {
+    "text": "चीनी (cīnī) is a Hindi noun with no productive affixal segmentation (simplex).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:simplex",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('sweet crystalline substance') can be approximated as HAVE(SOMETHING, HAVE(FEEL, GOOD)) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:SOMETHING",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:FEEL",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:GOOD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "चीनी is derived from Hindi चीन cīn ‘China’, with semantic metonymy (confidence 0.70).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:etymology-hop",
+      "confidence": 1.0
+     },
+     {
+      "kind": "edge",
+      "ref": "edge:sugar-cin-hi",
+      "confidence": 0.7
+     },
+     {
+      "kind": "source",
+      "ref": "platts",
+      "confidence": 0.7
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English sugar (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:en:sugar": {
+  "entry_id": "lex:en:sugar",
+  "sentences": [
+   {
+    "text": "sugar is an English noun with no productive affixal segmentation (simplex).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:simplex",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('sweet crystalline substance') can be approximated as HAVE(SOMETHING, HAVE(FEEL, GOOD)) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:SOMETHING",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:FEEL",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:GOOD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "sugar is borrowed from Old French sucre ‘sugar’ (confidence 0.90).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:etymology-hop",
+      "confidence": 1.0
+     },
+     {
+      "kind": "edge",
+      "ref": "edge:sugar-fr-en",
+      "confidence": 0.9
+     },
+     {
+      "kind": "source",
+      "ref": "oed",
+      "confidence": 0.9
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: Hindi चीनी (cīnī) (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:te:pustakam": {
+  "entry_id": "lex:te:pustakam",
+  "sentences": [
+   {
+    "text": "పుస్తకం (pustakaṁ) is a Telugu noun with no productive affixal segmentation (simplex).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:simplex",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('bound written text') can be approximated as TEXT in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:TEXT",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "పుస్తకం is borrowed from Sanskrit पुस्तक pustaka ‘book, manuscript’ (confidence 0.85).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:etymology-hop",
+      "confidence": 1.0
+     },
+     {
+      "kind": "edge",
+      "ref": "edge:book-skt-te",
+      "confidence": 0.85
+     },
+     {
+      "kind": "source",
+      "ref": "brown",
+      "confidence": 0.85
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English book (translation equivalent); Hindi किताब (kitāb) (translation equivalent); Hindi पुस्तक (pustak) (shared loan (both borrowed from the same source)).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:hi:kitab": {
+  "entry_id": "lex:hi:kitab",
+  "sentences": [
+   {
+    "text": "किताब (kitāb) is a Hindi noun with no productive affixal segmentation (simplex).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:simplex",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('bound written text') can be approximated as TEXT in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:TEXT",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "किताब is borrowed from Persian کتاب kitāb ‘book’ (confidence 0.85).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:etymology-hop",
+      "confidence": 1.0
+     },
+     {
+      "kind": "edge",
+      "ref": "edge:book-fa-hi",
+      "confidence": 0.85
+     },
+     {
+      "kind": "source",
+      "ref": "platts",
+      "confidence": 0.85
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English book (translation equivalent); Hindi पुस्तक (pustak) (translation equivalent); Telugu పుస్తకం (pustakaṁ) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:hi:akelapan": {
+  "entry_id": "lex:hi:akelapan",
+  "sentences": [
+   {
+    "text": "अकेलापन (akelāpan) is a Hindi noun formed from the stem अकेला with the suffix -पन (-pan) (abstract state).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:hi:-pan",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('the bad feeling of being alone') can be approximated as STATE_OF(HAVE(FEEL, HAVE(BECAUSE, NEG(HAVE(NEAR, PEOPLE)), BAD))) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:FEEL",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:BECAUSE",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:NEAR",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:PEOPLE",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:BAD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English loneliness (translation equivalent); Telugu ఒంటరితనం (oṇṭaritanaṁ) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:te:ontaritanam": {
+  "entry_id": "lex:te:ontaritanam",
+  "sentences": [
+   {
+    "text": "ఒంటరితనం (oṇṭaritanaṁ) is a Telugu noun formed from the stem ఒంటరి with the suffix -తనం (-tanaṁ) (abstract state).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:te:-tanam",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('the bad feeling of being alone') can be approximated as STATE_OF(HAVE(FEEL, HAVE(BECAUSE, NEG(HAVE(NEAR, PEOPLE)), BAD))) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:FEEL",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:BECAUSE",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:NEAR",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:PEOPLE",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:BAD",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: English loneliness (translation equivalent); Hindi अकेलापन (akelāpan) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ },
+ "lex:en:teacher": {
+  "entry_id": "lex:en:teacher",
+  "sentences": [
+   {
+    "text": "teacher is an English noun formed from the stem teach with the suffix -er (agent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:morphology-chain",
+      "confidence": 1.0
+     },
+     {
+      "kind": "affix",
+      "ref": "affix:en:-er",
+      "confidence": 1.0
+     },
+     {
+      "kind": "rule",
+      "ref": "rule:segmentation-confidence:1.0",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Its meaning ('one who teaches') is represented as AGENT_OF(TEACH) in the Suffeffix atom interlingua.",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:atom-structure",
+      "confidence": 1.0
+     },
+     {
+      "kind": "atom",
+      "ref": "atom:TEACH",
+      "confidence": 1.0
+     }
+    ]
+   },
+   {
+    "text": "Aligned forms: Hindi शिक्षक (śikṣak) (translation equivalent); Telugu అధ్యాపకుడు (adhyāpakuḍu) (translation equivalent).",
+    "trace": [
+     {
+      "kind": "rule",
+      "ref": "rule:alignment",
+      "confidence": 1.0
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "definition": {
+      "title": "Definition",
+      "type": "string"
+    },
+    "epistemic_status": {
+      "enum": [
+        "ESTABLISHED",
+        "ENGINEERING",
+        "HYPOTHESIS",
+        "FUTURE"
+      ],
+      "title": "Epistemic Status",
+      "type": "string"
+    },
+    "equivalence_class_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Equivalence Class Id"
+    }
+  },
+  "required": [
+    "id",
+    "label",
+    "definition",
+    "epistemic_status"
+  ],
+  "title": "AffixFunction",
+  "type": "object"
+}

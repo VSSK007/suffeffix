@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "form": {
+      "title": "Form",
+      "type": "string"
+    },
+    "family": {
+      "enum": [
+        "IE:Germanic",
+        "IE:Indo-Aryan",
+        "IE:Romance",
+        "IE:Iranian",
+        "Dravidian:South-Central",
+        "Dravidian:South",
+        "Semitic",
+        "Reconstructed:PIE",
+        "Reconstructed:Proto-Dravidian",
+        "Other"
+      ],
+      "title": "Family",
+      "type": "string"
+    },
+    "gloss": {
+      "title": "Gloss",
+      "type": "string"
+    },
+    "source_ref": {
+      "title": "Source Ref",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "form",
+    "family",
+    "gloss",
+    "source_ref"
+  ],
+  "title": "Root",
+  "type": "object"
+}

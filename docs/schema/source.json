@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "description": "Bibliographic entry; its id is the `source_ref` key used across the data.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "citation": {
+      "title": "Citation",
+      "type": "string"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "kind": {
+      "default": "reference_work",
+      "enum": [
+        "reference_work",
+        "dictionary",
+        "corpus",
+        "crowd",
+        "paper"
+      ],
+      "title": "Kind",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "citation"
+  ],
+  "title": "Source",
+  "type": "object"
+}

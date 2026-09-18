@@ -1,0 +1,185 @@
+{
+  "$defs": {
+    "AffixEquivalent": {
+      "additionalProperties": false,
+      "properties": {
+        "affix_id": {
+          "title": "Affix Id",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "affix_id"
+      ],
+      "title": "AffixEquivalent",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "annotator": {
+          "title": "Annotator",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "draft",
+          "enum": [
+            "draft",
+            "reviewed",
+            "published"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Refs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "annotator",
+        "date"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "lang": {
+      "enum": [
+        "en",
+        "te",
+        "hi"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "form": {
+      "title": "Form",
+      "type": "string"
+    },
+    "script_form": {
+      "title": "Script Form",
+      "type": "string"
+    },
+    "translit": {
+      "title": "Translit",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "suffix",
+        "prefix",
+        "circumfix",
+        "compound_element"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "functions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Functions",
+      "type": "array"
+    },
+    "register": {
+      "enum": [
+        "N",
+        "S",
+        "P",
+        "E",
+        "mixed"
+      ],
+      "title": "Register",
+      "type": "string"
+    },
+    "productivity": {
+      "enum": [
+        "high",
+        "mid",
+        "low",
+        "dead"
+      ],
+      "title": "Productivity",
+      "type": "string"
+    },
+    "allomorphs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Allomorphs",
+      "type": "array"
+    },
+    "attaches_to": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Attaches To",
+      "type": "array"
+    },
+    "examples": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Examples",
+      "type": "array"
+    },
+    "equivalents": {
+      "items": {
+        "$ref": "#/$defs/AffixEquivalent"
+      },
+      "title": "Equivalents",
+      "type": "array"
+    },
+    "epistemic_status": {
+      "default": "ESTABLISHED",
+      "enum": [
+        "ESTABLISHED",
+        "ENGINEERING",
+        "HYPOTHESIS",
+        "FUTURE"
+      ],
+      "title": "Epistemic Status",
+      "type": "string"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    }
+  },
+  "required": [
+    "id",
+    "lang",
+    "form",
+    "script_form",
+    "translit",
+    "kind",
+    "functions",
+    "productivity",
+    "provenance"
+  ],
+  "title": "Affix",
+  "type": "object"
+}

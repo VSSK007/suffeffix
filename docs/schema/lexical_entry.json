@@ -1,0 +1,239 @@
+{
+  "$defs": {
+    "AffixUse": {
+      "additionalProperties": false,
+      "properties": {
+        "affix_id": {
+          "title": "Affix Id",
+          "type": "string"
+        },
+        "function_id": {
+          "title": "Function Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "affix_id",
+        "function_id"
+      ],
+      "title": "AffixUse",
+      "type": "object"
+    },
+    "AlignedForm": {
+      "additionalProperties": false,
+      "properties": {
+        "entry_id": {
+          "title": "Entry Id",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "TRANSLATION",
+            "COGNATE",
+            "SHARED_LOAN",
+            "CALQUE"
+          ],
+          "title": "Relation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "entry_id",
+        "relation"
+      ],
+      "title": "AlignedForm",
+      "type": "object"
+    },
+    "Lemma": {
+      "additionalProperties": false,
+      "properties": {
+        "form": {
+          "title": "Form",
+          "type": "string"
+        },
+        "script": {
+          "title": "Script",
+          "type": "string"
+        },
+        "translit": {
+          "title": "Translit",
+          "type": "string"
+        },
+        "ipa": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ipa"
+        }
+      },
+      "required": [
+        "form",
+        "script",
+        "translit"
+      ],
+      "title": "Lemma",
+      "type": "object"
+    },
+    "Morphology": {
+      "additionalProperties": false,
+      "properties": {
+        "stem_form": {
+          "title": "Stem Form",
+          "type": "string"
+        },
+        "stem_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stem Ref"
+        },
+        "affixes": {
+          "items": {
+            "$ref": "#/$defs/AffixUse"
+          },
+          "title": "Affixes",
+          "type": "array"
+        },
+        "schema": {
+          "title": "Schema",
+          "type": "string"
+        },
+        "segmentation_confidence": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Segmentation Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "stem_form",
+        "schema"
+      ],
+      "title": "Morphology",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "annotator": {
+          "title": "Annotator",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "draft",
+          "enum": [
+            "draft",
+            "reviewed",
+            "published"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Refs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "annotator",
+        "date"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "lang": {
+      "enum": [
+        "en",
+        "te",
+        "hi"
+      ],
+      "title": "Lang",
+      "type": "string"
+    },
+    "lemma": {
+      "$ref": "#/$defs/Lemma"
+    },
+    "pos": {
+      "title": "Pos",
+      "type": "string"
+    },
+    "register": {
+      "enum": [
+        "N",
+        "S",
+        "P",
+        "E",
+        "mixed"
+      ],
+      "title": "Register",
+      "type": "string"
+    },
+    "concept_id": {
+      "title": "Concept Id",
+      "type": "string"
+    },
+    "morphology": {
+      "$ref": "#/$defs/Morphology"
+    },
+    "etymology": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Etymology",
+      "type": "array"
+    },
+    "aligned": {
+      "items": {
+        "$ref": "#/$defs/AlignedForm"
+      },
+      "title": "Aligned",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    }
+  },
+  "required": [
+    "id",
+    "lang",
+    "lemma",
+    "pos",
+    "concept_id",
+    "morphology",
+    "provenance"
+  ],
+  "title": "LexicalEntry",
+  "type": "object"
+}

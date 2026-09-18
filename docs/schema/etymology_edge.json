@@ -1,0 +1,186 @@
+{
+  "$defs": {
+    "EtymNode": {
+      "additionalProperties": false,
+      "properties": {
+        "node_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Node Ref"
+        },
+        "lang_or_family": {
+          "title": "Lang Or Family",
+          "type": "string"
+        },
+        "family": {
+          "enum": [
+            "IE:Germanic",
+            "IE:Indo-Aryan",
+            "IE:Romance",
+            "IE:Iranian",
+            "Dravidian:South-Central",
+            "Dravidian:South",
+            "Semitic",
+            "Reconstructed:PIE",
+            "Reconstructed:Proto-Dravidian",
+            "Other"
+          ],
+          "title": "Family",
+          "type": "string"
+        },
+        "form": {
+          "title": "Form",
+          "type": "string"
+        },
+        "gloss": {
+          "default": "",
+          "title": "Gloss",
+          "type": "string"
+        }
+      },
+      "required": [
+        "lang_or_family",
+        "family",
+        "form"
+      ],
+      "title": "EtymNode",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "annotator": {
+          "title": "Annotator",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "draft",
+          "enum": [
+            "draft",
+            "reviewed",
+            "published"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "source_refs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Refs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "annotator",
+        "date"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "from": {
+      "$ref": "#/$defs/EtymNode"
+    },
+    "to": {
+      "$ref": "#/$defs/EtymNode"
+    },
+    "type": {
+      "enum": [
+        "INHERITED",
+        "COGNATE",
+        "BORROWED",
+        "CALQUE",
+        "DERIVED",
+        "COMPOUNDED",
+        "RECONSTRUCTED",
+        "REBORROWED"
+      ],
+      "title": "Type",
+      "type": "string"
+    },
+    "drift": {
+      "items": {
+        "enum": [
+          "NONE",
+          "NARROWING",
+          "WIDENING",
+          "METAPHOR",
+          "METONYMY",
+          "PEJORATION",
+          "AMELIORATION",
+          "BLEACHING",
+          "SPECIALISATION"
+        ],
+        "type": "string"
+      },
+      "title": "Drift",
+      "type": "array"
+    },
+    "date_range": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date Range"
+    },
+    "source_ref": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ref",
+      "type": "array"
+    },
+    "confidence": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "status": {
+      "default": "accepted",
+      "enum": [
+        "accepted",
+        "contested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    }
+  },
+  "required": [
+    "id",
+    "from",
+    "to",
+    "type",
+    "source_ref",
+    "confidence",
+    "provenance"
+  ],
+  "title": "EtymologyEdge",
+  "type": "object"
+}
