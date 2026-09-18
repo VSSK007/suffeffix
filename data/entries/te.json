@@ -1,0 +1,4782 @@
+[
+ {
+  "id": "lex:te:mancitanam",
+  "lang": "te",
+  "lemma": {
+   "form": "మంచితనం",
+   "script": "Telu",
+   "translit": "mañcitanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:GOODNESS",
+  "morphology": {
+   "stem_form": "మంచి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:goodness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:acchai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pillatanam",
+  "lang": "te",
+  "lemma": {
+   "form": "పిల్లతనం",
+   "script": "Telu",
+   "translit": "pillatanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:CHILDHOOD",
+  "morphology": {
+   "stem_form": "పిల్ల",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:childhood",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bacpan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:ontaritanam",
+  "lang": "te",
+  "lemma": {
+   "form": "ఒంటరితనం",
+   "script": "Telu",
+   "translit": "oṇṭaritanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LONELINESS",
+  "morphology": {
+   "stem_form": "ఒంటరి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:loneliness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:akelapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:piccitanam",
+  "lang": "te",
+  "lemma": {
+   "form": "పిచ్చితనం",
+   "script": "Telu",
+   "translit": "piccitanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MADNESS",
+  "morphology": {
+   "stem_form": "పిచ్చి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:madness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pagalpan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:musalitanam",
+  "lang": "te",
+  "lemma": {
+   "form": "ముసలితనం",
+   "script": "Telu",
+   "translit": "musalitanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:OLD_AGE",
+  "morphology": {
+   "stem_form": "ముసలి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:old-age",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:burhapa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nijam",
+  "lang": "te",
+  "lemma": {
+   "form": "నిజం",
+   "script": "Telu",
+   "translit": "nijaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:TRUTH",
+  "morphology": {
+   "stem_form": "నిజం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:truth",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:saccai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sveccha",
+  "lang": "te",
+  "lemma": {
+   "form": "స్వేచ్ఛ",
+   "script": "Telu",
+   "translit": "svēccha",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:FREEDOM",
+  "morphology": {
+   "stem_form": "స్వేచ్ఛ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:freedom",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:azadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Tatsama simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:manavatvam",
+  "lang": "te",
+  "lemma": {
+   "form": "మానవత్వం",
+   "script": "Telu",
+   "translit": "mānavatvaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:HUMANITY",
+  "morphology": {
+   "stem_form": "మానవ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tvam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:humanity",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:manavta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nayakatvam",
+  "lang": "te",
+  "lemma": {
+   "form": "నాయకత్వం",
+   "script": "Telu",
+   "translit": "nāyakatvaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:LEADERSHIP",
+  "morphology": {
+   "stem_form": "నాయక",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tvam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:leadership",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:netrtva",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sneham",
+  "lang": "te",
+  "lemma": {
+   "form": "స్నేహం",
+   "script": "Telu",
+   "translit": "snēhaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:FRIENDSHIP",
+  "morphology": {
+   "stem_form": "స్నేహం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:friendship",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dosti",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:rajarikam",
+  "lang": "te",
+  "lemma": {
+   "form": "రాజరికం",
+   "script": "Telu",
+   "translit": "rājarikaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "mixed",
+  "concept_id": "concept:KINGSHIP",
+  "morphology": {
+   "stem_form": "రాజు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-rikam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:kingship",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rajatva",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Sanskritic base, native suffix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:tiyadanam",
+  "lang": "te",
+  "lemma": {
+   "form": "తీయదనం",
+   "script": "Telu",
+   "translit": "tīyadanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SWEETNESS",
+  "morphology": {
+   "stem_form": "తీయ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:sweetness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mithapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-danaṁ is the post-vocalic allomorph of -tanaṁ.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:andam",
+  "lang": "te",
+  "lemma": {
+   "form": "అందం",
+   "script": "Telu",
+   "translit": "andaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:BEAUTY",
+  "morphology": {
+   "stem_form": "అందం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:beauty",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sundarta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:balahinata",
+  "lang": "te",
+  "lemma": {
+   "form": "బలహీనత",
+   "script": "Telu",
+   "translit": "balahīnata",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:WEAKNESS",
+  "morphology": {
+   "stem_form": "బలహీన",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ta",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:weakness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kamzori",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Base itself contains privative -hīna.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:goppatanam",
+  "lang": "te",
+  "lemma": {
+   "form": "గొప్పతనం",
+   "script": "Telu",
+   "translit": "goppatanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:GREATNESS",
+  "morphology": {
+   "stem_form": "గొప్ప",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:greatness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mahanta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kottadanam",
+  "lang": "te",
+  "lemma": {
+   "form": "కొత్తదనం",
+   "script": "Telu",
+   "translit": "kottadanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NEWNESS",
+  "morphology": {
+   "stem_form": "కొత్త",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:newness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nayapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:samanatvam",
+  "lang": "te",
+  "lemma": {
+   "form": "సమానత్వం",
+   "script": "Telu",
+   "translit": "samānatvaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:EQUALITY",
+  "morphology": {
+   "stem_form": "సమాన",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tvam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:equality",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samanta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:aikyata",
+  "lang": "te",
+  "lemma": {
+   "form": "ఐక్యత",
+   "script": "Telu",
+   "translit": "aikyata",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:UNITY",
+  "morphology": {
+   "stem_form": "ఐక్య",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ta",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:unity",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ekta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nijayiti",
+  "lang": "te",
+  "lemma": {
+   "form": "నిజాయితీ",
+   "script": "Telu",
+   "translit": "nijāyitī",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "P",
+  "concept_id": "concept:HONESTY",
+  "morphology": {
+   "stem_form": "నిజాయితీ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:honesty",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:imandari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Perso-Arabic-influenced form; simplex in Telugu.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sodaratvam",
+  "lang": "te",
+  "lemma": {
+   "form": "సోదరత్వం",
+   "script": "Telu",
+   "translit": "sōdaratvaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:BROTHERHOOD",
+  "morphology": {
+   "stem_form": "సోదర",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tvam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:brotherhood",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhaicara",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:matrtvam",
+  "lang": "te",
+  "lemma": {
+   "form": "మాతృత్వం",
+   "script": "Telu",
+   "translit": "mātr̥tvaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:MOTHERHOOD",
+  "morphology": {
+   "stem_form": "మాతృ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tvam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:motherhood",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:matrtva",
+    "relation": "SHARED_LOAN"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jnanam",
+  "lang": "te",
+  "lemma": {
+   "form": "జ్ఞానం",
+   "script": "Telu",
+   "translit": "jñānaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:WISDOM",
+  "morphology": {
+   "stem_form": "జ్ఞానం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:wisdom",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajhdari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:santosam",
+  "lang": "te",
+  "lemma": {
+   "form": "సంతోషం",
+   "script": "Telu",
+   "translit": "santōṣaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:HAPPINESS",
+  "morphology": {
+   "stem_form": "సంతోషం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:happiness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:xusi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:duhkham",
+  "lang": "te",
+  "lemma": {
+   "form": "దుఃఖం",
+   "script": "Telu",
+   "translit": "duḥkhaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SADNESS",
+  "morphology": {
+   "stem_form": "దుఃఖం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:sadness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:udasi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:somaritanam",
+  "lang": "te",
+  "lemma": {
+   "form": "సోమరితనం",
+   "script": "Telu",
+   "translit": "sōmaritanaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LAZINESS",
+  "morphology": {
+   "stem_form": "సోమరి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-tanam",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:laziness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:susti",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jabbu",
+  "lang": "te",
+  "lemma": {
+   "form": "జబ్బు",
+   "script": "Telu",
+   "translit": "jabbu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:ILLNESS",
+  "morphology": {
+   "stem_form": "జబ్బు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:illness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bimari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:daya",
+  "lang": "te",
+  "lemma": {
+   "form": "దయ",
+   "script": "Telu",
+   "translit": "daya",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:KINDNESS",
+  "morphology": {
+   "stem_form": "దయ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:kindness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:meharbani",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:telivi",
+  "lang": "te",
+  "lemma": {
+   "form": "తెలివి",
+   "script": "Telu",
+   "translit": "telivi",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:CLEVERNESS",
+  "morphology": {
+   "stem_form": "తెలివి",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:cleverness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:calaki",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kangaru",
+  "lang": "te",
+  "lemma": {
+   "form": "కంగారు",
+   "script": "Telu",
+   "translit": "kaṅgāru",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NERVOUSNESS",
+  "morphology": {
+   "stem_form": "కంగారు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:nervousness",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ghabrahat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cadavadam",
+  "lang": "te",
+  "lemma": {
+   "form": "చదవడం",
+   "script": "Telu",
+   "translit": "cadavaḍaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:READING_ACT",
+  "morphology": {
+   "stem_form": "చదువు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dam",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:reading",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:parhai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:rayadam",
+  "lang": "te",
+  "lemma": {
+   "form": "రాయడం",
+   "script": "Telu",
+   "translit": "rāyaḍaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WRITING_ACT",
+  "morphology": {
+   "stem_form": "రాయు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dam",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:writing",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:likhai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:padadam",
+  "lang": "te",
+  "lemma": {
+   "form": "పాడడం",
+   "script": "Telu",
+   "translit": "pāḍaḍaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SINGING_ACT",
+  "morphology": {
+   "stem_form": "పాడు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dam",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:singing",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gayan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:alankarana",
+  "lang": "te",
+  "lemma": {
+   "form": "అలంకరణ",
+   "script": "Telu",
+   "translit": "alaṅkaraṇa",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:DECORATION",
+  "morphology": {
+   "stem_form": "అలంకరణ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:decoration",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sajavat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kadalika",
+  "lang": "te",
+  "lemma": {
+   "form": "కదలిక",
+   "script": "Telu",
+   "translit": "kadalika",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MOVEMENT",
+  "morphology": {
+   "stem_form": "కదలు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:movement",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:halcal",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-ika nominal outside the v0.1 affix inventory; stored simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cellimpu",
+  "lang": "te",
+  "lemma": {
+   "form": "చెల్లింపు",
+   "script": "Telu",
+   "translit": "cellimpu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:PAYMENT",
+  "morphology": {
+   "stem_form": "చెల్లు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:payment",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhugtan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-impu nominal outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:adhyapakudu",
+  "lang": "te",
+  "lemma": {
+   "form": "అధ్యాపకుడు",
+   "script": "Telu",
+   "translit": "adhyāpakuḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:TEACHER",
+  "morphology": {
+   "stem_form": "అధ్యాపక",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-kudu",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:teacher",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:siksak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:panivadu",
+  "lang": "te",
+  "lemma": {
+   "form": "పనివాడు",
+   "script": "Telu",
+   "translit": "panivāḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WORKER",
+  "morphology": {
+   "stem_form": "పని",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vadu",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:worker",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mazdur",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kalakarudu",
+  "lang": "te",
+  "lemma": {
+   "form": "కళాకారుడు",
+   "script": "Telu",
+   "translit": "kaḷākāruḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "mixed",
+  "concept_id": "concept:ARTIST",
+  "morphology": {
+   "stem_form": "కళ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-karudu",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:artist",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kalakar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:raitu",
+  "lang": "te",
+  "lemma": {
+   "form": "రైతు",
+   "script": "Telu",
+   "translit": "raitu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FARMER",
+  "morphology": {
+   "stem_form": "రైతు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:farmer",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kisan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:vyapari",
+  "lang": "te",
+  "lemma": {
+   "form": "వ్యాపారి",
+   "script": "Telu",
+   "translit": "vyāpāri",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:MERCHANT",
+  "morphology": {
+   "stem_form": "వ్యాపారి",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:merchant",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:vyapari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:dukanadarudu",
+  "lang": "te",
+  "lemma": {
+   "form": "దుకాణదారుడు",
+   "script": "Telu",
+   "translit": "dukāṇadāruḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "P",
+  "concept_id": "concept:SHOPKEEPER",
+  "morphology": {
+   "stem_form": "దుకాణం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-daru",
+     "function_id": "fn:HAB"
+    }
+   ],
+   "schema": "STEM+HAB",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:shopkeeper",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dukandar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:patagadu",
+  "lang": "te",
+  "lemma": {
+   "form": "పాటగాడు",
+   "script": "Telu",
+   "translit": "pāṭagāḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SINGER",
+  "morphology": {
+   "stem_form": "పాట",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-gadu",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:singer",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gayak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Colloquial/familiar register.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:samyavadi",
+  "lang": "te",
+  "lemma": {
+   "form": "సామ్యవాది",
+   "script": "Telu",
+   "translit": "sāmyavādi",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SOCIALIST_P",
+  "morphology": {
+   "stem_form": "సామ్య",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vadi",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:socialist",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajvadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jatiyavadi",
+  "lang": "te",
+  "lemma": {
+   "form": "జాతీయవాది",
+   "script": "Telu",
+   "translit": "jātīyavādi",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:NATIONALIST_P",
+  "morphology": {
+   "stem_form": "జాతీయ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vadi",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:nationalist",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastravadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:mantrikudu",
+  "lang": "te",
+  "lemma": {
+   "form": "మాంత్రికుడు",
+   "script": "Telu",
+   "translit": "māntrikuḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:MAGICIAN",
+  "morphology": {
+   "stem_form": "మాంత్రిక",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-kudu",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:magician",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jadugar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:snehituralu",
+  "lang": "te",
+  "lemma": {
+   "form": "స్నేహితురాలు",
+   "script": "Telu",
+   "translit": "snēhiturālu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:FRIEND_F",
+  "morphology": {
+   "stem_form": "స్నేహితుడు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ralu",
+     "function_id": "fn:FEM"
+    }
+   ],
+   "schema": "STEM+FEM",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:asaleni",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆశలేని",
+   "script": "Telu",
+   "translit": "āśalēni",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:HOPELESS",
+  "morphology": {
+   "stem_form": "ఆశ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-leni",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:hopeless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:niras",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:bhayamleni",
+  "lang": "te",
+  "lemma": {
+   "form": "భయంలేని",
+   "script": "Telu",
+   "translit": "bhayaṁlēni",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:FEARLESS",
+  "morphology": {
+   "stem_form": "భయం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-leni",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:fearless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nirbhay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sigguleni",
+  "lang": "te",
+  "lemma": {
+   "form": "సిగ్గులేని",
+   "script": "Telu",
+   "translit": "siggulēni",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:SHAMELESS",
+  "morphology": {
+   "stem_form": "సిగ్గు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-leni",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:shameless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:besarm",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:vyartham",
+  "lang": "te",
+  "lemma": {
+   "form": "వ్యర్థం",
+   "script": "Telu",
+   "translit": "vyarthaṁ",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:USELESS",
+  "morphology": {
+   "stem_form": "వ్యర్థం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:useless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bekar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Tatsama simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:illuleni",
+  "lang": "te",
+  "lemma": {
+   "form": "ఇల్లులేని",
+   "script": "Telu",
+   "translit": "illulēni",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOMELESS",
+  "morphology": {
+   "stem_form": "ఇల్లు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-leni",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:homeless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:beghar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nirjivam",
+  "lang": "te",
+  "lemma": {
+   "form": "నిర్జీవం",
+   "script": "Telu",
+   "translit": "nirjīvaṁ",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:LIFELESS",
+  "morphology": {
+   "stem_form": "జీవం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:nir-",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:lifeless",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nirjiv",
+    "relation": "SHARED_LOAN"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:duhkhamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "దుఃఖమైన",
+   "script": "Telu",
+   "translit": "duḥkhamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:UNHAPPY",
+  "morphology": {
+   "stem_form": "దుఃఖం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:unhappy",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:naxus",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:asagala",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆశగల",
+   "script": "Telu",
+   "translit": "āśagala",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:HOPEFUL",
+  "morphology": {
+   "stem_form": "ఆశ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-gala",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:hopeful",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:asavan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:upayogakaram",
+  "lang": "te",
+  "lemma": {
+   "form": "ఉపయోగకరం",
+   "script": "Telu",
+   "translit": "upayōgakaraṁ",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:USEFUL",
+  "morphology": {
+   "stem_form": "ఉపయోగ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:useful",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:upyogi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Tatsama -kara formation; simplex here.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:balavantudu",
+  "lang": "te",
+  "lemma": {
+   "form": "బలవంతుడు",
+   "script": "Telu",
+   "translit": "balavantuḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:POWERFUL",
+  "morphology": {
+   "stem_form": "బలం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vantudu",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:powerful",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:balvan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Masculine-human form.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:andamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "అందమైన",
+   "script": "Telu",
+   "translit": "andamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:BEAUTIFUL",
+  "morphology": {
+   "stem_form": "అందం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:beautiful",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sundar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:santosamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "సంతోషమైన",
+   "script": "Telu",
+   "translit": "santōṣamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:JOYFUL",
+  "morphology": {
+   "stem_form": "సంతోషం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:joyful",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:anandmay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:dayagala",
+  "lang": "te",
+  "lemma": {
+   "form": "దయగల",
+   "script": "Telu",
+   "translit": "dayagala",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:COMPASSIONATE",
+  "morphology": {
+   "stem_form": "దయ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-gala",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:compassionate",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dayavan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:asamayam",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆశామయం",
+   "script": "Telu",
+   "translit": "āśāmayaṁ",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:HOPEFUL_FULL",
+  "morphology": {
+   "stem_form": "ఆశ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-mayam",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:hi:asapurn",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:en:hope-filled",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cadavadagina",
+  "lang": "te",
+  "lemma": {
+   "form": "చదవదగిన",
+   "script": "Telu",
+   "translit": "cadavadagina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:READABLE",
+  "morphology": {
+   "stem_form": "చదువు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dagina",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:readable",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pathaniya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:tagadagina",
+  "lang": "te",
+  "lemma": {
+   "form": "తాగదగిన",
+   "script": "Telu",
+   "translit": "tāgadagina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:DRINKABLE",
+  "morphology": {
+   "stem_form": "తాగు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dagina",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:drinkable",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:peya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:gauravincadagina",
+  "lang": "te",
+  "lemma": {
+   "form": "గౌరవించదగిన",
+   "script": "Telu",
+   "translit": "gauraviñcadagina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:RESPECTABLE",
+  "morphology": {
+   "stem_form": "గౌరవించు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-dagina",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:respectable",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mananiya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:vegamga",
+  "lang": "te",
+  "lemma": {
+   "form": "వేగంగా",
+   "script": "Telu",
+   "translit": "vēgaṁgā",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "mixed",
+  "concept_id": "concept:QUICKLY",
+  "morphology": {
+   "stem_form": "వేగం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ga",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:quickly",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jaldi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nemmadiga",
+  "lang": "te",
+  "lemma": {
+   "form": "నెమ్మదిగా",
+   "script": "Telu",
+   "translit": "nemmadigā",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "N",
+  "concept_id": "concept:SLOWLY",
+  "morphology": {
+   "stem_form": "నెమ్మది",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ga",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:slowly",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dhire",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jagrattaga",
+  "lang": "te",
+  "lemma": {
+   "form": "జాగ్రత్తగా",
+   "script": "Telu",
+   "translit": "jāgrattagā",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "S",
+  "concept_id": "concept:CAREFULLY",
+  "morphology": {
+   "stem_form": "జాగ్రత్త",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-ga",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:carefully",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:savdhanipurvak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sulabhaparacu",
+  "lang": "te",
+  "lemma": {
+   "form": "సులభపరచు",
+   "script": "Telu",
+   "translit": "sulabhaparacu",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "mixed",
+  "concept_id": "concept:SIMPLIFY",
+  "morphology": {
+   "stem_form": "సులభం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-parachu",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:simplify",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:saral-banana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:balaparacu",
+  "lang": "te",
+  "lemma": {
+   "form": "బలపరచు",
+   "script": "Telu",
+   "translit": "balaparacu",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "mixed",
+  "concept_id": "concept:STRENGTHEN",
+  "morphology": {
+   "stem_form": "బలం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-parachu",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:strengthen",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mazbut-karna",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cupincu",
+  "lang": "te",
+  "lemma": {
+   "form": "చూపించు",
+   "script": "Telu",
+   "translit": "cūpiñcu",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "N",
+  "concept_id": "concept:SHOW",
+  "morphology": {
+   "stem_form": "చూచు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-inchu",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:show",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dikhana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:tinipincu",
+  "lang": "te",
+  "lemma": {
+   "form": "తినిపించు",
+   "script": "Telu",
+   "translit": "tinipiñcu",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "N",
+  "concept_id": "concept:FEED",
+  "morphology": {
+   "stem_form": "తిను",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-inchu",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:feed",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:khilana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-piñcu allomorph.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:adhunikikarincu",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆధునికీకరించు",
+   "script": "Telu",
+   "translit": "ādhunikīkariñcu",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "S",
+  "concept_id": "concept:MODERNIZE",
+  "morphology": {
+   "stem_form": "ఆధునిక",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-inchu",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:modernize",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:adhunik-banana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Sanskritic -īkar- + -iñcu.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:samyavadam",
+  "lang": "te",
+  "lemma": {
+   "form": "సామ్యవాదం",
+   "script": "Telu",
+   "translit": "sāmyavādaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SOCIALISM",
+  "morphology": {
+   "stem_form": "సామ్య",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vadam",
+     "function_id": "fn:DOCT"
+    }
+   ],
+   "schema": "STEM+DOCT",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:socialism",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajvad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jatiyavadam",
+  "lang": "te",
+  "lemma": {
+   "form": "జాతీయవాదం",
+   "script": "Telu",
+   "translit": "jātīyavādaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:NATIONALISM",
+  "morphology": {
+   "stem_form": "జాతీయ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-vadam",
+     "function_id": "fn:DOCT"
+    }
+   ],
+   "schema": "STEM+DOCT",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:nationalism",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastravad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:bhasasastram",
+  "lang": "te",
+  "lemma": {
+   "form": "భాషాశాస్త్రం",
+   "script": "Telu",
+   "translit": "bhāṣāśāstraṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:LINGUISTICS",
+  "morphology": {
+   "stem_form": "భాష",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-sastram",
+     "function_id": "fn:FIELD"
+    }
+   ],
+   "schema": "STEM+FIELD",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:linguistics",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhasavijnan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jivasastram",
+  "lang": "te",
+  "lemma": {
+   "form": "జీవశాస్త్రం",
+   "script": "Telu",
+   "translit": "jīvaśāstraṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:BIOLOGY",
+  "morphology": {
+   "stem_form": "జీవ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-sastram",
+     "function_id": "fn:FIELD"
+    }
+   ],
+   "schema": "STEM+FIELD",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:biology",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jivavijnan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pathasala",
+  "lang": "te",
+  "lemma": {
+   "form": "పాఠశాల",
+   "script": "Telu",
+   "translit": "pāṭhaśāla",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SCHOOL",
+  "morphology": {
+   "stem_form": "పాఠ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-sala",
+     "function_id": "fn:COLL"
+    }
+   ],
+   "schema": "STEM+COLL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:school",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pathsala",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:granthalayam",
+  "lang": "te",
+  "lemma": {
+   "form": "గ్రంథాలయం",
+   "script": "Telu",
+   "translit": "granthālayaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:LIBRARY",
+  "morphology": {
+   "stem_form": "గ్రంథ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:library",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pustakalay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-ālaya outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:davakhana",
+  "lang": "te",
+  "lemma": {
+   "form": "దవాఖానా",
+   "script": "Telu",
+   "translit": "davākhānā",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "P",
+  "concept_id": "concept:CLINIC",
+  "morphology": {
+   "stem_form": "దవాఖానా",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:clinic",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:davaxana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Perso-Arabic loan common in Telangana Telugu; borrowed whole.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pillalanti",
+  "lang": "te",
+  "lemma": {
+   "form": "పిల్లలాంటి",
+   "script": "Telu",
+   "translit": "pillalāṇṭi",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:CHILDISH",
+  "morphology": {
+   "stem_form": "పిల్ల",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-lanti",
+     "function_id": "fn:PEJ"
+    }
+   ],
+   "schema": "STEM+PEJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:childish",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:baccom-sa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Neutral 'child-like'; the pejorative shading is contextual.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pasupulanti",
+  "lang": "te",
+  "lemma": {
+   "form": "పసుపులాంటి",
+   "script": "Telu",
+   "translit": "pasupulāṇṭi",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:YELLOWISH",
+  "morphology": {
+   "stem_form": "పసుపు",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-lanti",
+     "function_id": "fn:PEJ"
+    }
+   ],
+   "schema": "STEM+PEJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:yellowish",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pila-sa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jatiyamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "జాతీయమైన",
+   "script": "Telu",
+   "translit": "jātīyamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:NATIONAL",
+  "morphology": {
+   "stem_form": "జాతి",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:national",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastriya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:sastriyamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "శాస్త్రీయమైన",
+   "script": "Telu",
+   "translit": "śāstrīyamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:SCIENTIFIC",
+  "morphology": {
+   "stem_form": "శాస్త్రం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:scientific",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:vaijnanik",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:prasiddhamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "ప్రసిద్ధమైన",
+   "script": "Telu",
+   "translit": "prasiddhamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:FAMOUS",
+  "morphology": {
+   "stem_form": "ప్రసిద్ధ",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:famous",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:prasiddh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pramadamaina",
+  "lang": "te",
+  "lemma": {
+   "form": "ప్రమాదమైన",
+   "script": "Telu",
+   "translit": "pramādamaina",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "S",
+  "concept_id": "concept:DANGEROUS",
+  "morphology": {
+   "stem_form": "ప్రమాదం",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:te:-aina",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 0.8
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:dangerous",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:xatarnak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:amma",
+  "lang": "te",
+  "lemma": {
+   "form": "అమ్మ",
+   "script": "Telu",
+   "translit": "amma",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MOTHER",
+  "morphology": {
+   "stem_form": "అమ్మ",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:mother-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:mother",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mata",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nanna",
+  "lang": "te",
+  "lemma": {
+   "form": "నాన్న",
+   "script": "Telu",
+   "translit": "nānna",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FATHER",
+  "morphology": {
+   "stem_form": "నాన్న",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:father",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pita",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:peru",
+  "lang": "te",
+  "lemma": {
+   "form": "పేరు",
+   "script": "Telu",
+   "translit": "pēru",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NAME",
+  "morphology": {
+   "stem_form": "పేరు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:name-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:name",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nam",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pallu",
+  "lang": "te",
+  "lemma": {
+   "form": "పల్లు",
+   "script": "Telu",
+   "translit": "pallu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TOOTH",
+  "morphology": {
+   "stem_form": "పల్లు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:tooth-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:tooth",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:mudu",
+  "lang": "te",
+  "lemma": {
+   "form": "మూడు",
+   "script": "Telu",
+   "translit": "mūḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:THREE",
+  "morphology": {
+   "stem_form": "మూడు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:three",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:tin",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:rendu",
+  "lang": "te",
+  "lemma": {
+   "form": "రెండు",
+   "script": "Telu",
+   "translit": "reṇḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TWO",
+  "morphology": {
+   "stem_form": "రెండు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:two",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:do",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:niru",
+  "lang": "te",
+  "lemma": {
+   "form": "నీరు",
+   "script": "Telu",
+   "translit": "nīru",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WATER",
+  "morphology": {
+   "stem_form": "నీరు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:water-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:water",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pani",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nippu",
+  "lang": "te",
+  "lemma": {
+   "form": "నిప్పు",
+   "script": "Telu",
+   "translit": "nippu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FIRE",
+  "morphology": {
+   "stem_form": "నిప్పు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:fire",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ag",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kukka",
+  "lang": "te",
+  "lemma": {
+   "form": "కుక్క",
+   "script": "Telu",
+   "translit": "kukka",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:DOG",
+  "morphology": {
+   "stem_form": "కుక్క",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:dog-areal-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:dog",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kutta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:illu",
+  "lang": "te",
+  "lemma": {
+   "form": "ఇల్లు",
+   "script": "Telu",
+   "translit": "illu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HOUSE",
+  "morphology": {
+   "stem_form": "ఇల్లు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:house-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:house",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ghar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:pustakam",
+  "lang": "te",
+  "lemma": {
+   "form": "పుస్తకం",
+   "script": "Telu",
+   "translit": "pustakaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:BOOK",
+  "morphology": {
+   "stem_form": "పుస్తకం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:book-skt-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:book",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kitab",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pustak",
+    "relation": "SHARED_LOAN"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cakkera",
+  "lang": "te",
+  "lemma": {
+   "form": "చక్కెర",
+   "script": "Telu",
+   "translit": "cakkera",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SUGAR",
+  "morphology": {
+   "stem_form": "చక్కెర",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:sugar-ia-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:sugar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sakkar",
+    "relation": "SHARED_LOAN"
+   },
+   {
+    "entry_id": "lex:hi:cini",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:raju",
+  "lang": "te",
+  "lemma": {
+   "form": "రాజు",
+   "script": "Telu",
+   "translit": "rāju",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:KING",
+  "morphology": {
+   "stem_form": "రాజు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:king-skt-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:king",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:raja",
+    "relation": "SHARED_LOAN"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:nidra",
+  "lang": "te",
+  "lemma": {
+   "form": "నిద్ర",
+   "script": "Telu",
+   "translit": "nidra",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SLEEP",
+  "morphology": {
+   "stem_form": "నిద్ర",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:sleep-skt-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:sleep",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nid",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:jnapakam",
+  "lang": "te",
+  "lemma": {
+   "form": "జ్ఞాపకం",
+   "script": "Telu",
+   "translit": "jñāpakaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:MEMORY",
+  "morphology": {
+   "stem_form": "జ్ఞాపకం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:memory",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:yad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:anandam",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆనందం",
+   "script": "Telu",
+   "translit": "ānandaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:JOY",
+  "morphology": {
+   "stem_form": "ఆనందం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:joy",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:anand",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kopam",
+  "lang": "te",
+  "lemma": {
+   "form": "కోపం",
+   "script": "Telu",
+   "translit": "kōpaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:ANGER",
+  "morphology": {
+   "stem_form": "కోపం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:anger",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gussa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:kannu",
+  "lang": "te",
+  "lemma": {
+   "form": "కన్ను",
+   "script": "Telu",
+   "translit": "kannu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:EYE",
+  "morphology": {
+   "stem_form": "కన్ను",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:eye-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:eye",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:akh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:naksatram",
+  "lang": "te",
+  "lemma": {
+   "form": "నక్షత్రం",
+   "script": "Telu",
+   "translit": "nakṣatraṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:STAR",
+  "morphology": {
+   "stem_form": "నక్షత్రం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:star",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:tara",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:uru",
+  "lang": "te",
+  "lemma": {
+   "form": "ఊరు",
+   "script": "Telu",
+   "translit": "ūru",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:VILLAGE",
+  "morphology": {
+   "stem_form": "ఊరు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:village-pdr-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:village",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gav",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:candrudu",
+  "lang": "te",
+  "lemma": {
+   "form": "చంద్రుడు",
+   "script": "Telu",
+   "translit": "candruḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:MOON",
+  "morphology": {
+   "stem_form": "చంద్రుడు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:moon-skt-te"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:moon",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:cad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:suryudu",
+  "lang": "te",
+  "lemma": {
+   "form": "సూర్యుడు",
+   "script": "Telu",
+   "translit": "sūryuḍu",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:SUN",
+  "morphology": {
+   "stem_form": "సూర్యుడు",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:sun",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:suraj",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:cepa",
+  "lang": "te",
+  "lemma": {
+   "form": "చేప",
+   "script": "Telu",
+   "translit": "cēpa",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FISH",
+  "morphology": {
+   "stem_form": "చేప",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:fish",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:machli",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:vana",
+  "lang": "te",
+  "lemma": {
+   "form": "వాన",
+   "script": "Telu",
+   "translit": "vāna",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:RAIN",
+  "morphology": {
+   "stem_form": "వాన",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:rain",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:baris",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:daham",
+  "lang": "te",
+  "lemma": {
+   "form": "దాహం",
+   "script": "Telu",
+   "translit": "dāhaṁ",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:THIRST",
+  "morphology": {
+   "stem_form": "దాహం",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:thirst",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pyas",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:akali",
+  "lang": "te",
+  "lemma": {
+   "form": "ఆకలి",
+   "script": "Telu",
+   "translit": "ākali",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HUNGER",
+  "morphology": {
+   "stem_form": "ఆకలి",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:hunger",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhukh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "lex:te:ratri",
+  "lang": "te",
+  "lemma": {
+   "form": "రాత్రి",
+   "script": "Telu",
+   "translit": "rātri",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "S",
+  "concept_id": "concept:NIGHT",
+  "morphology": {
+   "stem_form": "రాత్రి",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:night",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ }
+]

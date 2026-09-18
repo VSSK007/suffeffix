@@ -1,0 +1,752 @@
+[
+ {
+  "id": "atom:I",
+  "category": "FOUNDATIONAL",
+  "definition": "the speaker",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "I",
+   "te": "నేను",
+   "hi": "मैं"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:YOU",
+  "category": "FOUNDATIONAL",
+  "definition": "the addressee",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "you",
+   "te": "నువ్వు",
+   "hi": "तुम"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:SOMEONE",
+  "category": "FOUNDATIONAL",
+  "definition": "a person, unspecified",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "someone",
+   "te": "ఎవరో",
+   "hi": "कोई"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:SOMETHING",
+  "category": "FOUNDATIONAL",
+  "definition": "a thing, unspecified",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "something",
+   "te": "ఏదో",
+   "hi": "कुछ"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:PEOPLE",
+  "category": "SOCIAL",
+  "definition": "persons collectively",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "people",
+   "te": "ప్రజలు",
+   "hi": "लोग"
+  },
+  "related": [
+   {
+    "atom_id": "atom:SOMEONE",
+    "relation": "broader"
+   }
+  ]
+ },
+ {
+  "id": "atom:BODY",
+  "category": "FOUNDATIONAL",
+  "definition": "the physical body",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "body",
+   "te": "శరీరం",
+   "hi": "शरीर"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:PART",
+  "category": "RELATIONAL",
+  "definition": "a part of something",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "part",
+   "te": "భాగం",
+   "hi": "हिस्सा"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:ONE",
+  "category": "FOUNDATIONAL",
+  "definition": "the number one",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "one",
+   "te": "ఒకటి",
+   "hi": "एक"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:TWO",
+  "category": "FOUNDATIONAL",
+  "definition": "the number two",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "two",
+   "te": "రెండు",
+   "hi": "दो"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:MANY",
+  "category": "FOUNDATIONAL",
+  "definition": "a large number or amount",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "many",
+   "te": "చాలా",
+   "hi": "बहुत"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:ALL",
+  "category": "FOUNDATIONAL",
+  "definition": "the totality",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "all",
+   "te": "అన్నీ",
+   "hi": "सब"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:GOOD",
+  "category": "STATE",
+  "definition": "positively evaluated",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "good",
+   "te": "మంచి",
+   "hi": "अच्छा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:BAD",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:BAD",
+  "category": "STATE",
+  "definition": "negatively evaluated",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "bad",
+   "te": "చెడు",
+   "hi": "बुरा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:GOOD",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:BIG",
+  "category": "STATE",
+  "definition": "large in size or degree",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "big",
+   "te": "పెద్ద",
+   "hi": "बड़ा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:SMALL",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:SMALL",
+  "category": "STATE",
+  "definition": "little in size or degree",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "small",
+   "te": "చిన్న",
+   "hi": "छोटा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:BIG",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:DO",
+  "category": "ACTION",
+  "definition": "perform an action",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "do",
+   "te": "చేయు",
+   "hi": "करना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:HAPPEN",
+  "category": "ACTION",
+  "definition": "an event occurs",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "happen",
+   "te": "జరుగు",
+   "hi": "होना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:MOVE",
+  "category": "ACTION",
+  "definition": "change place",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "move",
+   "te": "కదులు",
+   "hi": "हिलना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:SAY",
+  "category": "ACTION",
+  "definition": "produce speech",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "say",
+   "te": "చెప్పు",
+   "hi": "कहना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:THINK",
+  "category": "ACTION",
+  "definition": "mental activity",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "think",
+   "te": "అనుకొను",
+   "hi": "सोचना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:KNOW",
+  "category": "STATE",
+  "definition": "have knowledge",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "know",
+   "te": "తెలుసు",
+   "hi": "जानना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:WANT",
+  "category": "STATE",
+  "definition": "desire",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "want",
+   "te": "కావాలి",
+   "hi": "चाहना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:FEEL",
+  "category": "EMOTIONAL",
+  "definition": "experience internally",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "feel",
+   "te": "అనిపించు",
+   "hi": "महसूस करना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:SEE",
+  "category": "ACTION",
+  "definition": "visual perception",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "see",
+   "te": "చూచు",
+   "hi": "देखना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:HEAR",
+  "category": "ACTION",
+  "definition": "auditory perception",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "hear",
+   "te": "విను",
+   "hi": "सुनना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:LIVE",
+  "category": "STATE",
+  "definition": "be alive",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "live",
+   "te": "బతుకు",
+   "hi": "जीना"
+  },
+  "related": [
+   {
+    "atom_id": "atom:DIE",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:DIE",
+  "category": "ACTION",
+  "definition": "cease to live",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "die",
+   "te": "చచ్చు",
+   "hi": "मरना"
+  },
+  "related": [
+   {
+    "atom_id": "atom:LIVE",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:TRUE",
+  "category": "STATE",
+  "definition": "in accordance with fact",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "true",
+   "te": "నిజం",
+   "hi": "सच"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:NOT",
+  "category": "RELATIONAL",
+  "definition": "negation",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "not",
+   "te": "కాదు",
+   "hi": "नहीं"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:BEFORE",
+  "category": "RELATIONAL",
+  "definition": "earlier in time",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "before",
+   "te": "ముందు",
+   "hi": "पहले"
+  },
+  "related": [
+   {
+    "atom_id": "atom:AFTER",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:AFTER",
+  "category": "RELATIONAL",
+  "definition": "later in time",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "after",
+   "te": "తరువాత",
+   "hi": "बाद"
+  },
+  "related": [
+   {
+    "atom_id": "atom:BEFORE",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:NOW",
+  "category": "RELATIONAL",
+  "definition": "at the present time",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "now",
+   "te": "ఇప్పుడు",
+   "hi": "अब"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:WHERE",
+  "category": "RELATIONAL",
+  "definition": "location",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "where",
+   "te": "ఎక్కడ",
+   "hi": "कहाँ"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:ABOVE",
+  "category": "RELATIONAL",
+  "definition": "higher position",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "above",
+   "te": "పైన",
+   "hi": "ऊपर"
+  },
+  "related": [
+   {
+    "atom_id": "atom:BELOW",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:BELOW",
+  "category": "RELATIONAL",
+  "definition": "lower position",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "below",
+   "te": "కింద",
+   "hi": "नीचे"
+  },
+  "related": [
+   {
+    "atom_id": "atom:ABOVE",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:NEAR",
+  "category": "RELATIONAL",
+  "definition": "close in space",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "near",
+   "te": "దగ్గర",
+   "hi": "पास"
+  },
+  "related": [
+   {
+    "atom_id": "atom:FAR",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:FAR",
+  "category": "RELATIONAL",
+  "definition": "distant in space",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "far",
+   "te": "దూరం",
+   "hi": "दूर"
+  },
+  "related": [
+   {
+    "atom_id": "atom:NEAR",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:BECAUSE",
+  "category": "RELATIONAL",
+  "definition": "causal link",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "because",
+   "te": "ఎందుకంటే",
+   "hi": "क्योंकि"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:LIKE",
+  "category": "RELATIONAL",
+  "definition": "similarity",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "like",
+   "te": "లాగా",
+   "hi": "जैसा"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:HAVE",
+  "category": "RELATIONAL",
+  "definition": "possession/attribution",
+  "epistemic_status": "ESTABLISHED",
+  "nsm_prime": true,
+  "exponents": {
+   "en": "have",
+   "te": "ఉంది",
+   "hi": "होना"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:CHILD",
+  "category": "SOCIAL",
+  "definition": "a young human",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "child",
+   "te": "పిల్ల",
+   "hi": "बच्चा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:OLD",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:OLD",
+  "category": "STATE",
+  "definition": "advanced in age",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "old",
+   "te": "ముసలి",
+   "hi": "बूढ़ा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:CHILD",
+    "relation": "opposite"
+   }
+  ]
+ },
+ {
+  "id": "atom:FEAR",
+  "category": "EMOTIONAL",
+  "definition": "the emotion of fear",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "fear",
+   "te": "భయం",
+   "hi": "डर"
+  },
+  "related": [
+   {
+    "atom_id": "atom:FEEL",
+    "relation": "co-occurs"
+   }
+  ]
+ },
+ {
+  "id": "atom:JOY",
+  "category": "EMOTIONAL",
+  "definition": "the emotion of joy",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "joy",
+   "te": "ఆనందం",
+   "hi": "आनंद"
+  },
+  "related": [
+   {
+    "atom_id": "atom:FEEL",
+    "relation": "co-occurs"
+   }
+  ]
+ },
+ {
+  "id": "atom:ANGER",
+  "category": "EMOTIONAL",
+  "definition": "the emotion of anger",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "anger",
+   "te": "కోపం",
+   "hi": "गुस्सा"
+  },
+  "related": [
+   {
+    "atom_id": "atom:FEEL",
+    "relation": "co-occurs"
+   }
+  ]
+ },
+ {
+  "id": "atom:SHAME",
+  "category": "EMOTIONAL",
+  "definition": "the emotion of shame",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "shame",
+   "te": "సిగ్గు",
+   "hi": "शर्म"
+  },
+  "related": [
+   {
+    "atom_id": "atom:FEEL",
+    "relation": "co-occurs"
+   }
+  ]
+ },
+ {
+  "id": "atom:WORK",
+  "category": "ACTION",
+  "definition": "purposeful labour",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "work",
+   "te": "పని",
+   "hi": "काम"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:TEACH",
+  "category": "ACTION",
+  "definition": "cause someone to know",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "teach",
+   "te": "నేర్పు",
+   "hi": "सिखाना"
+  },
+  "related": [
+   {
+    "atom_id": "atom:KNOW",
+    "relation": "co-occurs"
+   }
+  ]
+ },
+ {
+  "id": "atom:TEXT",
+  "category": "SOCIAL",
+  "definition": "written language artefact",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "text",
+   "te": "రాత",
+   "hi": "लेख"
+  },
+  "related": []
+ },
+ {
+  "id": "atom:NAME",
+  "category": "SOCIAL",
+  "definition": "a label for a person or thing",
+  "epistemic_status": "ENGINEERING",
+  "nsm_prime": false,
+  "exponents": {
+   "en": "name",
+   "te": "పేరు",
+   "hi": "नाम"
+  },
+  "related": []
+ }
+]

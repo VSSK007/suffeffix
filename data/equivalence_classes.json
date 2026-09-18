@@ -1,0 +1,172 @@
+[
+ {
+  "id": "eq:ST",
+  "function_id": "fn:ST",
+  "members": [
+   "affix:en:-ness",
+   "affix:en:-ity",
+   "affix:en:-hood",
+   "affix:en:-ship",
+   "affix:en:-dom",
+   "affix:te:-tanam",
+   "affix:te:-tvam",
+   "affix:te:-ta",
+   "affix:te:-rikam",
+   "affix:hi:-pan",
+   "affix:hi:-ta",
+   "affix:hi:-tva",
+   "affix:hi:-i",
+   "affix:hi:-apa"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:AG",
+  "function_id": "fn:AG",
+  "members": [
+   "affix:en:-er",
+   "affix:en:-ist",
+   "affix:te:-kudu",
+   "affix:te:-vadu",
+   "affix:te:-gadu",
+   "affix:te:-karudu",
+   "affix:te:-vadi",
+   "affix:hi:-kar",
+   "affix:hi:-vala",
+   "affix:hi:-dar",
+   "affix:hi:-gar",
+   "affix:hi:-vadi"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:POS",
+  "function_id": "fn:POS",
+  "members": [
+   "affix:en:-ful",
+   "affix:en:-ous",
+   "affix:te:-gala",
+   "affix:te:-mayam",
+   "affix:te:-vantudu",
+   "affix:hi:-van",
+   "affix:hi:-purn",
+   "affix:hi:-may",
+   "affix:hi:-dar"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:PRIV",
+  "function_id": "fn:PRIV",
+  "members": [
+   "affix:en:-less",
+   "affix:en:un-",
+   "affix:te:-leni",
+   "affix:te:nir-",
+   "affix:hi:-hin",
+   "affix:hi:nir-",
+   "affix:hi:be-"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:ABL",
+  "function_id": "fn:ABL",
+  "members": [
+   "affix:en:-able",
+   "affix:te:-dagina",
+   "affix:hi:-niya"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:ADV",
+  "function_id": "fn:ADV",
+  "members": [
+   "affix:en:-ly",
+   "affix:te:-ga",
+   "affix:hi:-purvak"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:CAUS",
+  "function_id": "fn:CAUS",
+  "members": [
+   "affix:en:-ize",
+   "affix:en:-ify",
+   "affix:en:-en",
+   "affix:te:-inchu",
+   "affix:te:-parachu",
+   "affix:hi:-a-caus"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:EV",
+  "function_id": "fn:EV",
+  "members": [
+   "affix:en:-tion",
+   "affix:en:-ment",
+   "affix:en:-ing",
+   "affix:te:-dam",
+   "affix:te:-ta-verbal",
+   "affix:hi:-ai",
+   "affix:hi:-avat",
+   "affix:hi:-ahat"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:DOCT",
+  "function_id": "fn:DOCT",
+  "members": [
+   "affix:en:-ism",
+   "affix:te:-vadam",
+   "affix:hi:-vad"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:FIELD",
+  "function_id": "fn:FIELD",
+  "members": [
+   "affix:en:-ology",
+   "affix:te:-sastram",
+   "affix:hi:-vijnan"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:COLL",
+  "function_id": "fn:COLL",
+  "members": [
+   "affix:te:-sala",
+   "affix:hi:-khana",
+   "affix:hi:-shala"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:PEJ",
+  "function_id": "fn:PEJ",
+  "members": [
+   "affix:en:-ish",
+   "affix:te:-lanti",
+   "affix:hi:-sa"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ },
+ {
+  "id": "eq:ADJ",
+  "function_id": "fn:ADJ",
+  "members": [
+   "affix:en:-ic",
+   "affix:en:-al",
+   "affix:te:-aina",
+   "affix:hi:-iya",
+   "affix:hi:-ik"
+  ],
+  "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
+ }
+]

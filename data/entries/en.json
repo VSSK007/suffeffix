@@ -1,0 +1,4931 @@
+[
+ {
+  "id": "lex:en:goodness",
+  "lang": "en",
+  "lemma": {
+   "form": "goodness",
+   "script": "Latn",
+   "translit": "goodness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:GOODNESS",
+  "morphology": {
+   "stem_form": "good",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:mancitanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:acchai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:childhood",
+  "lang": "en",
+  "lemma": {
+   "form": "childhood",
+   "script": "Latn",
+   "translit": "childhood",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:CHILDHOOD",
+  "morphology": {
+   "stem_form": "child",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-hood",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pillatanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bacpan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:loneliness",
+  "lang": "en",
+  "lemma": {
+   "form": "loneliness",
+   "script": "Latn",
+   "translit": "loneliness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LONELINESS",
+  "morphology": {
+   "stem_form": "lonely",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:ontaritanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:akelapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:madness",
+  "lang": "en",
+  "lemma": {
+   "form": "madness",
+   "script": "Latn",
+   "translit": "madness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MADNESS",
+  "morphology": {
+   "stem_form": "mad",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:piccitanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pagalpan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:old-age",
+  "lang": "en",
+  "lemma": {
+   "form": "old age",
+   "script": "Latn",
+   "translit": "old age",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:OLD_AGE",
+  "morphology": {
+   "stem_form": "old",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:musalitanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:burhapa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Simplex phrase; English lexicalises this state without an affix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:truth",
+  "lang": "en",
+  "lemma": {
+   "form": "truth",
+   "script": "Latn",
+   "translit": "truth",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TRUTH",
+  "morphology": {
+   "stem_form": "true",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-th",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nijam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:saccai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Fossilised -th; the suffix is dead.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:freedom",
+  "lang": "en",
+  "lemma": {
+   "form": "freedom",
+   "script": "Latn",
+   "translit": "freedom",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FREEDOM",
+  "morphology": {
+   "stem_form": "free",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-dom",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sveccha",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:azadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:humanity",
+  "lang": "en",
+  "lemma": {
+   "form": "humanity",
+   "script": "Latn",
+   "translit": "humanity",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:HUMANITY",
+  "morphology": {
+   "stem_form": "human",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ity",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:manavatvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:manavta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:leadership",
+  "lang": "en",
+  "lemma": {
+   "form": "leadership",
+   "script": "Latn",
+   "translit": "leadership",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LEADERSHIP",
+  "morphology": {
+   "stem_form": "leader",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ship",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nayakatvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:netrtva",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:friendship",
+  "lang": "en",
+  "lemma": {
+   "form": "friendship",
+   "script": "Latn",
+   "translit": "friendship",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FRIENDSHIP",
+  "morphology": {
+   "stem_form": "friend",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ship",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sneham",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dosti",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:kingship",
+  "lang": "en",
+  "lemma": {
+   "form": "kingship",
+   "script": "Latn",
+   "translit": "kingship",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:KINGSHIP",
+  "morphology": {
+   "stem_form": "king",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ship",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:rajarikam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rajatva",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:sweetness",
+  "lang": "en",
+  "lemma": {
+   "form": "sweetness",
+   "script": "Latn",
+   "translit": "sweetness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SWEETNESS",
+  "morphology": {
+   "stem_form": "sweet",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:tiyadanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mithapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:beauty",
+  "lang": "en",
+  "lemma": {
+   "form": "beauty",
+   "script": "Latn",
+   "translit": "beauty",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:BEAUTY",
+  "morphology": {
+   "stem_form": "beauty",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:andam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sundarta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "French loan, simplex in synchronic English.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:weakness",
+  "lang": "en",
+  "lemma": {
+   "form": "weakness",
+   "script": "Latn",
+   "translit": "weakness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WEAKNESS",
+  "morphology": {
+   "stem_form": "weak",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:balahinata",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kamzori",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:greatness",
+  "lang": "en",
+  "lemma": {
+   "form": "greatness",
+   "script": "Latn",
+   "translit": "greatness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:GREATNESS",
+  "morphology": {
+   "stem_form": "great",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:goppatanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mahanta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:newness",
+  "lang": "en",
+  "lemma": {
+   "form": "newness",
+   "script": "Latn",
+   "translit": "newness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NEWNESS",
+  "morphology": {
+   "stem_form": "new",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kottadanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nayapan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:equality",
+  "lang": "en",
+  "lemma": {
+   "form": "equality",
+   "script": "Latn",
+   "translit": "equality",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:EQUALITY",
+  "morphology": {
+   "stem_form": "equal",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ity",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:samanatvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samanta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:unity",
+  "lang": "en",
+  "lemma": {
+   "form": "unity",
+   "script": "Latn",
+   "translit": "unity",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:UNITY",
+  "morphology": {
+   "stem_form": "unity",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ity",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:aikyata",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ekta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Latin unitas; segmentation is etymological rather than productive.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:honesty",
+  "lang": "en",
+  "lemma": {
+   "form": "honesty",
+   "script": "Latn",
+   "translit": "honesty",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:HONESTY",
+  "morphology": {
+   "stem_form": "honest",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nijayiti",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:imandari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Simplex synchronically (-y is not in the v0.1 affix inventory).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:brotherhood",
+  "lang": "en",
+  "lemma": {
+   "form": "brotherhood",
+   "script": "Latn",
+   "translit": "brotherhood",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:BROTHERHOOD",
+  "morphology": {
+   "stem_form": "brother",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-hood",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sodaratvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhaicara",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:motherhood",
+  "lang": "en",
+  "lemma": {
+   "form": "motherhood",
+   "script": "Latn",
+   "translit": "motherhood",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MOTHERHOOD",
+  "morphology": {
+   "stem_form": "mother",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-hood",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:matrtvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:matrtva",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:wisdom",
+  "lang": "en",
+  "lemma": {
+   "form": "wisdom",
+   "script": "Latn",
+   "translit": "wisdom",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WISDOM",
+  "morphology": {
+   "stem_form": "wise",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-dom",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jnanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajhdari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:happiness",
+  "lang": "en",
+  "lemma": {
+   "form": "happiness",
+   "script": "Latn",
+   "translit": "happiness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HAPPINESS",
+  "morphology": {
+   "stem_form": "happy",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:santosam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:xusi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:sadness",
+  "lang": "en",
+  "lemma": {
+   "form": "sadness",
+   "script": "Latn",
+   "translit": "sadness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SADNESS",
+  "morphology": {
+   "stem_form": "sad",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:duhkham",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:udasi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:laziness",
+  "lang": "en",
+  "lemma": {
+   "form": "laziness",
+   "script": "Latn",
+   "translit": "laziness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LAZINESS",
+  "morphology": {
+   "stem_form": "lazy",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:somaritanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:susti",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:illness",
+  "lang": "en",
+  "lemma": {
+   "form": "illness",
+   "script": "Latn",
+   "translit": "illness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:ILLNESS",
+  "morphology": {
+   "stem_form": "ill",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jabbu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bimari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:kindness",
+  "lang": "en",
+  "lemma": {
+   "form": "kindness",
+   "script": "Latn",
+   "translit": "kindness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:KINDNESS",
+  "morphology": {
+   "stem_form": "kind",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:daya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:meharbani",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:cleverness",
+  "lang": "en",
+  "lemma": {
+   "form": "cleverness",
+   "script": "Latn",
+   "translit": "cleverness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:CLEVERNESS",
+  "morphology": {
+   "stem_form": "clever",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:telivi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:calaki",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:nervousness",
+  "lang": "en",
+  "lemma": {
+   "form": "nervousness",
+   "script": "Latn",
+   "translit": "nervousness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:NERVOUSNESS",
+  "morphology": {
+   "stem_form": "nervous",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ness",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kangaru",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ghabrahat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:reading",
+  "lang": "en",
+  "lemma": {
+   "form": "reading",
+   "script": "Latn",
+   "translit": "reading",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:READING_ACT",
+  "morphology": {
+   "stem_form": "read",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ing",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cadavadam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:parhai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:writing",
+  "lang": "en",
+  "lemma": {
+   "form": "writing",
+   "script": "Latn",
+   "translit": "writing",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WRITING_ACT",
+  "morphology": {
+   "stem_form": "write",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ing",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:rayadam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:likhai",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:singing",
+  "lang": "en",
+  "lemma": {
+   "form": "singing",
+   "script": "Latn",
+   "translit": "singing",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SINGING_ACT",
+  "morphology": {
+   "stem_form": "sing",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ing",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:padadam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gayan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:decoration",
+  "lang": "en",
+  "lemma": {
+   "form": "decoration",
+   "script": "Latn",
+   "translit": "decoration",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:DECORATION",
+  "morphology": {
+   "stem_form": "decorate",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-tion",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:alankarana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sajavat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:movement",
+  "lang": "en",
+  "lemma": {
+   "form": "movement",
+   "script": "Latn",
+   "translit": "movement",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:MOVEMENT",
+  "morphology": {
+   "stem_form": "move",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ment",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kadalika",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:halcal",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:payment",
+  "lang": "en",
+  "lemma": {
+   "form": "payment",
+   "script": "Latn",
+   "translit": "payment",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:PAYMENT",
+  "morphology": {
+   "stem_form": "pay",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ment",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cellimpu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhugtan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:teacher",
+  "lang": "en",
+  "lemma": {
+   "form": "teacher",
+   "script": "Latn",
+   "translit": "teacher",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TEACHER",
+  "morphology": {
+   "stem_form": "teach",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-er",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:adhyapakudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:siksak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:worker",
+  "lang": "en",
+  "lemma": {
+   "form": "worker",
+   "script": "Latn",
+   "translit": "worker",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WORKER",
+  "morphology": {
+   "stem_form": "work",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-er",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:panivadu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mazdur",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:artist",
+  "lang": "en",
+  "lemma": {
+   "form": "artist",
+   "script": "Latn",
+   "translit": "artist",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:ARTIST",
+  "morphology": {
+   "stem_form": "art",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ist",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kalakarudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kalakar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:farmer",
+  "lang": "en",
+  "lemma": {
+   "form": "farmer",
+   "script": "Latn",
+   "translit": "farmer",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FARMER",
+  "morphology": {
+   "stem_form": "farm",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-er",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:raitu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kisan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:merchant",
+  "lang": "en",
+  "lemma": {
+   "form": "merchant",
+   "script": "Latn",
+   "translit": "merchant",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:MERCHANT",
+  "morphology": {
+   "stem_form": "merchant",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:vyapari",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:vyapari",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "French loan, simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:shopkeeper",
+  "lang": "en",
+  "lemma": {
+   "form": "shopkeeper",
+   "script": "Latn",
+   "translit": "shopkeeper",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SHOPKEEPER",
+  "morphology": {
+   "stem_form": "shop",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:dukanadarudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dukandar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Compound (shop + keeper); compounding is outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:singer",
+  "lang": "en",
+  "lemma": {
+   "form": "singer",
+   "script": "Latn",
+   "translit": "singer",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SINGER",
+  "morphology": {
+   "stem_form": "sing",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-er",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:patagadu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gayak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:socialist",
+  "lang": "en",
+  "lemma": {
+   "form": "socialist",
+   "script": "Latn",
+   "translit": "socialist",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:SOCIALIST_P",
+  "morphology": {
+   "stem_form": "social",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ist",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:samyavadi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajvadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:nationalist",
+  "lang": "en",
+  "lemma": {
+   "form": "nationalist",
+   "script": "Latn",
+   "translit": "nationalist",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:NATIONALIST_P",
+  "morphology": {
+   "stem_form": "nation",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ist",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jatiyavadi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastravadi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:magician",
+  "lang": "en",
+  "lemma": {
+   "form": "magician",
+   "script": "Latn",
+   "translit": "magician",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:MAGICIAN",
+  "morphology": {
+   "stem_form": "magic",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:mantrikudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jadugar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-ian outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:lioness",
+  "lang": "en",
+  "lemma": {
+   "form": "lioness",
+   "script": "Latn",
+   "translit": "lioness",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:LIONESS",
+  "morphology": {
+   "stem_form": "lion",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ess",
+     "function_id": "fn:FEM"
+    }
+   ],
+   "schema": "STEM+FEM",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:hopeless",
+  "lang": "en",
+  "lemma": {
+   "form": "hopeless",
+   "script": "Latn",
+   "translit": "hopeless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOPELESS",
+  "morphology": {
+   "stem_form": "hope",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:asaleni",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:niras",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:fearless",
+  "lang": "en",
+  "lemma": {
+   "form": "fearless",
+   "script": "Latn",
+   "translit": "fearless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:FEARLESS",
+  "morphology": {
+   "stem_form": "fear",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:bhayamleni",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nirbhay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:shameless",
+  "lang": "en",
+  "lemma": {
+   "form": "shameless",
+   "script": "Latn",
+   "translit": "shameless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:SHAMELESS",
+  "morphology": {
+   "stem_form": "shame",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sigguleni",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:besarm",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:useless",
+  "lang": "en",
+  "lemma": {
+   "form": "useless",
+   "script": "Latn",
+   "translit": "useless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:USELESS",
+  "morphology": {
+   "stem_form": "use",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:vyartham",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bekar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:homeless",
+  "lang": "en",
+  "lemma": {
+   "form": "homeless",
+   "script": "Latn",
+   "translit": "homeless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOMELESS",
+  "morphology": {
+   "stem_form": "home",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:illuleni",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:beghar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:lifeless",
+  "lang": "en",
+  "lemma": {
+   "form": "lifeless",
+   "script": "Latn",
+   "translit": "lifeless",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:LIFELESS",
+  "morphology": {
+   "stem_form": "life",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-less",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nirjivam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nirjiv",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:unhappy",
+  "lang": "en",
+  "lemma": {
+   "form": "unhappy",
+   "script": "Latn",
+   "translit": "unhappy",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:UNHAPPY",
+  "morphology": {
+   "stem_form": "happy",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:un-",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:duhkhamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:naxus",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:hopeful",
+  "lang": "en",
+  "lemma": {
+   "form": "hopeful",
+   "script": "Latn",
+   "translit": "hopeful",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOPEFUL",
+  "morphology": {
+   "stem_form": "hope",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:asagala",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:asavan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:useful",
+  "lang": "en",
+  "lemma": {
+   "form": "useful",
+   "script": "Latn",
+   "translit": "useful",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:USEFUL",
+  "morphology": {
+   "stem_form": "use",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:upayogakaram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:upyogi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:powerful",
+  "lang": "en",
+  "lemma": {
+   "form": "powerful",
+   "script": "Latn",
+   "translit": "powerful",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:POWERFUL",
+  "morphology": {
+   "stem_form": "power",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:balavantudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:balvan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:beautiful",
+  "lang": "en",
+  "lemma": {
+   "form": "beautiful",
+   "script": "Latn",
+   "translit": "beautiful",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:BEAUTIFUL",
+  "morphology": {
+   "stem_form": "beauty",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:andamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sundar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:joyful",
+  "lang": "en",
+  "lemma": {
+   "form": "joyful",
+   "script": "Latn",
+   "translit": "joyful",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "mixed",
+  "concept_id": "concept:JOYFUL",
+  "morphology": {
+   "stem_form": "joy",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    }
+   ],
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:santosamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:anandmay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:compassionate",
+  "lang": "en",
+  "lemma": {
+   "form": "compassionate",
+   "script": "Latn",
+   "translit": "compassionate",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:COMPASSIONATE",
+  "morphology": {
+   "stem_form": "compassion",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:dayagala",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dayavan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-ate outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:hope-filled",
+  "lang": "en",
+  "lemma": {
+   "form": "hope-filled",
+   "script": "Latn",
+   "translit": "hope-filled",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOPEFUL_FULL",
+  "morphology": {
+   "stem_form": "hope",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:hi:asapurn",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:asamayam",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Compound; simplex here.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:readable",
+  "lang": "en",
+  "lemma": {
+   "form": "readable",
+   "script": "Latn",
+   "translit": "readable",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:READABLE",
+  "morphology": {
+   "stem_form": "read",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-able",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cadavadagina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pathaniya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:drinkable",
+  "lang": "en",
+  "lemma": {
+   "form": "drinkable",
+   "script": "Latn",
+   "translit": "drinkable",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:DRINKABLE",
+  "morphology": {
+   "stem_form": "drink",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-able",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:tagadagina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:peya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:respectable",
+  "lang": "en",
+  "lemma": {
+   "form": "respectable",
+   "script": "Latn",
+   "translit": "respectable",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:RESPECTABLE",
+  "morphology": {
+   "stem_form": "respect",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-able",
+     "function_id": "fn:ABL"
+    }
+   ],
+   "schema": "STEM+ABL",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:gauravincadagina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mananiya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:quickly",
+  "lang": "en",
+  "lemma": {
+   "form": "quickly",
+   "script": "Latn",
+   "translit": "quickly",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "N",
+  "concept_id": "concept:QUICKLY",
+  "morphology": {
+   "stem_form": "quick",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ly",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:vegamga",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jaldi",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:slowly",
+  "lang": "en",
+  "lemma": {
+   "form": "slowly",
+   "script": "Latn",
+   "translit": "slowly",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "N",
+  "concept_id": "concept:SLOWLY",
+  "morphology": {
+   "stem_form": "slow",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ly",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nemmadiga",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dhire",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:carefully",
+  "lang": "en",
+  "lemma": {
+   "form": "carefully",
+   "script": "Latn",
+   "translit": "carefully",
+   "ipa": null
+  },
+  "pos": "adverb",
+  "register": "N",
+  "concept_id": "concept:CAREFULLY",
+  "morphology": {
+   "stem_form": "care",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ful",
+     "function_id": "fn:POS"
+    },
+    {
+     "affix_id": "affix:en:-ly",
+     "function_id": "fn:ADV"
+    }
+   ],
+   "schema": "STEM+POS+ADV",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jagrattaga",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:savdhanipurvak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Double derivation: care + -ful + -ly.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:simplify",
+  "lang": "en",
+  "lemma": {
+   "form": "simplify",
+   "script": "Latn",
+   "translit": "simplify",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "E",
+  "concept_id": "concept:SIMPLIFY",
+  "morphology": {
+   "stem_form": "simple",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ify",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sulabhaparacu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:saral-banana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:strengthen",
+  "lang": "en",
+  "lemma": {
+   "form": "strengthen",
+   "script": "Latn",
+   "translit": "strengthen",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "N",
+  "concept_id": "concept:STRENGTHEN",
+  "morphology": {
+   "stem_form": "strong",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-en",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:balaparacu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mazbut-karna",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:show",
+  "lang": "en",
+  "lemma": {
+   "form": "show",
+   "script": "Latn",
+   "translit": "show",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "N",
+  "concept_id": "concept:SHOW",
+  "morphology": {
+   "stem_form": "show",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cupincu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dikhana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "English lexicalises this causative without an affix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:feed",
+  "lang": "en",
+  "lemma": {
+   "form": "feed",
+   "script": "Latn",
+   "translit": "feed",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "N",
+  "concept_id": "concept:FEED",
+  "morphology": {
+   "stem_form": "feed",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:tinipincu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:khilana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Suppletive causative of eat; no affix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:modernize",
+  "lang": "en",
+  "lemma": {
+   "form": "modernize",
+   "script": "Latn",
+   "translit": "modernize",
+   "ipa": null
+  },
+  "pos": "verb",
+  "register": "E",
+  "concept_id": "concept:MODERNIZE",
+  "morphology": {
+   "stem_form": "modern",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ize",
+     "function_id": "fn:CAUS"
+    }
+   ],
+   "schema": "STEM+CAUS",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:adhunikikarincu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:adhunik-banana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:socialism",
+  "lang": "en",
+  "lemma": {
+   "form": "socialism",
+   "script": "Latn",
+   "translit": "socialism",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:SOCIALISM",
+  "morphology": {
+   "stem_form": "social",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ism",
+     "function_id": "fn:DOCT"
+    }
+   ],
+   "schema": "STEM+DOCT",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:samyavadam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:samajvad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:nationalism",
+  "lang": "en",
+  "lemma": {
+   "form": "nationalism",
+   "script": "Latn",
+   "translit": "nationalism",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:NATIONALISM",
+  "morphology": {
+   "stem_form": "nation",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ism",
+     "function_id": "fn:DOCT"
+    }
+   ],
+   "schema": "STEM+DOCT",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jatiyavadam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastravad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:linguistics",
+  "lang": "en",
+  "lemma": {
+   "form": "linguistics",
+   "script": "Latn",
+   "translit": "linguistics",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:LINGUISTICS",
+  "morphology": {
+   "stem_form": "linguistics",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:bhasasastram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhasavijnan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-ics outside the v0.1 affix inventory.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:biology",
+  "lang": "en",
+  "lemma": {
+   "form": "biology",
+   "script": "Latn",
+   "translit": "biology",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:BIOLOGY",
+  "morphology": {
+   "stem_form": "bio",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ology",
+     "function_id": "fn:FIELD"
+    }
+   ],
+   "schema": "STEM+FIELD",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jivasastram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:jivavijnan",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:school",
+  "lang": "en",
+  "lemma": {
+   "form": "school",
+   "script": "Latn",
+   "translit": "school",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:SCHOOL",
+  "morphology": {
+   "stem_form": "school",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pathasala",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pathsala",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Greek via Latin/OE; simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:library",
+  "lang": "en",
+  "lemma": {
+   "form": "library",
+   "script": "Latn",
+   "translit": "library",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:LIBRARY",
+  "morphology": {
+   "stem_form": "library",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:granthalayam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pustakalay",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "Latin loan, simplex.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:clinic",
+  "lang": "en",
+  "lemma": {
+   "form": "clinic",
+   "script": "Latn",
+   "translit": "clinic",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "E",
+  "concept_id": "concept:CLINIC",
+  "morphology": {
+   "stem_form": "clinic",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:davakhana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:davaxana",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:booklet",
+  "lang": "en",
+  "lemma": {
+   "form": "booklet",
+   "script": "Latn",
+   "translit": "booklet",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "mixed",
+  "concept_id": "concept:BOOKLET",
+  "morphology": {
+   "stem_form": "book",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-let",
+     "function_id": "fn:DIM"
+    }
+   ],
+   "schema": "STEM+DIM",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:hi:pustika",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:duckling",
+  "lang": "en",
+  "lemma": {
+   "form": "duckling",
+   "script": "Latn",
+   "translit": "duckling",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:DUCKLING",
+  "morphology": {
+   "stem_form": "duck",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ling",
+     "function_id": "fn:DIM"
+    }
+   ],
+   "schema": "STEM+DIM",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:childish",
+  "lang": "en",
+  "lemma": {
+   "form": "childish",
+   "script": "Latn",
+   "translit": "childish",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:CHILDISH",
+  "morphology": {
+   "stem_form": "child",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ish",
+     "function_id": "fn:PEJ"
+    }
+   ],
+   "schema": "STEM+PEJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pillalanti",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:baccom-sa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:yellowish",
+  "lang": "en",
+  "lemma": {
+   "form": "yellowish",
+   "script": "Latn",
+   "translit": "yellowish",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:YELLOWISH",
+  "morphology": {
+   "stem_form": "yellow",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ish",
+     "function_id": "fn:PEJ"
+    }
+   ],
+   "schema": "STEM+PEJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pasupulanti",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pila-sa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:national",
+  "lang": "en",
+  "lemma": {
+   "form": "national",
+   "script": "Latn",
+   "translit": "national",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:NATIONAL",
+  "morphology": {
+   "stem_form": "nation",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-al",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jatiyamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rastriya",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:scientific",
+  "lang": "en",
+  "lemma": {
+   "form": "scientific",
+   "script": "Latn",
+   "translit": "scientific",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:SCIENTIFIC",
+  "morphology": {
+   "stem_form": "science",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ic",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:sastriyamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:vaijnanik",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:famous",
+  "lang": "en",
+  "lemma": {
+   "form": "famous",
+   "script": "Latn",
+   "translit": "famous",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:FAMOUS",
+  "morphology": {
+   "stem_form": "fame",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ous",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:prasiddhamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:prasiddh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:dangerous",
+  "lang": "en",
+  "lemma": {
+   "form": "dangerous",
+   "script": "Latn",
+   "translit": "dangerous",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "E",
+  "concept_id": "concept:DANGEROUS",
+  "morphology": {
+   "stem_form": "danger",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:en:-ous",
+     "function_id": "fn:ADJ"
+    }
+   ],
+   "schema": "STEM+ADJ",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pramadamaina",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:xatarnak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:mother",
+  "lang": "en",
+  "lemma": {
+   "form": "mother",
+   "script": "Latn",
+   "translit": "mother",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MOTHER",
+  "morphology": {
+   "stem_form": "mother",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:mother-oe-en",
+   "edge:mother-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:amma",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:mata",
+    "relation": "COGNATE"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:father",
+  "lang": "en",
+  "lemma": {
+   "form": "father",
+   "script": "Latn",
+   "translit": "father",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FATHER",
+  "morphology": {
+   "stem_form": "father",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nanna",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pita",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:name",
+  "lang": "en",
+  "lemma": {
+   "form": "name",
+   "script": "Latn",
+   "translit": "name",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NAME",
+  "morphology": {
+   "stem_form": "name",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:name-pie-en",
+   "edge:name-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:peru",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nam",
+    "relation": "COGNATE"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:tooth",
+  "lang": "en",
+  "lemma": {
+   "form": "tooth",
+   "script": "Latn",
+   "translit": "tooth",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TOOTH",
+  "morphology": {
+   "stem_form": "tooth",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:tooth-pie-en",
+   "edge:tooth-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pallu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:dat",
+    "relation": "COGNATE"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:three",
+  "lang": "en",
+  "lemma": {
+   "form": "three",
+   "script": "Latn",
+   "translit": "three",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:THREE",
+  "morphology": {
+   "stem_form": "three",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:three-pie-en",
+   "edge:three-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:mudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:tin",
+    "relation": "COGNATE"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:two",
+  "lang": "en",
+  "lemma": {
+   "form": "two",
+   "script": "Latn",
+   "translit": "two",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:TWO",
+  "morphology": {
+   "stem_form": "two",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:two-pie-en",
+   "edge:two-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:rendu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:do",
+    "relation": "COGNATE"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:water",
+  "lang": "en",
+  "lemma": {
+   "form": "water",
+   "script": "Latn",
+   "translit": "water",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:WATER",
+  "morphology": {
+   "stem_form": "water",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:niru",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pani",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:fire",
+  "lang": "en",
+  "lemma": {
+   "form": "fire",
+   "script": "Latn",
+   "translit": "fire",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FIRE",
+  "morphology": {
+   "stem_form": "fire",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nippu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ag",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:dog",
+  "lang": "en",
+  "lemma": {
+   "form": "dog",
+   "script": "Latn",
+   "translit": "dog",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:DOG",
+  "morphology": {
+   "stem_form": "dog",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:dog-oe-en"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kukka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kutta",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:house",
+  "lang": "en",
+  "lemma": {
+   "form": "house",
+   "script": "Latn",
+   "translit": "house",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HOUSE",
+  "morphology": {
+   "stem_form": "house",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:illu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:ghar",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:book",
+  "lang": "en",
+  "lemma": {
+   "form": "book",
+   "script": "Latn",
+   "translit": "book",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:BOOK",
+  "morphology": {
+   "stem_form": "book",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:book-oe-en"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:pustakam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:kitab",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pustak",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:sugar",
+  "lang": "en",
+  "lemma": {
+   "form": "sugar",
+   "script": "Latn",
+   "translit": "sugar",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SUGAR",
+  "morphology": {
+   "stem_form": "sugar",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:sugar-fr-en"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cakkera",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:sakkar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:cini",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:king",
+  "lang": "en",
+  "lemma": {
+   "form": "king",
+   "script": "Latn",
+   "translit": "king",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:KING",
+  "morphology": {
+   "stem_form": "king",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:king-pgmc-en"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:raju",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:raja",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:sleep",
+  "lang": "en",
+  "lemma": {
+   "form": "sleep",
+   "script": "Latn",
+   "translit": "sleep",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SLEEP",
+  "morphology": {
+   "stem_form": "sleep",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:nidra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:nid",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:memory",
+  "lang": "en",
+  "lemma": {
+   "form": "memory",
+   "script": "Latn",
+   "translit": "memory",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MEMORY",
+  "morphology": {
+   "stem_form": "memory",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:jnapakam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:yad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:joy",
+  "lang": "en",
+  "lemma": {
+   "form": "joy",
+   "script": "Latn",
+   "translit": "joy",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:JOY",
+  "morphology": {
+   "stem_form": "joy",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:anandam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:anand",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:anger",
+  "lang": "en",
+  "lemma": {
+   "form": "anger",
+   "script": "Latn",
+   "translit": "anger",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:ANGER",
+  "morphology": {
+   "stem_form": "anger",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kopam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gussa",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:eye",
+  "lang": "en",
+  "lemma": {
+   "form": "eye",
+   "script": "Latn",
+   "translit": "eye",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:EYE",
+  "morphology": {
+   "stem_form": "eye",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:kannu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:akh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:star",
+  "lang": "en",
+  "lemma": {
+   "form": "star",
+   "script": "Latn",
+   "translit": "star",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:STAR",
+  "morphology": {
+   "stem_form": "star",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:star-pie-en",
+   "edge:star-cog"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:te:naksatram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:tara",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:village",
+  "lang": "en",
+  "lemma": {
+   "form": "village",
+   "script": "Latn",
+   "translit": "village",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:VILLAGE",
+  "morphology": {
+   "stem_form": "village",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:uru",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:gav",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:moon",
+  "lang": "en",
+  "lemma": {
+   "form": "moon",
+   "script": "Latn",
+   "translit": "moon",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:MOON",
+  "morphology": {
+   "stem_form": "moon",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:candrudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:cad",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:sun",
+  "lang": "en",
+  "lemma": {
+   "form": "sun",
+   "script": "Latn",
+   "translit": "sun",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:SUN",
+  "morphology": {
+   "stem_form": "sun",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:suryudu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:suraj",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:fish",
+  "lang": "en",
+  "lemma": {
+   "form": "fish",
+   "script": "Latn",
+   "translit": "fish",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:FISH",
+  "morphology": {
+   "stem_form": "fish",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:cepa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:machli",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:rain",
+  "lang": "en",
+  "lemma": {
+   "form": "rain",
+   "script": "Latn",
+   "translit": "rain",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:RAIN",
+  "morphology": {
+   "stem_form": "rain",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:vana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:baris",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:thirst",
+  "lang": "en",
+  "lemma": {
+   "form": "thirst",
+   "script": "Latn",
+   "translit": "thirst",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:THIRST",
+  "morphology": {
+   "stem_form": "thirst",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:daham",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pyas",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:hunger",
+  "lang": "en",
+  "lemma": {
+   "form": "hunger",
+   "script": "Latn",
+   "translit": "hunger",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HUNGER",
+  "morphology": {
+   "stem_form": "hunger",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:akali",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:bhukh",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:night",
+  "lang": "en",
+  "lemma": {
+   "form": "night",
+   "script": "Latn",
+   "translit": "night",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NIGHT",
+  "morphology": {
+   "stem_form": "night",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:te:ratri",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:rat",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "lex:en:nice",
+  "lang": "en",
+  "lemma": {
+   "form": "nice",
+   "script": "Latn",
+   "translit": "nice",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:NICE_W",
+  "morphology": {
+   "stem_form": "nice",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:nice-me-en"
+  ],
+  "aligned": [],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ }
+]

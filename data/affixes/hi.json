@@ -1,0 +1,1598 @@
+[
+ {
+  "id": "affix:hi:-pan",
+  "lang": "hi",
+  "form": "-पन",
+  "script_form": "-पन",
+  "translit": "-pan",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-pana"
+  ],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:hi:akelapan",
+   "lex:hi:bacpan",
+   "lex:hi:mithapan",
+   "lex:hi:nayapan",
+   "lex:hi:pagalpan"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "The default native Hindi abstract-state suffix (बचपन).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-ta",
+  "lang": "hi",
+  "form": "-ता",
+  "script_form": "-ता",
+  "translit": "-tā",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:hi:ekta",
+   "lex:hi:mahanta",
+   "lex:hi:manavta",
+   "lex:hi:samanta",
+   "lex:hi:sundarta"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -tā tatsama (मानवता).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-tva",
+  "lang": "hi",
+  "form": "-त्व",
+  "script_form": "-त्व",
+  "translit": "-tva",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:hi:matrtva",
+   "lex:hi:netrtva",
+   "lex:hi:rajatva"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -tva tatsama; learned register (नेतृत्व).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-i",
+  "lang": "hi",
+  "form": "-ई",
+  "script_form": "-ई",
+  "translit": "-ī",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST",
+   "fn:AG",
+   "fn:ADJ"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:hi:azadi",
+   "lex:hi:bimari",
+   "lex:hi:calaki",
+   "lex:hi:dosti",
+   "lex:hi:imandari",
+   "lex:hi:jaldi"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Polysemous: abstract nouns (गरमी), agents/relational (व्यापारी). One affix, several functions — see DECISIONS §3.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-ai",
+  "lang": "hi",
+  "form": "-आई",
+  "script_form": "-आई",
+  "translit": "-āī",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST",
+   "fn:EV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ",
+   "V"
+  ],
+  "examples": [
+   "lex:hi:acchai",
+   "lex:hi:likhai",
+   "lex:hi:parhai",
+   "lex:hi:saccai"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-tion",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ment",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ing",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "States from adjectives (अच्छाई) and action nouns from verbs (पढ़ाई).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-ahat",
+  "lang": "hi",
+  "form": "-आहट",
+  "script_form": "-आहट",
+  "translit": "-āhaṭ",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV",
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:hi:ghabrahat"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-tion",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ment",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ing",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Process/sensation nouns (घबराहट).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-avat",
+  "lang": "hi",
+  "form": "-आवट",
+  "script_form": "-आवट",
+  "translit": "-āvaṭ",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:hi:sajavat"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-tion",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ment",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ing",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Result nouns (सजावट).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-apa",
+  "lang": "hi",
+  "form": "-आपा",
+  "script_form": "-आपा",
+  "translit": "-āpā",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "low",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:hi:burhapa"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "State nouns, few but common bases (बुढ़ापा).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-vala",
+  "lang": "hi",
+  "form": "-वाला",
+  "script_form": "-वाला",
+  "translit": "-vālā",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG",
+   "fn:POS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-वाली"
+  ],
+  "attaches_to": [
+   "N",
+   "V"
+  ],
+  "examples": [],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (N vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Agent/possessor/associate ('the X one'); extremely productive.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-kar",
+  "lang": "hi",
+  "form": "-कार",
+  "script_form": "-कार",
+  "translit": "-kār",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:kalakar"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (S vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit kāra: professional agent (कलाकार).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-dar",
+  "lang": "hi",
+  "form": "-दार",
+  "script_form": "-दार",
+  "translit": "-dār",
+  "kind": "suffix",
+  "functions": [
+   "fn:HAB",
+   "fn:AG",
+   "fn:POS"
+  ],
+  "register": "P",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:dukandar",
+   "lex:hi:imandari",
+   "lex:hi:samajhdari"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (P vs E)"
+   },
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "functional equivalent; register differs (P vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (P vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "functional equivalent; register differs (P vs S)"
+   },
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (P vs E)"
+   },
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "functional equivalent; register differs (P vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "functional equivalent; register differs (P vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Persian -dār 'holder': दुकानदार, समझदार.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-gar",
+  "lang": "hi",
+  "form": "-गर",
+  "script_form": "-गर",
+  "translit": "-gar",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "P",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:jadugar"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (P vs E)"
+   },
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "functional equivalent; register differs (P vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (P vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "functional equivalent; register differs (P vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Persian -gar 'maker' (कारीगर, जादूगर).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-iya",
+  "lang": "hi",
+  "form": "-ईय",
+  "script_form": "-ईय",
+  "translit": "-īya",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:rastriya"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ic",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-al",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-aina",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit relational adjectiviser (राष्ट्रीय).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-ik",
+  "lang": "hi",
+  "form": "-इक",
+  "script_form": "-इक",
+  "translit": "-ik",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:vaijnanik"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ic",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-al",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-aina",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -ika relational adjectiviser (वैज्ञानिक), often with vṛddhi.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-hin",
+  "lang": "hi",
+  "form": "-हीन",
+  "script_form": "-हीन",
+  "translit": "-hīn",
+  "kind": "suffix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-less",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:un-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-leni",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:nir-",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit hīna 'deprived of' (धनहीन).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:nir-",
+  "lang": "hi",
+  "form": "निर्-",
+  "script_form": "निर्-",
+  "translit": "nir-",
+  "kind": "prefix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [
+   "निः-",
+   "नि-"
+  ],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:hi:niras",
+   "lex:hi:nirbhay",
+   "lex:hi:nirjiv"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-less",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:un-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-leni",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:nir-",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit privative prefix (निराश, निर्जीव).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:be-",
+  "lang": "hi",
+  "form": "बे-",
+  "script_form": "बे-",
+  "translit": "be-",
+  "kind": "prefix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "P",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:hi:beghar",
+   "lex:hi:bekar",
+   "lex:hi:besarm"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-less",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:en:un-",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:-leni",
+    "note": "functional equivalent; register differs (P vs N)"
+   },
+   {
+    "affix_id": "affix:te:nir-",
+    "note": "functional equivalent; register differs (P vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Persian privative prefix (बेघर, बेशर्म).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-purn",
+  "lang": "hi",
+  "form": "-पूर्ण",
+  "script_form": "-पूर्ण",
+  "translit": "-pūrṇ",
+  "kind": "compound_element",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:asapurn"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit pūrṇa 'full of' (आशापूर्ण).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-may",
+  "lang": "hi",
+  "form": "-मय",
+  "script_form": "-मय",
+  "translit": "-may",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:anandmay"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -maya 'made of / full of' (आनंदमय).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-van",
+  "lang": "hi",
+  "form": "-वान",
+  "script_form": "-वान",
+  "translit": "-vān",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [
+   "-वती",
+   "-मान"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:asavan",
+   "lex:hi:balvan",
+   "lex:hi:dayavan"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -vant 'possessing' (बलवान).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-niya",
+  "lang": "hi",
+  "form": "-नीय",
+  "script_form": "-नीय",
+  "translit": "-nīya",
+  "kind": "suffix",
+  "functions": [
+   "fn:ABL"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V",
+   "N"
+  ],
+  "examples": [
+   "lex:hi:mananiya",
+   "lex:hi:pathaniya"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-able",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-dagina",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit gerundive: 'worthy of / to be X-ed' (पठनीय, माननीय).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-vad",
+  "lang": "hi",
+  "form": "-वाद",
+  "script_form": "-वाद",
+  "translit": "-vād",
+  "kind": "suffix",
+  "functions": [
+   "fn:DOCT"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:rastravad",
+   "lex:hi:samajvad"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ism",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-vadam",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit vāda: doctrine (समाजवाद).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-vadi",
+  "lang": "hi",
+  "form": "-वादी",
+  "script_form": "-वादी",
+  "translit": "-vādī",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:rastravadi",
+   "lex:hi:samajvadi"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (S vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Adherent of a -वाद doctrine (समाजवादी).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-khana",
+  "lang": "hi",
+  "form": "-ख़ाना",
+  "script_form": "-ख़ाना",
+  "translit": "-xānā",
+  "kind": "compound_element",
+  "functions": [
+   "fn:COLL"
+  ],
+  "register": "P",
+  "productivity": "mid",
+  "allomorphs": [
+   "-खाना"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:davaxana"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-sala",
+    "note": "functional equivalent; register differs (P vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Persian xāna 'house': place noun (दवाख़ाना).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-shala",
+  "lang": "hi",
+  "form": "-शाला",
+  "script_form": "-शाला",
+  "translit": "-śālā",
+  "kind": "compound_element",
+  "functions": [
+   "fn:COLL"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:pathsala"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-sala",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit śālā 'hall': place noun (पाठशाला).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-sa",
+  "lang": "hi",
+  "form": "-सा",
+  "script_form": "-सा",
+  "translit": "-sā",
+  "kind": "suffix",
+  "functions": [
+   "fn:PEJ",
+   "fn:DIM"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-सी",
+   "-से"
+  ],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:hi:baccom-sa",
+   "lex:hi:pila-sa"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ish",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-lanti",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Approximative 'like X, X-ish' (बच्चों-सा, पीला-सा).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-a-caus",
+  "lang": "hi",
+  "form": "-आ-",
+  "script_form": "-आ-",
+  "translit": "-ā-",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-वा-",
+   "-ला-"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:hi:dikhana",
+   "lex:hi:khilana"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ize",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ify",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-en",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-inchu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-parachu",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Stem-internal causative increment (दिखाना, खिलाना). The prompt's '-आना' conflates this with infinitive -ना — see DECISIONS §5.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-purvak",
+  "lang": "hi",
+  "form": "-पूर्वक",
+  "script_form": "-पूर्वक",
+  "translit": "-pūrvak",
+  "kind": "compound_element",
+  "functions": [
+   "fn:ADV"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:savdhanipurvak"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ly",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:te:-ga",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit pūrvaka: manner adverbialiser (सावधानीपूर्वक). The commoner Hindi strategy is the phrase 'X से' (a postposition, outside affix morphology).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ },
+ {
+  "id": "affix:hi:-vijnan",
+  "lang": "hi",
+  "form": "-विज्ञान",
+  "script_form": "-विज्ञान",
+  "translit": "-vijñān",
+  "kind": "compound_element",
+  "functions": [
+   "fn:FIELD"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [
+   "-शास्त्र"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:hi:bhasavijnan",
+   "lex:hi:jivavijnan"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ology",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:te:-sastram",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit vijñāna: field of study (भाषाविज्ञान).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "mcgregor"
+   ]
+  }
+ }
+]

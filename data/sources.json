@@ -1,0 +1,79 @@
+[
+ {
+  "id": "oed",
+  "title": "OED",
+  "citation": "Oxford English Dictionary. Oxford University Press. oed.com.",
+  "url": "https://www.oed.com",
+  "kind": "dictionary"
+ },
+ {
+  "id": "cdial",
+  "title": "CDIAL",
+  "citation": "Turner, R. L. (1962–66). A Comparative Dictionary of the Indo-Aryan Languages. London: Oxford University Press.",
+  "url": null,
+  "kind": "reference_work"
+ },
+ {
+  "id": "dedr",
+  "title": "DEDR",
+  "citation": "Burrow, T. & Emeneau, M. B. (1984). A Dravidian Etymological Dictionary (2nd ed.). Oxford: Clarendon Press.",
+  "url": null,
+  "kind": "reference_work"
+ },
+ {
+  "id": "mw",
+  "title": "Monier-Williams",
+  "citation": "Monier-Williams, M. (1899). A Sanskrit-English Dictionary. Oxford: Clarendon Press.",
+  "url": null,
+  "kind": "dictionary"
+ },
+ {
+  "id": "platts",
+  "title": "Platts",
+  "citation": "Platts, J. T. (1884). A Dictionary of Urdu, Classical Hindi, and English. London: W. H. Allen.",
+  "url": null,
+  "kind": "dictionary"
+ },
+ {
+  "id": "brown",
+  "title": "Brown Telugu Dictionary",
+  "citation": "Brown, C. P. (1903). A Telugu-English Dictionary (2nd ed.). Madras: Government Press.",
+  "url": null,
+  "kind": "dictionary"
+ },
+ {
+  "id": "mcgregor",
+  "title": "Oxford Hindi-English Dictionary",
+  "citation": "McGregor, R. S. (1993). The Oxford Hindi-English Dictionary. Oxford University Press.",
+  "url": null,
+  "kind": "dictionary"
+ },
+ {
+  "id": "krishnamurti",
+  "title": "The Dravidian Languages",
+  "citation": "Krishnamurti, Bh. (2003). The Dravidian Languages. Cambridge University Press.",
+  "url": null,
+  "kind": "reference_work"
+ },
+ {
+  "id": "watkins",
+  "title": "AHD IE Roots",
+  "citation": "Watkins, C. (2011). The American Heritage Dictionary of Indo-European Roots (3rd ed.). Boston: Houghton Mifflin.",
+  "url": null,
+  "kind": "reference_work"
+ },
+ {
+  "id": "nsm",
+  "title": "NSM primes",
+  "citation": "Goddard, C. & Wierzbicka, A. (2014). Words and Meanings: Lexical Semantics across Domains, Languages, and Cultures. Oxford University Press.",
+  "url": null,
+  "kind": "paper"
+ },
+ {
+  "id": "wiktionary",
+  "title": "Wiktionary",
+  "citation": "Wiktionary, the free dictionary. Crowd-edited; confidence capped at 0.6 when sole source.",
+  "url": "https://en.wiktionary.org",
+  "kind": "crowd"
+ }
+]

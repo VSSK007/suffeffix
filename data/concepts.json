@@ -1,0 +1,3035 @@
+[
+ {
+  "id": "concept:GOODNESS",
+  "gloss": "the state of being good",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "atom": "atom:GOOD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:GOOD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:CHILDHOOD",
+  "gloss": "the state or period of being a child",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "atom": "atom:CHILD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:CHILD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LONELINESS",
+  "gloss": "the bad feeling of being alone",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:BECAUSE"
+        },
+        {
+         "op": "NEG",
+         "args": [
+          {
+           "op": "HAVE",
+           "args": [
+            {
+             "atom": "atom:NEAR"
+            },
+            {
+             "atom": "atom:PEOPLE"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "atom": "atom:BAD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:BECAUSE",
+   "atom:NEAR",
+   "atom:PEOPLE",
+   "atom:BAD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MADNESS",
+  "gloss": "the state of being mad",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:THINK"
+        },
+        {
+         "atom": "atom:GOOD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:OLD_AGE",
+  "gloss": "the state or period of being old",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "atom": "atom:OLD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:OLD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:TRUTH",
+  "gloss": "the state of being true",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "atom": "atom:TRUE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:TRUE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FREEDOM",
+  "gloss": "the state of being free",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SOMEONE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HUMANITY",
+  "gloss": "the state/quality of being human",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:LIKE"
+      },
+      {
+       "atom": "atom:PEOPLE"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:PEOPLE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LEADERSHIP",
+  "gloss": "the state/role of being a leader",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "AGENT_OF",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SAY"
+        },
+        {
+         "atom": "atom:PEOPLE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SAY",
+   "atom:PEOPLE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FRIENDSHIP",
+  "gloss": "the relation of being friends",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:NEAR"
+      },
+      {
+       "atom": "atom:SOMEONE"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:NEAR",
+   "atom:SOMEONE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:KINGSHIP",
+  "gloss": "the status of being king",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "AGENT_OF",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SAY"
+        },
+        {
+         "atom": "atom:ALL"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SAY",
+   "atom:ALL"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SWEETNESS",
+  "gloss": "the state of being sweet",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BEAUTY",
+  "gloss": "the state of being beautiful",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SEE"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:WEAKNESS",
+  "gloss": "the state of being weak",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BIG"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:GREATNESS",
+  "gloss": "the state of being great",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BIG",
+   "atom:GOOD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NEWNESS",
+  "gloss": "the state of being new",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "atom": "atom:BEFORE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BEFORE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:EQUALITY",
+  "gloss": "the state of being equal",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:LIKE"
+      },
+      {
+       "atom": "atom:ALL"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:ALL"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:UNITY",
+  "gloss": "the state of being one",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "atom": "atom:ONE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:ONE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HONESTY",
+  "gloss": "the state of being honest",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SAY"
+      },
+      {
+       "atom": "atom:TRUE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SAY",
+   "atom:TRUE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BROTHERHOOD",
+  "gloss": "the relation of being brothers",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:LIKE"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:NEAR"
+        },
+        {
+         "atom": "atom:PEOPLE"
+        },
+        {
+         "atom": "atom:GOOD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:NEAR",
+   "atom:PEOPLE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MOTHERHOOD",
+  "gloss": "the state of being a mother",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:CHILD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:CHILD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:WISDOM",
+  "gloss": "deep practical knowledge",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:KNOW"
+      },
+      {
+       "atom": "atom:MANY"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:KNOW",
+   "atom:MANY",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HAPPINESS",
+  "gloss": "the state of feeling good",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:GOOD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SADNESS",
+  "gloss": "the state of feeling bad",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:BAD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:BAD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LAZINESS",
+  "gloss": "unwillingness to work",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:WANT"
+        },
+        {
+         "atom": "atom:WORK"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WANT",
+   "atom:WORK"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:ILLNESS",
+  "gloss": "the state of being ill",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:BAD"
+      },
+      {
+       "atom": "atom:BODY"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:BAD",
+   "atom:BODY"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:KINDNESS",
+  "gloss": "the quality of doing good to others",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "atom": "atom:GOOD"
+      },
+      {
+       "atom": "atom:SOMEONE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:GOOD",
+   "atom:SOMEONE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:CLEVERNESS",
+  "gloss": "quickness of thought",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:GOOD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NERVOUSNESS",
+  "gloss": "agitated uneasy feeling",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SMALL"
+        },
+        {
+         "atom": "atom:FEAR"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:SMALL",
+   "atom:FEAR"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:READING_ACT",
+  "gloss": "the act of reading",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SEE"
+      },
+      {
+       "atom": "atom:TEXT"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:TEXT"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:WRITING_ACT",
+  "gloss": "the act of writing",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "atom": "atom:TEXT"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:TEXT"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SINGING_ACT",
+  "gloss": "the act of singing",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SAY"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:LIKE"
+        },
+        {
+         "atom": "atom:JOY"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SAY",
+   "atom:LIKE",
+   "atom:JOY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:DECORATION",
+  "gloss": "the result of decorating",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SEE"
+        },
+        {
+         "atom": "atom:GOOD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:SEE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MOVEMENT",
+  "gloss": "the act of moving",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "atom": "atom:MOVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:MOVE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:PAYMENT",
+  "gloss": "the act/result of paying",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SOMETHING"
+      },
+      {
+       "atom": "atom:SOMEONE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SOMETHING",
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:TEACHER",
+  "gloss": "one who teaches",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "atom": "atom:TEACH"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:TEACH"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:WORKER",
+  "gloss": "one who works",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "atom": "atom:WORK"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WORK"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:ARTIST",
+  "gloss": "one who makes art",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SEE"
+        },
+        {
+         "atom": "atom:GOOD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:SEE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FARMER",
+  "gloss": "one who farms",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:WORK"
+      },
+      {
+       "atom": "atom:WHERE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WORK",
+   "atom:WHERE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MERCHANT",
+  "gloss": "one who trades",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:SOMETHING"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:SOMETHING"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SHOPKEEPER",
+  "gloss": "one who keeps a shop",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:WHERE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WHERE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SINGER",
+  "gloss": "one who sings",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SAY"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:LIKE"
+        },
+        {
+         "atom": "atom:JOY"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SAY",
+   "atom:LIKE",
+   "atom:JOY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SOCIALIST_P",
+  "gloss": "adherent of socialism",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:LIKE"
+        },
+        {
+         "atom": "atom:ALL"
+        },
+        {
+         "atom": "atom:PEOPLE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:LIKE",
+   "atom:ALL",
+   "atom:PEOPLE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NATIONALIST_P",
+  "gloss": "adherent of nationalism",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:BIG"
+        },
+        {
+         "atom": "atom:WHERE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:BIG",
+   "atom:WHERE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MAGICIAN",
+  "gloss": "one who does magic",
+  "ili": null,
+  "structure": {
+   "op": "AGENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "op": "NEG",
+       "args": [
+        {
+         "atom": "atom:KNOW"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:KNOW"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FRIEND_F",
+  "gloss": "a female friend",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIKE"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:NEAR"
+      },
+      {
+       "atom": "atom:SOMEONE"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:NEAR",
+   "atom:SOMEONE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": true
+ },
+ {
+  "id": "concept:LIONESS",
+  "gloss": "a female lion",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIKE"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      },
+      {
+       "atom": "atom:ANGER"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:BIG",
+   "atom:ANGER"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": true
+ },
+ {
+  "id": "concept:HOPELESS",
+  "gloss": "without hope",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:WANT"
+        },
+        {
+         "op": "HAVE",
+         "args": [
+          {
+           "atom": "atom:GOOD"
+          },
+          {
+           "atom": "atom:AFTER"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WANT",
+   "atom:GOOD",
+   "atom:AFTER"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FEARLESS",
+  "gloss": "without fear",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEAR"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEAR"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SHAMELESS",
+  "gloss": "without shame",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SHAME"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SHAME"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:USELESS",
+  "gloss": "of no use",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:GOOD"
+      },
+      {
+       "atom": "atom:DO"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:GOOD",
+   "atom:DO"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HOMELESS",
+  "gloss": "without a home",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:WHERE"
+        },
+        {
+         "atom": "atom:LIVE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WHERE",
+   "atom:LIVE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LIFELESS",
+  "gloss": "without life",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "atom": "atom:LIVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIVE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:UNHAPPY",
+  "gloss": "not happy",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:GOOD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HOPEFUL",
+  "gloss": "having hope",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:WANT"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:GOOD"
+        },
+        {
+         "atom": "atom:AFTER"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WANT",
+   "atom:GOOD",
+   "atom:AFTER"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:USEFUL",
+  "gloss": "having use",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:GOOD"
+    },
+    {
+     "atom": "atom:DO"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:GOOD",
+   "atom:DO"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:POWERFUL",
+  "gloss": "having power",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      },
+      {
+       "atom": "atom:DO"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BIG",
+   "atom:DO"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BEAUTIFUL",
+  "gloss": "having beauty",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    },
+    {
+     "atom": "atom:GOOD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:JOYFUL",
+  "gloss": "full of joy",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:JOY"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:JOY"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:COMPASSIONATE",
+  "gloss": "having compassion",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:GOOD"
+        },
+        {
+         "atom": "atom:SOMEONE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:GOOD",
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HOPEFUL_FULL",
+  "gloss": "full of hope (formal)",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:WANT"
+        },
+        {
+         "atom": "atom:GOOD"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BIG",
+   "atom:WANT",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:READABLE",
+  "gloss": "able to be read",
+  "ili": null,
+  "structure": {
+   "op": "EVENT_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SEE"
+      },
+      {
+       "atom": "atom:TEXT"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:TEXT",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:DRINKABLE",
+  "gloss": "able to be drunk",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:GOOD"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MOVE"
+      },
+      {
+       "atom": "atom:BODY"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:GOOD",
+   "atom:MOVE",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:RESPECTABLE",
+  "gloss": "worthy of respect",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:GOOD"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "atom": "atom:SOMEONE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:GOOD",
+   "atom:THINK",
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:QUICKLY",
+  "gloss": "in a fast manner",
+  "ili": null,
+  "structure": {
+   "op": "DEGREE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MOVE"
+      },
+      {
+       "atom": "atom:BIG"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:MOVE",
+   "atom:BIG"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SLOWLY",
+  "gloss": "in a slow manner",
+  "ili": null,
+  "structure": {
+   "op": "DEGREE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MOVE"
+      },
+      {
+       "atom": "atom:SMALL"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:MOVE",
+   "atom:SMALL"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:CAREFULLY",
+  "gloss": "with care",
+  "ili": null,
+  "structure": {
+   "op": "DEGREE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:BEFORE"
+        },
+        {
+         "atom": "atom:DO"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:BEFORE",
+   "atom:DO"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SIMPLIFY",
+  "gloss": "make simple",
+  "ili": null,
+  "structure": {
+   "op": "CAUSE",
+   "args": [
+    {
+     "op": "BECOME",
+     "args": [
+      {
+       "atom": "atom:SMALL"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SMALL"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:STRENGTHEN",
+  "gloss": "make strong",
+  "ili": null,
+  "structure": {
+   "op": "CAUSE",
+   "args": [
+    {
+     "op": "BECOME",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BIG"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SHOW",
+  "gloss": "cause to see",
+  "ili": null,
+  "structure": {
+   "op": "CAUSE",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FEED",
+  "gloss": "cause to eat",
+  "ili": null,
+  "structure": {
+   "op": "CAUSE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MOVE"
+      },
+      {
+       "atom": "atom:BODY"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:MOVE",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MODERNIZE",
+  "gloss": "make modern",
+  "ili": null,
+  "structure": {
+   "op": "CAUSE",
+   "args": [
+    {
+     "op": "BECOME",
+     "args": [
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:LIKE"
+        },
+        {
+         "atom": "atom:NOW"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:NOW"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SOCIALISM",
+  "gloss": "doctrine of social equality",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:LIKE"
+        },
+        {
+         "atom": "atom:ALL"
+        },
+        {
+         "atom": "atom:PEOPLE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:LIKE",
+   "atom:ALL",
+   "atom:PEOPLE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NATIONALISM",
+  "gloss": "doctrine of the nation",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:THINK"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:BIG"
+        },
+        {
+         "atom": "atom:WHERE"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:THINK",
+   "atom:BIG",
+   "atom:WHERE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LINGUISTICS",
+  "gloss": "the study of language",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:KNOW"
+    },
+    {
+     "atom": "atom:SAY"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:KNOW",
+   "atom:SAY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BIOLOGY",
+  "gloss": "the study of life",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:KNOW"
+    },
+    {
+     "atom": "atom:LIVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:KNOW",
+   "atom:LIVE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SCHOOL",
+  "gloss": "place of teaching",
+  "ili": null,
+  "structure": {
+   "op": "PLACE_OF",
+   "args": [
+    {
+     "atom": "atom:TEACH"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:TEACH"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:LIBRARY",
+  "gloss": "place of books",
+  "ili": null,
+  "structure": {
+   "op": "PLACE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MANY"
+      },
+      {
+       "atom": "atom:TEXT"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:MANY",
+   "atom:TEXT"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:CLINIC",
+  "gloss": "place of medicine",
+  "ili": null,
+  "structure": {
+   "op": "PLACE_OF",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:DO"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:GOOD"
+        },
+        {
+         "atom": "atom:BODY"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:DO",
+   "atom:GOOD",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BOOKLET",
+  "gloss": "a small book",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SMALL"
+    },
+    {
+     "atom": "atom:TEXT"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SMALL",
+   "atom:TEXT"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": true
+ },
+ {
+  "id": "concept:DUCKLING",
+  "gloss": "a young duck",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SMALL"
+    },
+    {
+     "atom": "atom:LIVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SMALL",
+   "atom:LIVE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": true
+ },
+ {
+  "id": "concept:CHILDISH",
+  "gloss": "like a child (pejorative)",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIKE"
+    },
+    {
+     "atom": "atom:CHILD"
+    },
+    {
+     "atom": "atom:BAD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:CHILD",
+   "atom:BAD"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:YELLOWISH",
+  "gloss": "somewhat yellow",
+  "ili": null,
+  "structure": {
+   "op": "DEGREE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:LIKE"
+      },
+      {
+       "atom": "atom:SEE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:SEE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NATIONAL",
+  "gloss": "of the nation",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIKE"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BIG"
+      },
+      {
+       "atom": "atom:WHERE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:BIG",
+   "atom:WHERE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SCIENTIFIC",
+  "gloss": "of science",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIKE"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:KNOW"
+      },
+      {
+       "atom": "atom:TRUE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIKE",
+   "atom:KNOW",
+   "atom:TRUE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FAMOUS",
+  "gloss": "widely known",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:KNOW"
+    },
+    {
+     "atom": "atom:MANY"
+    },
+    {
+     "atom": "atom:PEOPLE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:KNOW",
+   "atom:MANY",
+   "atom:PEOPLE"
+  ],
+  "structure_status": "ENGINEERING",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:DANGEROUS",
+  "gloss": "full of danger",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BAD"
+      },
+      {
+       "op": "HAVE",
+       "args": [
+        {
+         "atom": "atom:HAPPEN"
+        },
+        {
+         "atom": "atom:AFTER"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:BAD",
+   "atom:HAPPEN",
+   "atom:AFTER"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MOTHER",
+  "gloss": "female parent",
+  "ili": null,
+  "structure": {
+   "atom": "atom:SOMEONE"
+  },
+  "atoms": [
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FATHER",
+  "gloss": "male parent",
+  "ili": null,
+  "structure": {
+   "atom": "atom:SOMEONE"
+  },
+  "atoms": [
+   "atom:SOMEONE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NAME",
+  "gloss": "label of a person or thing",
+  "ili": null,
+  "structure": {
+   "atom": "atom:NAME"
+  },
+  "atoms": [
+   "atom:NAME"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:TOOTH",
+  "gloss": "hard mouth part",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:PART"
+    },
+    {
+     "atom": "atom:BODY"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:PART",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:THREE",
+  "gloss": "the number three",
+  "ili": null,
+  "structure": {
+   "atom": "atom:MANY"
+  },
+  "atoms": [
+   "atom:MANY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:TWO",
+  "gloss": "the number two",
+  "ili": null,
+  "structure": {
+   "atom": "atom:TWO"
+  },
+  "atoms": [
+   "atom:TWO"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:WATER",
+  "gloss": "water",
+  "ili": null,
+  "structure": {
+   "atom": "atom:SOMETHING"
+  },
+  "atoms": [
+   "atom:SOMETHING"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FIRE",
+  "gloss": "fire",
+  "ili": null,
+  "structure": {
+   "atom": "atom:SOMETHING"
+  },
+  "atoms": [
+   "atom:SOMETHING"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:DOG",
+  "gloss": "the domestic dog",
+  "ili": null,
+  "structure": {
+   "atom": "atom:LIVE"
+  },
+  "atoms": [
+   "atom:LIVE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HOUSE",
+  "gloss": "dwelling",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:WHERE"
+    },
+    {
+     "atom": "atom:LIVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WHERE",
+   "atom:LIVE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:BOOK",
+  "gloss": "bound written text",
+  "ili": null,
+  "structure": {
+   "atom": "atom:TEXT"
+  },
+  "atoms": [
+   "atom:TEXT"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SUGAR",
+  "gloss": "sweet crystalline substance",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SOMETHING"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:FEEL"
+      },
+      {
+       "atom": "atom:GOOD"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SOMETHING",
+   "atom:FEEL",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:KING",
+  "gloss": "male ruler",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SOMEONE"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:SAY"
+      },
+      {
+       "atom": "atom:ALL"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SOMEONE",
+   "atom:SAY",
+   "atom:ALL"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SLEEP",
+  "gloss": "the state of sleep",
+  "ili": null,
+  "structure": {
+   "op": "STATE_OF",
+   "args": [
+    {
+     "op": "NEG",
+     "args": [
+      {
+       "atom": "atom:SEE"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MEMORY",
+  "gloss": "what is kept in mind",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:KNOW"
+    },
+    {
+     "atom": "atom:BEFORE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:KNOW",
+   "atom:BEFORE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:JOY",
+  "gloss": "the feeling of joy",
+  "ili": null,
+  "structure": {
+   "atom": "atom:JOY"
+  },
+  "atoms": [
+   "atom:JOY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:ANGER",
+  "gloss": "the feeling of anger",
+  "ili": null,
+  "structure": {
+   "atom": "atom:ANGER"
+  },
+  "atoms": [
+   "atom:ANGER"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:EYE",
+  "gloss": "organ of sight",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:PART"
+    },
+    {
+     "atom": "atom:BODY"
+    },
+    {
+     "atom": "atom:SEE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:PART",
+   "atom:BODY",
+   "atom:SEE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:STAR",
+  "gloss": "a star",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    },
+    {
+     "atom": "atom:ABOVE"
+    },
+    {
+     "atom": "atom:FAR"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:ABOVE",
+   "atom:FAR"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:VILLAGE",
+  "gloss": "small settlement",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:WHERE"
+    },
+    {
+     "atom": "atom:LIVE"
+    },
+    {
+     "atom": "atom:PEOPLE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WHERE",
+   "atom:LIVE",
+   "atom:PEOPLE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:MOON",
+  "gloss": "the moon",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    },
+    {
+     "atom": "atom:ABOVE"
+    },
+    {
+     "atom": "atom:NOW"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:ABOVE",
+   "atom:NOW"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:SUN",
+  "gloss": "the sun",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    },
+    {
+     "atom": "atom:ABOVE"
+    },
+    {
+     "atom": "atom:BIG"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE",
+   "atom:ABOVE",
+   "atom:BIG"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:FISH",
+  "gloss": "a fish",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:LIVE"
+    },
+    {
+     "atom": "atom:MOVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:LIVE",
+   "atom:MOVE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:RAIN",
+  "gloss": "rain",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:HAPPEN"
+    },
+    {
+     "atom": "atom:ABOVE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:HAPPEN",
+   "atom:ABOVE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:THIRST",
+  "gloss": "the need to drink",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:WANT"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:MOVE"
+      },
+      {
+       "atom": "atom:BODY"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WANT",
+   "atom:MOVE",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:HUNGER",
+  "gloss": "the need to eat",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:WANT"
+    },
+    {
+     "op": "HAVE",
+     "args": [
+      {
+       "atom": "atom:BODY"
+      }
+     ]
+    }
+   ]
+  },
+  "atoms": [
+   "atom:WANT",
+   "atom:BODY"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NIGHT",
+  "gloss": "the dark part of the day",
+  "ili": null,
+  "structure": {
+   "op": "NEG",
+   "args": [
+    {
+     "atom": "atom:SEE"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:SEE"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": false
+ },
+ {
+  "id": "concept:NICE_W",
+  "gloss": "pleasant (drift showcase)",
+  "ili": null,
+  "structure": {
+   "op": "HAVE",
+   "args": [
+    {
+     "atom": "atom:FEEL"
+    },
+    {
+     "atom": "atom:GOOD"
+    }
+   ]
+  },
+  "atoms": [
+   "atom:FEEL",
+   "atom:GOOD"
+  ],
+  "structure_status": "HYPOTHESIS",
+  "partial_coverage": true
+ }
+]

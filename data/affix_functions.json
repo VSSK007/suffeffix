@@ -1,0 +1,142 @@
+[
+ {
+  "id": "fn:ST",
+  "label": "abstract state",
+  "definition": "forms abstract-state nouns (goodness, बचपन, మంచితనం)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:ST"
+ },
+ {
+  "id": "fn:AG",
+  "label": "agent",
+  "definition": "forms agent nouns (teacher, कलाकार, కళాకారుడు)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:AG"
+ },
+ {
+  "id": "fn:EV",
+  "label": "event / result noun",
+  "definition": "forms event or result nouns (payment, पढ़ाई, చదవడం)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:EV"
+ },
+ {
+  "id": "fn:POS",
+  "label": "possessive / characterised-by",
+  "definition": "forms 'having X' adjectives (hopeful, बलवान, ఆశగల)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:POS"
+ },
+ {
+  "id": "fn:PRIV",
+  "label": "privative",
+  "definition": "forms 'lacking X' words (hopeless, बेघर, ఆశలేని)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:PRIV"
+ },
+ {
+  "id": "fn:ABL",
+  "label": "ability / passive potential",
+  "definition": "forms 'able to be X-ed' adjectives (readable, पठनीय, చదవదగిన)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:ABL"
+ },
+ {
+  "id": "fn:ADJ",
+  "label": "relational adjective",
+  "definition": "forms relational adjectives (national, राष्ट्रीय, జాతీయమైన)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:ADJ"
+ },
+ {
+  "id": "fn:ADV",
+  "label": "adverbialiser",
+  "definition": "forms adverbs (quickly, सावधानीपूर्वक, వేగంగా)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:ADV"
+ },
+ {
+  "id": "fn:CAUS",
+  "label": "causative",
+  "definition": "forms causative verbs (simplify, दिखाना, చూపించు)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:CAUS"
+ },
+ {
+  "id": "fn:DIM",
+  "label": "diminutive",
+  "definition": "forms diminutives (booklet, -सा approximations)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:COLL",
+  "label": "collective / place",
+  "definition": "forms place or collection nouns (school, पाठशाला, పాఠశాల)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:COLL"
+ },
+ {
+  "id": "fn:PEJ",
+  "label": "approximative / pejorative",
+  "definition": "forms 'somewhat like X' words (childish, बच्चों-सा, పిల్లలాంటి)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:PEJ"
+ },
+ {
+  "id": "fn:DOCT",
+  "label": "doctrine / -ism",
+  "definition": "forms doctrine nouns (socialism, समाजवाद, సామ్యవాదం)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:DOCT"
+ },
+ {
+  "id": "fn:FEM",
+  "label": "feminine",
+  "definition": "forms feminine counterparts (lioness, స్నేహితురాలు)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:FIELD",
+  "label": "field of study",
+  "definition": "forms discipline names (biology, भाषाविज्ञान, భాషాశాస్త్రం)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": "eq:FIELD"
+ },
+ {
+  "id": "fn:INF",
+  "label": "verbal noun / infinitive",
+  "definition": "forms verbal nouns (reading, పాడడం)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:COMP",
+  "label": "comparative",
+  "definition": "forms comparatives (included for explanations only)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:HAB",
+  "label": "habitual agent",
+  "definition": "forms habitual-doer nouns (दुकानदार, దుకాణదారు)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:ORD",
+  "label": "ordinal",
+  "definition": "forms ordinals (included for explanations only)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ },
+ {
+  "id": "fn:NEGV",
+  "label": "negative verbaliser",
+  "definition": "forms negated verbal forms (included for explanations only)",
+  "epistemic_status": "ENGINEERING",
+  "equivalence_class_id": null
+ }
+]

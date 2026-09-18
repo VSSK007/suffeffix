@@ -1,0 +1,1519 @@
+[
+ {
+  "id": "affix:te:-tanam",
+  "lang": "te",
+  "form": "-తనం",
+  "script_form": "-తనం",
+  "translit": "-tanaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-danaṁ"
+  ],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:te:goppatanam",
+   "lex:te:kottadanam",
+   "lex:te:mancitanam",
+   "lex:te:musalitanam",
+   "lex:te:ontaritanam",
+   "lex:te:piccitanam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "The default native Telugu abstract-state suffix (మంచితనం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-tvam",
+  "lang": "te",
+  "form": "-త్వం",
+  "script_form": "-త్వం",
+  "translit": "-tvaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:te:manavatvam",
+   "lex:te:matrtvam",
+   "lex:te:nayakatvam",
+   "lex:te:samanatvam",
+   "lex:te:sodaratvam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -tva tatsama; learned register (మానవత్వం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-ta",
+  "lang": "te",
+  "form": "-త",
+  "script_form": "-త",
+  "translit": "-ta",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:te:aikyata",
+   "lex:te:balahinata"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "functional equivalent; register differs (S vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -tā tatsama (సమానత).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-rikam",
+  "lang": "te",
+  "form": "-రికం",
+  "script_form": "-రికం",
+  "translit": "-rikaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [
+   "-rikaṁ",
+   "-arikaṁ"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:rajarikam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ness",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ity",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-hood",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ship",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-dom",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Native status suffix (రాజరికం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-dam",
+  "lang": "te",
+  "form": "-డం",
+  "script_form": "-డం",
+  "translit": "-ḍaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV",
+   "fn:INF"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-aḍaṁ"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:te:cadavadam",
+   "lex:te:padadam",
+   "lex:te:rayadam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-tion",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ment",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ing",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-avat",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ahat",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Verbal noun (చదవడం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-ta-verbal",
+  "lang": "te",
+  "form": "-ట",
+  "script_form": "-ట",
+  "translit": "-ṭa",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV",
+   "fn:INF"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-tion",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ment",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ing",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-avat",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ahat",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Older verbal-noun suffix, variant of -డం.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-kudu",
+  "lang": "te",
+  "form": "-కుడు",
+  "script_form": "-కుడు",
+  "translit": "-kuḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [
+   "-uḍu",
+   "-tuḍu"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:adhyapakudu",
+   "lex:te:mantrikudu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Masculine human nominaliser on Sanskritic bases (గాయకుడు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-ralu",
+  "lang": "te",
+  "form": "-రాలు",
+  "script_form": "-రాలు",
+  "translit": "-rālu",
+  "kind": "suffix",
+  "functions": [
+   "fn:FEM"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [
+   "-turālu"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:snehituralu"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Feminine human counterpart of -కుడు/-వాడు (స్నేహితురాలు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-vadu",
+  "lang": "te",
+  "form": "-వాడు",
+  "script_form": "-వాడు",
+  "translit": "-vāḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG",
+   "fn:POS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:panivadu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ENGINEERING",
+  "notes": "Pronominalised masc-human formative doing agent/possessor work; a syntactician would call it a bound pronoun.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-di",
+  "lang": "te",
+  "form": "-ది",
+  "script_form": "-ది",
+  "translit": "-di",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG",
+   "fn:POS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [],
+  "equivalents": [],
+  "epistemic_status": "ENGINEERING",
+  "notes": "Non-masculine counterpart of -వాడు.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-gadu",
+  "lang": "te",
+  "form": "-గాడు",
+  "script_form": "-గాడు",
+  "translit": "-gāḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:patagadu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Colloquial masculine agent, often familiar/pejorative (పాటగాడు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-karudu",
+  "lang": "te",
+  "form": "-కారుడు",
+  "script_form": "-కారుడు",
+  "translit": "-kāruḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "mixed",
+  "productivity": "mid",
+  "allomorphs": [
+   "-kāriṇi"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:kalakarudu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (mixed vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "functional equivalent; register differs (mixed vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (mixed vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (mixed vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (mixed vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit kāra + native inflection: professional agent (కళాకారుడు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-daru",
+  "lang": "te",
+  "form": "-దారుడు",
+  "script_form": "-దారుడు",
+  "translit": "-dāruḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:HAB",
+   "fn:AG"
+  ],
+  "register": "P",
+  "productivity": "mid",
+  "allomorphs": [
+   "-dāru"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:dukanadarudu"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Perso-Arabic -dār via Indo-Aryan: holder/keeper (దుకాణదారుడు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-aina",
+  "lang": "te",
+  "form": "-ఐన",
+  "script_form": "-ఐన",
+  "translit": "-aina",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-maina"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:andamaina",
+   "lex:te:duhkhamaina",
+   "lex:te:jatiyamaina",
+   "lex:te:pramadamaina",
+   "lex:te:prasiddhamaina",
+   "lex:te:santosamaina"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ic",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-al",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-iya",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-ik",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ENGINEERING",
+  "notes": "Adjectival participle of అగు 'become' used as adjectiviser; treating it as a suffix is an implementation convenience (see DECISIONS §2).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-ga",
+  "lang": "te",
+  "form": "-గా",
+  "script_form": "-గా",
+  "translit": "-gā",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:te:jagrattaga",
+   "lex:te:nemmadiga",
+   "lex:te:vegamga"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ly",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-purvak",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "The default Telugu adverbialiser (వేగంగా).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-gala",
+  "lang": "te",
+  "form": "-గల",
+  "script_form": "-గల",
+  "translit": "-gala",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:asagala",
+   "lex:te:dayagala"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-van",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-purn",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-may",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (N vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'having X' (ఆశగల); from కల-/గల- 'exist'.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-mayam",
+  "lang": "te",
+  "form": "-మయం",
+  "script_form": "-మయం",
+  "translit": "-mayaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:asamayam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-van",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-purn",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-may",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (S vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -maya 'made of / full of'.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-vantudu",
+  "lang": "te",
+  "form": "-వంతుడు",
+  "script_form": "-వంతుడు",
+  "translit": "-vantuḍu",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [
+   "-vantamaina"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:balavantudu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ful",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ous",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-van",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-purn",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-may",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (S vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit -vant + masc formative (బలవంతుడు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-leni",
+  "lang": "te",
+  "form": "-లేని",
+  "script_form": "-లేని",
+  "translit": "-lēni",
+  "kind": "suffix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:asaleni",
+   "lex:te:bhayamleni",
+   "lex:te:illuleni",
+   "lex:te:sigguleni"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-less",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:en:un-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-hin",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:nir-",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:be-",
+    "note": "functional equivalent; register differs (N vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Negative participle of ఉండు/లే 'not exist': 'lacking X' (ఆశలేని).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:nir-",
+  "lang": "te",
+  "form": "నిర్-",
+  "script_form": "నిర్-",
+  "translit": "nir-",
+  "kind": "prefix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [
+   "నిః-",
+   "ని-"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:nirjivam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-less",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:un-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-hin",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:nir-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:be-",
+    "note": "functional equivalent; register differs (S vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit privative prefix in tatsama vocabulary (నిర్జీవం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-dagina",
+  "lang": "te",
+  "form": "-దగిన",
+  "script_form": "-దగిన",
+  "translit": "-dagina",
+  "kind": "suffix",
+  "functions": [
+   "fn:ABL"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:te:cadavadagina",
+   "lex:te:gauravincadagina",
+   "lex:te:tagadagina"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-able",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-niya",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'fit to be X-ed' (చదవదగిన), from తగు 'be fitting'.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-inchu",
+  "lang": "te",
+  "form": "-ించు",
+  "script_form": "-ించు",
+  "translit": "-iñcu",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-piñcu"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:te:adhunikikarincu",
+   "lex:te:cupincu",
+   "lex:te:tinipincu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ize",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ify",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-en",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-a-caus",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Causative verbaliser (చూపించు, తినిపించు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-parachu",
+  "lang": "te",
+  "form": "-పరచు",
+  "script_form": "-పరచు",
+  "translit": "-paracu",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [
+   "-parucu"
+  ],
+  "attaches_to": [
+   "ADJ",
+   "N"
+  ],
+  "examples": [
+   "lex:te:balaparacu",
+   "lex:te:sulabhaparacu"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ize",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-ify",
+    "note": "functional equivalent; register differs (N vs E)"
+   },
+   {
+    "affix_id": "affix:en:-en",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-a-caus",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'make X' on nominal/adjectival bases (సులభపరచు).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-vadam",
+  "lang": "te",
+  "form": "-వాదం",
+  "script_form": "-వాదం",
+  "translit": "-vādaṁ",
+  "kind": "suffix",
+  "functions": [
+   "fn:DOCT"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:jatiyavadam",
+   "lex:te:samyavadam"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ism",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-vad",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit vāda: doctrine (సామ్యవాదం).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-vadi",
+  "lang": "te",
+  "form": "-వాది",
+  "script_form": "-వాది",
+  "translit": "-vādi",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:jatiyavadi",
+   "lex:te:samyavadi"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-er",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:en:-ist",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Adherent of a -వాదం doctrine (సామ్యవాది).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-sastram",
+  "lang": "te",
+  "form": "-శాస్త్రం",
+  "script_form": "-శాస్త్రం",
+  "translit": "-śāstraṁ",
+  "kind": "compound_element",
+  "functions": [
+   "fn:FIELD"
+  ],
+  "register": "S",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:bhasasastram",
+   "lex:te:jivasastram"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ology",
+    "note": "functional equivalent; register differs (S vs E)"
+   },
+   {
+    "affix_id": "affix:hi:-vijnan",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit śāstra: field of study (భాషాశాస్త్రం). Modelled as a suffix; historically a compound element.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-sala",
+  "lang": "te",
+  "form": "-శాల",
+  "script_form": "-శాల",
+  "translit": "-śāla",
+  "kind": "compound_element",
+  "functions": [
+   "fn:COLL"
+  ],
+  "register": "S",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:pathasala"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:hi:-khana",
+    "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-shala",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Sanskrit śālā 'hall': place noun (పాఠశాల).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "affix:te:-lanti",
+  "lang": "te",
+  "form": "-లాంటి",
+  "script_form": "-లాంటి",
+  "translit": "-lāṇṭi",
+  "kind": "suffix",
+  "functions": [
+   "fn:PEJ"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-vaṇṭi"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:te:pasupulanti",
+   "lex:te:pillalanti"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:en:-ish",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-sa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'like X, X-ish' (పిల్లలాంటి).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ }
+]

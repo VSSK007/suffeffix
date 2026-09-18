@@ -1,0 +1,107 @@
+[
+ {
+  "id": "root:pie:mehter",
+  "form": "*méh₂tēr",
+  "family": "Reconstructed:PIE",
+  "gloss": "mother",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:hnomn",
+  "form": "*h₁nómn̥",
+  "family": "Reconstructed:PIE",
+  "gloss": "name",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:trejes",
+  "form": "*tréyes",
+  "family": "Reconstructed:PIE",
+  "gloss": "three",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:hdont",
+  "form": "*h₃dónts",
+  "family": "Reconstructed:PIE",
+  "gloss": "tooth",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:dwoh",
+  "form": "*dwóh₁",
+  "family": "Reconstructed:PIE",
+  "gloss": "two",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:hster",
+  "form": "*h₂stḗr",
+  "family": "Reconstructed:PIE",
+  "gloss": "star",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pie:hregs",
+  "form": "*h₃rḗǵs",
+  "family": "Reconstructed:PIE",
+  "gloss": "king, ruler",
+  "source_ref": "watkins"
+ },
+ {
+  "id": "root:pgmc:kuningaz",
+  "form": "*kuningaz",
+  "family": "IE:Germanic",
+  "gloss": "king",
+  "source_ref": "oed"
+ },
+ {
+  "id": "root:pdr:amma",
+  "form": "*amma",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "mother (nursery word)",
+  "source_ref": "krishnamurti"
+ },
+ {
+  "id": "root:pdr:peyar",
+  "form": "*peyar",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "name",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:il",
+  "form": "*il",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "house",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:nir",
+  "form": "*nīr",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "water",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:kan",
+  "form": "*kaṇ",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "eye",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:ur",
+  "form": "*ūr",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "village",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:pal",
+  "form": "*pal",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "tooth",
+  "source_ref": "dedr"
+ }
+]

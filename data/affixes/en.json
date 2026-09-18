@@ -1,0 +1,1478 @@
+[
+ {
+  "id": "affix:en:-ness",
+  "lang": "en",
+  "form": "-ness",
+  "script_form": "-ness",
+  "translit": "-ness",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:cleverness",
+   "lex:en:goodness",
+   "lex:en:greatness",
+   "lex:en:happiness",
+   "lex:en:illness",
+   "lex:en:kindness"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic; the default English state nominaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ity",
+  "lang": "en",
+  "form": "-ity",
+  "script_form": "-ity",
+  "translit": "-ity",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "E",
+  "productivity": "mid",
+  "allomorphs": [
+   "-ty"
+  ],
+  "attaches_to": [
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:equality",
+   "lex:en:humanity",
+   "lex:en:unity"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "functional equivalent; register differs (E vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Latinate stratum; attaches mostly to Latinate bases.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-hood",
+  "lang": "en",
+  "form": "-hood",
+  "script_form": "-hood",
+  "translit": "-hood",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:brotherhood",
+   "lex:en:childhood",
+   "lex:en:motherhood"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic; states and statuses (childhood).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ship",
+  "lang": "en",
+  "form": "-ship",
+  "script_form": "-ship",
+  "translit": "-ship",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:friendship",
+   "lex:en:kingship",
+   "lex:en:leadership"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic; offices and relations (leadership).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-dom",
+  "lang": "en",
+  "form": "-dom",
+  "script_form": "-dom",
+  "translit": "-dom",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "low",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:freedom",
+   "lex:en:wisdom"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-tvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-rikam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-pan",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ta",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-tva",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-i",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic; domains and states (freedom).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-th",
+  "lang": "en",
+  "form": "-th",
+  "script_form": "-th",
+  "translit": "-th",
+  "kind": "suffix",
+  "functions": [
+   "fn:ST"
+  ],
+  "register": "N",
+  "productivity": "dead",
+  "allomorphs": [
+   "-t"
+  ],
+  "attaches_to": [
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:truth"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Dead Germanic nominaliser preserved in fossils (truth, warmth).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-er",
+  "lang": "en",
+  "form": "-er",
+  "script_form": "-er",
+  "translit": "-er",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [
+   "-or",
+   "-ar"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:en:farmer",
+   "lex:en:singer",
+   "lex:en:teacher",
+   "lex:en:worker"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (N vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "The default English agent suffix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ist",
+  "lang": "en",
+  "form": "-ist",
+  "script_form": "-ist",
+  "translit": "-ist",
+  "kind": "suffix",
+  "functions": [
+   "fn:AG"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:artist",
+   "lex:en:nationalist",
+   "lex:en:socialist"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-kudu",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vadu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-gadu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-karudu",
+    "note": "functional equivalent; register differs (E vs mixed)"
+   },
+   {
+    "affix_id": "affix:te:-vadi",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-kar",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vala",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (E vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-gar",
+    "note": "functional equivalent; register differs (E vs P)"
+   },
+   {
+    "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Greek via Latin/French; pairs with -ism.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ism",
+  "lang": "en",
+  "form": "-ism",
+  "script_form": "-ism",
+  "translit": "-ism",
+  "kind": "suffix",
+  "functions": [
+   "fn:DOCT"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:nationalism",
+   "lex:en:socialism"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-vadam",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vad",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Doctrine/system nominaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ful",
+  "lang": "en",
+  "form": "-ful",
+  "script_form": "-ful",
+  "translit": "-ful",
+  "kind": "suffix",
+  "functions": [
+   "fn:POS"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:beautiful",
+   "lex:en:carefully",
+   "lex:en:hopeful",
+   "lex:en:joyful",
+   "lex:en:powerful",
+   "lex:en:useful"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-van",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-purn",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-may",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (N vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'having/characterised by X'.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-less",
+  "lang": "en",
+  "form": "-less",
+  "script_form": "-less",
+  "translit": "-less",
+  "kind": "suffix",
+  "functions": [
+   "fn:PRIV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:fearless",
+   "lex:en:homeless",
+   "lex:en:hopeless",
+   "lex:en:lifeless",
+   "lex:en:shameless",
+   "lex:en:useless"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-leni",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:nir-",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-hin",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:nir-",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:be-",
+    "note": "functional equivalent; register differs (N vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'lacking X'.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:un-",
+  "lang": "en",
+  "form": "un-",
+  "script_form": "un-",
+  "translit": "un-",
+  "kind": "prefix",
+  "functions": [
+   "fn:PRIV",
+   "fn:NEGV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ",
+   "V"
+  ],
+  "examples": [
+   "lex:en:unhappy"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-leni",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:nir-",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-hin",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:nir-",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:hi:be-",
+    "note": "functional equivalent; register differs (N vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Negative/privative prefix.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-able",
+  "lang": "en",
+  "form": "-able",
+  "script_form": "-able",
+  "translit": "-able",
+  "kind": "suffix",
+  "functions": [
+   "fn:ABL"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [
+   "-ible"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:en:drinkable",
+   "lex:en:readable",
+   "lex:en:respectable"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-dagina",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-niya",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Passive-potential adjectiviser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ly",
+  "lang": "en",
+  "form": "-ly",
+  "script_form": "-ly",
+  "translit": "-ly",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADV"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:carefully",
+   "lex:en:quickly",
+   "lex:en:slowly"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-ga",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-purvak",
+    "note": "functional equivalent; register differs (N vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "The default adverbialiser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ish",
+  "lang": "en",
+  "form": "-ish",
+  "script_form": "-ish",
+  "translit": "-ish",
+  "kind": "suffix",
+  "functions": [
+   "fn:PEJ",
+   "fn:ADJ"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:childish",
+   "lex:en:yellowish"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-lanti",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-sa",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Approximative, often mildly pejorative.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ize",
+  "lang": "en",
+  "form": "-ize",
+  "script_form": "-ize",
+  "translit": "-ize",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [
+   "-ise"
+  ],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:modernize"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-inchu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-parachu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-a-caus",
+    "note": "functional equivalent; register differs (E vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Greek; causative verbaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ify",
+  "lang": "en",
+  "form": "-ify",
+  "script_form": "-ify",
+  "translit": "-ify",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "E",
+  "productivity": "mid",
+  "allomorphs": [
+   "-fy"
+  ],
+  "attaches_to": [
+   "N",
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:simplify"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-inchu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-parachu",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-a-caus",
+    "note": "functional equivalent; register differs (E vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Latin facere; causative verbaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-en",
+  "lang": "en",
+  "form": "-en",
+  "script_form": "-en",
+  "translit": "-en",
+  "kind": "suffix",
+  "functions": [
+   "fn:CAUS"
+  ],
+  "register": "N",
+  "productivity": "low",
+  "allomorphs": [],
+  "attaches_to": [
+   "ADJ"
+  ],
+  "examples": [
+   "lex:en:strengthen"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-inchu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-parachu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-a-caus",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic causative (strengthen); no longer productive.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-tion",
+  "lang": "en",
+  "form": "-tion",
+  "script_form": "-tion",
+  "translit": "-tion",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [
+   "-sion",
+   "-ation"
+  ],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:en:decoration"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ai",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-avat",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ahat",
+    "note": "functional equivalent; register differs (E vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Latinate event/result nominaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ment",
+  "lang": "en",
+  "form": "-ment",
+  "script_form": "-ment",
+  "translit": "-ment",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV"
+  ],
+  "register": "E",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:en:movement",
+   "lex:en:payment"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ai",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-avat",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-ahat",
+    "note": "functional equivalent; register differs (E vs N)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Latinate event/result nominaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ing",
+  "lang": "en",
+  "form": "-ing",
+  "script_form": "-ing",
+  "translit": "-ing",
+  "kind": "suffix",
+  "functions": [
+   "fn:EV",
+   "fn:INF"
+  ],
+  "register": "N",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "V"
+  ],
+  "examples": [
+   "lex:en:reading",
+   "lex:en:singing",
+   "lex:en:writing"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-dam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:te:-ta-verbal",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-avat",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:hi:-ahat",
+    "note": "register-matched functional equivalent"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Gerund/verbal noun; also event nominal.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ic",
+  "lang": "en",
+  "form": "-ic",
+  "script_form": "-ic",
+  "translit": "-ic",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [
+   "-ical"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:scientific"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-aina",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-iya",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-ik",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Relational adjectiviser (Greek/Latin).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-al",
+  "lang": "en",
+  "form": "-al",
+  "script_form": "-al",
+  "translit": "-al",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:national"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-aina",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:hi:-iya",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-ik",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Relational adjectiviser (Latin).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ous",
+  "lang": "en",
+  "form": "-ous",
+  "script_form": "-ous",
+  "translit": "-ous",
+  "kind": "suffix",
+  "functions": [
+   "fn:ADJ",
+   "fn:POS"
+  ],
+  "register": "E",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:dangerous",
+   "lex:en:famous"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-gala",
+    "note": "functional equivalent; register differs (E vs N)"
+   },
+   {
+    "affix_id": "affix:te:-mayam",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:te:-vantudu",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-van",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-purn",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-may",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-dar",
+    "note": "functional equivalent; register differs (E vs P)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "'full of / characterised by' (Latin -osus).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-let",
+  "lang": "en",
+  "form": "-let",
+  "script_form": "-let",
+  "translit": "-let",
+  "kind": "suffix",
+  "functions": [
+   "fn:DIM"
+  ],
+  "register": "E",
+  "productivity": "mid",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:booklet"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Diminutive (French).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ling",
+  "lang": "en",
+  "form": "-ling",
+  "script_form": "-ling",
+  "translit": "-ling",
+  "kind": "suffix",
+  "functions": [
+   "fn:DIM"
+  ],
+  "register": "N",
+  "productivity": "low",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:duckling"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Germanic diminutive (duckling).",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ess",
+  "lang": "en",
+  "form": "-ess",
+  "script_form": "-ess",
+  "translit": "-ess",
+  "kind": "suffix",
+  "functions": [
+   "fn:FEM"
+  ],
+  "register": "E",
+  "productivity": "low",
+  "allomorphs": [],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:lioness"
+  ],
+  "equivalents": [],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Feminine suffix (French/Greek); declining use.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "affix:en:-ology",
+  "lang": "en",
+  "form": "-ology",
+  "script_form": "-ology",
+  "translit": "-ology",
+  "kind": "suffix",
+  "functions": [
+   "fn:FIELD"
+  ],
+  "register": "E",
+  "productivity": "high",
+  "allomorphs": [
+   "-logy"
+  ],
+  "attaches_to": [
+   "N"
+  ],
+  "examples": [
+   "lex:en:biology"
+  ],
+  "equivalents": [
+   {
+    "affix_id": "affix:te:-sastram",
+    "note": "functional equivalent; register differs (E vs S)"
+   },
+   {
+    "affix_id": "affix:hi:-vijnan",
+    "note": "functional equivalent; register differs (E vs S)"
+   }
+  ],
+  "epistemic_status": "ESTABLISHED",
+  "notes": "Greek logos; field-of-study nominaliser.",
+  "provenance": {
+   "annotator": "suffeffix-v0.1",
+   "date": "2026-09-17",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ }
+]
