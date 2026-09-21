@@ -19,50 +19,85 @@ export default async function AtomPage({ params }: { params: Promise<{ name: str
   const d = await data.atom(slug.atomId(name));
   if (!d) notFound();
   const a = d.atom;
+
   return (
-    <div className="space-y-10">
+    <div className="space-y-18">
       <header>
-        <p className="eyebrow mb-2">{a.category.toLowerCase()} atom{a.nsm_prime ? " · NSM prime" : ""}</p>
-        <div className="flex flex-wrap items-baseline gap-3">
-          <h1 className="font-mono text-[36px]">{name}</h1>
+        <p className="label mb-5">
+          {a.category.toLowerCase()} atom{a.nsm_prime ? " · NSM prime" : " · engineering addition"}
+        </p>
+        <div className="flex flex-wrap items-baseline gap-4">
+          <h1 className="font-mono text-[40px] leading-none">
+            {a.nsm_prime && (
+              <span style={{ color: "var(--est)" }} aria-label="NSM prime">
+                *
+              </span>
+            )}
+            {name}
+          </h1>
           <EpiBadge status={a.epistemic_status} />
         </div>
-        <p className="text-muted mt-1 text-[15.5px]">{a.definition}</p>
+        <p className="font-serif text-[18px] italic mt-4 max-w-[48ch]">{a.definition}</p>
       </header>
 
-      <section>
-        <h2 className="text-xl mb-3">Exponents</h2>
-        <div className="grid grid-cols-3 max-w-md border hairline rounded-md bg-card divide-x"
-          style={{ borderColor: "var(--line)" }}>
-          {(["en", "te", "hi"] as const).map((l) => (
-            <div key={l} className="p-3 hairline">
-              <p className="eyebrow mb-1">{l}</p>
-              <p className="text-[18px]">{a.exponents[l]}</p>
+      {/* exponents as a three-column specimen — the whole point of an atom is
+          that it lands differently in each language */}
+      <section className="mt-12">
+        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
+          Exponents
+        </h2>
+        <div className="grid grid-cols-3 max-w-xl" style={{ borderTop: "1px solid var(--rule)" }}>
+          {(
+            [
+              ["en", "English", "var(--indo)"],
+              ["te", "Telugu", "var(--drav)"],
+              ["hi", "Hindi", "var(--indo)"],
+            ] as const
+          ).map(([l, label, hue]) => (
+            <div key={l} className="py-4 pr-5">
+              <p className="label flex items-baseline gap-1.5">
+                <span className="inline-block w-2 h-2" style={{ background: hue }} aria-hidden="true" />
+                {label}
+              </p>
+              <p className="text-[22px] font-serif mt-2">{a.exponents[l]}</p>
             </div>
           ))}
         </div>
       </section>
 
       {d.related.length > 0 && (
-        <section>
-          <h2 className="text-xl mb-3">Related atoms</h2>
-          <div className="flex flex-wrap gap-2">
+        <section className="mt-12">
+          <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
+            Related atoms
+          </h2>
+          <ul className="flex flex-wrap gap-x-7 gap-y-2">
             {a.related.map((r, i) => (
-              <Link key={i} href={slug.atomHref(r.atom_id)}
-                className="font-mono text-[12px] border hairline rounded-md px-2.5 py-1 hover:border-accent hover:text-accent transition-colors">
-                <span className="text-muted">{r.relation} · </span>{r.atom_id.replace("atom:", "")}
-              </Link>
+              <li key={i}>
+                <Link href={slug.atomHref(r.atom_id)} className="group flex items-baseline gap-2">
+                  <span
+                    className="text-[11px] tracking-[0.07em] text-faint"
+                    style={{ fontFamily: "var(--font-serif), serif", fontVariantCaps: "all-small-caps" }}
+                  >
+                    {r.relation}
+                  </span>
+                  <span className="font-mono text-[13.5px] group-hover:text-accent transition-colors">
+                    {r.atom_id.replace("atom:", "")}
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
 
-      <section>
-        <h2 className="text-xl mb-3">Words whose decomposition uses {name}</h2>
+      <section className="mt-12">
+        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
+          Decompositions that use {name}
+        </h2>
         <EntryList entries={d.entries} />
       </section>
 
-      <p className="text-[12px] text-muted border-t hairline pt-4 italic">
+      <p className="mt-12 pt-5 text-[12.5px] text-faint italic" style={{ borderTop: "1px solid var(--rule)" }}>
         Semantic atoms are an engineering interlingua, not a theory of human cognition.
       </p>
     </div>

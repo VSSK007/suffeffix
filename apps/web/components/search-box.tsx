@@ -72,7 +72,7 @@ export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
 
   return (
     <div>
-      <label htmlFor="search" className="eyebrow block mb-2">
+      <label htmlFor="search" className="label block mb-2.5">
         Search — any of the three scripts, or Latin transliteration
       </label>
       <input
@@ -86,18 +86,19 @@ export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
           setQ(e.target.value);
         }}
         placeholder="మంచితనం · बचपन · hopeless · manchitanam"
-        className="w-full border hairline rounded-md px-4 py-3 font-mono text-sm bg-card focus:outline-none focus:border-accent transition-colors"
+        className="w-full px-0 py-2.5 font-mono text-[15px] bg-transparent focus:outline-none"
+        style={{ borderBottom: "2px solid var(--rule-hi)" }}
       />
       {failed && <p className="text-sm mt-2" style={{ color: "var(--con)" }}>Search index failed to load.</p>}
       {results.length > 0 && (
-        <div className="mt-3 border hairline rounded-md bg-card px-2">
+        <div className="mt-4" style={{ borderBottom: "1px solid var(--rule)" }}>
           {results.map(({ r }) => (
             <EntryRow key={r.id} e={r} />
           ))}
         </div>
       )}
       {rows && qn.length >= 2 && results.length === 0 && (
-        <p className="text-sm text-muted mt-3">No matches for “{q}”.</p>
+        <p className="text-sm text-muted mt-4">No matches for “{q}”.</p>
       )}
     </div>
   );
