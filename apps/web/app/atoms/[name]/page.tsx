@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
-import { EpiBadge } from "@/components/badges";
-import { EntryList } from "@/components/entry-list";
+import { LANES } from "@/lib/lang";
+import { EpiTag, FamilyDot } from "@/components/marks";
 
 export async function generateStaticParams() {
   const atoms = await data.atoms();
@@ -11,95 +11,94 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
-  return { title: `${name} · atom` };
+  return { title: `${name} — semantic atom` };
 }
 
 export default async function AtomPage({ params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
-  const d = await data.atom(slug.atomId(name));
+  const id = slug.atomId(name);
+  const d = await data.atom(id);
   if (!d) notFound();
   const a = d.atom;
+  const concepts = (await data.concepts()).filter((c) => c.atoms.includes(id));
 
   return (
-    <div className="space-y-18">
+    <article className="space-y-14">
       <header>
-        <p className="label mb-5">
-          {a.category.toLowerCase()} atom{a.nsm_prime ? " · NSM prime" : " · engineering addition"}
-        </p>
-        <div className="flex flex-wrap items-baseline gap-4">
-          <h1 className="font-mono text-[40px] leading-none">
-            {a.nsm_prime && (
-              <span style={{ color: "var(--est)" }} aria-label="NSM prime">
-                *
-              </span>
-            )}
-            {name}
-          </h1>
-          <EpiBadge status={a.epistemic_status} />
+        <nav className="text-[12.5px] text-muted mb-6" aria-label="Breadcrumb">
+          <Link href="/atoms/" className="hover:text-ink">Semantic atoms</Link>
+          <span className="mx-2 text-faint">/</span>
+          <span>{a.category.toLowerCase()}</span>
+        </nav>
+        <div className="flex flex-wrap items-end gap-6">
+          <div
+            className="rounded-2xl px-7 py-5"
+            style={{ background: a.nsm_prime ? "var(--surface)" : "transparent", border: `2px ${a.nsm_prime ? "solid" : "dashed"} var(--line-2)` }}
+          >
+            <h1 className="mono text-[44px] sm:text-[56px] font-medium leading-none">{name}</h1>
+          </div>
+          <div className="space-y-2 pb-1">
+            <div className="flex flex-wrap gap-1.5">
+              <EpiTag status={a.epistemic_status} />
+              <span className="text-[12.5px] text-muted">{a.nsm_prime ? "NSM prime" : "engineering addition"} · {a.category.toLowerCase()}</span>
+            </div>
+            <p className="text-[19px] text-ink-2">{a.definition}</p>
+          </div>
         </div>
-        <p className="font-serif text-[18px] italic mt-4 max-w-[48ch]">{a.definition}</p>
       </header>
 
-      {/* exponents as a three-column specimen — the whole point of an atom is
-          that it lands differently in each language */}
-      <section className="mt-12">
-        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Exponents
-        </h2>
-        <div className="grid grid-cols-3 max-w-xl" style={{ borderTop: "1px solid var(--rule)" }}>
-          {(
-            [
-              ["en", "English", "var(--indo)"],
-              ["te", "Telugu", "var(--drav)"],
-              ["hi", "Hindi", "var(--indo)"],
-            ] as const
-          ).map(([l, label, hue]) => (
-            <div key={l} className="py-4 pr-5">
-              <p className="label flex items-baseline gap-1.5">
-                <span className="inline-block w-2 h-2" style={{ background: hue }} aria-hidden="true" />
-                {label}
-              </p>
-              <p className="text-[22px] font-serif mt-2">{a.exponents[l]}</p>
+      <section>
+        <h2 className="wide text-[21px] font-semibold mb-4">How each language says it</h2>
+        <div className="lanes panel py-5">
+          {LANES.slice(0, 2).map((l) => (
+            <div key={l.code} className="px-5 py-2">
+              <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-2"><FamilyDot lang={l.code} /> {l.name}</p>
+              <p className="display text-[34px] font-semibold">{a.exponents[l.code]}</p>
             </div>
           ))}
+          <div className="gutter" aria-hidden="true" />
+          <div className="px-5 py-2">
+            <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-2"><FamilyDot lang="te" /> Telugu</p>
+            <p className="display text-[34px] font-semibold">{a.exponents.te}</p>
+          </div>
         </div>
       </section>
 
       {d.related.length > 0 && (
-        <section className="mt-12">
-          <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-            Related atoms
-          </h2>
-          <ul className="flex flex-wrap gap-x-7 gap-y-2">
-            {a.related.map((r, i) => (
-              <li key={i}>
-                <Link href={slug.atomHref(r.atom_id)} className="group flex items-baseline gap-2">
-                  <span
-                    className="text-[11px] tracking-[0.07em] text-faint"
-                    style={{ fontFamily: "var(--font-serif), serif", fontVariantCaps: "all-small-caps" }}
-                  >
-                    {r.relation}
-                  </span>
-                  <span className="font-mono text-[13.5px] group-hover:text-accent transition-colors">
-                    {r.atom_id.replace("atom:", "")}
-                  </span>
-                </Link>
-              </li>
+        <section>
+          <h2 className="wide text-[21px] font-semibold mb-4">Related atoms</h2>
+          <div className="flex flex-wrap gap-2">
+            {a.related.map((r) => (
+              <Link key={r.atom_id} href={slug.atomHref(r.atom_id)} className="panel px-4 py-2.5 hover:border-line-2 transition-colors">
+                <span className="text-[11.5px] text-muted block">{r.relation}</span>
+                <span className="mono text-[15px] font-medium">{r.atom_id.replace("atom:", "")}</span>
+              </Link>
             ))}
-          </ul>
+          </div>
         </section>
       )}
 
-      <section className="mt-12">
-        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Decompositions that use {name}
-        </h2>
-        <EntryList entries={d.entries} />
+      <section>
+        <h2 className="wide text-[21px] font-semibold mb-1">Meanings built with {name}</h2>
+        <p className="text-[13px] text-muted mb-4">{concepts.length} {concepts.length === 1 ? "meaning uses" : "meanings use"} this atom in their decomposition.</p>
+        <div className="border-y border-line divide-y divide-[var(--line)]">
+          {concepts.map((c) => (
+            <Link key={c.id} href={slug.conceptHref(c.id)} className="lanes-labelled py-3 hover:bg-[color-mix(in_srgb,var(--ink)_3%,transparent)] transition-colors">
+              <div className="pr-4">
+                <div className="text-[13.5px] text-ink-2">{c.gloss}</div>
+                <div className="mono text-[10.5px] text-faint mt-0.5 truncate">{c.structure}</div>
+              </div>
+              {LANES.slice(0, 2).map((l) => (
+                <div key={l.code} className="md:px-4 text-[16px] font-medium">{c.lanes[l.code].map((e) => e.form).join(", ") || <span className="text-faint">—</span>}</div>
+              ))}
+              <div className="gutter" aria-hidden="true" />
+              <div className="md:px-4 text-[16px] font-medium">{c.lanes.te.map((e) => e.form).join(", ") || <span className="text-faint">—</span>}</div>
+            </Link>
+          ))}
+        </div>
       </section>
 
-      <p className="mt-12 pt-5 text-[12.5px] text-faint italic" style={{ borderTop: "1px solid var(--rule)" }}>
-        Semantic atoms are an engineering interlingua, not a theory of human cognition.
-      </p>
-    </div>
+      <p className="text-[12.5px] text-muted">Semantic atoms are an engineering interlingua, not a theory of human cognition.</p>
+    </article>
   );
 }

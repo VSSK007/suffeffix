@@ -6,45 +6,71 @@ export const metadata = { title: "Documentation" };
 
 const DOCS_DIR = path.join(process.cwd(), "..", "..", "docs");
 
-const BLURB: Record<string, string> = {
-  "ARCHITECTURE.md": "Layers, the JSON-first decision, and dependency direction.",
-  "DECISIONS.md": "Challenged assumptions, corrections to the seed data, dependency justifications.",
-  "DATASET.md": "Files, limits, research-integrity rules, flagship etymology chains.",
-  "SEMANTICS.md": "The atom interlingua and its epistemic boundaries.",
-  "FRONTEND.md": "Design language and routes.",
-  "BACKEND.md": "Core library, search normalization, explanation engine.",
-  "API.md": "The /v0 endpoints (also served as OpenAPI).",
-  "IMPLEMENTATION_PLAN.md": "Milestones and acceptance criteria.",
-  "REPO.md": "Repository layout and tooling.",
-  "ROADMAP.md": "Deferred features and known limitations.",
-  "LAUNCH_CHECKLIST.md": "What v0.1 verifies before shipping.",
-};
+const GROUPS: { title: string; items: [string, string][] }[] = [
+  {
+    title: "Start here",
+    items: [
+      ["ARCHITECTURE", "Layers, the JSON-first decision, and why dependencies point inward."],
+      ["DECISIONS", "Every assumption in the original brief that turned out to be wrong, and what replaced it."],
+      ["DATASET", "Files, limits, research-integrity rules, and the flagship etymology chains."],
+      ["SEMANTICS", "The atom interlingua and the limits of what it claims."],
+    ],
+  },
+  {
+    title: "Building on it",
+    items: [
+      ["API", "The read-only /v0 endpoints, also served as OpenAPI."],
+      ["BACKEND", "Core library, search normalisation, the explanation engine."],
+      ["FRONTEND", "Design language, lanes, and routes."],
+      ["DEPLOY", "Shipping the static site to suffeffix.com."],
+    ],
+  },
+  {
+    title: "Project",
+    items: [
+      ["ROADMAP", "Deferred work — French, Tamil, a larger lexicon — and known limitations."],
+      ["IMPLEMENTATION_PLAN", "Milestones and their acceptance criteria."],
+      ["LAUNCH_CHECKLIST", "What v0.1 verifies before shipping."],
+      ["REPO", "Repository layout and tooling."],
+    ],
+  },
+];
 
 export default async function DocsIndex() {
-  const files = (await fs.readdir(DOCS_DIR)).filter((f) => f.endsWith(".md")).sort();
+  const present = new Set((await fs.readdir(DOCS_DIR)).filter((f) => f.endsWith(".md")).map((f) => f.replace(/\.md$/, "")));
   return (
-    <div className="space-y-10">
-      <header className="max-w-[56ch]">
-        <p className="label mb-4">rendered from the repository</p>
-        <h1 className="font-serif text-[34px] leading-tight">Documentation</h1>
-        <p className="mt-4 text-[14.5px] leading-[1.75] text-muted">
-          The same Markdown that ships in the repo, including the decision log — every assumption
-          in the original brief that turned out to be wrong, and what was done instead.
+    <div>
+      <header className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-end mb-12">
+        <div>
+          <p className="kicker mb-3">Documentation</p>
+          <h1 className="display text-[40px] sm:text-[52px] font-semibold">How it is built, and why</h1>
+        </div>
+        <p className="text-[15px] leading-[1.7] text-ink-2 max-w-[54ch]">
+          The same Markdown that ships in the repository. The decision log is the most interesting read:
+          it records where the original brief was linguistically or technically wrong.
         </p>
       </header>
-      <ul style={{ borderBottom: "1px solid var(--rule)" }}>
-        {files.map((f) => (
-          <li key={f} style={{ borderTop: "1px solid var(--rule)" }}>
-            <Link href={`/docs/${f.replace(/\.md$/, "")}/`}
-              className="group grid sm:grid-cols-[minmax(0,15rem)_1fr] gap-x-6 gap-y-0.5 py-3.5 items-baseline">
-              <span className="font-mono text-[13px] group-hover:text-accent transition-colors">
-                {f.replace(/\.md$/, "")}
-              </span>
-              <span className="text-[13.5px] text-muted leading-snug">{BLURB[f] ?? ""}</span>
-            </Link>
-          </li>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {GROUPS.map((g) => (
+          <section key={g.title}>
+            <h2 className="kicker mb-3">{g.title}</h2>
+            <ul className="border-t border-line">
+              {g.items
+                .filter(([slug]) => present.has(slug))
+                .map(([slug, blurb]) => (
+                  <li key={slug} className="border-b border-line">
+                    <Link href={`/docs/${slug}/`} className="group block py-3.5">
+                      <span className="text-[15.5px] font-semibold group-hover:text-ie-ink">
+                        {slug.charAt(0) + slug.slice(1).toLowerCase().replace(/_/g, " ")}
+                      </span>
+                      <span className="block text-[13px] text-muted mt-0.5 leading-snug">{blurb}</span>
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </section>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

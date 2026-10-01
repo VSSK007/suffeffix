@@ -2,161 +2,186 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Suffeffix visual system ──────────────────────────────────────────────
-   Subject: a machine that cuts words apart and traces them across two
-   language families. The design borrows from the apparatus of comparative
-   philology: ruled ledger paper, specimen slips, the asterisk of
-   reconstruction, and the vertical rule that marks a morpheme boundary.
+/* ── Suffeffix · parallel-text instrument ───────────────────────────────────
+   Every view is three lanes — English | Hindi ‖ Telugu. The two Indo-European
+   languages sit together; a visible gutter separates Dravidian Telugu, so the
+   family boundary (the one hard constraint in the dataset) is part of the
+   layout itself.
 
-   Ground: unbleached manuscript paper, slightly green-grey (not cream).
-   Ink:    iron-gall, a near-black with a blue-green cast.
-   Accent: cinnabar — the red of manuscript rubrication and correction
-           marks. One accent, used for the cut and for live links only.
-   Families get their own permanent hues (indo / drav) because family
-   membership is the one hard constraint in the whole dataset.
-   ─────────────────────────────────────────────────────────────────────── */
+   Two family hues do the semantic work: ultramarine for Indo-European,
+   turmeric for Dravidian. They are data colours, not decoration — they only
+   ever mean "this belongs to that family". Ink and neutrals carry the rest.
+   One type family (Anek) covers Latin, Devanagari and Telugu, so the three
+   scripts look like they belong on the same page.
+   ─────────────────────────────────────────────────────────────────────────── */
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
+  --font-sans: var(--font-latin), var(--font-deva), var(--font-telu), system-ui, sans-serif;
+  --bg: #f2f2ee;
+  --surface: #fbfbf9;
+  --sunk: #e8e8e2;
+  --ink: #121317;
+  --ink-2: #363940;
+  --muted: #5d616a;
+  --faint: #8a8e96;
+  --line: #dadad2;
+  --line-2: #c4c4ba;
 
-  --paper:   #eceae1;
-  --raised:  #f4f3ec;
-  --sunk:    #e2e0d5;
-  --ink:     #14201e;
-  --muted:   #5d6b66;
-  --faint:   #8d9791;
-  --rule:    #cdcabd;
-  --rule-hi: #b8b4a4;
+  --ie: #2b41c4;
+  --ie-ink: #2236a8;
+  --ie-wash: #e4e7f8;
+  --dr: #c47c00;
+  --dr-ink: #8a5600;
+  --dr-wash: #f6ead2;
+  --semi: #3d7a52;
+  --pie: #6a56b5;
+  --other: #7a7f88;
 
-  --accent:     #a8321e;
-  --accent-ink: #7d2415;
-  --accent-wash:#f6e3de;
+  --con: #c3232c;
+  --con-wash: #f9e2e2;
+  --est: #2f7a4f;
+  --eng: #2a6a8f;
+  --hyp: #9a6a05;
+  --fut: #8a8e96;
 
-  --indo: #2f4f8f;
-  --drav: #8a5a12;
-  --recon:#6b5f8a;
-  --semi: #4a6b3f;
-
-  --est: #2d6a4a;  --est-bg: #dfeae2;
-  --eng: #2c5c78;  --eng-bg: #dde8ee;
-  --hyp: #8a6116;  --hyp-bg: #f0e6d0;
-  --con: #a8321e;  --con-bg: #f6e3de;
-
-  --grid: rgba(20, 32, 30, 0.045);
+  --shadow: 0 1px 0 rgba(18, 19, 23, 0.04), 0 12px 32px -12px rgba(18, 19, 23, 0.18);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper:   #12171a;
-    --raised:  #1a2126;
-    --sunk:    #0d1214;
-    --ink:     #dfe4e0;
-    --muted:   #93a19b;
-    --faint:   #69756f;
-    --rule:    #2b353a;
-    --rule-hi: #3d4a50;
+    color-scheme: dark;
+    --bg: #0e0f12;
+    --surface: #16171b;
+    --sunk: #0a0b0d;
+    --ink: #ecece6;
+    --ink-2: #c8c9c3;
+    --muted: #9b9fa7;
+    --faint: #6d717a;
+    --line: #25272d;
+    --line-2: #363941;
 
-    --accent:     #e8734f;
-    --accent-ink: #f09472;
-    --accent-wash:#341b14;
+    --ie: #8394ff;
+    --ie-ink: #a8b4ff;
+    --ie-wash: #1a2049;
+    --dr: #f2b23d;
+    --dr-ink: #f7c76c;
+    --dr-wash: #362810;
+    --semi: #79c391;
+    --pie: #a998ef;
+    --other: #8a8f98;
 
-    --indo: #7fa3e0;
-    --drav: #d4a55e;
-    --recon:#a89ad0;
-    --semi: #8fb87f;
+    --con: #ff6b6b;
+    --con-wash: #3a1517;
+    --est: #6fcf97;
+    --eng: #6cb8e0;
+    --hyp: #e6b44a;
+    --fut: #6d717a;
 
-    --est: #7fc8a3;  --est-bg: #14291f;
-    --eng: #7cb8d8;  --eng-bg: #13242e;
-    --hyp: #d9b063;  --hyp-bg: #2b2413;
-    --con: #e8734f;  --con-bg: #341b14;
-
-    --grid: rgba(223, 228, 224, 0.05);
+    --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 16px 40px -12px rgba(0, 0, 0, 0.6);
   }
 }
 
 * { box-sizing: border-box; }
 
+html { -webkit-text-size-adjust: 100%; }
+
 body {
-  @apply bg-paper text-ink antialiased;
-  font-feature-settings: "kern", "liga";
-  /* ruled paper: a faint baseline grid, like a philologist's notebook */
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 31px,
-    var(--grid) 31px,
-    var(--grid) 32px
-  );
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern";
 }
 
-h1, h2, h3 { @apply font-serif; text-wrap: balance; font-weight: 600; }
+h1, h2, h3, h4 { text-wrap: balance; }
 
-::selection { background: var(--accent-wash); color: var(--accent-ink); }
+::selection { background: var(--ie-wash); color: var(--ink); }
 
-a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--accent);
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--ie);
   outline-offset: 2px;
+  border-radius: 4px;
 }
 
+/* Anek is variable on width: display type runs wide, UI type normal. */
+.display {
+  font-variation-settings: "wdth" 118;
+  letter-spacing: -0.015em;
+  line-height: 1.04;
+}
+.wide { font-variation-settings: "wdth" 112; }
+
+.mono { font-family: var(--font-mono); }
 .tnum { font-variant-numeric: tabular-nums; }
 
-/* small caps label, set in the body serif — reads as a catalogue heading
-   rather than the usual mono eyebrow */
-.label {
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: 12px;
-  font-variant-caps: all-small-caps;
-  letter-spacing: 0.1em;
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--muted);
 }
 
-/* the cut: a hairline rule that marks a morpheme boundary */
-.cut {
-  display: inline-block;
-  width: 1px;
-  align-self: stretch;
-  background: var(--accent);
-  opacity: 0.55;
+/* ── lanes: English | Hindi ‖ Telugu ─────────────────────────────────────── */
+.lanes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 2.25rem minmax(0, 1fr);
+}
+.lanes-labelled {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr) minmax(0, 1fr) 2.25rem minmax(0, 1fr);
+}
+.gutter { position: relative; }
+.gutter::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  border-left: 1.5px dashed var(--line-2);
+}
+.row-label { display: block; }
+@media (max-width: 767px) {
+  .lanes, .lanes-labelled { grid-template-columns: minmax(0, 1fr); }
+  .gutter { height: 1.1rem; }
+  .gutter::before { top: 50%; bottom: auto; left: 0; right: 0; border-left: 0; border-top: 1.5px dashed var(--line-2); }
 }
 
-/* specimen: a slip of raised paper with a ruled left edge, no radius.
-   Used sparingly — only where something really is a separate object. */
-.specimen {
-  background: var(--raised);
-  border-left: 2px solid var(--rule-hi);
-  border-top: 1px solid var(--rule);
-  border-right: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+/* surfaces */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
 }
+
+/* morpheme chips */
+.chip-stem { border: 1.5px solid var(--line-2); background: var(--surface); color: var(--ink); }
+.chip-ie { background: var(--ie-wash); color: var(--ie-ink); border: 1.5px solid color-mix(in srgb, var(--ie) 35%, transparent); }
+.chip-dr { background: var(--dr-wash); color: var(--dr-ink); border: 1.5px solid color-mix(in srgb, var(--dr) 40%, transparent); }
 
 /* documentation prose */
-.prose-doc h1 { @apply text-4xl mt-8 mb-4; }
-.prose-doc h2 { @apply text-2xl mt-10 mb-3; }
-.prose-doc h3 { @apply text-lg mt-6 mb-2; }
-.prose-doc p { @apply my-3 leading-[1.75] max-w-[68ch]; }
-.prose-doc ul { @apply list-none ml-0 my-3 space-y-1.5; }
-.prose-doc ul li { @apply pl-5 relative leading-relaxed; }
-.prose-doc ul li::before {
-  content: "—"; position: absolute; left: 0; color: var(--faint);
-}
-.prose-doc ol { @apply ml-5 my-3 space-y-1.5 list-decimal; }
-.prose-doc ol li { @apply leading-relaxed pl-1; }
-.prose-doc code { @apply font-mono text-[0.85em] px-1 py-0.5; background: var(--sunk); }
-.prose-doc pre { @apply font-mono text-xs p-4 overflow-x-auto my-4 leading-relaxed; background: var(--sunk); }
+.prose-doc { max-width: 72ch; }
+.prose-doc h1 { font-variation-settings: "wdth" 118; font-size: 2.25rem; font-weight: 650; line-height: 1.1; margin: 0.5rem 0 1.25rem; letter-spacing: -0.015em; }
+.prose-doc h2 { font-size: 1.35rem; font-weight: 620; margin: 2.5rem 0 0.75rem; }
+.prose-doc h3 { font-size: 1.1rem; font-weight: 620; margin: 1.75rem 0 0.5rem; }
+.prose-doc p { margin: 0.75rem 0; line-height: 1.75; color: var(--ink-2); }
+.prose-doc ul { margin: 0.75rem 0; padding-left: 1.25rem; list-style: disc; color: var(--ink-2); }
+.prose-doc ol { margin: 0.75rem 0; padding-left: 1.25rem; list-style: decimal; color: var(--ink-2); }
+.prose-doc li { margin: 0.35rem 0; line-height: 1.7; }
+.prose-doc li::marker { color: var(--faint); }
+.prose-doc strong { color: var(--ink); font-weight: 620; }
+.prose-doc code { font-family: var(--font-mono); font-size: 0.86em; background: var(--sunk); padding: 0.1em 0.35em; border-radius: 4px; }
+.prose-doc pre { font-family: var(--font-mono); font-size: 12.5px; background: var(--sunk); padding: 1rem 1.1rem; border-radius: 10px; overflow-x: auto; margin: 1rem 0; line-height: 1.6; }
 .prose-doc pre code { background: transparent; padding: 0; }
-.prose-doc table { @apply text-sm my-5 w-full; border-collapse: collapse; }
-.prose-doc th {
-  @apply text-left px-3 py-2;
-  font-family: var(--font-serif), serif;
-  font-variant-caps: all-small-caps; letter-spacing: 0.06em;
-  border-bottom: 2px solid var(--ink);
-}
-.prose-doc td { @apply px-3 py-2 align-top; border-bottom: 1px solid var(--rule); }
-.prose-doc blockquote {
-  @apply pl-5 my-6 font-serif text-[19px] leading-relaxed;
-  border-left: 2px solid var(--accent);
-}
-.prose-doc a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
+.prose-doc table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 14px; display: block; overflow-x: auto; }
+.prose-doc th { text-align: left; padding: 0.55rem 0.75rem; border-bottom: 2px solid var(--ink); font-weight: 620; white-space: nowrap; }
+.prose-doc td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); }
+.prose-doc blockquote { margin: 1.5rem 0; padding: 0.25rem 0 0.25rem 1.1rem; border-left: 3px solid var(--ie); font-size: 1.15rem; line-height: 1.6; color: var(--ink); }
+.prose-doc a { color: var(--ie-ink); text-decoration: underline; text-underline-offset: 3px; }
+
+@keyframes rise { from { opacity: 0.001; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 420ms cubic-bezier(.2,.7,.2,1) both; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

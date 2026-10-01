@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
 import type { EtymologyGraph } from "@/lib/api";
-import { ContestedBadge, Confidence, familyColor } from "@/components/badges";
+import { LANG_NAME } from "@/lib/lang";
+import { Confidence, ContestedTag, familyHue } from "@/components/marks";
 
 export async function generateStaticParams() {
   const etym = await data.etymology();
@@ -15,47 +16,71 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug: s } = await params;
   const d = await data.entry(slug.entryId(lang, s));
-  return { title: d ? `Etymology of ${d.entry.lemma.form}` : "Etymology" };
+  return { title: d ? `Lineage of ${d.entry.lemma.form}` : "Lineage" };
 }
 
-const HEX: Record<string, string> = {
-  "IE:Germanic": "#2f4f8f", "IE:Indo-Aryan": "#2f4f8f", "IE:Romance": "#2f4f8f", "IE:Iranian": "#2f4f8f",
-  "Reconstructed:PIE": "#6b5f8a", "Reconstructed:Proto-Dravidian": "#8a6a55",
-  "Dravidian:South-Central": "#8a5a12", "Dravidian:South": "#8a5a12",
-  Semitic: "#4a6b3f", Other: "#7c8884",
-};
+/* Family bands: every form sits in the band of its family. Inheritance and
+   cognacy stay inside a band (the validator enforces it), so any edge that
+   crosses a band boundary is, by construction, a borrowing or a calque. */
 
-const NODE_W = 196;
-const COL_W = 268;
-const ROW_H = 96;
+type Band = "ie" | "semi" | "other" | "dr";
+const BAND_ORDER: Band[] = ["ie", "semi", "other", "dr"];
+const BAND_LABEL: Record<Band, string> = {
+  ie: "Indo-European", semi: "Semitic", other: "Unclassified / expressive", dr: "Dravidian",
+};
+const BAND_HUE: Record<Band, string> = { ie: "var(--ie)", semi: "var(--semi)", other: "var(--other)", dr: "var(--dr)" };
+
+function bandOf(family: string): Band {
+  if (family.startsWith("Dravidian") || family === "Reconstructed:Proto-Dravidian") return "dr";
+  if (family.startsWith("IE") || family === "Reconstructed:PIE") return "ie";
+  if (family === "Semitic") return "semi";
+  return "other";
+}
+
+const NODE_W = 142;
+const NODE_H = 54;
+const COL_W = 198;
+const ROW_H = 74;
+const BAND_HEAD = 30;
+const BAND_PAD = 14;
+const LEFT = 24;
 
 function layout(g: EtymologyGraph) {
-  const nodeKey = (n: { node_ref: string | null; lang_or_family: string; form: string }) =>
-    n.node_ref ?? `${n.lang_or_family}:${n.form}`;
-  const keys = g.nodes.map((n) => n.key);
-  const level = new Map<string, number>(keys.map((k) => [k, 0]));
-  for (let i = 0; i < keys.length + 2; i++) {
+  const key = (n: { node_ref: string | null; lang_or_family: string; form: string }) => n.node_ref ?? `${n.lang_or_family}:${n.form}`;
+  const level = new Map<string, number>(g.nodes.map((n) => [n.key, 0]));
+  for (let i = 0; i < g.nodes.length + 2; i++) {
     for (const e of g.edges) {
-      const f = level.get(nodeKey(e.from)) ?? 0;
-      const t = nodeKey(e.to);
+      const f = level.get(key(e.from)) ?? 0;
+      const t = key(e.to);
       if ((level.get(t) ?? 0) < f + 1) level.set(t, f + 1);
     }
   }
-  const byLevel = new Map<number, string[]>();
-  for (const k of keys) {
-    const l = level.get(k) ?? 0;
-    byLevel.set(l, [...(byLevel.get(l) ?? []), k]);
+  const bands = BAND_ORDER.filter((b) => g.nodes.some((n) => bandOf(n.family) === b));
+  const slots = new Map<string, { band: Band; layer: number; row: number }>();
+  const bandRows = new Map<Band, number>();
+  for (const b of bands) {
+    const perLayer = new Map<number, number>();
+    const nodes = g.nodes.filter((n) => bandOf(n.family) === b).sort((x, y) => x.key.localeCompare(y.key));
+    for (const n of nodes) {
+      const L = level.get(n.key) ?? 0;
+      const r = perLayer.get(L) ?? 0;
+      perLayer.set(L, r + 1);
+      slots.set(n.key, { band: b, layer: L, row: r });
+    }
+    bandRows.set(b, Math.max(1, ...perLayer.values()));
   }
+  const bandTop = new Map<Band, number>();
+  let y = 0;
+  for (const b of bands) {
+    bandTop.set(b, y);
+    y += BAND_HEAD + BAND_PAD * 2 + (bandRows.get(b)! - 1) * ROW_H + NODE_H;
+  }
+  const maxLayer = Math.max(0, ...[...level.values()]);
   const pos = new Map<string, { x: number; y: number }>();
-  for (const [l, ks] of byLevel) {
-    ks.sort().forEach((k, i) => pos.set(k, { x: 32 + l * COL_W, y: 60 + i * ROW_H }));
+  for (const [k, s] of slots) {
+    pos.set(k, { x: LEFT + s.layer * COL_W, y: bandTop.get(s.band)! + BAND_HEAD + BAND_PAD + s.row * ROW_H });
   }
-  return {
-    pos,
-    nodeKey,
-    width: 64 + (Math.max(...byLevel.keys()) + 1) * COL_W,
-    height: 110 + Math.max(...[...byLevel.values()].map((v) => v.length)) * ROW_H,
-  };
+  return { pos, key, bands, bandTop, height: y, width: LEFT * 2 + maxLayer * COL_W + NODE_W };
 }
 
 export default async function EtymologyPage({ params }: { params: Promise<{ lang: string; slug: string }> }) {
@@ -65,138 +90,144 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
   const entry = await data.entry(id);
   if (!g || !entry) notFound();
 
-  const { pos, nodeKey, width, height } = layout(g);
-  const families = [...new Set(g.nodes.map((n) => n.family))].sort();
-  const crossings = g.edges.filter(
-    (e) => familyColor(e.from.family) !== familyColor(e.to.family),
-  ).length;
+  const { pos, key, bands, bandTop, height, width } = layout(g);
+  const crossings = g.edges.filter((e) => bandOf(e.from.family) !== bandOf(e.to.family)).length;
+  const contested = g.edges.filter((e) => e.status === "contested").length;
 
   return (
-    <div className="space-y-12">
-      <header className="max-w-[60ch]">
-        <p className="label mb-4">lineage · {g.nodes.length} forms · {g.edges.length} edges</p>
-        <h1 className="font-serif text-[32px] leading-tight">
-          Etymology of{" "}
-          <Link href={slug.entryHref(id)} className="hover:text-accent transition-colors">
-            {entry.entry.lemma.form}
-          </Link>
-        </h1>
-        <p className="mt-5 text-[14.5px] leading-[1.75] text-muted">
-          Colour is family. Inheritance and cognacy never cross between colours — the validator
-          rejects such an edge outright — so every colour change you see below is a borrowing or a
-          calque, {crossings === 1 ? "and there is one here" : `and there are ${crossings} here`}.
-          Dashed edges are contested.
-        </p>
-        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-5 font-mono text-[11.5px]">
-          {families.map((f) => (
-            <span key={f} className="flex items-center gap-2">
-              <span className="inline-block w-2.5 h-2.5" style={{ background: HEX[f] ?? HEX.Other }} />
-              <span className="text-muted">{f}</span>
-            </span>
-          ))}
+    <article className="space-y-12">
+      <header>
+        <nav className="text-[12.5px] text-muted mb-6" aria-label="Breadcrumb">
+          <Link href="/lexicon/" className="hover:text-ink">Concordance</Link>
+          <span className="mx-2 text-faint">/</span>
+          <Link href={slug.entryHref(id)} className="hover:text-ink">{entry.entry.lemma.form}</Link>
+          <span className="mx-2 text-faint">/</span>
+          <span>lineage</span>
+        </nav>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-end">
+          <div>
+            <p className="kicker mb-3">Lineage · {LANG_NAME[entry.entry.lang]}</p>
+            <h1 className="display text-[44px] sm:text-[60px] font-semibold">{entry.entry.lemma.form}</h1>
+          </div>
+          <div className="grid grid-cols-3 gap-4 max-w-md">
+            {(
+              [
+                [g.nodes.length, "forms"],
+                [crossings, crossings === 1 ? "borrowing across families" : "borrowings across families"],
+                [contested, "contested edges"],
+              ] as [number, string][]
+            ).map(([n, l]) => (
+              <div key={l} className="border-t border-line pt-2">
+                <div className="wide text-[28px] font-semibold tnum leading-none">{n}</div>
+                <div className="text-[12px] text-muted mt-1 leading-snug">{l}</div>
+              </div>
+            ))}
+          </div>
         </div>
+        <p className="text-[14.5px] leading-[1.7] text-ink-2 max-w-[70ch] mt-6">
+          Each band is a language family. Inheritance and cognacy never leave their band — the validator
+          rejects any edge that tries — so every line crossing a band boundary is a borrowing. Dashed lines
+          are contested and left unresolved.
+        </p>
       </header>
 
-      <div className="overflow-x-auto -mx-6 px-6">
-        <svg
-          width={width}
-          height={height}
-          role="img"
-          aria-label={`Etymology lineage of ${entry.entry.lemma.form}`}
-          style={{ minWidth: width }}
-        >
+      <div className="panel overflow-x-auto">
+        <svg width={width} height={height} role="img" aria-label={`Lineage graph of ${entry.entry.lemma.form}`} style={{ minWidth: width, display: "block" }}>
           <defs>
-            <marker id="tip" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6 z" fill="var(--faint)" />
+            <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0.5 L7,4 L0,7.5 z" fill="var(--muted)" />
             </marker>
+            {bands.map((b) => (
+              <marker key={b} id={`arr-${b}`} markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                <path d="M0,0.5 L7,4 L0,7.5 z" fill={BAND_HUE[b]} />
+              </marker>
+            ))}
           </defs>
 
-          {/* edges: orthogonal routing (out, across, in) — reads as a wiring
-              diagram rather than a web of diagonals */}
+          {bands.map((b, i) => {
+            const top = bandTop.get(b)!;
+            const next = bands[i + 1] ? bandTop.get(bands[i + 1])! : height;
+            return (
+              <g key={b}>
+                <rect x={0} y={top} width={width} height={next - top} fill={BAND_HUE[b]} opacity={0.045} />
+                <text x={LEFT} y={top + 20} fontSize="11" fontWeight={600} fill={BAND_HUE[b]} fontFamily="var(--font-mono)" letterSpacing="0.06em">
+                  {BAND_LABEL[b].toUpperCase()}
+                </text>
+                {i > 0 && (
+                  <line x1={0} x2={width} y1={top} y2={top} stroke="var(--line-2)" strokeWidth={1.5} strokeDasharray="6 5" />
+                )}
+              </g>
+            );
+          })}
+
           {g.edges.map((e) => {
-            const a = pos.get(nodeKey(e.from));
-            const b = pos.get(nodeKey(e.to));
+            const a = pos.get(key(e.from));
+            const b = pos.get(key(e.to));
             if (!a || !b) return null;
-            const x1 = a.x + NODE_W;
-            const x2 = b.x - 8;
-            const midX = x1 + (x2 - x1) / 2;
-            const d =
-              a.y === b.y
-                ? `M${x1},${a.y} L${x2},${b.y}`
-                : `M${x1},${a.y} H${midX} V${b.y} H${x2}`;
+            const cross = bandOf(e.from.family) !== bandOf(e.to.family);
+            const toBand = bandOf(e.to.family);
+            const ay = a.y + NODE_H / 2;
+            const by = b.y + NODE_H / 2;
+            let d: string;
+            let lx: number;
+            let ly: number;
+            if (b.x > a.x) {
+              const x1 = a.x + NODE_W;
+              const x2 = b.x - 4;
+              const mx = x1 + (x2 - x1) / 2;
+              d = ay === by ? `M${x1},${ay} L${x2},${by}` : `M${x1},${ay} H${mx} V${by} H${x2}`;
+              lx = mx;
+              ly = ay === by ? ay - 8 : (ay + by) / 2;
+            } else {
+              const x = a.x + NODE_W / 2;
+              d = `M${x},${a.y + NODE_H} V${b.y - 4}`;
+              lx = x + 8;
+              ly = (a.y + NODE_H + b.y) / 2;
+            }
             const drift = e.drift.filter((x) => x !== "NONE");
+            const label = `${e.type.toLowerCase()}${drift.length ? " · " + drift.join("/").toLowerCase() : ""}`;
             return (
               <g key={e.id}>
                 <path
                   d={d}
                   fill="none"
-                  stroke="var(--faint)"
-                  strokeWidth={1}
-                  strokeDasharray={e.status === "contested" ? "3 3" : undefined}
-                  markerEnd="url(#tip)"
+                  stroke={cross ? BAND_HUE[toBand] : "var(--muted)"}
+                  strokeWidth={cross ? 2 : 1.25}
+                  strokeDasharray={e.status === "contested" ? "5 4" : undefined}
+                  markerEnd={`url(#${cross ? `arr-${toBand}` : "arr"})`}
                 />
-                <text
-                  x={midX}
-                  y={(a.y + b.y) / 2 - 7}
-                  fontSize="9.5"
-                  fill="var(--muted)"
-                  fontFamily="var(--font-mono)"
-                  textAnchor="middle"
-                >
-                  {e.type.toLowerCase()}
-                  {drift.length ? ` · ${drift.join("/").toLowerCase()}` : ""}
-                </text>
-                <text
-                  x={midX}
-                  y={(a.y + b.y) / 2 + 5}
-                  fontSize="8.5"
-                  fill="var(--faint)"
-                  fontFamily="var(--font-mono)"
-                  textAnchor="middle"
-                >
-                  {e.source_ref.join(", ")} · {e.confidence.toFixed(2)}
-                </text>
+                <g transform={`translate(${lx}, ${ly})`}>
+                  <rect x={-label.length * 2.9 - 5} y={-9} width={label.length * 5.8 + 10} height={16} rx={8} fill="var(--surface)" stroke="var(--line)" />
+                  <text x={0} y={3} fontSize="9.5" textAnchor="middle" fill={cross ? BAND_HUE[toBand] : "var(--muted)"} fontFamily="var(--font-mono)">
+                    {label}
+                  </text>
+                </g>
               </g>
             );
           })}
 
-          {/* nodes: a coloured family rule on the left edge, form and gloss set
-              in the page's own type */}
           {g.nodes.map((n) => {
             const p = pos.get(n.key);
             if (!p) return null;
-            const hue = HEX[n.family] ?? HEX.Other;
-            const isFocus = n.node_ref === id;
-            const label = n.form.length > 23 ? n.form.slice(0, 22) + "…" : n.form;
+            const hue = familyHue(n.family);
+            const focus = n.node_ref === id;
+            const form = n.form.length > 17 ? n.form.slice(0, 16) + "…" : n.form;
             const body = (
               <g>
-                <rect
-                  x={p.x}
-                  y={p.y - 26}
-                  width={NODE_W}
-                  height={n.gloss ? 54 : 40}
-                  fill="var(--raised)"
-                  stroke={isFocus ? "var(--ink)" : "var(--rule)"}
-                  strokeWidth={isFocus ? 1.5 : 1}
-                />
-                <rect x={p.x} y={p.y - 26} width={3} height={n.gloss ? 54 : 40} fill={hue} />
-                <text x={p.x + 14} y={p.y - 7} fontSize="15" fill="var(--ink)" fontFamily="var(--font-serif)">
-                  {label}
+                <rect x={p.x} y={p.y} width={NODE_W} height={NODE_H} rx={10} fill="var(--surface)" stroke={focus ? "var(--ink)" : "var(--line-2)"} strokeWidth={focus ? 2 : 1} />
+                <rect x={p.x} y={p.y + 10} width={3.5} height={NODE_H - 20} rx={1.75} fill={hue} />
+                <text x={p.x + 14} y={p.y + 23} fontSize="15" fontWeight={600} fill="var(--ink)" fontFamily="var(--font-sans)">{form}</text>
+                <text x={p.x + 14} y={p.y + 40} fontSize="10" fill="var(--muted)" fontFamily="var(--font-sans)">
+                  {(() => {
+                    const where = LANG_NAME[n.lang_or_family] ?? n.lang_or_family;
+                    const t = n.gloss ? `${where} · ${n.gloss}` : where;
+                    return t.length > 24 ? t.slice(0, 23) + "…" : t;
+                  })()}
                 </text>
-                <text x={p.x + 14} y={p.y + 8} fontSize="9" fill={hue} fontFamily="var(--font-mono)">
-                  {n.lang_or_family}
-                </text>
-                {n.gloss && (
-                  <text x={p.x + 14} y={p.y + 21} fontSize="9.5" fill="var(--muted)" fontFamily="var(--font-serif)">
-                    {n.gloss.length > 30 ? n.gloss.slice(0, 29) + "…" : n.gloss}
-                  </text>
-                )}
               </g>
             );
             return n.node_ref?.startsWith("lex:") ? (
-              <Link key={n.key} href={slug.entryHref(n.node_ref)}>
-                {body}
-              </Link>
+              <Link key={n.key} href={slug.entryHref(n.node_ref)}>{body}</Link>
             ) : (
               <g key={n.key}>{body}</g>
             );
@@ -205,36 +236,30 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
       </div>
 
       <section>
-        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Every edge, with its source
-        </h2>
-        <ul>
-          {g.edges.map((e) => (
-            <li
-              key={e.id}
-              className="grid sm:grid-cols-[7rem_1fr_auto] gap-x-5 gap-y-1 py-3 items-baseline"
-              style={{ borderTop: "1px solid var(--rule)" }}
-            >
-              <span
-                className="text-[11px] tracking-[0.07em] text-faint"
-                style={{ fontFamily: "var(--font-serif), serif", fontVariantCaps: "all-small-caps" }}
-              >
-                {e.type}
-              </span>
-              <span className="text-[15px] leading-snug">
-                <span style={{ color: HEX[e.from.family] ?? HEX.Other }}>{e.from.form}</span>
-                <span className="text-faint mx-2">→</span>
-                <span style={{ color: HEX[e.to.family] ?? HEX.Other }}>{e.to.form}</span>
-                {e.status === "contested" && <span className="ml-2.5"><ContestedBadge /></span>}
-              </span>
-              <span className="flex items-baseline gap-3 sm:justify-end">
-                <span className="font-mono text-[10.5px] text-faint">{e.source_ref.join(", ")}</span>
-                <Confidence value={e.confidence} />
-              </span>
-            </li>
-          ))}
-        </ul>
+        <h2 className="wide text-[21px] font-semibold mb-4">Every edge, with its source</h2>
+        <ol className="border-y border-line divide-y divide-[var(--line)]">
+          {g.edges.map((e) => {
+            const cross = bandOf(e.from.family) !== bandOf(e.to.family);
+            return (
+              <li key={e.id} className="py-3.5 grid sm:grid-cols-[1fr_auto] gap-x-6 gap-y-1.5 items-center">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px]">
+                  <span className="font-medium" style={{ boxShadow: `inset 0 -2px 0 ${familyHue(e.from.family)}` }}>{e.from.form}</span>
+                  <span className="text-[12px] text-faint">{LANG_NAME[e.from.lang_or_family] ?? e.from.lang_or_family}</span>
+                  <span className="text-muted text-[12.5px] px-1">— {e.type.toLowerCase()} →</span>
+                  <span className="font-medium" style={{ boxShadow: `inset 0 -2px 0 ${familyHue(e.to.family)}` }}>{e.to.form}</span>
+                  <span className="text-[12px] text-faint">{LANG_NAME[e.to.lang_or_family] ?? e.to.lang_or_family}</span>
+                  {cross && <span className="text-[11.5px] rounded-full border border-line px-2 text-muted">crosses families</span>}
+                  {e.status === "contested" && <ContestedTag />}
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="mono text-[11.5px] text-muted">{e.source_ref.join(", ")}</span>
+                  <Confidence value={e.confidence} />
+                </div>
+              </li>
+            );
+          })}
+        </ol>
       </section>
-    </div>
+    </article>
   );
 }

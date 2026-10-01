@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
-import { EpiBadge, LANG_NAME, RegisterBadge, ReviewBadge } from "@/components/badges";
-import { EntryList } from "@/components/entry-list";
+import type { LangCode } from "@/lib/lang";
+import { LANES, LANG_NAME, REGISTER_NAME } from "@/lib/lang";
+import { EpiTag, FamilyDot, ReviewTag } from "@/components/marks";
 
 export async function generateStaticParams() {
   const affixes = await data.affixes();
@@ -15,14 +16,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug: s } = await params;
   const d = await data.affix(slug.affixId(lang, s));
-  return { title: d ? `${d.affix.form} (${LANG_NAME[d.affix.lang]})` : "Affix" };
+  return { title: d ? `${d.affix.form} — ${LANG_NAME[d.affix.lang]} affix` : "Affix" };
 }
 
-const PRODUCTIVITY_NOTE: Record<string, string> = {
-  high: "freely attaches to new bases",
-  mid: "attaches to a sizeable but bounded set",
-  low: "a handful of lexicalised forms",
-  dead: "no longer forms new words — survives only in fossils",
+const PRODUCTIVITY: Record<string, { n: number; text: string }> = {
+  high: { n: 4, text: "freely attaches to new bases" },
+  mid: { n: 3, text: "attaches to a sizeable but bounded set" },
+  low: { n: 2, text: "a handful of lexicalised forms" },
+  dead: { n: 1, text: "no longer forms new words; survives in fossils" },
 };
 
 export default async function AffixPage({ params }: { params: Promise<{ lang: string; slug: string }> }) {
@@ -30,105 +31,142 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
   const d = await data.affix(slug.affixId(lang, s));
   if (!d) notFound();
   const a = d.affix;
+  const fam = lang === "te" ? "chip-dr" : "chip-ie";
+  const prod = PRODUCTIVITY[a.productivity] ?? PRODUCTIVITY.mid;
+  const details = await data.entryDetails();
 
-  const rows: [string, React.ReactNode][] = [
-    ["function", d.functions.map((f) => `${f.label} (${f.id})`).join(" · ")],
-    [
-      "productivity",
-      <span key="p">
-        {a.productivity}
-        <span className="text-faint"> — {PRODUCTIVITY_NOTE[a.productivity]}</span>
-      </span>,
-    ],
-    ["register", <RegisterBadge key="r" register={a.register} />],
-    ...(a.allomorphs.length ? ([["allomorphs", a.allomorphs.join(" · ")]] as [string, React.ReactNode][]) : []),
-    ...(a.attaches_to.length ? ([["attaches to", a.attaches_to.join(" · ")]] as [string, React.ReactNode][]) : []),
-    ...(a.provenance.source_refs.length
-      ? ([["sources", a.provenance.source_refs.join(" · ")]] as [string, React.ReactNode][])
-      : []),
-  ];
+  const eqByLang: Record<LangCode, typeof d.equivalents> = { en: [], hi: [], te: [] };
+  for (const q of d.equivalents) eqByLang[q.affix.lang as LangCode].push(q);
 
   return (
-    <div className="space-y-20">
+    <article className="space-y-14">
       <header>
-        <p className="label mb-5">
-          {LANG_NAME[a.lang]} {a.kind.replace("_", " ")} · <ReviewBadge status={a.provenance.review_status} />
-        </p>
-        <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
-          {/* the affix itself, carrying the cut that marks where it attaches */}
-          <span className="flex items-stretch">
-            <span
-              className="w-px self-stretch mr-3"
-              style={{ background: "var(--accent)", opacity: 0.6 }}
-              aria-hidden="true"
-            />
-            <h1 className="font-serif text-[44px] leading-none">{a.form}</h1>
-          </span>
-          {a.translit !== a.form && <span className="font-mono text-[17px] text-muted">{a.translit}</span>}
-          <EpiBadge status={a.epistemic_status} />
+        <nav className="text-[12.5px] text-muted mb-6" aria-label="Breadcrumb">
+          <Link href="/affixes/" className="hover:text-ink">Affix Atlas</Link>
+          <span className="mx-2 text-faint">/</span>
+          <span>{LANG_NAME[a.lang]}</span>
+        </nav>
+        <span className="inline-flex items-center gap-2 text-[13px] font-medium text-muted mb-4">
+          <FamilyDot lang={a.lang} /> {LANG_NAME[a.lang]} {a.kind.replace("_", " ")}
+        </span>
+        <div className="flex flex-wrap items-center gap-5">
+          <h1 className={`${fam} display inline-block rounded-2xl px-6 py-3 text-[52px] sm:text-[68px] font-semibold`}>{a.form}</h1>
+          <div className="space-y-1.5">
+            {a.translit !== a.form && <div className="mono text-[17px] text-muted">{a.translit}</div>}
+            <div className="text-[19px] font-medium">{d.functions.map((f) => f.label).join(" · ")}</div>
+          </div>
         </div>
-        <p className="font-mono text-[10.5px] text-faint mt-4">{a.id}</p>
       </header>
 
-      <section className="grid md:grid-cols-[minmax(0,26rem)_1fr] gap-10 md:gap-14 items-start">
-        <dl>
-          {rows.map(([k, v]) => (
-            <div key={k} className="grid grid-cols-[7.5rem_1fr] gap-x-4 py-2.5" style={{ borderTop: "1px solid var(--rule)" }}>
-              <dt className="label pt-[3px]">{k}</dt>
-              <dd className="text-[14px] leading-relaxed">{v}</dd>
-            </div>
-          ))}
-        </dl>
-        {a.notes && (
-          <div className="pl-5 py-1" style={{ borderLeft: "2px solid var(--rule-hi)" }}>
-            <p className="label mb-1.5">Annotator note</p>
-            <p className="font-serif text-[15.5px] leading-relaxed italic max-w-[52ch]">{a.notes}</p>
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px rounded-xl overflow-hidden border border-line" style={{ background: "var(--line)" }}>
+        <div className="bg-surface p-5">
+          <p className="kicker mb-2">Register</p>
+          <p className="text-[17px] font-medium">{REGISTER_NAME[a.register] ?? a.register}</p>
+        </div>
+        <div className="bg-surface p-5">
+          <p className="kicker mb-2">Productivity</p>
+          <div className="flex items-center gap-2">
+            <span className="flex gap-[3px]" aria-hidden="true">
+              {[1, 2, 3, 4].map((i) => (
+                <span key={i} className="w-[6px] h-[14px] rounded-[1px]" style={{ background: i <= prod.n ? "var(--ink-2)" : "var(--line-2)" }} />
+              ))}
+            </span>
+            <span className="text-[17px] font-medium">{a.productivity}</span>
+          </div>
+          <p className="text-[12px] text-muted mt-1">{prod.text}</p>
+        </div>
+        <div className="bg-surface p-5">
+          <p className="kicker mb-2">Attaches to</p>
+          <p className="text-[17px] font-medium">{a.attaches_to.join(" · ") || "—"}</p>
+          {a.allomorphs.length > 0 && <p className="text-[12px] text-muted mt-1">allomorphs {a.allomorphs.join(", ")}</p>}
+        </div>
+        <div className="bg-surface p-5">
+          <p className="kicker mb-2">Status</p>
+          <div className="flex flex-wrap gap-1.5">
+            <EpiTag status={a.epistemic_status} />
+            <ReviewTag status={a.provenance.review_status} />
+          </div>
+          {a.provenance.source_refs.length > 0 && (
+            <p className="mono text-[11.5px] text-muted mt-2">{a.provenance.source_refs.join(", ")}</p>
+          )}
+        </div>
+      </section>
+
+      {a.notes && (
+        <aside className="rounded-lg border border-dashed border-line-2 px-5 py-4 max-w-[72ch]">
+          <p className="kicker mb-1.5">Annotator note</p>
+          <p className="text-[14.5px] leading-relaxed text-ink-2">{a.notes}</p>
+        </aside>
+      )}
+
+      <section>
+        <h2 className="wide text-[21px] font-semibold mb-4">Words built with {a.form}</h2>
+        {d.examples.length === 0 ? (
+          <p className="text-[14px] text-muted">No entry in the dataset uses this affix yet.</p>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {d.examples.map((ex) => {
+              const det = details[ex.id];
+              return (
+                <Link key={ex.id} href={slug.entryHref(ex.id)} className="panel p-4 hover:border-line-2 transition-colors group">
+                  <div className="text-[21px] font-semibold group-hover:text-ie-ink">{ex.form}</div>
+                  {ex.form !== ex.translit && <div className="mono text-[11.5px] text-faint">{ex.translit}</div>}
+                  <div className="text-[13px] text-muted mt-2">{ex.gloss}</div>
+                  {det && (
+                    <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[13px]">
+                      <span className="chip-stem rounded px-1.5">{det.entry.morphology.stem_form}</span>
+                      {det.affixes.map((x) => (
+                        <span key={x.id} className="inline-flex items-center gap-1.5">
+                          <span className="text-faint">+</span>
+                          <span className={`${fam} rounded px-1.5`} style={x.id === a.id ? undefined : { opacity: 0.55 }}>
+                            {x.form}
+                          </span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </Link>
+              );
+            })}
           </div>
         )}
       </section>
 
-      <section>
-        <h2 className="font-serif text-[15px] mb-4" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Words built with it
-        </h2>
-        <EntryList entries={d.examples} />
-      </section>
-
       {d.equivalents.length > 0 && (
         <section>
-          <div className="flex items-baseline gap-4 flex-wrap mb-4">
-            <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-              Does the same job elsewhere
-            </h2>
-            <span className="text-[11.5px] text-faint">functionally equivalent, not interchangeable</span>
-          </div>
-          <ul>
-            {d.equivalents.map((q, i) => (
-              <li
-                key={i}
-                className="grid grid-cols-[3.2rem_minmax(0,9rem)_1fr] gap-x-5 py-3 items-baseline"
-                style={{ borderTop: "1px solid var(--rule)" }}
-              >
-                <span
-                  className="text-[11px] tracking-[0.07em] text-faint"
-                  style={{ fontFamily: "var(--font-serif), serif", fontVariantCaps: "all-small-caps" }}
-                >
-                  {q.affix.lang}
-                </span>
-                <span className="flex items-baseline gap-2.5">
-                  <Link href={slug.affixHref(q.affix.id)} className="text-[18px] font-serif hover:text-accent transition-colors">
-                    {q.affix.form}
-                  </Link>
-                  {q.affix.translit !== q.affix.form && (
-                    <span className="font-mono text-[11px] text-faint">{q.affix.translit}</span>
-                  )}
-                </span>
-                <span className="text-[12.5px] text-muted leading-snug">{q.note}</span>
-              </li>
+          <h2 className="wide text-[21px] font-semibold mb-1">Does the same job elsewhere</h2>
+          <p className="text-[13px] text-muted mb-5">Functional equivalents, placed in their lanes. Same register is noted; most differ.</p>
+          <div className="lanes">
+            {LANES.slice(0, 2).map((l) => (
+              <Lane key={l.code} code={l.code} items={eqByLang[l.code]} self={a.lang === l.code ? a.form : null} />
             ))}
-          </ul>
+            <div className="gutter" aria-hidden="true" />
+            <Lane code="te" items={eqByLang.te} self={a.lang === "te" ? a.form : null} />
+          </div>
         </section>
       )}
+    </article>
+  );
+}
+
+function Lane({ code, items, self }: { code: LangCode; items: { affix: { id: string; form: string; translit: string }; note: string }[]; self: string | null }) {
+  return (
+    <div className="py-2 md:px-4">
+      <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-3">
+        <FamilyDot lang={code} /> {LANG_NAME[code]}
+      </p>
+      {self && <p className="text-[13px] text-faint mb-2">this affix: {self}</p>}
+      {items.length === 0 && !self && <p className="text-faint">—</p>}
+      <ul className="space-y-2.5">
+        {items.map((q) => (
+          <li key={q.affix.id}>
+            <Link href={slug.affixHref(q.affix.id)} className={`${code === "te" ? "chip-dr" : "chip-ie"} inline-block rounded-md px-2 py-0.5 text-[16px] hover:-translate-y-[1px] transition-transform`}>
+              {q.affix.form}
+            </Link>
+            <div className="text-[12px] text-muted mt-1">{q.note}</div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

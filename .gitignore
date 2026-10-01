@@ -8,3 +8,4 @@ node_modules/
 apps/web/.sitedata/
 apps/web/public/search-index.json
 apps/web/out/
+*.tsbuildinfo

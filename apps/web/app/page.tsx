@@ -1,180 +1,191 @@
 import Link from "next/link";
 import { data, slug } from "@/lib/data";
-import { SearchBox } from "@/components/search-box";
-import { Segmentation } from "@/components/segmentation";
+import { LANES } from "@/lib/lang";
+import { SearchTrigger } from "@/components/command-palette";
+import { Showcase } from "@/components/showcase";
+import { FamilyDot } from "@/components/marks";
 
-/* The hero is the thesis: one word, cut. Everything else on the page is
-   apparatus around that demonstration. */
-const HERO = "lex:te:mancitanam";
-
-const SEEDS = [
-  { id: "lex:hi:bacpan", why: "बच्चा + -पन — the same state-suffix job, done natively in Hindi" },
-  { id: "lex:en:hopeless", why: "hope + -less — privative, aligned with Telugu -లేని and Hindi -हीन" },
-  { id: "lex:en:sugar", why: "one Sanskrit word, three routes out: east, west, and south" },
-  { id: "lex:te:kukka", why: "Telugu కుక్క and Hindi कुत्ता look alike; the graph refuses to say why" },
+const SHOWCASE = [
+  "concept:GOODNESS", "concept:CHILDHOOD", "concept:HOPELESS", "concept:TEACHER",
+  "concept:LONELINESS", "concept:SOCIALISM", "concept:READABLE", "concept:CAREFULLY",
 ];
 
-export default async function Home() {
-  const meta = await data.meta();
-  const hero = await data.entry(HERO);
-  const seeds = await Promise.all(SEEDS.map(async (s) => ({ ...s, d: await data.entry(s.id) })));
-  const c = meta.counts;
+/* Sugar's three routes out of Sanskrit, as recorded in the etymology edges. */
+const SUGAR_ROUTES: { label: string; steps: { form: string; fam: string }[] }[] = [
+  {
+    label: "inherited, east",
+    steps: [
+      { form: "śarkarā", fam: "ie" }, { form: "sakkarā", fam: "ie" }, { form: "शक्कर", fam: "ie" },
+    ],
+  },
+  {
+    label: "borrowed, west",
+    steps: [
+      { form: "śarkarā", fam: "ie" }, { form: "šakar", fam: "ie" }, { form: "sukkar", fam: "semi" },
+      { form: "succarum", fam: "ie" }, { form: "sucre", fam: "ie" }, { form: "sugar", fam: "ie" },
+    ],
+  },
+  {
+    label: "borrowed, south",
+    steps: [{ form: "śarkarā", fam: "ie" }, { form: "చక్కెర", fam: "dr" }],
+  },
+];
+const FAM_HUE: Record<string, string> = { ie: "var(--ie)", dr: "var(--dr)", semi: "var(--semi)" };
 
-  const heroPieces = [
-    { text: hero.entry.morphology.stem_form, role: "stem" as const, label: "stem · good" },
-    ...hero.affixes.map((a, i) => ({
-      text: a.form,
-      translit: a.translit,
-      role: "affix" as const,
-      label: hero.functions[i]?.label,
-      href: slug.affixHref(a.id),
-    })),
-  ];
+export default async function Home() {
+  const [meta, concepts, affixes, atoms] = await Promise.all([data.meta(), data.concepts(), data.affixes(), data.atoms()]);
+  const rows = SHOWCASE.map((id) => concepts.find((c) => c.id === id)).filter((r): r is NonNullable<typeof r> => !!r);
+  const c = meta.counts;
+  const jobs = new Set(affixes.flatMap((a) => a.functions)).size;
+  const priv = (lang: string) => affixes.filter((a) => a.lang === lang && a.functions.includes("fn:PRIV"));
 
   return (
-    <div className="space-y-24">
-      {/* ── hero: the demonstration ─────────────────────────────── */}
-      <section>
-        <div className="grid lg:grid-cols-[1fr_auto] gap-10 lg:gap-16 items-end">
-          <div>
-            <p className="label mb-5">Telugu · noun · native register</p>
-            <Segmentation pieces={heroPieces} size="lg" />
-            <p className="mt-8 font-serif text-[19px] leading-relaxed max-w-[46ch]">
-              <span className="italic">mañcitanaṁ</span> — the state of being good.
-              One stem, one suffix, and a claim you can check all the way down.
-            </p>
-            <Link
-              href={slug.entryHref(HERO)}
-              className="inline-block mt-5 font-mono text-[12px] underline underline-offset-4"
-              style={{ color: "var(--accent-ink)" }}
-            >
-              read the full entry →
-            </Link>
+    <div className="space-y-20 sm:space-y-28">
+      {/* ── thesis ─────────────────────────────────────────────── */}
+      <section className="grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] gap-10 items-end">
+        <div>
+          <div className="flex items-center gap-3 mb-6">
+            {LANES.map((l) => (
+              <span key={l.code} className="inline-flex items-center gap-1.5 text-[12.5px] text-muted">
+                <FamilyDot lang={l.code} /> {l.name}
+              </span>
+            ))}
           </div>
-
-          {/* the apparatus: what the graph knows about that one word */}
-          <dl className="specimen p-6 text-[13.5px] space-y-3.5 min-w-[17rem] lg:max-w-xs">
-            <div>
-              <dt className="label">decomposition</dt>
-              <dd className="font-mono text-[14px] mt-1">{hero.structure_pretty}</dd>
-            </div>
-            <div>
-              <dt className="label">aligned</dt>
-              <dd className="mt-1 space-y-0.5">
-                {hero.aligned.map((a) => (
-                  <Link
-                    key={a.entry.id}
-                    href={slug.entryHref(a.entry.id)}
-                    className="block hover:text-accent transition-colors"
-                  >
-                    {a.entry.form}
-                    <span className="text-faint font-mono text-[11px] ml-2">{a.entry.lang}</span>
-                  </Link>
-                ))}
-              </dd>
-            </div>
-            <div>
-              <dt className="label">review status</dt>
-              <dd className="font-mono text-[12px] mt-1 text-muted">
-                {hero.entry.provenance.review_status} · annotated {hero.entry.provenance.date}
-              </dd>
-            </div>
-          </dl>
+          <h1 className="display text-[36px] sm:text-[60px] lg:text-[72px] font-semibold">
+            One meaning.
+            <br />
+            Three languages.
+            <br />
+            <span className="text-faint">Two families.</span>
+          </h1>
+        </div>
+        <div className="space-y-6">
+          <p className="text-[17px] leading-[1.65] text-ink-2 max-w-[48ch]">
+            Suffeffix is a knowledge graph that takes words apart — stem, affix, function — and lines them
+            up across English, Hindi and Telugu. Every etymology carries a source and a confidence; every
+            explanation shows the rules that built it.
+          </p>
+          <SearchTrigger variant="hero" />
         </div>
       </section>
 
+      {/* ── the instrument ─────────────────────────────────────── */}
       <section>
-        <SearchBox autoFocus />
+        <Showcase rows={rows} />
       </section>
 
-      {/* ── four ways in, each with a reason ────────────────────── */}
-      <section>
-        <h2
-          className="font-serif text-[15px] mb-6"
-          style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}
-        >
-          Four words worth opening
-        </h2>
-        <ul>
-          {seeds.map(({ id, why, d }) => (
-            <li key={id} style={{ borderTop: "1px solid var(--rule)" }}>
-              <Link
-                href={slug.entryHref(id)}
-                className="group grid sm:grid-cols-[13rem_1fr] gap-x-8 gap-y-1 py-5 items-baseline"
-              >
-                <span className="flex items-baseline gap-3">
-                  <span className="text-[23px] font-serif group-hover:text-accent transition-colors">
-                    {d.entry.lemma.form}
-                  </span>
-                  {d.entry.lemma.form !== d.entry.lemma.translit && (
-                    <span className="font-mono text-[11.5px] text-faint">{d.entry.lemma.translit}</span>
-                  )}
-                </span>
-                <span className="text-[14.5px] text-muted leading-relaxed">{why}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+      {/* ── three instruments, each previewed with real data ───── */}
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <Link href="/affixes/" className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
+          <p className="kicker mb-3">Affix Atlas</p>
+          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">{jobs} jobs an affix can do, in three languages</h2>
+          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
+            Every affix filed by function. Here is the privative row — the affixes that mean “without”.
+          </p>
+          <div className="mt-auto lanes gap-y-1 text-[17px]">
+            {(["en", "hi"] as const).map((l) => (
+              <div key={l} className="flex flex-wrap gap-1.5">
+                {priv(l).map((a) => (
+                  <span key={a.id} className="chip-ie rounded-md px-2 py-0.5">{a.form}</span>
+                ))}
+              </div>
+            ))}
+            <div className="gutter" aria-hidden="true" />
+            <div className="flex flex-wrap gap-1.5">
+              {priv("te").map((a) => (
+                <span key={a.id} className="chip-dr rounded-md px-2 py-0.5">{a.form}</span>
+              ))}
+            </div>
+          </div>
+          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">Open the Atlas →</span>
+        </Link>
+
+        <Link href={slug.etymologyHref("lex:en:sugar")} className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
+          <p className="kicker mb-3">Etymology</p>
+          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">One Sanskrit word, three routes out</h2>
+          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
+            Sugar left Sanskrit three ways. Colour is family; every change of colour is a borrowing.
+          </p>
+          <div className="mt-auto space-y-2.5">
+            {SUGAR_ROUTES.map((r) => (
+              <div key={r.label}>
+                <div className="text-[11px] text-faint mb-1">{r.label}</div>
+                <div className="flex flex-wrap items-center gap-1 text-[13.5px]">
+                  {r.steps.map((s, k) => (
+                    <span key={k} className="inline-flex items-center gap-1">
+                      {k > 0 && <span className="text-faint text-[11px]">→</span>}
+                      <span className="rounded px-1.5 py-[1px]" style={{ boxShadow: `inset 0 -2px 0 ${FAM_HUE[s.fam]}` }}>
+                        {s.form}
+                      </span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">See the lineage graph →</span>
+        </Link>
+
+        <Link href="/atoms/" className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
+          <p className="kicker mb-3">Semantic atoms</p>
+          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">Fifty atoms, and not one more</h2>
+          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
+            Meanings are decomposed into a closed inventory — an engineering interlingua, not a theory of
+            cognition. Filled cells are NSM primes.
+          </p>
+          <div className="mt-auto grid grid-cols-10 gap-[3px]">
+            {atoms.map((a) => (
+              <span
+                key={a.id}
+                title={a.id.replace("atom:", "")}
+                className="aspect-square rounded-[3px]"
+                style={a.nsm_prime ? { background: "var(--ink-2)" } : { border: "1.5px solid var(--line-2)" }}
+              />
+            ))}
+          </div>
+          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">Browse the atoms →</span>
+        </Link>
       </section>
 
-      {/* ── the constraint that makes this not a dictionary ─────── */}
-      <section className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+      {/* ── the constraint + honest counts ──────────────────────── */}
+      <section className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-10 lg:gap-16 items-start">
         <div>
-          <h2 className="font-serif text-[26px] leading-snug">Two families, and no pretending otherwise</h2>
-          <p className="mt-4 text-[15px] leading-[1.75] text-muted max-w-[46ch]">
-            Telugu is Dravidian. Hindi and English are Indo-European. No cognate has ever crossed
-            that line, so the validator refuses to store one — Telugu&rsquo;s resemblances to Hindi are
-            borrowings, and the graph says which. Where scholarship disagrees, the edge stays marked{" "}
-            <span style={{ color: "var(--accent-ink)" }}>contested</span> rather than quietly resolved.
+          <p className="kicker mb-3">The one hard rule</p>
+          <h2 className="wide text-[28px] sm:text-[32px] font-semibold leading-tight mb-4">
+            No cognate crosses the gutter.
+          </h2>
+          <p className="text-[15px] leading-[1.75] text-ink-2 max-w-[52ch]">
+            Telugu is Dravidian; Hindi and English are Indo-European. Telugu’s many resemblances to Hindi
+            are borrowings — mostly from Sanskrit — and the validator rejects any cognate or inheritance
+            edge that claims otherwise. Where the literature disagrees, as with Telugu కుక్క and Hindi
+            कुत्ता, the edge is stored <span className="text-con font-medium">contested</span> and left
+            unresolved.
           </p>
         </div>
-        <figure className="font-mono text-[12.5px] leading-[1.9]">
-          <div className="flex items-baseline gap-3">
-            <span
-              className="w-3 h-3 inline-block shrink-0 translate-y-[1px]"
-              style={{ background: "var(--indo)" }}
-            />
-            <span>Indo-European — English · Hindi · Sanskrit · Latin · PIE</span>
-          </div>
-          <div className="flex items-baseline gap-3 mt-1.5">
-            <span
-              className="w-3 h-3 inline-block shrink-0 translate-y-[1px]"
-              style={{ background: "var(--drav)" }}
-            />
-            <span>Dravidian — Telugu · Proto-Dravidian</span>
-          </div>
-          <figcaption className="mt-5 text-[11.5px] text-faint leading-relaxed max-w-[36ch]">
-            {c.contested_edges as number} of {c.etymology_edges as number} etymology edges are stored
-            as contested. Every edge carries a source and a confidence in [0,1].
-          </figcaption>
-        </figure>
-      </section>
-
-      {/* ── the ledger: counts as a ruled table, not stat cards ──── */}
-      <section>
-        <h2
-          className="font-serif text-[15px] mb-5"
-          style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}
-        >
-          The dataset, honestly counted
-        </h2>
-        <table className="w-full text-[14px]" style={{ borderCollapse: "collapse" }}>
-          <tbody>
-            {([
-              [c.entries, "lexical entries", `English ${c.entries_by_lang.en} · Telugu ${c.entries_by_lang.te} · Hindi ${c.entries_by_lang.hi}`],
-              [c.affixes as number, "affixes", `across ${c.affix_functions as number} cross-lingual functions and ${c.equivalence_classes as number} equivalence classes`],
-              [c.atoms as number, "semantic atoms", "an engineering interlingua, not a theory of cognition — 40 seeded from NSM primes"],
-              [c.etymology_edges as number, "etymology edges", `each with a cited source; ${c.contested_edges as number} contested, ${c.roots as number} reconstructed roots`],
-              [meta.review_status.draft ?? 0, "items still draft", "authored against reference works, awaiting item-by-item review"],
-            ] as [number, string, string][]).map(([n, label, note]) => (
-              <tr key={label} style={{ borderTop: "1px solid var(--rule)" }}>
-                <td className="py-3.5 pr-5 font-mono text-[21px] tnum align-baseline w-[4.5rem] text-right">{n}</td>
-                <td className="py-3.5 pr-6 align-baseline font-serif text-[16px] whitespace-nowrap">{label}</td>
-                <td className="py-3.5 align-baseline text-[13px] text-muted leading-relaxed">{note}</td>
-              </tr>
+        <div>
+          <p className="kicker mb-4">The dataset, counted honestly</p>
+          <dl className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-6">
+            {(
+              [
+                [c.entries, "words", `en ${c.entries_by_lang.en} · hi ${c.entries_by_lang.hi} · te ${c.entries_by_lang.te}`],
+                [c.concepts as number, "aligned meanings", "the rows of the concordance"],
+                [c.affixes as number, "affixes", `in ${c.affix_functions as number} functions`],
+                [c.atoms as number, "semantic atoms", "40 are NSM primes"],
+                [c.etymology_edges as number, "etymology edges", `${c.contested_edges as number} contested`],
+                [meta.review_status.draft ?? 0, "items in draft", "awaiting expert review"],
+              ] as [number, string, string][]
+            ).map(([n, label, note]) => (
+              <div key={label} className="border-t border-line pt-3">
+                <dt className="sr-only">{label}</dt>
+                <dd>
+                  <span className="wide text-[34px] font-semibold tnum leading-none block">{n}</span>
+                  <span className="text-[13.5px] font-medium block mt-1.5">{label}</span>
+                  <span className="text-[12px] text-muted block">{note}</span>
+                </dd>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </dl>
+        </div>
       </section>
     </div>
   );

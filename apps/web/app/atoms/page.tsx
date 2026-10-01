@@ -1,78 +1,44 @@
-import Link from "next/link";
-import { data, slug } from "@/lib/data";
+import { data } from "@/lib/data";
+import { AtomTable } from "@/components/atom-table";
 
 export const metadata = { title: "Semantic atoms" };
 
-const CATEGORY_ORDER = ["FOUNDATIONAL", "RELATIONAL", "STATE", "ACTION", "EMOTIONAL", "SOCIAL"];
-
-/* The atom inventory is small and closed, so it is set as a specimen sheet:
-   every atom on one page, in three scripts, with primes marked by an asterisk
-   the way a reconstructed form is. */
 export default async function AtomsPage() {
-  const atoms = await data.atoms();
+  const [atoms, concepts] = await Promise.all([data.atoms(), data.concepts()]);
+  const usage: Record<string, number> = {};
+  for (const c of concepts) for (const a of c.atoms) usage[a] = (usage[a] ?? 0) + 1;
   const primes = atoms.filter((a) => a.nsm_prime).length;
 
   return (
-    <div className="space-y-14">
-      <header className="max-w-[58ch]">
-        <p className="label mb-4">the closed inventory · {atoms.length} of a possible 50</p>
-        <h1 className="font-serif text-[34px] leading-tight">Semantic atoms</h1>
-        <p className="mt-6 font-serif text-[21px] leading-[1.6] pl-5" style={{ borderLeft: "2px solid var(--accent)" }}>
-          Semantic atoms are an engineering interlingua, not a theory of human cognition.
-        </p>
-        <p className="mt-5 text-[14.5px] leading-[1.75] text-muted">
-          {primes} of them are marked <span style={{ color: "var(--est)" }}>*</span> because they are
-          Natural Semantic Metalanguage primes (Wierzbicka, Goddard) — established as members of that
-          inventory, which is not the same as being proven cognitive universals. The remaining{" "}
-          {atoms.length - primes} were admitted only because the concept list required them, and the
-          ceiling of fifty is enforced by the validator so the interlingua cannot quietly become an
-          ontology.
-        </p>
+    <div className="space-y-12">
+      <header className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-end">
+        <div>
+          <p className="kicker mb-3">Semantic atoms</p>
+          <h1 className="display text-[40px] sm:text-[52px] font-semibold">
+            {atoms.length} atoms,
+            <br />
+            and not one more
+          </h1>
+        </div>
+        <div className="space-y-3 max-w-[56ch]">
+          <p className="text-[18px] leading-[1.5] font-medium border-l-[3px] border-ie pl-4">
+            Semantic atoms are an engineering interlingua, not a theory of human cognition.
+          </p>
+          <p className="text-[14px] leading-[1.7] text-ink-2">
+            Solid cells are the {primes} Natural Semantic Metalanguage primes (Wierzbicka, Goddard) —
+            established as members of that inventory, not as proven universals. Dashed cells are the{" "}
+            {atoms.length - primes} additions this dataset needed. The validator caps the inventory at fifty,
+            so it cannot quietly grow into an ontology.
+          </p>
+        </div>
       </header>
 
-      {CATEGORY_ORDER.map((cat) => {
-        const group = atoms.filter((a) => a.category === cat);
-        if (!group.length) return null;
-        return (
-          <section key={cat}>
-            <h2
-              className="font-serif text-[15px] mb-3"
-              style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}
-            >
-              {cat.toLowerCase()} <span className="text-faint">· {group.length}</span>
-            </h2>
-            <div style={{ borderBottom: "1px solid var(--rule)" }}>
-              {group.map((a) => (
-                <Link
-                  key={a.id}
-                  href={slug.atomHref(a.id)}
-                  className="group grid grid-cols-[minmax(0,9rem)_1fr] sm:grid-cols-[minmax(0,9rem)_minmax(0,16rem)_1fr] gap-x-5 gap-y-0.5 py-2.5 items-baseline"
-                  style={{ borderTop: "1px solid var(--rule)" }}
-                >
-                  <span className="font-mono text-[13.5px] group-hover:text-accent transition-colors">
-                    {a.nsm_prime && (
-                      <span style={{ color: "var(--est)" }} title="NSM prime" aria-label="NSM prime">
-                        *
-                      </span>
-                    )}
-                    {a.id.replace("atom:", "")}
-                  </span>
-                  <span className="text-[14.5px] flex gap-3 flex-wrap">
-                    <span>{a.exponents.en}</span>
-                    <span className="text-faint">·</span>
-                    <span>{a.exponents.te}</span>
-                    <span className="text-faint">·</span>
-                    <span>{a.exponents.hi}</span>
-                  </span>
-                  <span className="text-[12.5px] text-muted col-start-2 sm:col-start-3 leading-snug">
-                    {a.definition}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      <AtomTable atoms={atoms} usage={usage} />
+
+      <p className="text-[12.5px] text-muted">
+        The small number at the top right of each cell counts the meanings whose decomposition uses that
+        atom. Hover an atom to light up its opposites and relations.
+      </p>
     </div>
   );
 }

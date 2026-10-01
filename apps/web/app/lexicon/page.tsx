@@ -1,24 +1,35 @@
 import { data } from "@/lib/data";
-import { SearchBox } from "@/components/search-box";
-import { LexiconBrowser } from "@/components/lexicon-browser";
+import { Concordance } from "@/components/concordance";
 
-export const metadata = { title: "Lexicon" };
+export const metadata = { title: "Concordance" };
 
 export default async function LexiconPage() {
-  const entries = await data.entries();
+  const [rows, functions, meta] = await Promise.all([data.concepts(), data.functions(), data.meta()]);
+  const counts = new Map<string, number>();
+  for (const r of rows) for (const f of r.functions) counts.set(f, (counts.get(f) ?? 0) + 1);
+  const fns = functions
+    .filter((f) => counts.has(f.id))
+    .map((f) => ({ id: f.id, label: f.label, count: counts.get(f.id) ?? 0 }))
+    .sort((a, b) => b.count - a.count);
+
   return (
-    <div className="space-y-10">
-      <header className="max-w-[56ch]">
-        <p className="label mb-4">every entry in the graph</p>
-        <h1 className="font-serif text-[34px] leading-tight">Lexicon</h1>
-        <p className="mt-4 text-[14.5px] leading-[1.75] text-muted">
-          Concept-aligned across the three languages: where a concept is lexicalised in all three, the
-          entries point at one another, and the relation says whether that link is translation,
-          cognacy, or a loan they happen to share.
+    <div>
+      <header className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-end mb-10">
+        <div>
+          <p className="kicker mb-3">Concordance</p>
+          <h1 className="display text-[40px] sm:text-[52px] font-semibold">
+            {rows.length} meanings,
+            <br />
+            {meta.counts.entries} words
+          </h1>
+        </div>
+        <p className="text-[15px] leading-[1.7] text-ink-2 max-w-[54ch]">
+          Every meaning in the graph, with its word in each language side by side. Affix tags carry their
+          function, so a row shows at a glance whether the three languages build the meaning the same way —
+          or whether one of them doesn’t derive it at all.
         </p>
       </header>
-      <SearchBox />
-      <LexiconBrowser entries={entries} />
+      <Concordance rows={rows} functions={fns} />
     </div>
   );
 }

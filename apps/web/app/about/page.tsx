@@ -1,100 +1,106 @@
-import { EpiBadge } from "@/components/badges";
+import Link from "next/link";
+import { EpiTag, ContestedTag } from "@/components/marks";
+import { LANES } from "@/lib/lang";
+import { FamilyDot } from "@/components/marks";
 
 export const metadata = { title: "About" };
 
+function Row({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-[14rem_1fr] gap-x-12 gap-y-3 py-10 border-t border-line">
+      <h2 className="wide text-[19px] font-semibold">{title}</h2>
+      <div className="text-[15px] leading-[1.75] text-ink-2 max-w-[64ch] space-y-4">{children}</div>
+    </section>
+  );
+}
+
 export default function AboutPage() {
   return (
-    <div className="space-y-16">
-      <header className="max-w-[58ch]">
-        <p className="label mb-4">what this is, and what it refuses to be</p>
-        <h1 className="font-serif text-[34px] leading-tight">About Suffeffix</h1>
-        <p className="mt-6 font-serif text-[21px] leading-[1.6] pl-5" style={{ borderLeft: "2px solid var(--accent)" }}>
-          An explainable lexical knowledge graph that jointly represents morphology, semantic
-          decomposition, etymology, and affix alignment.
+    <div>
+      <header className="mb-10">
+        <p className="kicker mb-3">About</p>
+        <h1 className="display text-[40px] sm:text-[56px] font-semibold max-w-[18ch]">
+          A knowledge graph that shows its working
+        </h1>
+        <p className="text-[19px] leading-[1.55] text-ink-2 max-w-[56ch] mt-6">
+          Suffeffix is an explainable lexical knowledge graph that jointly represents morphology, semantic
+          decomposition, etymology, and affix alignment — for English, Hindi and Telugu.
         </p>
       </header>
 
-      <section className="grid md:grid-cols-[minmax(0,14rem)_1fr] gap-x-10 gap-y-4">
-        <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Epistemic key
-        </h2>
-        <div>
-          <p className="text-[14.5px] text-muted mb-4 max-w-[52ch]">
-            Every piece of linguistic content in the dataset carries one of four tags, so a reader can
-            tell a citable fact from a convenience of the implementation:
-          </p>
-          <dl className="max-w-[54ch]">
-            {[
+      <Row title="Two families">
+        <p>
+          Telugu is Dravidian. Hindi (Indo-Aryan) and English (Germanic) are Indo-European. There are no
+          cognates between Telugu and either of the others — only borrowing links them, mostly through
+          Sanskrit, Perso-Arabic vocabulary, and English. The validator rejects any cognate or inheritance
+          edge that crosses that boundary, so the rule is enforced by the build, not promised in prose.
+        </p>
+        <div className="flex flex-wrap gap-x-6 gap-y-2 text-[13.5px]">
+          {LANES.map((l) => (
+            <span key={l.code} className="inline-flex items-center gap-2">
+              <FamilyDot lang={l.code} /> <span className="font-medium text-ink">{l.name}</span>
+              <span className="text-muted">{l.familyName}</span>
+            </span>
+          ))}
+        </div>
+        <p>
+          English and Hindi genuinely are related, so <em>name</em>/नाम, <em>mother</em>/माता,{" "}
+          <em>three</em>/तीन and <em>tooth</em>/दाँत are stored as cognates, each with a source.
+        </p>
+      </Row>
+
+      <Row title="Epistemic status">
+        <p>Every piece of linguistic content carries one of four tags, so a citable fact is never confused with a convenience of the implementation:</p>
+        <dl className="space-y-2.5">
+          {(
+            [
               ["ESTABLISHED", "standard linguistic knowledge, citable from reference works"],
               ["ENGINEERING", "an abstraction chosen for implementation convenience — not a linguistic claim"],
               ["HYPOTHESIS", "plausible and testable, not yet demonstrated"],
               ["FUTURE", "out of scope for v0.1"],
-            ].map(([tag, gloss]) => (
-              <div key={tag} className="grid grid-cols-[8.5rem_1fr] gap-x-4 py-2.5" style={{ borderTop: "1px solid var(--rule)" }}>
-                <dt className="pt-[2px]"><EpiBadge status={tag} /></dt>
-                <dd className="text-[14px] leading-relaxed">{gloss}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      <section className="grid md:grid-cols-[minmax(0,14rem)_1fr] gap-x-10 gap-y-4">
-        <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Two families
-        </h2>
-        <p className="text-[15px] leading-[1.75] max-w-[58ch]">
-          Telugu is Dravidian; Hindi is Indo-Aryan and English is Germanic, both Indo-European. There
-          are no cognates between Telugu and either of the others — only borrowing links them, mostly
-          through Sanskrit, through Perso-Arabic vocabulary, and through English. The validator
-          rejects any cognate or inheritance edge that crosses that boundary, so the constraint is
-          enforced by the build rather than promised in prose. English and Hindi genuinely are
-          related, so <span className="font-serif italic">name</span>/नाम,{" "}
-          <span className="font-serif italic">mother</span>/माता,{" "}
-          <span className="font-serif italic">three</span>/तीन and{" "}
-          <span className="font-serif italic">tooth</span>/दाँत are stored as cognates, each with a source.
+            ] as [string, string][]
+          ).map(([t, g]) => (
+            <div key={t} className="grid grid-cols-[8.5rem_1fr] gap-3 items-baseline">
+              <dt><EpiTag status={t} /></dt>
+              <dd className="text-[14px]">{g}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="flex flex-wrap items-center gap-2">
+          Etymologies the literature disputes are stored <ContestedTag /> and never silently resolved.
         </p>
-      </section>
+      </Row>
 
-      <section className="grid md:grid-cols-[minmax(0,14rem)_1fr] gap-x-10 gap-y-4">
-        <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Semantic atoms
-        </h2>
-        <p className="text-[15px] leading-[1.75] max-w-[58ch]">
-          <em>Semantic atoms are an engineering interlingua, not a theory of human cognition.</em>{" "}
-          Atoms seeded from NSM primes are marked ESTABLISHED as members of that inventory; the rest
-          are ENGINEERING additions, and the total is capped at fifty so the interlingua cannot drift
-          into being an ontology.
+      <Row title="Semantic atoms">
+        <p>
+          <strong className="text-ink font-semibold">Semantic atoms are an engineering interlingua, not a theory of human cognition.</strong>{" "}
+          Atoms seeded from NSM primes are marked established as members of that inventory; the rest are
+          engineering additions, and the total is capped at fifty.
         </p>
-      </section>
+      </Row>
 
-      <section className="grid md:grid-cols-[minmax(0,14rem)_1fr] gap-x-10 gap-y-4">
-        <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          Data statement
-        </h2>
-        <p className="text-[15px] leading-[1.75] max-w-[58ch]">
-          338 concept-aligned entries in English, Telugu, and Hindi, authored for this project against
-          the reference works in its bibliography — the OED; Turner&rsquo;s CDIAL; Burrow and
-          Emeneau&rsquo;s DEDR; Monier-Williams; Platts; Brown; McGregor; Krishnamurti; Watkins.
-          Nearly all of it ships as <span className="font-mono text-[13px]">draft</span>: authored
-          carefully, not yet reviewed item by item. Reference-work entry numbers are deliberately
-          absent until someone verifies them against the physical volumes, and etymologies the
-          literature disputes are stored contested rather than quietly settled.
+      <Row title="Data statement">
+        <p>
+          338 concept-aligned entries, authored for this project against the reference works in its
+          bibliography: the OED; Turner’s <em>CDIAL</em>; Burrow and Emeneau’s <em>DEDR</em>;
+          Monier-Williams; Platts; Brown; McGregor; Krishnamurti; Watkins. Nearly everything ships as{" "}
+          <span className="mono text-[13px]">draft</span> — authored carefully, not yet reviewed item by item.
+          Reference-work entry numbers are deliberately absent until someone checks them against the printed
+          volumes.
         </p>
-      </section>
+      </Row>
 
-      <section className="grid md:grid-cols-[minmax(0,14rem)_1fr] gap-x-10 gap-y-4">
-        <h2 className="font-serif text-[15px]" style={{ fontVariantCaps: "all-small-caps", letterSpacing: "0.09em" }}>
-          No model in the loop
-        </h2>
-        <p className="text-[15px] leading-[1.75] max-w-[58ch]">
-          Suffeffix contains no language-model inference of any kind — no embeddings, no retrieval, no
-          generation at read time. The explanations are assembled by named template rules from graph
-          facts, which is why each one can show you the nodes, rules, and sources behind every
-          sentence. Code is Apache-2.0; the dataset is CC BY-SA 4.0; cite via{" "}
-          <span className="font-mono text-[13px]">CITATION.cff</span>.
+      <Row title="No model in the loop">
+        <p>
+          Suffeffix contains no language-model inference: no similarity search, no retrieval, no generation at read
+          time. Explanations are assembled by named template rules from graph facts, which is why every
+          sentence can show the nodes, rules and sources behind it.
         </p>
-      </section>
+        <p>
+          Code is Apache-2.0; the dataset is CC BY-SA 4.0. Cite via <span className="mono text-[13px]">CITATION.cff</span>, or read the{" "}
+          <Link href="/docs/DECISIONS/" className="text-ie-ink underline underline-offset-4">decision log</Link>.
+        </p>
+      </Row>
     </div>
   );
 }
