@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { LaneEntry, Morpheme } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANG_FAMILY } from "@/lib/lang";
+import { LANG_FAMILY, langAttr } from "@/lib/lang";
 
 /** One affix as a chip tinted by its language family. */
 export function AffixChip({
@@ -15,7 +15,7 @@ export function AffixChip({
       className={`${fam} group inline-flex items-baseline gap-2 rounded-lg ${text} leading-tight transition-transform hover:-translate-y-[1px]`}
       title={`${m.fnLabel} (${m.fnId})`}
     >
-      <span className="font-medium">{m.form}</span>
+      <span lang={langAttr(lang)} className="font-medium">{m.form}</span>
       {showFn && size !== "sm" && (
         <span className="mono text-[10.5px] opacity-75 tracking-wide">{m.fnId.replace("fn:", "")}</span>
       )}
@@ -23,9 +23,9 @@ export function AffixChip({
   );
 }
 
-export function StemChip({ text, size = "md" }: { text: string; size?: "sm" | "md" | "lg" }) {
+export function StemChip({ text, size = "md", lang }: { text: string; size?: "sm" | "md" | "lg"; lang?: string }) {
   const cls = size === "lg" ? "text-[26px] px-3.5 py-1.5" : size === "sm" ? "text-[13px] px-2 py-[1px]" : "text-[16px] px-2.5 py-1";
-  return <span className={`chip-stem inline-flex items-baseline rounded-lg ${cls} leading-tight`}>{text}</span>;
+  return <span lang={lang} className={`chip-stem inline-flex items-baseline rounded-lg ${cls} leading-tight`}>{text}</span>;
 }
 
 /** The word as an equation: prefixes + stem + suffixes. Simplex words say so. */
@@ -44,7 +44,7 @@ export function Morphemes({ e, size = "md" }: { e: LaneEntry; size?: "sm" | "md"
           {plus}
         </span>
       ))}
-      <StemChip text={e.stem} size={size} />
+      <StemChip text={e.stem} size={size} lang={langAttr(e.lang)} />
       {post.map((m) => (
         <span key={m.affixId + m.fnId} className="inline-flex items-center gap-2">
           {plus}

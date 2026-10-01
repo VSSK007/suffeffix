@@ -1,192 +1,254 @@
 import Link from "next/link";
 import { data, slug } from "@/lib/data";
-import { LANES } from "@/lib/lang";
-import { SearchTrigger } from "@/components/command-palette";
-import { Showcase } from "@/components/showcase";
-import { FamilyDot } from "@/components/marks";
+import { HeroStage } from "@/components/hero-stage";
+import { CopyButton } from "@/components/copy-button";
+import { REPORT_BIBTEX } from "@/lib/cite";
+import { loadCensus } from "@/lib/census";
+import { pageMeta } from "@/lib/seo";
 
-const SHOWCASE = [
-  "concept:GOODNESS", "concept:CHILDHOOD", "concept:HOPELESS", "concept:TEACHER",
-  "concept:LONELINESS", "concept:SOCIALISM", "concept:READABLE", "concept:CAREFULLY",
-];
+export const metadata = {
+  ...pageMeta({ title: "Suffeffix", path: "/" }),
+  title: { absolute: "Suffeffix — an explainable lexical knowledge graph" },
+};
 
-/* Sugar's three routes out of Sanskrit, as recorded in the etymology edges. */
+const STAGE = ["concept:GOODNESS", "concept:CHILDHOOD", "concept:HOPELESS", "concept:SOCIALISM", "concept:READABLE", "concept:LONELINESS"];
+const MINI = ["concept:GOODNESS", "concept:TEACHER", "concept:HOPELESS"];
+
 const SUGAR_ROUTES: { label: string; steps: { form: string; fam: string }[] }[] = [
-  {
-    label: "inherited, east",
-    steps: [
-      { form: "śarkarā", fam: "ie" }, { form: "sakkarā", fam: "ie" }, { form: "शक्कर", fam: "ie" },
-    ],
-  },
-  {
-    label: "borrowed, west",
-    steps: [
-      { form: "śarkarā", fam: "ie" }, { form: "šakar", fam: "ie" }, { form: "sukkar", fam: "semi" },
-      { form: "succarum", fam: "ie" }, { form: "sucre", fam: "ie" }, { form: "sugar", fam: "ie" },
-    ],
-  },
-  {
-    label: "borrowed, south",
-    steps: [{ form: "śarkarā", fam: "ie" }, { form: "చక్కెర", fam: "dr" }],
-  },
+  { label: "Inherited, east", steps: [{ form: "śarkarā", fam: "ie" }, { form: "sakkarā", fam: "ie" }, { form: "शक्कर", fam: "ie" }] },
+  { label: "Borrowed, west", steps: [{ form: "śarkarā", fam: "ie" }, { form: "šakar", fam: "ie" }, { form: "sukkar", fam: "semi" }, { form: "succarum", fam: "ie" }, { form: "sucre", fam: "ie" }, { form: "sugar", fam: "ie" }] },
+  { label: "Borrowed, south", steps: [{ form: "śarkarā", fam: "ie" }, { form: "చక్కెర", fam: "dr" }] },
 ];
 const FAM_HUE: Record<string, string> = { ie: "var(--ie)", dr: "var(--dr)", semi: "var(--semi)" };
 
 export default async function Home() {
-  const [meta, concepts, affixes, atoms] = await Promise.all([data.meta(), data.concepts(), data.affixes(), data.atoms()]);
-  const rows = SHOWCASE.map((id) => concepts.find((c) => c.id === id)).filter((r): r is NonNullable<typeof r> => !!r);
+  const [meta, concepts, affixes, atoms, census] = await Promise.all([data.meta(), data.concepts(), data.affixes(), data.atoms(), loadCensus()]);
+  const byId = new Map(concepts.map((c) => [c.id, c]));
+  const stage = STAGE.map((id) => byId.get(id)).filter((r): r is NonNullable<typeof r> => !!r);
+  const mini = MINI.map((id) => byId.get(id)).filter((r): r is NonNullable<typeof r> => !!r);
   const c = meta.counts;
-  const jobs = new Set(affixes.flatMap((a) => a.functions)).size;
   const priv = (lang: string) => affixes.filter((a) => a.lang === lang && a.functions.includes("fn:PRIV"));
 
+  const stats: [string, string][] = [
+    [String(c.entries), "words"],
+    [String(c.concepts as number), "aligned meanings"],
+    [String(c.affixes as number), "affixes"],
+    [String(c.atoms as number), "semantic atoms"],
+    [String(c.etymology_edges as number), "sourced etymology edges"],
+    ["0", "model calls"],
+  ];
+
   return (
-    <div className="space-y-20 sm:space-y-28">
-      {/* ── thesis ─────────────────────────────────────────────── */}
-      <section className="grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] gap-10 items-end">
-        <div>
-          <div className="flex items-center gap-3 mb-6">
-            {LANES.map((l) => (
-              <span key={l.code} className="inline-flex items-center gap-1.5 text-[12.5px] text-muted">
-                <FamilyDot lang={l.code} /> {l.name}
-              </span>
-            ))}
+    <>
+      {/* ── hero ─────────────────────────────────────────────── */}
+      <section className="container pt-14 sm:pt-20 pb-12">
+        <p className="kicker mb-7">Suffeffix Research · v0.1</p>
+        <h1 className="h-xl max-w-[14ch]">
+          One meaning. Three languages. <span className="text-faint">Two families.</span>
+        </h1>
+        <div className="mt-9 grid gap-8 lg:grid-cols-[1.2fr_1fr] items-end">
+          <p className="lede max-w-[56ch]">
+            Suffeffix is an explainable lexical knowledge graph. It takes words apart — stem, affix, function —
+            lines them up across English, Hindi and Telugu, and traces where they came from, with a source for
+            every etymology and a trace for every explanation.
+          </p>
+          <div className="flex flex-wrap gap-3 lg:justify-end">
+            <Link href="/research/suffeffix-v0-1/" className="btn btn-primary">Read the technical report</Link>
+            <Link href="/lexicon/" className="btn btn-ghost">Explore the graph</Link>
           </div>
-          <h1 className="display text-[36px] sm:text-[60px] lg:text-[72px] font-semibold">
-            One meaning.
-            <br />
-            Three languages.
-            <br />
-            <span className="text-faint">Two families.</span>
-          </h1>
         </div>
-        <div className="space-y-6">
-          <p className="text-[17px] leading-[1.65] text-ink-2 max-w-[48ch]">
-            Suffeffix is a knowledge graph that takes words apart — stem, affix, function — and lines them
-            up across English, Hindi and Telugu. Every etymology carries a source and a confidence; every
-            explanation shows the rules that built it.
-          </p>
-          <SearchTrigger variant="hero" />
+        <div className="mt-14">
+          <HeroStage rows={stage} />
         </div>
       </section>
 
-      {/* ── the instrument ─────────────────────────────────────── */}
-      <section>
-        <Showcase rows={rows} />
-      </section>
-
-      {/* ── three instruments, each previewed with real data ───── */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <Link href="/affixes/" className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
-          <p className="kicker mb-3">Affix Atlas</p>
-          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">{jobs} jobs an affix can do, in three languages</h2>
-          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
-            Every affix filed by function. Here is the privative row — the affixes that mean “without”.
-          </p>
-          <div className="mt-auto lanes gap-y-1 text-[17px]">
-            {(["en", "hi"] as const).map((l) => (
-              <div key={l} className="flex flex-wrap gap-1.5">
-                {priv(l).map((a) => (
-                  <span key={a.id} className="chip-ie rounded-md px-2 py-0.5">{a.form}</span>
-                ))}
-              </div>
-            ))}
-            <div className="gutter" aria-hidden="true" />
-            <div className="flex flex-wrap gap-1.5">
-              {priv("te").map((a) => (
-                <span key={a.id} className="chip-dr rounded-md px-2 py-0.5">{a.form}</span>
-              ))}
+      {/* ── by the numbers ───────────────────────────────────── */}
+      <section className="container pb-8" aria-label="The dataset in numbers">
+        <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 border-t border-line">
+          {stats.map(([n, l]) => (
+            <div key={l} className="py-7 pr-4 border-b border-line lg:border-b-0">
+              <dd className="h-lg tnum leading-none">{n}</dd>
+              <dt className="text-[13.5px] text-muted mt-2.5">{l}</dt>
             </div>
-          </div>
-          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">Open the Atlas →</span>
-        </Link>
+          ))}
+        </dl>
+        <p className="text-[13px] text-muted mt-4 max-w-[80ch]">
+          Every record in v0.1 is a draft, authored against reference works and awaiting expert review. The
+          meanings were chosen to showcase derivation and etymology, so these counts describe the dataset, not the languages.
+        </p>
+      </section>
 
-        <Link href={slug.etymologyHref("lex:en:sugar")} className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
-          <p className="kicker mb-3">Etymology</p>
-          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">One Sanskrit word, three routes out</h2>
-          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
-            Sugar left Sanskrit three ways. Colour is family; every change of colour is a borrowing.
-          </p>
-          <div className="mt-auto space-y-2.5">
-            {SUGAR_ROUTES.map((r) => (
-              <div key={r.label}>
-                <div className="text-[11px] text-faint mb-1">{r.label}</div>
-                <div className="flex flex-wrap items-center gap-1 text-[13.5px]">
-                  {r.steps.map((s, k) => (
-                    <span key={k} className="inline-flex items-center gap-1">
-                      {k > 0 && <span className="text-faint text-[11px]">→</span>}
-                      <span className="rounded px-1.5 py-[1px]" style={{ boxShadow: `inset 0 -2px 0 ${FAM_HUE[s.fam]}` }}>
-                        {s.form}
-                      </span>
-                    </span>
-                  ))}
+      {/* ── featured research ────────────────────────────────── */}
+      <section className="container band">
+        <div className="flex items-end justify-between gap-6 mb-8">
+          <h2 className="h-lg">Research</h2>
+          <Link href="/research/" className="link-arrow hidden sm:inline">All research</Link>
+        </div>
+        <Link
+          href="/research/suffeffix-v0-1/"
+          className="group grid lg:grid-cols-[1.1fr_1fr] gap-0 overflow-hidden rounded-[28px] border border-line card-hover bg-bg"
+        >
+          <div className="p-8 sm:p-12 flex flex-col">
+            <p className="kicker mb-6">Technical report · v0.1 · September 2026</p>
+            <h3 className="h-md max-w-[24ch]">
+              Suffeffix: an explainable lexical knowledge graph for morphology, semantic decomposition, etymology and affix alignment
+            </h3>
+            <p className="text-[15.5px] text-ink-2 leading-relaxed mt-5 max-w-[56ch]">
+              How we model words across a family boundary the data refuses to blur: the validator rejects
+              cognates between Telugu and its neighbours, every etymology carries a source and a confidence, and
+              explanations are generated by named rules rather than by a language model.
+            </p>
+            <span className="link-arrow mt-auto pt-10 self-start group-hover:border-ink">Read the report</span>
+          </div>
+          <div className="band-surface p-8 sm:p-12 grid content-center gap-6" aria-hidden="true">
+            {(["en", "hi", "te"] as const).map((l, k) => (
+              <div key={l} className={k === 2 ? "pt-5 border-t border-dashed border-line-2" : ""}>
+                <div className="flex justify-between text-[12px] text-muted mb-2">
+                  <span>{{ en: "English", hi: "Hindi", te: "Telugu" }[l]}</span>
+                  <span className="mono">{census.reg[l].n} words</span>
+                </div>
+                <div className="flex gap-[2px] h-6">
+                  {([["N", "s1"], ["S", "s2"], ["P", "s3"], ["E", "s4"], ["mixed", "neutral"]] as const).map(([r, v]) =>
+                    census.reg[l].counts[r] ? (
+                      <div key={r} className="last:rounded-r-[4px]" style={{ flex: census.reg[l].counts[r], background: `var(--${v})` }} />
+                    ) : null,
+                  )}
                 </div>
               </div>
             ))}
           </div>
-          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">See the lineage graph →</span>
-        </Link>
-
-        <Link href="/atoms/" className="panel p-6 group hover:border-line-2 transition-colors flex flex-col">
-          <p className="kicker mb-3">Semantic atoms</p>
-          <h2 className="wide text-[22px] font-semibold leading-snug mb-2">Fifty atoms, and not one more</h2>
-          <p className="text-[13.5px] text-muted leading-relaxed mb-6">
-            Meanings are decomposed into a closed inventory — an engineering interlingua, not a theory of
-            cognition. Filled cells are NSM primes.
-          </p>
-          <div className="mt-auto grid grid-cols-10 gap-[3px]">
-            {atoms.map((a) => (
-              <span
-                key={a.id}
-                title={a.id.replace("atom:", "")}
-                className="aspect-square rounded-[3px]"
-                style={a.nsm_prime ? { background: "var(--ink-2)" } : { border: "1.5px solid var(--line-2)" }}
-              />
-            ))}
-          </div>
-          <span className="mt-6 text-[13px] font-medium text-ie-ink group-hover:underline underline-offset-4">Browse the atoms →</span>
         </Link>
       </section>
 
-      {/* ── the constraint + honest counts ──────────────────────── */}
-      <section className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-10 lg:gap-16 items-start">
-        <div>
-          <p className="kicker mb-3">The one hard rule</p>
-          <h2 className="wide text-[28px] sm:text-[32px] font-semibold leading-tight mb-4">
-            No cognate crosses the gutter.
-          </h2>
-          <p className="text-[15px] leading-[1.75] text-ink-2 max-w-[52ch]">
-            Telugu is Dravidian; Hindi and English are Indo-European. Telugu’s many resemblances to Hindi
-            are borrowings — mostly from Sanskrit — and the validator rejects any cognate or inheritance
-            edge that claims otherwise. Where the literature disagrees, as with Telugu కుక్క and Hindi
-            कुत्ता, the edge is stored <span className="text-con font-medium">contested</span> and left
-            unresolved.
-          </p>
-        </div>
-        <div>
-          <p className="kicker mb-4">The dataset, counted honestly</p>
-          <dl className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-6">
-            {(
-              [
-                [c.entries, "words", `en ${c.entries_by_lang.en} · hi ${c.entries_by_lang.hi} · te ${c.entries_by_lang.te}`],
-                [c.concepts as number, "aligned meanings", "the rows of the concordance"],
-                [c.affixes as number, "affixes", `in ${c.affix_functions as number} functions`],
-                [c.atoms as number, "semantic atoms", "40 are NSM primes"],
-                [c.etymology_edges as number, "etymology edges", `${c.contested_edges as number} contested`],
-                [meta.review_status.draft ?? 0, "items in draft", "awaiting expert review"],
-              ] as [number, string, string][]
-            ).map(([n, label, note]) => (
-              <div key={label} className="border-t border-line pt-3">
-                <dt className="sr-only">{label}</dt>
-                <dd>
-                  <span className="wide text-[34px] font-semibold tnum leading-none block">{n}</span>
-                  <span className="text-[13.5px] font-medium block mt-1.5">{label}</span>
-                  <span className="text-[12px] text-muted block">{note}</span>
-                </dd>
+      {/* ── explore ──────────────────────────────────────────── */}
+      <section className="band band-surface">
+        <div className="container">
+          <p className="kicker mb-5">Explore</p>
+          <h2 className="h-lg max-w-[18ch] mb-12">Four ways into the graph</h2>
+          <div className="grid gap-5 md:grid-cols-2">
+            {/* concordance */}
+            <Link href="/lexicon/" className="group rounded-[26px] bg-bg border border-line p-7 sm:p-9 card-hover flex flex-col">
+              <h3 className="h-md">Concordance</h3>
+              <p className="text-[15px] text-muted mt-3 max-w-[44ch]">
+                Every meaning with its word in each language side by side, filterable by the affix function it uses.
+              </p>
+              <div className="mt-8 space-y-0 border-t border-line">
+                {mini.map((r) => (
+                  <div key={r.id} className="lanes border-b border-line">
+                    {(["en", "hi"] as const).map((l) => (
+                      <div key={l} className="py-3 pr-2 text-[17px] font-medium">{r.lanes[l][0]?.form}</div>
+                    ))}
+                    <div className="gutter" />
+                    <div className="py-3 text-[17px] font-medium">{r.lanes.te[0]?.form}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </dl>
+              <span className="link-arrow mt-8 self-start">Open the concordance</span>
+            </Link>
+
+            {/* atlas */}
+            <Link href="/affixes/" className="group rounded-[26px] bg-bg border border-line p-7 sm:p-9 card-hover flex flex-col">
+              <h3 className="h-md">Affix Atlas</h3>
+              <p className="text-[15px] text-muted mt-3 max-w-[44ch]">
+                Every affix filed by the job it does. Here is the privative row — the affixes that mean “without”.
+              </p>
+              <div className="mt-8 lanes gap-y-2 text-[18px] items-start">
+                {(["en", "hi"] as const).map((l) => (
+                  <div key={l} className="flex flex-wrap gap-1.5 pr-2">
+                    {priv(l).map((a) => (<span key={a.id} lang={l === "hi" ? "hi" : undefined} className="chip-ie rounded-md px-2.5 py-0.5">{a.form}</span>))}
+                  </div>
+                ))}
+                <div className="gutter" aria-hidden="true" />
+                <div className="flex flex-wrap gap-1.5">
+                  {priv("te").map((a) => (<span key={a.id} lang="te" className="chip-dr rounded-md px-2.5 py-0.5">{a.form}</span>))}
+                </div>
+              </div>
+              <span className="link-arrow mt-auto pt-8 self-start">Open the Atlas</span>
+            </Link>
+
+            {/* etymology */}
+            <Link href={slug.etymologyHref("lex:en:sugar")} className="group rounded-[26px] bg-bg border border-line p-7 sm:p-9 card-hover flex flex-col">
+              <h3 className="h-md">Etymology</h3>
+              <p className="text-[15px] text-muted mt-3 max-w-[44ch]">
+                Sugar left Sanskrit three ways. Colour is family; every change of colour is a borrowing.
+              </p>
+              <div className="mt-8 space-y-3">
+                {SUGAR_ROUTES.map((r) => (
+                  <div key={r.label}>
+                    <div className="text-[11.5px] text-faint mb-1">{r.label}</div>
+                    <div className="flex flex-wrap items-center gap-x-1 gap-y-1.5 text-[14.5px]">
+                      {r.steps.map((s, k) => (
+                        <span key={k} className="inline-flex items-center gap-1">
+                          {k > 0 && <span className="text-faint text-[11px]">→</span>}
+                          <span lang={s.fam === "dr" ? "te" : undefined} className="px-1" style={{ boxShadow: `inset 0 -2.5px 0 ${FAM_HUE[s.fam]}` }}>{s.form}</span>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <span className="link-arrow mt-auto pt-8 self-start">See the lineage graph</span>
+            </Link>
+
+            {/* atoms */}
+            <Link href="/atoms/" className="group rounded-[26px] bg-bg border border-line p-7 sm:p-9 card-hover flex flex-col">
+              <h3 className="h-md">Semantic atoms</h3>
+              <p className="text-[15px] text-muted mt-3 max-w-[44ch]">
+                Fifty atoms, and not one more. An engineering interlingua, not a theory of cognition. Filled cells are NSM primes.
+              </p>
+              <div className="mt-8 grid grid-cols-10 gap-1" aria-hidden="true">
+                {atoms.map((a) => (
+                  <span key={a.id} className="aspect-square rounded-[4px]" style={a.nsm_prime ? { background: "var(--ink-2)" } : { border: "1.5px dashed var(--line-2)" }} />
+                ))}
+              </div>
+              <span className="link-arrow mt-auto pt-8 self-start">Browse the atoms</span>
+            </Link>
+          </div>
         </div>
       </section>
-    </div>
+
+      {/* ── principles ───────────────────────────────────────── */}
+      <section className="container band">
+        <p className="kicker mb-5">Principles</p>
+        <h2 className="h-lg max-w-[20ch] mb-14">A knowledge graph that shows its working</h2>
+        <div className="grid gap-12 md:grid-cols-3">
+          {[
+            ["Explainable by construction", "Every explanation is assembled from graph facts by a named template rule, and every sentence opens to the nodes, rules and sources behind it. There is no language model in the loop."],
+            ["Honest about uncertainty", "Each fact carries an epistemic status — established, engineering, hypothesis — and each etymology a source and a confidence. Where scholarship disagrees, the edge is stored contested and left unresolved."],
+            ["Respectful of two families", "Telugu is Dravidian; Hindi and English are Indo-European. The validator rejects any cognate or inheritance edge across that boundary, so the resemblances that remain are modelled as the borrowings they are."],
+          ].map(([t, d]) => (
+            <div key={t} className="border-t-2 border-ink pt-5">
+              <h3 className="wide text-[21px] font-semibold leading-snug">{t}</h3>
+              <p className="text-[15.5px] text-ink-2 leading-[1.75] mt-3">{d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── cite ─────────────────────────────────────────────── */}
+      <section className="band band-ink" id="cite">
+        <div className="container grid gap-10 lg:grid-cols-[1fr_1.2fr] items-start">
+          <div>
+            <p className="kicker mb-5">Build on it</p>
+            <h2 className="h-lg max-w-[14ch]">Cite it. Download it. Correct it.</h2>
+            <p className="text-[16px] leading-[1.7] mt-5 max-w-[46ch] muted-on-ink">
+              The dataset is CC BY-SA 4.0 and the code is Apache-2.0. Every record is a draft — if you can
+              review one against a reference work, or spot an error, we want to hear it.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/data/" className="btn btn-primary">Download the dataset</Link>
+              <a href="https://github.com/VSSK007/suffeffix/issues/new" className="btn btn-ghost">Report an error</a>
+            </div>
+          </div>
+          <div className="rounded-[22px] p-6 sm:p-7" style={{ background: "color-mix(in srgb, var(--bg) 8%, transparent)", border: "1px solid color-mix(in srgb, var(--bg) 18%, transparent)" }}>
+            <div className="flex items-center justify-between mb-4">
+              <span className="kicker">BibTeX</span>
+              <CopyButton text={REPORT_BIBTEX} />
+            </div>
+            <pre className="mono text-[12.5px] leading-[1.7] overflow-x-auto whitespace-pre" style={{ color: "color-mix(in srgb, var(--bg) 88%, transparent)" }}>{REPORT_BIBTEX}</pre>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

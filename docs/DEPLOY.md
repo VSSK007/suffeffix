@@ -1,33 +1,67 @@
 # Deploying suffeffix.com
 
-The site is a **fully static export**: `scripts/export_site.py` replays the FastAPI app
-and freezes its responses into `apps/web/.sitedata/`, and `next build` pre-renders every
-page (338 entries, 85 affixes, 50 atoms, 45 etymology graphs, docs) into `apps/web/out/`.
-No server, no database, no Python in production — any static host serves it.
+The site is a **fully static export**. `scripts/export_site.py` replays the FastAPI app and freezes its
+responses into `apps/web/.sitedata/`; `scripts/export_downloads.py` builds the dataset release (CSV, JSON,
+JSON Schemas, checksums, zip); `next build` pre-renders every page into `apps/web/out/`. There is no server,
+database or Python in production — any static host will do.
 
-## Build
+What is pre-rendered: the home page, the technical report, the dataset page, 338 word pages, 115 meaning
+pages, 85 affix pages, 50 atom pages, 45 etymology graphs, the documentation, plus `sitemap.xml`,
+`robots.txt`, a web manifest and icons (about 650 URLs).
+
+## Build locally
 
 ```sh
-pip install "pydantic>=2.7,<3" fastapi uvicorn httpx      # once
-make site         # = export_site.py + pnpm build  → apps/web/out/
+pip install "pydantic>=2.7,<3" fastapi uvicorn httpx   # once
+cd apps/web && pnpm install && cd ../..                 # once
+make site        # export data + release, next build, then the broken-link check
+npx serve apps/web/out
 ```
 
-## Host options (pick one)
+`make site` fails if the dataset does not validate, if the family constraint is violated, or if any internal
+link or `#anchor` is broken.
 
-**Cloudflare Pages** (recommended: free, fast, easy custom domains)
-1. Push the repo to GitHub, then Cloudflare Dashboard → Workers & Pages → Create → Pages → connect the repo.
-2. Build command: `pip install "pydantic>=2.7,<3" fastapi uvicorn httpx && python scripts/export_site.py && cd apps/web && npx pnpm install && npx pnpm build`
-   · Build output directory: `apps/web/out` · Root directory: `/` · Python 3.12 + Node 22 via `PYTHON_VERSION`/`NODE_VERSION` env vars.
-3. Custom domains → add `suffeffix.com` and `www.suffeffix.com`. If the domain's DNS is on Cloudflare, records are added automatically; otherwise point a `CNAME` at `<project>.pages.dev`.
+## Cloudflare Pages (recommended)
 
-**Vercel**: framework Next.js, root `apps/web`, but run `python scripts/export_site.py` in a preceding install step (Vercel images include Python 3), output detected automatically from `output: "export"`. Add both domains under Project → Domains and follow its DNS instructions (A `76.76.21.21` / CNAME `cname.vercel-dns.com`).
+Automatic, from this repository: `.github/workflows/deploy.yml` validates, builds and publishes on every push to
+`main`.
 
-**Netlify / GitHub Pages / any web server**: upload `apps/web/out/` as-is. For GitHub Pages, publish `out/` and set `suffeffix.com` as the custom domain with a `CNAME` file.
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Direct Upload** and create a project named
+   `suffeffix` (or any name; set the repository variable `CLOUDFLARE_PAGES_PROJECT`).
+2. Create an API token with the **Cloudflare Pages: Edit** permission.
+3. GitHub → repository → **Settings → Secrets and variables → Actions**: add secrets `CLOUDFLARE_API_TOKEN` and
+   `CLOUDFLARE_ACCOUNT_ID`.
+4. Push to `main` (or run the *deploy* workflow). The step is skipped, not failed, until the token exists.
+5. Pages project → **Custom domains** → add `suffeffix.com` and `www.suffeffix.com`. If the domain's DNS is on
+   Cloudflare the records are created for you; otherwise add a `CNAME` for `www` and an `ALIAS`/`ANAME` (or move the
+   nameservers) for the apex, as the dashboard instructs. TLS certificates are issued automatically.
+6. Redirect `www` to the apex (or the reverse) with a Pages *Redirect rule*, and keep the canonical host
+   `https://suffeffix.com` — the site's canonical URLs, sitemap and Open Graph tags all assume it.
 
-DNS at your registrar: apex `A`/`ALIAS` per the host's docs, `www` CNAME to the host, and let the host issue the TLS certificate (all three do it automatically).
+Security and caching headers ship with the site in `apps/web/public/_headers` (CSP, HSTS, `X-Frame-Options`,
+immutable caching for hashed assets). Cloudflare Pages and Netlify read that file as-is.
+
+## Vercel
+
+`vercel.json` at the repository root sets the build command, output directory, trailing slashes and the same
+headers. Import the repository, leave the framework preset on *Other*, add `suffeffix.com` under Domains, and follow
+Vercel's DNS instructions.
+
+## Netlify, GitHub Pages, any web server
+
+Upload `apps/web/out/`. Netlify reads `_headers`. For nginx/Apache, replicate the headers in `_headers` and serve
+`404.html` for missing paths. Always serve directories with a trailing slash (`/lexicon/`), which is what every
+internal link and canonical URL uses.
+
+## After the first deploy
+
+- Submit `https://suffeffix.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+- Check a page in a social-card validator; the card image is `/og.png`.
+- Run Lighthouse against production, not localhost — caching headers only apply there. Record the scores in
+  `docs/LAUNCH_CHECKLIST.md`.
 
 ## Refreshing content
 
-Data lives in `data/*.json`. After editing: `make validate && make test && make site`, then push —
-the host rebuilds and the site updates. The API (`make api`) remains available for local exploration
-and future dynamic deployments; the static export is generated from its exact response shapes.
+Data lives in `data/*.json`. After editing: `make validate && make test && make site`, then push. CI re-validates and
+the deploy workflow publishes. The dataset release under `/data/` is regenerated from the same files on every build,
+and its checksums are recomputed, so the page can never list a file that is not downloadable.

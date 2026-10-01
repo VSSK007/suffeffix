@@ -10,6 +10,9 @@ export const LANES: { code: LangCode; name: string; family: FamilyKey; familyNam
   { code: "te", name: "Telugu", family: "dr", familyName: "Dravidian · South-Central" },
 ];
 
+/** HTML lang attribute for a language code; English is the page default. */
+export const langAttr = (l: string): string | undefined => (l === "hi" || l === "te" ? l : undefined);
+
 export const LANG_NAME: Record<string, string> = { en: "English", hi: "Hindi", te: "Telugu" };
 export const LANG_FAMILY: Record<string, FamilyKey> = { en: "ie", hi: "ie", te: "dr" };
 

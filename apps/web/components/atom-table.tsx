@@ -62,8 +62,8 @@ export function AtomTable({ atoms, usage }: { atoms: Atom[]; usage: Record<strin
                     </div>
                     <div className="mono text-[13.5px] font-medium mt-0.5 truncate">{name}</div>
                     <div className="text-[11.5px] text-muted leading-snug mt-1 truncate">{a.exponents.en}</div>
-                    <div className="text-[12px] text-ink-2 leading-snug truncate">{a.exponents.hi}</div>
-                    <div className="text-[12px] text-ink-2 leading-snug truncate">{a.exponents.te}</div>
+                    <div lang="hi" className="text-[12px] text-ink-2 leading-snug truncate">{a.exponents.hi}</div>
+                    <div lang="te" className="text-[12px] text-ink-2 leading-snug truncate">{a.exponents.te}</div>
                   </Link>
                 );
               })}

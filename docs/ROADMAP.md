@@ -15,3 +15,11 @@ All items below are `FUTURE` and intentionally absent from v0.1.
 - Nearly all content ships `review_status: "draft"`; counts are displayed honestly on `/`.
 - Atom structures for complex emotions/abstractions are coarse approximations (`HYPOTHESIS`).
 - Segmentations follow surface morphology; sandhi alternations recorded only as allomorphs.
+
+## Added during launch preparation (text only)
+
+- **Expert review workflow.** A reviewer-facing view that lists draft records with their sources, so `draft` to `reviewed` can happen item by item.
+- **Reference entry numbers.** Verify and add CDIAL and DEDR entry numbers against the printed volumes, lifting the 0.7 confidence cap where justified.
+- **Real-user performance data** for Hindi- and Telugu-heavy pages, then reconsider the font strategy (decision 12).
+- **Per-page social cards** (one per word or meaning) instead of a single site-wide image.
+- **Print or PDF edition** of the technical report.

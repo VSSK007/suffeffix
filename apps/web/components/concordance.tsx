@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { ConceptRow, LaneEntry } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANES, normalize } from "@/lib/lang";
+import { LANES, normalize, langAttr } from "@/lib/lang";
 import { FamilyDot } from "./marks";
 
 function Cell({ list, fn }: { list: LaneEntry[]; fn: string | null }) {
@@ -17,7 +17,7 @@ function Cell({ list, fn }: { list: LaneEntry[]; fn: string | null }) {
     <div className="space-y-1.5">
       {list.map((e) => (
         <div key={e.id} className="min-w-0">
-          <Link href={slug.entryHref(e.id)} className="text-[17px] font-medium hover:text-ie-ink transition-colors">
+          <Link href={slug.entryHref(e.id)} lang={langAttr(e.lang)} className="text-[17px] font-medium hover:text-ie-ink transition-colors">
             {e.form}
           </Link>
           {e.form !== e.translit && <span className="mono text-[11px] text-faint ml-2">{e.translit}</span>}
@@ -117,7 +117,7 @@ export function Concordance({
               className="rounded-full px-3 py-1 text-[12.5px] border transition-colors"
               style={fn === f.id ? { background: "var(--ink)", color: "var(--bg)", borderColor: "var(--ink)" } : { borderColor: "var(--line)", color: "var(--muted)" }}
             >
-              {f.label} <span className="opacity-60 tnum">{f.count}</span>
+              {f.label} <span className="font-semibold tnum">{f.count}</span>
             </button>
           ))}
         </div>

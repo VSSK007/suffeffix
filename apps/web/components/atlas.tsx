@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { LangCode } from "@/lib/lang";
-import { LANES, REGISTER_NAME } from "@/lib/lang";
+import { LANES, REGISTER_NAME, langAttr } from "@/lib/lang";
 import { slug } from "@/lib/model";
 import { FamilyDot } from "./marks";
 
@@ -36,10 +36,10 @@ function Chip({ a, lang }: { a: AffixLite; lang: LangCode }) {
       href={slug.affixHref(a.id)}
       onClick={(e) => e.stopPropagation()}
       className={`${lang === "te" ? "chip-dr" : "chip-ie"} inline-flex items-baseline gap-1 rounded-md px-2 py-0.5 text-[15px] hover:-translate-y-[1px] transition-transform`}
-      style={dead ? { opacity: 0.55, borderStyle: "dashed" } : undefined}
+      style={dead ? { borderStyle: "dashed", fontStyle: "italic" } : undefined}
       title={`${a.translit} · ${REGISTER_NAME[a.register] ?? a.register} · productivity ${a.productivity}`}
     >
-      {a.form}
+      <span lang={langAttr(lang)}>{a.form}</span>
       <span className="mono text-[9.5px] opacity-70">{a.register}</span>
     </Link>
   );
@@ -158,7 +158,7 @@ function ExampleWord({ w, lang }: { w: ExampleRow["lanes"][LangCode]; lang: Lang
   if (!w) return <span className="text-faint text-[13px]">—</span>;
   return (
     <Link href={slug.entryHref(w.id)} className="group inline-flex flex-wrap items-baseline gap-x-2">
-      <span className="text-[16px] font-medium group-hover:text-ie-ink">{w.form}</span>
+      <span lang={langAttr(lang)} className="text-[16px] font-medium group-hover:text-ie-ink">{w.form}</span>
       <span className={`${lang === "te" ? "chip-dr" : "chip-ie"} rounded px-1.5 text-[11.5px]`}>{w.affix}</span>
     </Link>
   );

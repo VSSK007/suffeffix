@@ -22,20 +22,28 @@ Every etymology edge carries `source_ref` and `confidence`; contested etymologie
 ## Run locally
 
 ```sh
-# Python (3.12) — from repo root
-pip install "pydantic>=2.7,<3" fastapi uvicorn pytest httpx   # or: uv sync in packages/core and apps/api
+# Python 3.12 — from the repo root
+pip install "pydantic>=2.7,<3" fastapi uvicorn pytest httpx
 
-make validate            # validate the dataset (fails the build on violations)
+make validate            # validate the dataset (fails the build on any violation)
+make test                # core + API test suites (29 tests)
 make api                 # FastAPI on http://localhost:8000  (OpenAPI at /openapi.json)
 
-# Web — Node 20+, pnpm
+# Website — Node 20+, pnpm
 cd apps/web && pnpm install && cd ../..
-make web                 # Next.js on http://localhost:3000
-
-make test                # core + api test suites
+make web                 # Next.js dev server on http://localhost:3000 (needs `make site-data` once)
+make site                # the production build: export data + dataset release, build, check links
+npx serve apps/web/out   # preview the static site
 ```
 
-`apps/web/.env.local` may set `NEXT_PUBLIC_API_URL` (defaults to `http://localhost:8000`; see `.env.example`).
+The public site is a static export built from the API's own responses; see `docs/DEPLOY.md` for deploying to
+suffeffix.com (Cloudflare Pages workflow included).
+
+## What is on the site
+
+The home page; a **technical report** with six interactive figures; a **dataset release** with CSV and JSON downloads,
+JSON Schemas and checksums (`/data/`); the **Concordance**, **Affix Atlas**, **Semantic atoms** and **etymology
+lineage graphs**; and a global search palette (⌘K).
 
 ## Layout
 

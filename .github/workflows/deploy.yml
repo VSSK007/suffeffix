@@ -1,0 +1,53 @@
+# Deploys the static site to Cloudflare Pages on every push to main.
+#
+# One-time setup (repository → Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN   token with "Cloudflare Pages: Edit"
+#   CLOUDFLARE_ACCOUNT_ID  your account id
+# Variable:
+#   CLOUDFLARE_PAGES_PROJECT  the Pages project name (default: suffeffix)
+# Then add suffeffix.com under Pages → Custom domains. See docs/DEPLOY.md.
+name: deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install "pydantic>=2.7,<3" fastapi uvicorn httpx
+      - name: Validate, export, and release
+        run: |
+          python scripts/validate.py
+          PYTHONPATH="packages/core:apps/api" python scripts/export_site.py
+          PYTHONPATH="packages/core" python scripts/export_downloads.py
+      - uses: pnpm/action-setup@v4
+        with: { version: 11 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
+      - run: pnpm install --frozen-lockfile
+        working-directory: apps/web
+      - run: pnpm build
+        working-directory: apps/web
+      - name: Broken-link check
+        run: python scripts/check_links.py
+      - name: Publish to Cloudflare Pages
+        if: ${{ env.CF_TOKEN != '' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy apps/web/out --project-name=${{ vars.CLOUDFLARE_PAGES_PROJECT || 'suffeffix' }} --branch=main

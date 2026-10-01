@@ -21,9 +21,11 @@ stats:
 
 site-data:
 	$(PY) scripts/export_site.py
+	$(PY) scripts/export_downloads.py
 
 site: site-data
 	cd apps/web && pnpm build
+	$(PY) scripts/check_links.py
 
 dev:
 	@echo "Run 'make api' and 'make web' in two terminals."

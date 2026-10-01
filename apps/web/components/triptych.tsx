@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ConceptRow, LaneEntry } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANES, LANG_NAME, REGISTER_NAME } from "@/lib/lang";
+import { LANES, LANG_NAME, REGISTER_NAME, langAttr } from "@/lib/lang";
 import { AffixChip, StemChip } from "./morphemes";
 import { FamilyDot } from "./marks";
 
@@ -22,6 +22,7 @@ function Word({ e, focus, size }: { e: LaneEntry; focus: boolean; size: "md" | "
   return (
     <Link href={slug.entryHref(e.id)} className="group block">
       <span
+        lang={langAttr(e.lang)}
         className={`display ${big} font-semibold block transition-colors ${focus ? "" : "group-hover:text-ie-ink"}`}
         style={focus ? { textDecoration: "underline", textDecorationThickness: "2px", textUnderlineOffset: "6px" } : undefined}
       >
@@ -179,7 +180,7 @@ export function Triptych({
             if (!a || !b) return null;
             return (
               <li key={r.a + r.b} className="text-[13px] text-ink-2 flex flex-wrap items-baseline gap-x-2">
-                <span className="font-medium">{a.form}</span>
+                <span lang={langAttr(a.lang)} className="font-medium">{a.form}</span>
                 <span className="text-faint">{LANG_NAME[a.lang]}</span>
                 <span className="text-faint">⟷</span>
                 <span className="font-medium">{b.form}</span>
