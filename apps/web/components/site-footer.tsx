@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { LaneMark } from "./lane-mark";
+import { BrandMark } from "./brand-mark";
+import { Wordmark } from "./wordmark";
 
 const COLS: { title: string; links: [string, string, boolean?][] }[] = [
   {
@@ -22,8 +23,9 @@ export function SiteFooter() {
       <div className="container py-14 grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div className="space-y-4">
           <div className="flex items-center gap-2.5">
-            <LaneMark size={18} />
-            <span className="wide text-[18px] font-semibold">suffeffix</span>
+            <BrandMark size={26} />
+            <Wordmark size={21} />
+            <span className="sr-only">Suffeffix</span>
           </div>
           <p className="text-[14px] text-muted max-w-[40ch] leading-relaxed">
             An explainable lexical knowledge graph for morphology, semantic decomposition, etymology and

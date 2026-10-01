@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SearchTrigger } from "./command-palette";
-import { LaneMark } from "./lane-mark";
+import { BrandMark } from "./brand-mark";
+import { Wordmark } from "./wordmark";
 import { ThemeToggle } from "./theme-toggle";
 
 export const NAV: readonly (readonly [string, string])[] = [
@@ -37,8 +38,8 @@ export function SiteHeader() {
     >
       <div className="container flex items-center gap-6" style={{ height: "var(--header-h)" }}>
         <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Suffeffix — home">
-          <LaneMark size={20} />
-          <span className="wide text-[20px] font-semibold tracking-[-0.01em]">suffeffix</span>
+          <BrandMark size={30} />
+          <Wordmark size={25} />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-0.5 text-[14.5px]" aria-label="Primary">

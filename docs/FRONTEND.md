@@ -21,7 +21,10 @@ in three languages and two families.
   `next/font`. Display type uses Anek's width axis (`.display`, `.h-xl`, `.h-lg`); IBM Plex Mono carries identifiers,
   transliterations and traces. Hindi and Telugu text carries a `lang` attribute so screen readers and browsers choose
   the right voice and font.
-- **The mark.** Three bars — two ultramarine, a gap, one turmeric. The lanes, as a logo.
+- **The mark.** An "ff" — the two f's of suf·f·e·f·f·ix — sharing one crossbar that changes colour across a small seam, from
+  the Indo-European blue to the Dravidian amber: a single line crossing the family boundary. The wordmark is live text in
+  Anek Latin (width 112, weight 650) with each "ff" joined by a continuous crossbar. Source files and usage rules are in
+  `brand/`.
 - **The triptych** (`components/triptych.tsx`) is the signature object: one meaning's words in three lanes, each affix
   placed on the row of its *function*, so functionally equivalent affixes line up horizontally. Alignment is shown by
   position.
