@@ -15,6 +15,8 @@ jobs:
         run: python scripts/validate.py
       - name: Tests
         run: PYTHONPATH="packages/core:apps/api" python -m pytest packages/core/tests apps/api/tests -q
+      - name: Wordmark spelling
+        run: python scripts/check_brand.py
       - name: Prohibited-feature grep
         run: |
           ! grep -riE "openai|anthropic|embedding|vector|stripe|langchain" apps packages data --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=out --exclude-dir=.sitedata --include="*.py" --include="*.ts" --include="*.tsx" --include="*.json"

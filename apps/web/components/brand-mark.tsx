@@ -1,4 +1,4 @@
-/** The symbol: an "ff" — the two f's of suf·f·e·f·f·ix — sharing one crossbar that changes colour
+/** The symbol: an "ff" — the pair that appears twice in su·ff·e·ff·ix — sharing one crossbar that changes colour
  *  across a small seam, from the Indo-European blue to the Dravidian amber. A single line that
  *  crosses the family boundary. Stems follow the surrounding text colour; the bar uses the two
  *  family hues, which have light and dark variants. Source files live in /brand. */

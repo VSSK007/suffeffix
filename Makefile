@@ -24,6 +24,7 @@ site-data:
 	$(PY) scripts/export_downloads.py
 
 site: site-data
+	$(PY) scripts/check_brand.py
 	cd apps/web && pnpm build
 	$(PY) scripts/check_links.py
 
