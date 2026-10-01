@@ -37,7 +37,7 @@ npx serve apps/web/out   # preview the static site
 ```
 
 The public site is a static export built from the API's own responses; see `docs/DEPLOY.md` for deploying to
-suffeffix.com (Cloudflare Pages workflow included).
+suffeffix.com on a VPS (nginx config, server setup script and a GitHub Actions deploy included).
 
 ## What is on the site
 

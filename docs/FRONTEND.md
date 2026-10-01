@@ -59,7 +59,7 @@ indexes loaded lazily.
 - **SEO**: every page has its own canonical URL, description, Open Graph and Twitter card (`lib/seo.ts`,
   `/og.png`); JSON-LD for the site, the report (`ScholarlyArticle`) and the dataset (`Dataset`); a sitemap of ~650 URLs.
 - **Security**: strict CSP, HSTS, `X-Frame-Options: DENY`, `nosniff`, referrer and permissions policies, immutable caching
-  for hashed assets — in `public/_headers` (Cloudflare Pages, Netlify) and `vercel.json`. The site makes no third-party
+  for hashed assets — in `deploy/nginx/` (the nginx config is the single source of truth). The site makes no third-party
   requests (fonts are self-hosted) and sets no cookies.
 - **Accessibility**: skip link, landmarks, `aria-current`, visible focus, `lang` on Indic text, keyboard-operable charts and
   palette, a pause control on moving content, `prefers-reduced-motion` respected, table twins for charts.

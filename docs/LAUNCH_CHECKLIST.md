@@ -42,10 +42,14 @@ Performance varied by up to 25 points between runs of the same page, so treat it
 - [x] Light and dark themes both reviewed in screenshots.
 - [ ] Interactive behaviour (hover readouts, the search palette, the theme toggle, table views) exercised in a real browser. It is implemented and compiled, not clicked through.
 
-## Deploy
+## Deploy (IONOS VPS; see `docs/DEPLOY.md`)
 
-- [ ] Cloudflare Pages project created and secrets added (`docs/DEPLOY.md`). The deploy workflow is untested until then.
-- [ ] `suffeffix.com` and `www` attached; apex/`www` redirect chosen; TLS issued.
-- [ ] Production headers confirmed (`curl -I https://suffeffix.com/`), including CSP and HSTS.
+- [x] Release / prune / rollback logic exercised locally against a fake server (7 deploys keep 5; rollback edge cases); both shell scripts pass `bash -n`.
+- [ ] `nginx -t` and `deploy/setup-server.sh` run on the real server. They are written but **not yet run** against one.
+- [ ] DNS `A` (and `AAAA` only if IPv6 works) records for `suffeffix.com` and `www` point at the VPS; IONOS firewall policy allows 22, 80 and 443.
+- [ ] Certificate issued; `certbot renew --dry-run` succeeds.
+- [ ] GitHub secrets `VPS_HOST`, `VPS_SSH_KEY`, `VPS_KNOWN_HOSTS` added; the first deploy ran and the live check returned 200.
+- [ ] Production headers confirmed with `curl -I` (HSTS, CSP), including the `http`→`https` and `www`→apex redirects.
+- [ ] SSH password logins disabled after key login is confirmed.
 - [ ] `sitemap.xml` submitted to Search Console and Bing; social card checked.
 - [ ] Lighthouse re-run against production and recorded above.

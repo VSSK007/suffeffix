@@ -1,0 +1,60 @@
+# Deploys the static site to a VPS (nginx) over SSH on every push to main.
+#
+# One-time setup — see docs/DEPLOY.md ("IONOS VPS"). Repository → Settings → Secrets and variables → Actions:
+#   VPS_HOST         server hostname or IP
+#   VPS_SSH_KEY      PRIVATE key whose public half was given to deploy/setup-server.sh
+#   VPS_KNOWN_HOSTS  output of:  ssh-keyscan -p <port> <host>      (pins the server's host key)
+# Optional:
+#   VPS_USER (default: deploy)   VPS_PORT (default: 22)
+# The deploy step is skipped, not failed, until VPS_HOST and VPS_SSH_KEY exist.
+name: deploy-vps
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-vps
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install "pydantic>=2.7,<3" fastapi uvicorn httpx
+      - name: Validate, export, and release
+        run: |
+          python scripts/validate.py
+          PYTHONPATH="packages/core:apps/api" python scripts/export_site.py
+          PYTHONPATH="packages/core" python scripts/export_downloads.py
+      - uses: pnpm/action-setup@v4
+        with: { version: 11 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
+      - run: pnpm install --frozen-lockfile
+        working-directory: apps/web
+      - run: pnpm build
+        working-directory: apps/web
+      - name: Broken-link check
+        run: python scripts/check_links.py
+      - name: Deploy over SSH
+        if: ${{ env.VPS_HOST != '' && env.VPS_SSH_KEY != '' }}
+        env:
+          VPS_USER: ${{ secrets.VPS_USER || 'deploy' }}
+          VPS_PORT: ${{ secrets.VPS_PORT || '22' }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          test -s ~/.ssh/known_hosts || { echo "VPS_KNOWN_HOSTS secret is empty; refusing to trust an unknown host"; exit 1; }
+          SSH_PORT="$VPS_PORT" SSH_KEY=~/.ssh/deploy_key bash deploy/deploy.sh "$VPS_USER@$VPS_HOST"

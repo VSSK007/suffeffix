@@ -27,6 +27,10 @@ site: site-data
 	cd apps/web && pnpm build
 	$(PY) scripts/check_links.py
 
+deploy: site
+	@test -n "$(HOST)" || (echo 'usage: make deploy HOST=deploy@your-server'; exit 1)
+	bash deploy/deploy.sh $(HOST)
+
 dev:
 	@echo "Run 'make api' and 'make web' in two terminals."
 
