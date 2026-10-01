@@ -1,6 +1,9 @@
 # Suffeffix identity
 
-**Symbol** — an "ff": the two f's of suf·f·e·f·f·ix, sharing one crossbar that changes colour across a small seam, from
+**Name** — *suffix*, with *eff* (the letter F, as in "effing") infixed: suff·eff·ix. "Suffix — and every effing affix."
+The wordmark and symbol both play on the doubled "ff". The story is told on the site at `/about/#name`.
+
+**Symbol** — an "ff": the pair that appears twice in su·ff·e·ff·ix, sharing one crossbar that changes colour across a small seam, from
 the Indo-European blue to the Dravidian amber. A single line crossing the family boundary.
 
 **Wordmark** — "suffeffix", lowercase, Anek Latin at width 112 / weight 650, letter-spacing −0.03em, ligatures off. Each

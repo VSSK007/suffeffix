@@ -2,20 +2,25 @@ import Link from "next/link";
 import { EpiTag, ContestedTag } from "@/components/marks";
 import { LANES } from "@/lib/lang";
 import { FamilyDot } from "@/components/marks";
+import { Wordmark } from "@/components/wordmark";
+import { data } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({ title: "About", description: "What Suffeffix is, what it refuses to be, and how to read its epistemic statuses, its family constraint and its data statement.", path: "/about/" });
 
-function Row({ title, children }: { title: string; children: React.ReactNode }) {
+function Row({ title, id, children }: { title: string; id?: string; children: React.ReactNode }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-[14rem_1fr] gap-x-12 gap-y-3 py-10 border-t border-line">
+    <section id={id} className="grid grid-cols-1 md:grid-cols-[14rem_1fr] gap-x-12 gap-y-3 py-10 border-t border-line">
       <h2 className="wide text-[19px] font-semibold">{title}</h2>
       <div className="text-[15px] leading-[1.75] text-ink-2 max-w-[64ch] space-y-4">{children}</div>
     </section>
   );
 }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const affixes = await data.affixes();
+  const kinds = (k: string) => affixes.filter((a) => a.kind === k).length;
+  const notSuffix = affixes.length - kinds("suffix");
   return (
     <div>
       <header className="mb-10">
@@ -28,6 +33,49 @@ export default function AboutPage() {
           decomposition, etymology, and affix alignment — for English, Hindi and Telugu.
         </p>
       </header>
+
+      <Row title="The name" id="name">
+        <p className="!text-[22px] !leading-[1.45] !text-ink font-medium">
+          Suffeffix means <em>suffix</em> — and every effing affix.
+        </p>
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-4 py-2" role="img" aria-label="suff, plus the infix eff, plus ix, makes suffeffix">
+          <span className="chip-stem rounded-lg px-3.5 py-1.5 text-[26px] font-medium leading-tight">suff</span>
+          <span className="text-faint" aria-hidden="true">+</span>
+          <span className="chip-ie rounded-lg px-3.5 py-1.5 text-[26px] font-semibold leading-tight">eff</span>
+          <span className="text-faint" aria-hidden="true">+</span>
+          <span className="chip-stem rounded-lg px-3.5 py-1.5 text-[26px] font-medium leading-tight">ix</span>
+          <span className="text-faint" aria-hidden="true">=</span>
+          <Wordmark size={34} />
+        </div>
+        <p>
+          Take <em>suffix</em> and open it between its stem and its ending: <em>suff·ix</em>. Drop <em>eff</em> into the
+          middle — the spoken name of the letter F, and the polite way of writing the word English speakers wedge into the
+          middle of other words for emphasis. The result, <em>suff·eff·ix</em>, is a suffix with an infix inside it: a small
+          joke about the very thing this project catalogues.
+        </p>
+        <p>
+          English really does this. Expletive infixation (<em>abso-bloody-lutely</em>, <em>fan-effing-tastic</em>) is a
+          documented morphological process, and McCarthy (1982) showed that where the infix lands follows the stress pattern
+          of the host word. Our name is a playful cousin of it, not an instance: it infixes the bare <em>eff</em>, without the{" "}
+          <em>-ing</em>, and it does not honour the stress rule. We never claimed it was grammatical.
+        </p>
+        <p>
+          The first half of the name says <em>suffix</em>; the second half is the real scope — <em>every effing affix</em>.
+          Suffixes are only the commonest kind. Of the {affixes.length} affixes in v0.1, {kinds("suffix")} are suffixes,{" "}
+          {kinds("prefix")} are prefixes (<span lang="en">un-</span>, <span lang="hi">निर्-</span>, <span lang="hi">बे-</span>,{" "}
+          <span lang="te">నిర్-</span>) and {kinds("compound_element")} are compound elements (such as{" "}
+          <span lang="hi">-शाला</span> and <span lang="te">-శాస్త్రం</span>) — {notSuffix} that the name, taken literally, leaves out.
+          The schema has room for circumfixes too, and nothing in it assumes an affix belongs at the end of a word.
+        </p>
+        <p className="!text-[14px] !text-muted">
+          A coinage, not a finding: this is the project&rsquo;s own word-play and no claim from a reference work. McCarthy, J. J.
+          (1982).{" "}
+          <a href="https://works.bepress.com/john_j_mccarthy/11/" className="underline underline-offset-4 hover:text-ie-ink">
+            Prosodic structure and expletive infixation
+          </a>
+          . <em>Language</em> 58: 574–590.
+        </p>
+      </Row>
 
       <Row title="Two families">
         <p>

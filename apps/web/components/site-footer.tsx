@@ -13,7 +13,7 @@ const COLS: { title: string; links: [string, string, boolean?][] }[] = [
   },
   {
     title: "Project",
-    links: [["About", "/about/"], ["Documentation", "/docs/"], ["Source on GitHub", "https://github.com/VSSK007/suffeffix", true], ["Report an error", "https://github.com/VSSK007/suffeffix/issues/new", true]],
+    links: [["About", "/about/"], ["Why the name", "/about/#name"], ["Documentation", "/docs/"], ["Source on GitHub", "https://github.com/VSSK007/suffeffix", true], ["Report an error", "https://github.com/VSSK007/suffeffix/issues/new", true]],
   },
 ];
 
