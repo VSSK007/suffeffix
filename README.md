@@ -33,7 +33,7 @@ make api                 # FastAPI on http://localhost:8000  (OpenAPI at /openap
 cd apps/web && pnpm install && cd ../..
 make web                 # Next.js dev server on http://localhost:3000 (needs `make site-data` once)
 make site                # the production build: export data + dataset release, build, check links
-npx serve apps/web/out   # preview the static site
+make preview             # preview the static site at http://localhost:3000 (nginx-like URL behaviour)
 ```
 
 The public site is a static export built from the API's own responses; see `docs/DEPLOY.md` for deploying to

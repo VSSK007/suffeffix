@@ -140,7 +140,7 @@ Then:
 pip install "pydantic>=2.7,<3" fastapi uvicorn httpx   # once
 cd apps/web && pnpm install && cd ../..                 # once
 make site                                               # export data, build, check links
-npx serve apps/web/out                                  # preview
+make preview                                            # http://localhost:3000, behaves like the nginx config
 ```
 
 `make site` fails if the dataset does not validate, if the family constraint is violated, or if any internal link or

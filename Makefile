@@ -27,6 +27,9 @@ site: site-data
 	cd apps/web && pnpm build
 	$(PY) scripts/check_links.py
 
+preview:
+	node deploy/preview.mjs
+
 deploy: site
 	@test -n "$(HOST)" || (echo 'usage: make deploy HOST=deploy@your-server'; exit 1)
 	bash deploy/deploy.sh $(HOST)
