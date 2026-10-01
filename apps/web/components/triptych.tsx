@@ -1,24 +1,26 @@
 import Link from "next/link";
 import type { ConceptRow, LaneEntry } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANES, LANG_NAME, REGISTER_NAME, langAttr } from "@/lib/lang";
+import { LANES, LANG_NAME, REGISTER_NAME, langAttr, type LangCode } from "@/lib/lang";
+import { LaneRow } from "./lane-row";
 import { AffixChip, StemChip } from "./morphemes";
 import { FamilyDot } from "./marks";
 
-/* The signature object. One meaning, three lanes — English | Hindi ‖ Telugu.
+/* The signature object. One meaning, five lanes —
+   English | French | Hindi ‖ Telugu | Tamil.
    Every affix sits on the row of its *function*, so functionally equivalent
-   affixes line up horizontally across the three languages: the alignment is
+   affixes line up horizontally across the five languages: the alignment is
    shown by position, not asserted in prose. The dashed gutter before Telugu
    is the family boundary. */
 
 const REL_TEXT: Record<string, string> = {
-  COGNATE: "cognates — inherited from one Indo-European ancestor",
-  SHARED_LOAN: "shared loan — both borrowed from the same Sanskrit source",
+  COGNATE: "cognates — inherited from one common ancestor",
+  SHARED_LOAN: "shared loan — both borrowed from the same source",
   CALQUE: "calque",
 };
 
 function Word({ e, focus, size }: { e: LaneEntry; focus: boolean; size: "md" | "lg" }) {
-  const big = size === "lg" ? "text-[34px] sm:text-[40px]" : "text-[26px]";
+  const big = size === "lg" ? "text-[28px] xl:text-[32px]" : "text-[22px] xl:text-[24px]";
   return (
     <Link href={slug.entryHref(e.id)} className="group block">
       <span
@@ -43,7 +45,7 @@ export function Triptych({
   const fnLabel = new Map<string, string>();
   for (const l of LANES) for (const e of row.lanes[l.code]) for (const m of e.morphemes) fnLabel.set(m.fnId, m.fnLabel);
 
-  const cell = (lang: (typeof LANES)[number]["code"], render: (e: LaneEntry) => React.ReactNode, emptyText?: string) => {
+  const cell = (lang: LangCode, render: (e: LaneEntry) => React.ReactNode, emptyText?: string) => {
     const list = row.lanes[lang];
     if (!list.length) return <Empty text={emptyText ?? "not lexicalised"} />;
     return <div className="space-y-2">{list.map((e) => <div key={e.id}>{render(e)}</div>)}</div>;
@@ -60,18 +62,14 @@ export function Triptych({
     </div>
   );
 
-  const laneCells = (render: (code: (typeof LANES)[number]["code"]) => React.ReactNode) => (
-    <>
-      {LANES.slice(0, 2).map((l) => (
-        <div key={l.code} className="py-3.5 px-4" style={laneBg(l.code)}>
+  const laneCells = (render: (code: LangCode) => React.ReactNode) => (
+    <LaneRow
+      render={(l) => (
+        <div className="py-3.5 px-3" style={laneBg(l.code)}>
           {render(l.code)}
         </div>
-      ))}
-      <div className="gutter" aria-hidden="true" />
-      <div className="py-3.5 px-4" style={laneBg("te")}>
-        {render("te")}
-      </div>
-    </>
+      )}
+    />
   );
 
   const functionRows = row.functions;
@@ -79,25 +77,20 @@ export function Triptych({
   return (
     <div>
       {/* ── desktop: row-major, aligned by function ─────────────── */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         {showHeader && (
           <div className="lanes-labelled items-end pb-2">
             <div />
-            {LANES.slice(0, 2).map((l) => (
-              <div key={l.code} className="px-4">
-                <span className="inline-flex items-center gap-2 text-[12.5px] font-semibold">
-                  <FamilyDot lang={l.code} /> {l.name}
-                </span>
-                <div className="text-[11px] text-faint mt-0.5">{l.familyName}</div>
-              </div>
-            ))}
-            <div />
-            <div className="px-4">
-              <span className="inline-flex items-center gap-2 text-[12.5px] font-semibold">
-                <FamilyDot lang="te" /> Telugu
-              </span>
-              <div className="text-[11px] text-faint mt-0.5">{LANES[2].familyName}</div>
-            </div>
+            <LaneRow
+              render={(l) => (
+                <div className="px-3">
+                  <span className="inline-flex items-center gap-2 text-[12.5px] font-semibold">
+                    <FamilyDot lang={l.code} /> {l.name}
+                  </span>
+                  <div className="text-[11px] text-faint mt-0.5">{l.familyName.split(" · ")[1]}</div>
+                </div>
+              )}
+            />
           </div>
         )}
 
@@ -140,10 +133,10 @@ export function Triptych({
       </div>
 
       {/* ── mobile: lane-major ──────────────────────────────────── */}
-      <div className="md:hidden space-y-0">
+      <div className="lg:hidden space-y-0">
         {LANES.map((l, i) => (
           <div key={l.code}>
-            {i === 2 && <div className="gutter my-2" aria-hidden="true" />}
+            {i > 0 && l.family !== LANES[i - 1].family && <div className="gutter my-2" aria-hidden="true" />}
             <div className="border-t border-line py-4" style={laneBg(l.code)}>
               <span className="inline-flex items-center gap-2 text-[12px] font-semibold mb-2">
                 <FamilyDot lang={l.code} /> {l.name}
@@ -183,7 +176,7 @@ export function Triptych({
                 <span lang={langAttr(a.lang)} className="font-medium">{a.form}</span>
                 <span className="text-faint">{LANG_NAME[a.lang]}</span>
                 <span className="text-faint">⟷</span>
-                <span className="font-medium">{b.form}</span>
+                <span lang={langAttr(b.lang)} className="font-medium">{b.form}</span>
                 <span className="text-faint">{LANG_NAME[b.lang]}</span>
                 <span className="text-muted">· {REL_TEXT[r.relation] ?? r.relation.toLowerCase()}</span>
               </li>

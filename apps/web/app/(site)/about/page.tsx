@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { EpiTag, ContestedTag } from "@/components/marks";
-import { LANES } from "@/lib/lang";
+import { DR_LANES, IE_LANES, LANES } from "@/lib/lang";
+import { loadCensus } from "@/lib/census";
 import { FamilyDot } from "@/components/marks";
 import { Wordmark } from "@/components/wordmark";
 import { data } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta({ title: "About", description: "What Suffeffix is, what it refuses to be, and how to read its epistemic statuses, its family constraint and its data statement.", path: "/about/" });
+export const metadata = pageMeta({ title: "About", description: "What Suffeffix is, what it refuses to be, the T.H.E.F.T. framework behind its five languages, and how to read its epistemic statuses, its family constraint and its data statement.", path: "/about/" });
 
 function Row({ title, id, children }: { title: string; id?: string; children: React.ReactNode }) {
   return (
@@ -18,7 +19,10 @@ function Row({ title, id, children }: { title: string; id?: string; children: Re
 }
 
 export default async function AboutPage() {
-  const affixes = await data.affixes();
+  const [affixes, census, meta] = await Promise.all([data.affixes(), loadCensus(), data.meta()]);
+  const share = (l: string, k: string) => Math.round((100 * (census.reg[l].counts[k] ?? 0)) / census.reg[l].n);
+  const borrowed = census.edgeTypes.find((t) => t.type === "BORROWED");
+  const inheritedAcross = census.edgeTypes.filter((t) => t.type === "INHERITED" || t.type === "COGNATE").reduce((n, t) => n + t.crosses, 0);
   const kinds = (k: string) => affixes.filter((a) => a.kind === k).length;
   const notSuffix = affixes.length - kinds("suffix");
   return (
@@ -30,7 +34,9 @@ export default async function AboutPage() {
         </h1>
         <p className="text-[19px] leading-[1.55] text-ink-2 max-w-[56ch] mt-6">
           Suffeffix is an explainable lexical knowledge graph that jointly represents morphology, semantic
-          decomposition, etymology, and affix alignment — for English, Hindi and Telugu.
+          decomposition, etymology, and affix alignment — for five languages in two families: Telugu, Hindi,
+          English, French and Tamil. Together they make the{" "}
+          <a href="#theft" className="underline underline-offset-4 hover:text-ie-ink">T.H.E.F.T. framework</a>.
         </p>
       </header>
 
@@ -61,10 +67,10 @@ export default async function AboutPage() {
         </p>
         <p>
           The first half of the name says <em>suffix</em>; the second half is the real scope — <em>every effing affix</em>.
-          Suffixes are only the commonest kind. Of the {affixes.length} affixes in v0.1, {kinds("suffix")} are suffixes,{" "}
-          {kinds("prefix")} are prefixes (<span lang="en">un-</span>, <span lang="hi">निर्-</span>, <span lang="hi">बे-</span>,{" "}
-          <span lang="te">నిర్-</span>) and {kinds("compound_element")} are compound elements (such as{" "}
-          <span lang="hi">-शाला</span> and <span lang="te">-శాస్త్రం</span>) — {notSuffix} that the name, taken literally, leaves out.
+          Suffixes are only the commonest kind. Of the {affixes.length} affixes in v0.2, {kinds("suffix")} are suffixes,{" "}
+          {kinds("prefix")} are prefixes (<span lang="en">un-</span>, <span lang="fr">in-</span>, <span lang="hi">निर्-</span>,{" "}
+          <span lang="te">నిర్-</span>, <span lang="ta">சிறு-</span>) and {kinds("compound_element")} are compound elements (such as{" "}
+          <span lang="hi">-शाला</span>, <span lang="te">-శాస్త్రం</span> and <span lang="ta">-இயல்</span>) — {notSuffix} that the name, taken literally, leaves out.
           The schema has room for circumfixes too, and nothing in it assumes an affix belongs at the end of a word.
         </p>
         <p className="!text-[14px] !text-muted">
@@ -77,15 +83,91 @@ export default async function AboutPage() {
         </p>
       </Row>
 
+      <Row title="The T.H.E.F.T. framework" id="theft">
+        <p className="!text-[22px] !leading-[1.45] !text-ink font-medium">
+          Telugu, Hindi, English, French, Tamil. Five languages, two families — and between the families, only theft.
+        </p>
+        <div className="grid grid-cols-5 gap-1.5 sm:gap-2 py-2" role="img" aria-label="T for Telugu, H for Hindi, E for English, F for French, T for Tamil">
+          {(["te", "hi", "en", "fr", "ta"] as const).map((code) => {
+            const l = LANES.find((x) => x.code === code)!;
+            return (
+              <div key={code} className={`${l.family === "dr" ? "chip-dr" : "chip-ie"} rounded-xl px-1 py-3 text-center`}>
+                <div className="display text-[34px] sm:text-[44px] font-semibold leading-none">{l.name[0]}</div>
+                <div className="text-[12px] sm:text-[13px] font-medium mt-2">{l.name}</div>
+                <div className="text-[10.5px] sm:text-[11px] opacity-75 mt-0.5 leading-tight">{l.familyName.split(" · ")[1]}</div>
+              </div>
+            );
+          })}
+        </div>
+        <p>The five are not a sample of convenience. Each grouping isolates one thing a lexical graph has to get right.</p>
+        <dl className="space-y-4">
+          <div>
+            <dt className="font-semibold text-ink">Telugu and Tamil — one family, two answers to Sanskrit.</dt>
+            <dd>
+              Both are Dravidian and share inherited words (<span lang="te">పేరు</span>/<span lang="ta">பெயர்</span> ‘name’,{" "}
+              <span lang="te">కన్ను</span>/<span lang="ta">கண்</span> ‘eye’, <span lang="te">మూడు</span>/<span lang="ta">மூன்று</span> ‘three’),
+              which the graph stores as cognates. But Telugu absorbs Sanskrit, while modern Tamil often coins from native roots: ‘library’ is{" "}
+              <span lang="te">గ్రంథాలయం</span> in Telugu and <span lang="ta">நூலகம்</span>, from <span lang="ta">நூல்</span> ‘book’, in
+              Tamil. In this dataset {share("te", "S")}% of Telugu words are Sanskritic, against {share("ta", "S")}% of Tamil words.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-ink">English and French — one family, one long loan.</dt>
+            <dd>
+              Germanic English took much of its everyday and learned vocabulary from French after 1066: <em>joy</em>,{" "}
+              <em>beauty</em> and <em>merchant</em> carry borrowing edges from Old French. Both keep a learned Latin and
+              Greek layer (register L): {share("en", "L")}% of the English words here and {share("fr", "L")}% of the French ones.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-ink">English, French and Hindi — distant cousins.</dt>
+            <dd>
+              Three branches of Indo-European that parted thousands of years ago still share inherited roots:{" "}
+              <em>mother</em>/<span lang="fr">mère</span>/<span lang="hi">माता</span>, <em>name</em>/<span lang="fr">nom</span>/<span lang="hi">नाम</span>,{" "}
+              <em>three</em>/<span lang="fr">trois</span>/<span lang="hi">तीन</span>. These are cognates, each with a source.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-ink">Sanskrit and Latin — two classical donors.</dt>
+            <dd>
+              Sanskrit is to Hindi and Telugu roughly what Latin is to French and English: a prestige source of learned words.
+              Indian grammar calls a word borrowed unchanged <em>tatsama</em> (‘same as that’) and one worn down by inheritance{" "}
+              <em>tadbhava</em> (‘born of that’). French shows the same split in its doublets: learned <span lang="fr">-ité</span>{" "}
+              (<span lang="fr">humanité</span>) beside inherited <span lang="fr">-té</span> (<span lang="fr">bonté</span>), both from
+              Latin <em>-itātem</em>. Suffeffix records both kinds of layering in one register field.
+            </dd>
+          </div>
+        </dl>
+        <p>
+          <strong className="text-ink font-semibold">Why “theft”.</strong> Linguists say <em>borrowing</em>, but nothing is
+          ever given back. Within a family, words are inherited; across the family line they can only be taken. That is the
+          framework’s one hard rule, and the validator enforces it: {inheritedAcross === 0 ? "none" : inheritedAcross} of the{" "}
+          {census.edgeTotal} etymology edges claims inheritance or cognacy across the boundary
+          {borrowed ? (
+            <>
+              , while {borrowed.crosses} borrowing edges cross it — Sanskrit <em>pustaka</em> into Tamil{" "}
+              <span lang="ta">புத்தகம்</span> and Telugu <span lang="te">పుస్తకం</span> among them
+            </>
+          ) : null}
+          .
+        </p>
+        <p className="!text-[14px] !text-muted">
+          <EpiTag status="ENGINEERING" />{" "}
+          The choice of five is a design decision, not a claim about the languages. The percentages describe the{" "}
+          {meta.counts.entries} words in this dataset, whose meanings were chosen to showcase derivation, not the
+          vocabularies as a whole.
+        </p>
+      </Row>
+
       <Row title="Two families">
         <p>
-          Telugu is Dravidian. Hindi (Indo-Aryan) and English (Germanic) are Indo-European. There are no
-          cognates between Telugu and either of the others — only borrowing links them, mostly through
-          Sanskrit, Perso-Arabic vocabulary, and English. The validator rejects any cognate or inheritance
-          edge that crosses that boundary, so the rule is enforced by the build, not promised in prose.
+          Telugu and Tamil are Dravidian. English (Germanic), French (Romance) and Hindi (Indo-Aryan) are
+          Indo-European. There are no cognates across that line — only borrowing links the families, mostly
+          through Sanskrit, Perso-Arabic vocabulary, and English. The validator rejects any cognate or
+          inheritance edge that crosses the boundary, so the rule is enforced by the build, not promised in prose.
         </p>
-        <div className="flex flex-wrap gap-x-6 gap-y-2 text-[13.5px]">
-          {LANES.map((l) => (
+        <div className="grid gap-y-2 text-[13.5px]">
+          {[...IE_LANES, ...DR_LANES].map((l) => (
             <span key={l.code} className="inline-flex items-center gap-2">
               <FamilyDot lang={l.code} /> <span className="font-medium text-ink">{l.name}</span>
               <span className="text-muted">{l.familyName}</span>
@@ -93,8 +175,10 @@ export default async function AboutPage() {
           ))}
         </div>
         <p>
-          English and Hindi genuinely are related, so <em>name</em>/नाम, <em>mother</em>/माता,{" "}
-          <em>three</em>/तीन and <em>tooth</em>/दाँत are stored as cognates, each with a source.
+          The Indo-European three genuinely are related, so <em>name</em>/<span lang="fr">nom</span>/<span lang="hi">नाम</span> and{" "}
+          <em>mother</em>/<span lang="fr">mère</span>/<span lang="hi">माता</span> are stored as cognates, as are the Dravidian pairs{" "}
+          <span lang="te">నీరు</span>/<span lang="ta">நீர்</span> ‘water’ and <span lang="te">ఊరు</span>/<span lang="ta">ஊர்</span> ‘village’.
+          Each carries a source.
         </p>
       </Row>
 
@@ -106,7 +190,7 @@ export default async function AboutPage() {
               ["ESTABLISHED", "standard linguistic knowledge, citable from reference works"],
               ["ENGINEERING", "an abstraction chosen for implementation convenience — not a linguistic claim"],
               ["HYPOTHESIS", "plausible and testable, not yet demonstrated"],
-              ["FUTURE", "out of scope for v0.1"],
+              ["FUTURE", "out of scope for this release"],
             ] as [string, string][]
           ).map(([t, g]) => (
             <div key={t} className="grid grid-cols-[8.5rem_1fr] gap-3 items-baseline">
@@ -130,9 +214,9 @@ export default async function AboutPage() {
 
       <Row title="Data statement">
         <p>
-          338 concept-aligned entries, authored for this project against the reference works in its
-          bibliography: the OED; Turner’s <em>CDIAL</em>; Burrow and Emeneau’s <em>DEDR</em>;
-          Monier-Williams; Platts; Brown; McGregor; Krishnamurti; Watkins. Nearly everything ships as{" "}
+          {meta.counts.entries} concept-aligned entries, authored for this project against the reference works in its
+          bibliography: the OED; the <em>TLFi</em>; Turner’s <em>CDIAL</em>; Burrow and Emeneau’s <em>DEDR</em>; the
+          Madras <em>Tamil Lexicon</em>; Monier-Williams; Platts; Brown; McGregor; Krishnamurti; Watkins. Nearly everything ships as{" "}
           <span className="mono text-[13px]">draft</span> — authored carefully, not yet reviewed item by item.
           Reference-work entry numbers are deliberately absent until someone checks them against the printed
           volumes.

@@ -75,5 +75,19 @@
   "citation": "Wiktionary, the free dictionary. Crowd-edited; confidence capped at 0.6 when sole source.",
   "url": "https://en.wiktionary.org",
   "kind": "crowd"
+ },
+ {
+  "id": "tlfi",
+  "title": "TLFi",
+  "citation": "ATILF (CNRS & Université de Lorraine). Trésor de la langue française informatisé. http://www.atilf.fr/tlfi",
+  "url": "http://www.atilf.fr/tlfi",
+  "kind": "dictionary"
+ },
+ {
+  "id": "madras_tl",
+  "title": "Tamil Lexicon",
+  "citation": "University of Madras (1924–1936). Tamil Lexicon. Madras: University of Madras.",
+  "url": null,
+  "kind": "dictionary"
  }
 ]

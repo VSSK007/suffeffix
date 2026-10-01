@@ -2,7 +2,7 @@
 // /openapi.json). The static site consumes these shapes from .sitedata JSON
 // exported by scripts/export_site.py, so the API remains the contract.
 
-export type Lang = "en" | "te" | "hi";
+export type Lang = "en" | "fr" | "hi" | "te" | "ta";
 export type EpistemicStatus = "ESTABLISHED" | "ENGINEERING" | "HYPOTHESIS" | "FUTURE";
 export type ReviewStatus = "draft" | "reviewed" | "published";
 
@@ -34,7 +34,7 @@ export interface Atom {
   definition: string;
   epistemic_status: EpistemicStatus;
   nsm_prime: boolean;
-  exponents: { en: string; te: string; hi: string };
+  exponents: { en: string; fr: string; hi: string; te: string; ta: string };
   related: { atom_id: string; relation: string }[];
 }
 

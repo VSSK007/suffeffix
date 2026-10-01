@@ -1,22 +1,22 @@
 [
  {
-  "id": "lex:te:mancitanam",
-  "lang": "te",
+  "id": "lex:fr:bonte",
+  "lang": "fr",
   "lemma": {
-   "form": "మంచితనం",
-   "script": "Telu",
-   "translit": "mañcitanaṁ",
+   "form": "bonté",
+   "script": "Latn",
+   "translit": "bonté",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:GOODNESS",
   "morphology": {
-   "stem_form": "మంచి",
+   "stem_form": "bon",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-te",
      "function_id": "fn:ST"
     }
    ],
@@ -30,60 +30,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:bonte",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:acchai",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:nanmai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mancitanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pillatanam",
-  "lang": "te",
+  "id": "lex:fr:enfance",
+  "lang": "fr",
   "lemma": {
-   "form": "పిల్లతనం",
-   "script": "Telu",
-   "translit": "pillatanaṁ",
+   "form": "enfance",
+   "script": "Latn",
+   "translit": "enfance",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:CHILDHOOD",
   "morphology": {
-   "stem_form": "పిల్ల",
+   "stem_form": "enfant",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-ance",
      "function_id": "fn:ST"
     }
    ],
    "schema": "STEM+ST",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:childhood",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:enfance",
     "relation": "TRANSLATION"
    },
    {
@@ -93,50 +89,50 @@
    {
     "entry_id": "lex:ta:kulantaipparuvam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pillatanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:ontaritanam",
-  "lang": "te",
+  "id": "lex:fr:solitude",
+  "lang": "fr",
   "lemma": {
-   "form": "ఒంటరితనం",
-   "script": "Telu",
-   "translit": "oṇṭaritanaṁ",
+   "form": "solitude",
+   "script": "Latn",
+   "translit": "solitude",
    "ipa": null
   },
   "pos": "noun",
-  "register": "N",
+  "register": "L",
   "concept_id": "concept:LONELINESS",
   "morphology": {
-   "stem_form": "ఒంటరి",
+   "stem_form": "seul",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-itude",
      "function_id": "fn:ST"
     }
    ],
    "schema": "STEM+ST",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.7
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:loneliness",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:solitude",
     "relation": "TRANSLATION"
    },
    {
@@ -146,50 +142,50 @@
    {
     "entry_id": "lex:ta:tanimai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:ontaritanam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned, from Latin solitudo; the link to seul is etymological.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:piccitanam",
-  "lang": "te",
+  "id": "lex:fr:folie",
+  "lang": "fr",
   "lemma": {
-   "form": "పిచ్చితనం",
-   "script": "Telu",
-   "translit": "piccitanaṁ",
+   "form": "folie",
+   "script": "Latn",
+   "translit": "folie",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:MADNESS",
   "morphology": {
-   "stem_form": "పిచ్చి",
+   "stem_form": "fou",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-ie",
      "function_id": "fn:ST"
     }
    ],
    "schema": "STEM+ST",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:madness",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:folie",
     "relation": "TRANSLATION"
    },
    {
@@ -199,36 +195,40 @@
    {
     "entry_id": "lex:ta:paittiyam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:piccitanam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "fou/fol + -ie.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:musalitanam",
-  "lang": "te",
+  "id": "lex:fr:vieillesse",
+  "lang": "fr",
   "lemma": {
-   "form": "ముసలితనం",
-   "script": "Telu",
-   "translit": "musalitanaṁ",
+   "form": "vieillesse",
+   "script": "Latn",
+   "translit": "vieillesse",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:OLD_AGE",
   "morphology": {
-   "stem_form": "ముసలి",
+   "stem_form": "vieil",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-esse",
      "function_id": "fn:ST"
     }
    ],
@@ -242,42 +242,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:vieillesse",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:burhapa",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:mutumai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:musalitanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nijam",
-  "lang": "te",
+  "id": "lex:fr:verite",
+  "lang": "fr",
   "lemma": {
-   "form": "నిజం",
-   "script": "Telu",
-   "translit": "nijaṁ",
+   "form": "vérité",
+   "script": "Latn",
+   "translit": "vérité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:TRUTH",
   "morphology": {
-   "stem_form": "నిజం",
+   "stem_form": "vérité",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -290,42 +290,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:verite",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:saccai",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:unmai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nijam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned, from Latin veritas; not transparently built on vrai.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sveccha",
-  "lang": "te",
+  "id": "lex:fr:liberte",
+  "lang": "fr",
   "lemma": {
-   "form": "స్వేచ్ఛ",
-   "script": "Telu",
-   "translit": "svēccha",
+   "form": "liberté",
+   "script": "Latn",
+   "translit": "liberté",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:FREEDOM",
   "morphology": {
-   "stem_form": "స్వేచ్ఛ",
+   "stem_form": "liberté",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -338,46 +338,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:liberte",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:azadi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:cutantiram",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sveccha",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Tatsama simplex.",
+  "notes": "Learned, from Latin libertas.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:manavatvam",
-  "lang": "te",
+  "id": "lex:fr:humanite",
+  "lang": "fr",
   "lemma": {
-   "form": "మానవత్వం",
-   "script": "Telu",
-   "translit": "mānavatvaṁ",
+   "form": "humanité",
+   "script": "Latn",
+   "translit": "humanité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:HUMANITY",
   "morphology": {
-   "stem_form": "మానవ",
+   "stem_form": "humain",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tvam",
+     "affix_id": "affix:fr:-ite",
      "function_id": "fn:ST"
     }
    ],
@@ -391,50 +391,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:humanite",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:manavta",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:manitattuvam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:manavatvam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nayakatvam",
-  "lang": "te",
+  "id": "lex:fr:leadership",
+  "lang": "fr",
   "lemma": {
-   "form": "నాయకత్వం",
-   "script": "Telu",
-   "translit": "nāyakatvaṁ",
+   "form": "leadership",
+   "script": "Latn",
+   "translit": "leadership",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "E",
   "concept_id": "concept:LEADERSHIP",
   "morphology": {
-   "stem_form": "నాయక",
+   "stem_form": "leadership",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-tvam",
-     "function_id": "fn:ST"
-    }
-   ],
-   "schema": "STEM+ST",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -444,42 +439,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:leadership",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:netrtva",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:talaimai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nayakatvam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "An English loan in current French.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sneham",
-  "lang": "te",
+  "id": "lex:fr:amitie",
+  "lang": "fr",
   "lemma": {
-   "form": "స్నేహం",
-   "script": "Telu",
-   "translit": "snēhaṁ",
+   "form": "amitié",
+   "script": "Latn",
+   "translit": "amitié",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:FRIENDSHIP",
   "morphology": {
-   "stem_form": "స్నేహం",
+   "stem_form": "amitié",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -492,60 +487,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:amitie",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:dosti",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:natpu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sneham",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:rajarikam",
-  "lang": "te",
+  "id": "lex:fr:royaute",
+  "lang": "fr",
   "lemma": {
-   "form": "రాజరికం",
-   "script": "Telu",
-   "translit": "rājarikaṁ",
+   "form": "royauté",
+   "script": "Latn",
+   "translit": "royauté",
    "ipa": null
   },
   "pos": "noun",
-  "register": "mixed",
+  "register": "N",
   "concept_id": "concept:KINGSHIP",
   "morphology": {
-   "stem_form": "రాజు",
+   "stem_form": "royal",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-rikam",
+     "affix_id": "affix:fr:-te",
      "function_id": "fn:ST"
     }
    ],
    "schema": "STEM+ST",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:kingship",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:royaute",
     "relation": "TRANSLATION"
    },
    {
@@ -555,36 +546,40 @@
    {
     "entry_id": "lex:ta:aracatci",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rajarikam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Sanskritic base, native suffix.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:tiyadanam",
-  "lang": "te",
+  "id": "lex:fr:douceur",
+  "lang": "fr",
   "lemma": {
-   "form": "తీయదనం",
-   "script": "Telu",
-   "translit": "tīyadanaṁ",
+   "form": "douceur",
+   "script": "Latn",
+   "translit": "douceur",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:SWEETNESS",
   "morphology": {
-   "stem_form": "తీయ",
+   "stem_form": "doux",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-eur",
      "function_id": "fn:ST"
     }
    ],
@@ -598,55 +593,58 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:douceur",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:mithapan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:inimai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tiyadanam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "-danaṁ is the post-vocalic allomorph of -tanaṁ.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:andam",
-  "lang": "te",
+  "id": "lex:fr:beaute",
+  "lang": "fr",
   "lemma": {
-   "form": "అందం",
-   "script": "Telu",
-   "translit": "andaṁ",
+   "form": "beauté",
+   "script": "Latn",
+   "translit": "beauté",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:BEAUTY",
   "morphology": {
-   "stem_form": "అందం",
+   "stem_form": "beau",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-te",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:beauty-of-fr"
+  ],
   "aligned": [
    {
     "entry_id": "lex:en:beauty",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:beaute",
     "relation": "TRANSLATION"
    },
    {
@@ -656,36 +654,40 @@
    {
     "entry_id": "lex:ta:alaku",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:andam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:balahinata",
-  "lang": "te",
+  "id": "lex:fr:faiblesse",
+  "lang": "fr",
   "lemma": {
-   "form": "బలహీనత",
-   "script": "Telu",
-   "translit": "balahīnata",
+   "form": "faiblesse",
+   "script": "Latn",
+   "translit": "faiblesse",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:WEAKNESS",
   "morphology": {
-   "stem_form": "బలహీన",
+   "stem_form": "faible",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ta",
+     "affix_id": "affix:fr:-esse",
      "function_id": "fn:ST"
     }
    ],
@@ -699,46 +701,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:faiblesse",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:kamzori",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:palavinam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balahinata",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Base itself contains privative -hīna.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:goppatanam",
-  "lang": "te",
+  "id": "lex:fr:grandeur",
+  "lang": "fr",
   "lemma": {
-   "form": "గొప్పతనం",
-   "script": "Telu",
-   "translit": "goppatanaṁ",
+   "form": "grandeur",
+   "script": "Latn",
+   "translit": "grandeur",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:GREATNESS",
   "morphology": {
-   "stem_form": "గొప్ప",
+   "stem_form": "grand",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-eur",
      "function_id": "fn:ST"
     }
    ],
@@ -752,46 +754,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:grandeur",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:mahanta",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:perumai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:goppatanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kottadanam",
-  "lang": "te",
+  "id": "lex:fr:nouveaute",
+  "lang": "fr",
   "lemma": {
-   "form": "కొత్తదనం",
-   "script": "Telu",
-   "translit": "kottadanaṁ",
+   "form": "nouveauté",
+   "script": "Latn",
+   "translit": "nouveauté",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:NEWNESS",
   "morphology": {
-   "stem_form": "కొత్త",
+   "stem_form": "nouveau",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-te",
      "function_id": "fn:ST"
     }
    ],
@@ -805,46 +807,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:nouveaute",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:nayapan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:putumai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kottadanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:samanatvam",
-  "lang": "te",
+  "id": "lex:fr:egalite",
+  "lang": "fr",
   "lemma": {
-   "form": "సమానత్వం",
-   "script": "Telu",
-   "translit": "samānatvaṁ",
+   "form": "égalité",
+   "script": "Latn",
+   "translit": "égalité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:EQUALITY",
   "morphology": {
-   "stem_form": "సమాన",
+   "stem_form": "égal",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tvam",
+     "affix_id": "affix:fr:-ite",
      "function_id": "fn:ST"
     }
    ],
@@ -858,60 +860,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:egalite",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:samanta",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:camattuvam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samanatvam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:aikyata",
-  "lang": "te",
+  "id": "lex:fr:unite",
+  "lang": "fr",
   "lemma": {
-   "form": "ఐక్యత",
-   "script": "Telu",
-   "translit": "aikyata",
+   "form": "unité",
+   "script": "Latn",
+   "translit": "unité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:UNITY",
   "morphology": {
-   "stem_form": "ఐక్య",
+   "stem_form": "un",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ta",
+     "affix_id": "affix:fr:-ite",
      "function_id": "fn:ST"
     }
    ],
    "schema": "STEM+ST",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.8
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:unity",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:unite",
     "relation": "TRANSLATION"
    },
    {
@@ -921,35 +919,44 @@
    {
     "entry_id": "lex:ta:orrumai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:aikyata",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Latin unitas; segmentation is etymological.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nijayiti",
-  "lang": "te",
+  "id": "lex:fr:honnetete",
+  "lang": "fr",
   "lemma": {
-   "form": "నిజాయితీ",
-   "script": "Telu",
-   "translit": "nijāyitī",
+   "form": "honnêteté",
+   "script": "Latn",
+   "translit": "honnêteté",
    "ipa": null
   },
   "pos": "noun",
-  "register": "P",
+  "register": "N",
   "concept_id": "concept:HONESTY",
   "morphology": {
-   "stem_form": "నిజాయితీ",
+   "stem_form": "honnête",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-te",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -959,50 +966,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:honnetete",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:imandari",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:nermai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nijayiti",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Perso-Arabic-influenced form; simplex in Telugu.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sodaratvam",
-  "lang": "te",
+  "id": "lex:fr:fraternite",
+  "lang": "fr",
   "lemma": {
-   "form": "సోదరత్వం",
-   "script": "Telu",
-   "translit": "sōdaratvaṁ",
+   "form": "fraternité",
+   "script": "Latn",
+   "translit": "fraternité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:BROTHERHOOD",
   "morphology": {
-   "stem_form": "సోదర",
+   "stem_form": "fraternité",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-tvam",
-     "function_id": "fn:ST"
-    }
-   ],
-   "schema": "STEM+ST",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1012,50 +1014,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:fraternite",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:bhaicara",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:cakotarattuvam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sodaratvam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned, from Latin fraternitas; not built on frère.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:matrtvam",
-  "lang": "te",
+  "id": "lex:fr:maternite",
+  "lang": "fr",
   "lemma": {
-   "form": "మాతృత్వం",
-   "script": "Telu",
-   "translit": "mātr̥tvaṁ",
+   "form": "maternité",
+   "script": "Latn",
+   "translit": "maternité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:MOTHERHOOD",
   "morphology": {
-   "stem_form": "మాతృ",
+   "stem_form": "maternité",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-tvam",
-     "function_id": "fn:ST"
-    }
-   ],
-   "schema": "STEM+ST",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1065,45 +1062,50 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:maternite",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:matrtva",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:taymai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:matrtvam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned, from Latin maternitas; not built on mère.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jnanam",
-  "lang": "te",
+  "id": "lex:fr:sagesse",
+  "lang": "fr",
   "lemma": {
-   "form": "జ్ఞానం",
-   "script": "Telu",
-   "translit": "jñānaṁ",
+   "form": "sagesse",
+   "script": "Latn",
+   "translit": "sagesse",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:WISDOM",
   "morphology": {
-   "stem_form": "జ్ఞానం",
+   "stem_form": "sage",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-esse",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1113,42 +1115,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:sagesse",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:samajhdari",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:arivu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jnanam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:santosam",
-  "lang": "te",
+  "id": "lex:fr:bonheur",
+  "lang": "fr",
   "lemma": {
-   "form": "సంతోషం",
-   "script": "Telu",
-   "translit": "santōṣaṁ",
+   "form": "bonheur",
+   "script": "Latn",
+   "translit": "bonheur",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:HAPPINESS",
   "morphology": {
-   "stem_form": "సంతోషం",
+   "stem_form": "bonheur",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -1161,94 +1163,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:bonheur",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:xusi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:makilcci",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:santosam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Historically bon + heur 'fortune'; simplex today.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:duhkham",
-  "lang": "te",
+  "id": "lex:fr:tristesse",
+  "lang": "fr",
   "lemma": {
-   "form": "దుఃఖం",
-   "script": "Telu",
-   "translit": "duḥkhaṁ",
-   "ipa": null
-  },
-  "pos": "noun",
-  "register": "S",
-  "concept_id": "concept:SADNESS",
-  "morphology": {
-   "stem_form": "దుఃఖం",
-   "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
-   "segmentation_confidence": 1.0
-  },
-  "etymology": [],
-  "aligned": [
-   {
-    "entry_id": "lex:en:sadness",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:tristesse",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:hi:udasi",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:ta:varuttam",
-    "relation": "TRANSLATION"
-   }
-  ],
-  "notes": "",
-  "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
-   "review_status": "draft",
-   "source_refs": [
-    "brown"
-   ]
-  }
- },
- {
-  "id": "lex:te:somaritanam",
-  "lang": "te",
-  "lemma": {
-   "form": "సోమరితనం",
-   "script": "Telu",
-   "translit": "sōmaritanaṁ",
+   "form": "tristesse",
+   "script": "Latn",
+   "translit": "tristesse",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
-  "concept_id": "concept:LAZINESS",
+  "concept_id": "concept:SADNESS",
   "morphology": {
-   "stem_form": "సోమరి",
+   "stem_form": "triste",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-tanam",
+     "affix_id": "affix:fr:-esse",
      "function_id": "fn:ST"
     }
    ],
@@ -1258,11 +1212,55 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:en:laziness",
+    "entry_id": "lex:en:sadness",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:paresse",
+    "entry_id": "lex:hi:udasi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:varuttam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:duhkham",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:paresse",
+  "lang": "fr",
+  "lemma": {
+   "form": "paresse",
+   "script": "Latn",
+   "translit": "paresse",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LAZINESS",
+  "morphology": {
+   "stem_form": "paresse",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:laziness",
     "relation": "TRANSLATION"
    },
    {
@@ -1272,35 +1270,44 @@
    {
     "entry_id": "lex:ta:compal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:somaritanam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "From Latin pigritia; simplex.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jabbu",
-  "lang": "te",
+  "id": "lex:fr:maladie",
+  "lang": "fr",
   "lemma": {
-   "form": "జబ్బు",
-   "script": "Telu",
-   "translit": "jabbu",
+   "form": "maladie",
+   "script": "Latn",
+   "translit": "maladie",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:ILLNESS",
   "morphology": {
-   "stem_form": "జబ్బు",
+   "stem_form": "malade",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-ie",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1310,45 +1317,50 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:maladie",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:bimari",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:noy",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jabbu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:daya",
-  "lang": "te",
+  "id": "lex:fr:gentillesse",
+  "lang": "fr",
   "lemma": {
-   "form": "దయ",
-   "script": "Telu",
-   "translit": "daya",
+   "form": "gentillesse",
+   "script": "Latn",
+   "translit": "gentillesse",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:KINDNESS",
   "morphology": {
-   "stem_form": "దయ",
+   "stem_form": "gentil",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-esse",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1358,45 +1370,50 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:gentillesse",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:meharbani",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:irakkam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:daya",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:telivi",
-  "lang": "te",
+  "id": "lex:fr:habilete",
+  "lang": "fr",
   "lemma": {
-   "form": "తెలివి",
-   "script": "Telu",
-   "translit": "telivi",
+   "form": "habileté",
+   "script": "Latn",
+   "translit": "habileté",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:CLEVERNESS",
   "morphology": {
-   "stem_form": "తెలివి",
+   "stem_form": "habile",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-te",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1406,55 +1423,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:habilete",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:calaki",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:putticalittanam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:telivi",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kangaru",
-  "lang": "te",
+  "id": "lex:fr:nervosite",
+  "lang": "fr",
   "lemma": {
-   "form": "కంగారు",
-   "script": "Telu",
-   "translit": "kaṅgāru",
+   "form": "nervosité",
+   "script": "Latn",
+   "translit": "nervosité",
    "ipa": null
   },
   "pos": "noun",
-  "register": "N",
+  "register": "L",
   "concept_id": "concept:NERVOUSNESS",
   "morphology": {
-   "stem_form": "కంగారు",
+   "stem_form": "nerveux",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
-   "segmentation_confidence": 1.0
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-ite",
+     "function_id": "fn:ST"
+    }
+   ],
+   "schema": "STEM+ST",
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:nervousness",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:nervosite",
     "relation": "TRANSLATION"
    },
    {
@@ -1464,40 +1482,39 @@
    {
     "entry_id": "lex:ta:patarram",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kangaru",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cadavadam",
-  "lang": "te",
+  "id": "lex:fr:lecture",
+  "lang": "fr",
   "lemma": {
-   "form": "చదవడం",
-   "script": "Telu",
-   "translit": "cadavaḍaṁ",
+   "form": "lecture",
+   "script": "Latn",
+   "translit": "lecture",
    "ipa": null
   },
   "pos": "noun",
-  "register": "N",
+  "register": "L",
   "concept_id": "concept:READING_ACT",
   "morphology": {
-   "stem_form": "చదువు",
+   "stem_form": "lecture",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-dam",
-     "function_id": "fn:EV"
-    }
-   ],
-   "schema": "STEM+EV",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1507,60 +1524,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:lecture",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:parhai",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:patittal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cadavadam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned, from Latin lectura. A false friend: English 'lecture' means something else.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:rayadam",
-  "lang": "te",
+  "id": "lex:fr:ecriture",
+  "lang": "fr",
   "lemma": {
-   "form": "రాయడం",
-   "script": "Telu",
-   "translit": "rāyaḍaṁ",
+   "form": "écriture",
+   "script": "Latn",
+   "translit": "écriture",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:WRITING_ACT",
   "morphology": {
-   "stem_form": "రాయు",
+   "stem_form": "écrire",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-dam",
+     "affix_id": "affix:fr:-ure",
      "function_id": "fn:EV"
     }
    ],
    "schema": "STEM+EV",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:writing",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:ecriture",
     "relation": "TRANSLATION"
    },
    {
@@ -1570,40 +1583,39 @@
    {
     "entry_id": "lex:ta:elututal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rayadam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:padadam",
-  "lang": "te",
+  "id": "lex:fr:chant",
+  "lang": "fr",
   "lemma": {
-   "form": "పాడడం",
-   "script": "Telu",
-   "translit": "pāḍaḍaṁ",
+   "form": "chant",
+   "script": "Latn",
+   "translit": "chant",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:SINGING_ACT",
   "morphology": {
-   "stem_form": "పాడు",
+   "stem_form": "chanter",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-dam",
-     "function_id": "fn:EV"
-    }
-   ],
-   "schema": "STEM+EV",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1613,45 +1625,50 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:chant",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:gayan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:patutal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:padadam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Converted from the verb without an affix.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:alankarana",
-  "lang": "te",
+  "id": "lex:fr:decoration",
+  "lang": "fr",
   "lemma": {
-   "form": "అలంకరణ",
-   "script": "Telu",
-   "translit": "alaṅkaraṇa",
+   "form": "décoration",
+   "script": "Latn",
+   "translit": "décoration",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:DECORATION",
   "morphology": {
-   "stem_form": "అలంకరణ",
+   "stem_form": "décorer",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-tion",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1661,55 +1678,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:decoration",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:sajavat",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:alankaram",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:alankarana",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kadalika",
-  "lang": "te",
+  "id": "lex:fr:mouvement",
+  "lang": "fr",
   "lemma": {
-   "form": "కదలిక",
-   "script": "Telu",
-   "translit": "kadalika",
+   "form": "mouvement",
+   "script": "Latn",
+   "translit": "mouvement",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:MOVEMENT",
   "morphology": {
-   "stem_form": "కదలు",
+   "stem_form": "mouvoir",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
-   "segmentation_confidence": 1.0
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-ment",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:movement",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:mouvement",
     "relation": "TRANSLATION"
    },
    {
@@ -1719,35 +1737,44 @@
    {
     "entry_id": "lex:ta:iyakkam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kadalika",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "-ika nominal outside the v0.1 affix inventory; stored simplex.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cellimpu",
-  "lang": "te",
+  "id": "lex:fr:paiement",
+  "lang": "fr",
   "lemma": {
-   "form": "చెల్లింపు",
-   "script": "Telu",
-   "translit": "cellimpu",
+   "form": "paiement",
+   "script": "Latn",
+   "translit": "paiement",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:PAYMENT",
   "morphology": {
-   "stem_form": "చెల్లు",
+   "stem_form": "payer",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-ment",
+     "function_id": "fn:EV"
+    }
+   ],
+   "schema": "STEM+EV",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1757,46 +1784,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:paiement",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:bhugtan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:celuttutal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cellimpu",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "-impu nominal outside the v0.1 affix inventory.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:adhyapakudu",
-  "lang": "te",
+  "id": "lex:fr:enseignant",
+  "lang": "fr",
   "lemma": {
-   "form": "అధ్యాపకుడు",
-   "script": "Telu",
-   "translit": "adhyāpakuḍu",
+   "form": "enseignant",
+   "script": "Latn",
+   "translit": "enseignant",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:TEACHER",
   "morphology": {
-   "stem_form": "అధ్యాపక",
+   "stem_form": "enseigner",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-kudu",
+     "affix_id": "affix:fr:-ant",
      "function_id": "fn:AG"
     }
    ],
@@ -1810,60 +1837,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:enseignant",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:siksak",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:aciriyar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:adhyapakudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:panivadu",
-  "lang": "te",
+  "id": "lex:fr:travailleur",
+  "lang": "fr",
   "lemma": {
-   "form": "పనివాడు",
-   "script": "Telu",
-   "translit": "panivāḍu",
+   "form": "travailleur",
+   "script": "Latn",
+   "translit": "travailleur",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:WORKER",
   "morphology": {
-   "stem_form": "పని",
+   "stem_form": "travailler",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-vadu",
+     "affix_id": "affix:fr:-eur-ag",
      "function_id": "fn:AG"
     }
    ],
    "schema": "STEM+AG",
-   "segmentation_confidence": 0.8
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:worker",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:travailleur",
     "relation": "TRANSLATION"
    },
    {
@@ -1873,36 +1896,40 @@
    {
     "entry_id": "lex:ta:tolilali",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:panivadu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kalakarudu",
-  "lang": "te",
+  "id": "lex:fr:artiste",
+  "lang": "fr",
   "lemma": {
-   "form": "కళాకారుడు",
-   "script": "Telu",
-   "translit": "kaḷākāruḍu",
+   "form": "artiste",
+   "script": "Latn",
+   "translit": "artiste",
    "ipa": null
   },
   "pos": "noun",
-  "register": "mixed",
+  "register": "L",
   "concept_id": "concept:ARTIST",
   "morphology": {
-   "stem_form": "కళ",
+   "stem_form": "art",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-karudu",
+     "affix_id": "affix:fr:-iste",
      "function_id": "fn:AG"
     }
    ],
@@ -1916,45 +1943,50 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:artiste",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:kalakar",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kalainar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kalakarudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:raitu",
-  "lang": "te",
+  "id": "lex:fr:fermier",
+  "lang": "fr",
   "lemma": {
-   "form": "రైతు",
-   "script": "Telu",
-   "translit": "raitu",
+   "form": "fermier",
+   "script": "Latn",
+   "translit": "fermier",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:FARMER",
   "morphology": {
-   "stem_form": "రైతు",
+   "stem_form": "ferme",
    "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-ier",
+     "function_id": "fn:AG"
+    }
+   ],
+   "schema": "STEM+AG",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -1964,55 +1996,53 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:fermier",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:kisan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:ulavar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:raitu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:vyapari",
-  "lang": "te",
+  "id": "lex:fr:marchand",
+  "lang": "fr",
   "lemma": {
-   "form": "వ్యాపారి",
-   "script": "Telu",
-   "translit": "vyāpāri",
+   "form": "marchand",
+   "script": "Latn",
+   "translit": "marchand",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:MERCHANT",
   "morphology": {
-   "stem_form": "వ్యాపారి",
+   "stem_form": "marchand",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:merchant-of-fr"
+  ],
   "aligned": [
    {
     "entry_id": "lex:en:merchant",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:marchand",
     "relation": "TRANSLATION"
    },
    {
@@ -2022,36 +2052,40 @@
    {
     "entry_id": "lex:ta:vanikar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vyapari",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "From Old French marchant; simplex today.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:dukanadarudu",
-  "lang": "te",
+  "id": "lex:fr:boutiquier",
+  "lang": "fr",
   "lemma": {
-   "form": "దుకాణదారుడు",
-   "script": "Telu",
-   "translit": "dukāṇadāruḍu",
+   "form": "boutiquier",
+   "script": "Latn",
+   "translit": "boutiquier",
    "ipa": null
   },
   "pos": "noun",
-  "register": "P",
+  "register": "N",
   "concept_id": "concept:SHOPKEEPER",
   "morphology": {
-   "stem_form": "దుకాణం",
+   "stem_form": "boutique",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-daru",
+     "affix_id": "affix:fr:-ier",
      "function_id": "fn:HAB"
     }
    ],
@@ -2065,46 +2099,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:boutiquier",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:dukandar",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kataikkarar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:dukanadarudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:patagadu",
-  "lang": "te",
+  "id": "lex:fr:chanteur",
+  "lang": "fr",
   "lemma": {
-   "form": "పాటగాడు",
-   "script": "Telu",
-   "translit": "pāṭagāḍu",
+   "form": "chanteur",
+   "script": "Latn",
+   "translit": "chanteur",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:SINGER",
   "morphology": {
-   "stem_form": "పాట",
+   "stem_form": "chanter",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-gadu",
+     "affix_id": "affix:fr:-eur-ag",
      "function_id": "fn:AG"
     }
    ],
@@ -2118,46 +2152,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:chanteur",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:gayak",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:patakar",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:patagadu",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Colloquial/familiar register.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:samyavadi",
-  "lang": "te",
+  "id": "lex:fr:socialiste",
+  "lang": "fr",
   "lemma": {
-   "form": "సామ్యవాది",
-   "script": "Telu",
-   "translit": "sāmyavādi",
+   "form": "socialiste",
+   "script": "Latn",
+   "translit": "socialiste",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:SOCIALIST_P",
   "morphology": {
-   "stem_form": "సామ్య",
+   "stem_form": "social",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-vadi",
+     "affix_id": "affix:fr:-iste",
      "function_id": "fn:AG"
     }
    ],
@@ -2171,46 +2205,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:socialiste",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:samajvadi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:cocalist",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samyavadi",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jatiyavadi",
-  "lang": "te",
+  "id": "lex:fr:nationaliste",
+  "lang": "fr",
   "lemma": {
-   "form": "జాతీయవాది",
-   "script": "Telu",
-   "translit": "jātīyavādi",
+   "form": "nationaliste",
+   "script": "Latn",
+   "translit": "nationaliste",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:NATIONALIST_P",
   "morphology": {
-   "stem_form": "జాతీయ",
+   "stem_form": "national",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-vadi",
+     "affix_id": "affix:fr:-iste",
      "function_id": "fn:AG"
     }
    ],
@@ -2224,46 +2258,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:nationaliste",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:rastravadi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:teciyavati",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyavadi",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:mantrikudu",
-  "lang": "te",
+  "id": "lex:fr:magicien",
+  "lang": "fr",
   "lemma": {
-   "form": "మాంత్రికుడు",
-   "script": "Telu",
-   "translit": "māntrikuḍu",
+   "form": "magicien",
+   "script": "Latn",
+   "translit": "magicien",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:MAGICIAN",
   "morphology": {
-   "stem_form": "మాంత్రిక",
+   "stem_form": "magie",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-kudu",
+     "affix_id": "affix:fr:-ien",
      "function_id": "fn:AG"
     }
    ],
@@ -2277,46 +2311,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:magicien",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:jadugar",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:mantiravati",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mantrikudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:snehituralu",
-  "lang": "te",
+  "id": "lex:fr:amie",
+  "lang": "fr",
   "lemma": {
-   "form": "స్నేహితురాలు",
-   "script": "Telu",
-   "translit": "snēhiturālu",
+   "form": "amie",
+   "script": "Latn",
+   "translit": "amie",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:FRIEND_F",
   "morphology": {
-   "stem_form": "స్నేహితుడు",
+   "stem_form": "ami",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ralu",
+     "affix_id": "affix:fr:-e-fem",
      "function_id": "fn:FEM"
     }
    ],
@@ -2326,56 +2360,93 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:fr:amie",
+    "entry_id": "lex:ta:toli",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:ta:toli",
+    "entry_id": "lex:te:snehituralu",
     "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:asaleni",
-  "lang": "te",
+  "id": "lex:fr:lionne",
+  "lang": "fr",
   "lemma": {
-   "form": "ఆశలేని",
-   "script": "Telu",
-   "translit": "āśalēni",
+   "form": "lionne",
+   "script": "Latn",
+   "translit": "lionne",
    "ipa": null
   },
-  "pos": "adjective",
-  "register": "mixed",
-  "concept_id": "concept:HOPELESS",
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:LIONESS",
   "morphology": {
-   "stem_form": "ఆశ",
+   "stem_form": "lion",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-leni",
-     "function_id": "fn:PRIV"
+     "affix_id": "affix:fr:-e-fem",
+     "function_id": "fn:FEM"
     }
    ],
-   "schema": "STEM+PRIV",
+   "schema": "STEM+FEM",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:en:hopeless",
+    "entry_id": "lex:en:lioness",
     "relation": "TRANSLATION"
-   },
+   }
+  ],
+  "notes": "-ne allomorph.",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:desespere",
+  "lang": "fr",
+  "lemma": {
+   "form": "désespéré",
+   "script": "Latn",
+   "translit": "désespéré",
+   "ipa": null
+  },
+  "pos": "adjective",
+  "register": "N",
+  "concept_id": "concept:HOPELESS",
+  "morphology": {
+   "stem_form": "espéré",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:fr:des-",
+     "function_id": "fn:PRIV"
+    }
+   ],
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 0.9
+  },
+  "etymology": [],
+  "aligned": [
    {
-    "entry_id": "lex:fr:desespere",
+    "entry_id": "lex:en:hopeless",
     "relation": "TRANSLATION"
    },
    {
@@ -2385,50 +2456,50 @@
    {
     "entry_id": "lex:ta:nampikkaiyarra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:asaleni",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:bhayamleni",
-  "lang": "te",
+  "id": "lex:fr:intrepide",
+  "lang": "fr",
   "lemma": {
-   "form": "భయంలేని",
-   "script": "Telu",
-   "translit": "bhayaṁlēni",
+   "form": "intrépide",
+   "script": "Latn",
+   "translit": "intrépide",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "mixed",
+  "register": "L",
   "concept_id": "concept:FEARLESS",
   "morphology": {
-   "stem_form": "భయం",
+   "stem_form": "trépide",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-leni",
+     "affix_id": "affix:fr:in-",
      "function_id": "fn:PRIV"
     }
    ],
    "schema": "STEM+PRIV",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.7
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:fearless",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:intrepide",
     "relation": "TRANSLATION"
    },
    {
@@ -2438,50 +2509,50 @@
    {
     "entry_id": "lex:ta:accamarra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:bhayamleni",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned; trépide is not a free word.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sigguleni",
-  "lang": "te",
+  "id": "lex:fr:ehonte",
+  "lang": "fr",
   "lemma": {
-   "form": "సిగ్గులేని",
-   "script": "Telu",
-   "translit": "siggulēni",
+   "form": "éhonté",
+   "script": "Latn",
+   "translit": "éhonté",
    "ipa": null
   },
   "pos": "adjective",
   "register": "N",
   "concept_id": "concept:SHAMELESS",
   "morphology": {
-   "stem_form": "సిగ్గు",
+   "stem_form": "honte",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-leni",
+     "affix_id": "affix:fr:e-",
      "function_id": "fn:PRIV"
     }
    ],
    "schema": "STEM+PRIV",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.7
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:shameless",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:ehonte",
     "relation": "TRANSLATION"
    },
    {
@@ -2491,84 +2562,40 @@
    {
     "entry_id": "lex:ta:vetkamillata",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sigguleni",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Fossil é- (Latin ex-) around honte.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:vyartham",
-  "lang": "te",
+  "id": "lex:fr:inutile",
+  "lang": "fr",
   "lemma": {
-   "form": "వ్యర్థం",
-   "script": "Telu",
-   "translit": "vyarthaṁ",
+   "form": "inutile",
+   "script": "Latn",
+   "translit": "inutile",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:USELESS",
   "morphology": {
-   "stem_form": "వ్యర్థం",
-   "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
-   "segmentation_confidence": 1.0
-  },
-  "etymology": [],
-  "aligned": [
-   {
-    "entry_id": "lex:en:useless",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:inutile",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:hi:bekar",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:ta:payanarra",
-    "relation": "TRANSLATION"
-   }
-  ],
-  "notes": "Tatsama simplex.",
-  "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
-   "review_status": "draft",
-   "source_refs": [
-    "brown"
-   ]
-  }
- },
- {
-  "id": "lex:te:illuleni",
-  "lang": "te",
-  "lemma": {
-   "form": "ఇల్లులేని",
-   "script": "Telu",
-   "translit": "illulēni",
-   "ipa": null
-  },
-  "pos": "adjective",
-  "register": "N",
-  "concept_id": "concept:HOMELESS",
-  "morphology": {
-   "stem_form": "ఇల్లు",
+   "stem_form": "utile",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-leni",
+     "affix_id": "affix:fr:in-",
      "function_id": "fn:PRIV"
     }
    ],
@@ -2578,11 +2605,55 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:en:homeless",
+    "entry_id": "lex:en:useless",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:sans-abri",
+    "entry_id": "lex:hi:bekar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:payanarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vyartham",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:sans-abri",
+  "lang": "fr",
+  "lemma": {
+   "form": "sans-abri",
+   "script": "Latn",
+   "translit": "sans-abri",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:HOMELESS",
+  "morphology": {
+   "stem_form": "abri",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:homeless",
     "relation": "TRANSLATION"
    },
    {
@@ -2592,36 +2663,40 @@
    {
     "entry_id": "lex:ta:vitarra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:illuleni",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "A compound with the preposition sans; no privative affix.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nirjivam",
-  "lang": "te",
+  "id": "lex:fr:inanime",
+  "lang": "fr",
   "lemma": {
-   "form": "నిర్జీవం",
-   "script": "Telu",
-   "translit": "nirjīvaṁ",
+   "form": "inanimé",
+   "script": "Latn",
+   "translit": "inanimé",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:LIFELESS",
   "morphology": {
-   "stem_form": "జీవం",
+   "stem_form": "animé",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:nir-",
+     "affix_id": "affix:fr:in-",
      "function_id": "fn:PRIV"
     }
    ],
@@ -2635,60 +2710,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:inanime",
+    "entry_id": "lex:hi:nirjiv",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:hi:nirjiv",
-    "relation": "SHARED_LOAN"
+    "entry_id": "lex:ta:uyirarra",
+    "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:ta:uyirarra",
+    "entry_id": "lex:te:nirjivam",
     "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:duhkhamaina",
-  "lang": "te",
+  "id": "lex:fr:malheureux",
+  "lang": "fr",
   "lemma": {
-   "form": "దుఃఖమైన",
-   "script": "Telu",
-   "translit": "duḥkhamaina",
+   "form": "malheureux",
+   "script": "Latn",
+   "translit": "malheureux",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:UNHAPPY",
   "morphology": {
-   "stem_form": "దుఃఖం",
+   "stem_form": "heureux",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-aina",
-     "function_id": "fn:ADJ"
+     "affix_id": "affix:fr:mal-",
+     "function_id": "fn:PRIV"
     }
    ],
-   "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "schema": "STEM+PRIV",
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:unhappy",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:malheureux",
     "relation": "TRANSLATION"
    },
    {
@@ -2698,40 +2769,39 @@
    {
     "entry_id": "lex:ta:makilcciyarra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:duhkhamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:asagala",
-  "lang": "te",
+  "id": "lex:fr:plein-d'espoir",
+  "lang": "fr",
   "lemma": {
-   "form": "ఆశగల",
-   "script": "Telu",
-   "translit": "āśagala",
+   "form": "plein d'espoir",
+   "script": "Latn",
+   "translit": "plein d'espoir",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "mixed",
+  "register": "N",
   "concept_id": "concept:HOPEFUL",
   "morphology": {
-   "stem_form": "ఆశ",
+   "stem_form": "espoir",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-gala",
-     "function_id": "fn:POS"
-    }
-   ],
-   "schema": "STEM+POS",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -2741,42 +2811,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:plein-d'espoir",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:asavan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:nampikkaiyulla",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:asagala",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "A phrase: French has no productive -ful.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:upayogakaram",
-  "lang": "te",
+  "id": "lex:fr:utile",
+  "lang": "fr",
   "lemma": {
-   "form": "ఉపయోగకరం",
-   "script": "Telu",
-   "translit": "upayōgakaraṁ",
+   "form": "utile",
+   "script": "Latn",
+   "translit": "utile",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:USEFUL",
   "morphology": {
-   "stem_form": "ఉపయోగ",
+   "stem_form": "utile",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -2789,50 +2859,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:utile",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:upyogi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:payanulla",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:upayogakaram",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Tatsama -kara formation; simplex here.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:balavantudu",
-  "lang": "te",
+  "id": "lex:fr:puissant",
+  "lang": "fr",
   "lemma": {
-   "form": "బలవంతుడు",
-   "script": "Telu",
-   "translit": "balavantuḍu",
+   "form": "puissant",
+   "script": "Latn",
+   "translit": "puissant",
    "ipa": null
   },
-  "pos": "noun",
-  "register": "S",
+  "pos": "adjective",
+  "register": "N",
   "concept_id": "concept:POWERFUL",
   "morphology": {
-   "stem_form": "బలం",
+   "stem_form": "puissant",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-vantudu",
-     "function_id": "fn:POS"
-    }
-   ],
-   "schema": "STEM+POS",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -2842,60 +2907,51 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:puissant",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:balvan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:valimaiyana",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balavantudu",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Masculine-human form.",
+  "notes": "Historically a participle of pouvoir; simplex today.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:andamaina",
-  "lang": "te",
+  "id": "lex:fr:beau",
+  "lang": "fr",
   "lemma": {
-   "form": "అందమైన",
-   "script": "Telu",
-   "translit": "andamaina",
+   "form": "beau",
+   "script": "Latn",
+   "translit": "beau",
    "ipa": null
   },
   "pos": "adjective",
   "register": "N",
   "concept_id": "concept:BEAUTIFUL",
   "morphology": {
-   "stem_form": "అందం",
+   "stem_form": "beau",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-aina",
-     "function_id": "fn:ADJ"
-    }
-   ],
-   "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:beautiful",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:beau",
     "relation": "TRANSLATION"
    },
    {
@@ -2905,50 +2961,50 @@
    {
     "entry_id": "lex:ta:alakana",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:andamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:santosamaina",
-  "lang": "te",
+  "id": "lex:fr:joyeux",
+  "lang": "fr",
   "lemma": {
-   "form": "సంతోషమైన",
-   "script": "Telu",
-   "translit": "santōṣamaina",
+   "form": "joyeux",
+   "script": "Latn",
+   "translit": "joyeux",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:JOYFUL",
   "morphology": {
-   "stem_form": "సంతోషం",
+   "stem_form": "joie",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-aina",
-     "function_id": "fn:ADJ"
+     "affix_id": "affix:fr:-eux",
+     "function_id": "fn:POS"
     }
    ],
-   "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "schema": "STEM+POS",
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:joyful",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:joyeux",
     "relation": "TRANSLATION"
    },
    {
@@ -2958,40 +3014,44 @@
    {
     "entry_id": "lex:ta:makilcciyana",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:santosamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:dayagala",
-  "lang": "te",
+  "id": "lex:fr:compatissant",
+  "lang": "fr",
   "lemma": {
-   "form": "దయగల",
-   "script": "Telu",
-   "translit": "dayagala",
+   "form": "compatissant",
+   "script": "Latn",
+   "translit": "compatissant",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "mixed",
+  "register": "N",
   "concept_id": "concept:COMPASSIONATE",
   "morphology": {
-   "stem_form": "దయ",
+   "stem_form": "compatir",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-gala",
-     "function_id": "fn:POS"
+     "affix_id": "affix:fr:-ant",
+     "function_id": "fn:ADJ"
     }
    ],
-   "schema": "STEM+POS",
+   "schema": "STEM+ADJ",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3001,109 +3061,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:compatissant",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:dayavan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:irakkamulla",
     "relation": "TRANSLATION"
-   }
-  ],
-  "notes": "",
-  "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
-   "review_status": "draft",
-   "source_refs": [
-    "brown"
-   ]
-  }
- },
- {
-  "id": "lex:te:asamayam",
-  "lang": "te",
-  "lemma": {
-   "form": "ఆశామయం",
-   "script": "Telu",
-   "translit": "āśāmayaṁ",
-   "ipa": null
-  },
-  "pos": "adjective",
-  "register": "S",
-  "concept_id": "concept:HOPEFUL_FULL",
-  "morphology": {
-   "stem_form": "ఆశ",
-   "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-mayam",
-     "function_id": "fn:POS"
-    }
-   ],
-   "schema": "STEM+POS",
-   "segmentation_confidence": 1.0
-  },
-  "etymology": [],
-  "aligned": [
-   {
-    "entry_id": "lex:en:hope-filled",
-    "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:hi:asapurn",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:ta:nampikkai-nirainta",
+    "entry_id": "lex:te:dayagala",
     "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cadavadagina",
-  "lang": "te",
+  "id": "lex:fr:lisible",
+  "lang": "fr",
   "lemma": {
-   "form": "చదవదగిన",
-   "script": "Telu",
-   "translit": "cadavadagina",
+   "form": "lisible",
+   "script": "Latn",
+   "translit": "lisible",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "N",
+  "register": "L",
   "concept_id": "concept:READABLE",
   "morphology": {
-   "stem_form": "చదువు",
+   "stem_form": "lire",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-dagina",
+     "affix_id": "affix:fr:-able",
      "function_id": "fn:ABL"
     }
    ],
    "schema": "STEM+ABL",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:readable",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:lisible",
     "relation": "TRANSLATION"
    },
    {
@@ -3113,50 +3120,50 @@
    {
     "entry_id": "lex:ta:patikkakkutiya",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cadavadagina",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Learned allomorph -ible.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:tagadagina",
-  "lang": "te",
+  "id": "lex:fr:buvable",
+  "lang": "fr",
   "lemma": {
-   "form": "తాగదగిన",
-   "script": "Telu",
-   "translit": "tāgadagina",
+   "form": "buvable",
+   "script": "Latn",
+   "translit": "buvable",
    "ipa": null
   },
   "pos": "adjective",
   "register": "N",
   "concept_id": "concept:DRINKABLE",
   "morphology": {
-   "stem_form": "తాగు",
+   "stem_form": "boire",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-dagina",
+     "affix_id": "affix:fr:-able",
      "function_id": "fn:ABL"
     }
    ],
    "schema": "STEM+ABL",
-   "segmentation_confidence": 1.0
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:drinkable",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:buvable",
     "relation": "TRANSLATION"
    },
    {
@@ -3166,36 +3173,40 @@
    {
     "entry_id": "lex:ta:kutikkattakka",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tagadagina",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Stem allomorph buv-.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:gauravincadagina",
-  "lang": "te",
+  "id": "lex:fr:respectable",
+  "lang": "fr",
   "lemma": {
-   "form": "గౌరవించదగిన",
-   "script": "Telu",
-   "translit": "gauraviñcadagina",
+   "form": "respectable",
+   "script": "Latn",
+   "translit": "respectable",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "mixed",
+  "register": "N",
   "concept_id": "concept:RESPECTABLE",
   "morphology": {
-   "stem_form": "గౌరవించు",
+   "stem_form": "respecter",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-dagina",
+     "affix_id": "affix:fr:-able",
      "function_id": "fn:ABL"
     }
    ],
@@ -3209,46 +3220,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:respectable",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:mananiya",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:matikkattakka",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:gauravincadagina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:vegamga",
-  "lang": "te",
+  "id": "lex:fr:rapidement",
+  "lang": "fr",
   "lemma": {
-   "form": "వేగంగా",
-   "script": "Telu",
-   "translit": "vēgaṁgā",
+   "form": "rapidement",
+   "script": "Latn",
+   "translit": "rapidement",
    "ipa": null
   },
   "pos": "adverb",
-  "register": "mixed",
+  "register": "N",
   "concept_id": "concept:QUICKLY",
   "morphology": {
-   "stem_form": "వేగం",
+   "stem_form": "rapide",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ga",
+     "affix_id": "affix:fr:-ment-adv",
      "function_id": "fn:ADV"
     }
    ],
@@ -3262,46 +3273,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:rapidement",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:jaldi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:vekamaka",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vegamga",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nemmadiga",
-  "lang": "te",
+  "id": "lex:fr:lentement",
+  "lang": "fr",
   "lemma": {
-   "form": "నెమ్మదిగా",
-   "script": "Telu",
-   "translit": "nemmadigā",
+   "form": "lentement",
+   "script": "Latn",
+   "translit": "lentement",
    "ipa": null
   },
   "pos": "adverb",
   "register": "N",
   "concept_id": "concept:SLOWLY",
   "morphology": {
-   "stem_form": "నెమ్మది",
+   "stem_form": "lente",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ga",
+     "affix_id": "affix:fr:-ment-adv",
      "function_id": "fn:ADV"
     }
    ],
@@ -3315,50 +3326,54 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:lentement",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:dhire",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:metuvaka",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nemmadiga",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jagrattaga",
-  "lang": "te",
+  "id": "lex:fr:soigneusement",
+  "lang": "fr",
   "lemma": {
-   "form": "జాగ్రత్తగా",
-   "script": "Telu",
-   "translit": "jāgrattagā",
+   "form": "soigneusement",
+   "script": "Latn",
+   "translit": "soigneusement",
    "ipa": null
   },
   "pos": "adverb",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:CAREFULLY",
   "morphology": {
-   "stem_form": "జాగ్రత్త",
+   "stem_form": "soin",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-ga",
+     "affix_id": "affix:fr:-eux",
+     "function_id": "fn:POS"
+    },
+    {
+     "affix_id": "affix:fr:-ment-adv",
      "function_id": "fn:ADV"
     }
    ],
-   "schema": "STEM+ADV",
+   "schema": "STEM+POS+ADV",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3368,46 +3383,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:soigneusement",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:savdhanipurvak",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kavanamaka",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jagrattaga",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "Double derivation, like English care-ful-ly.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sulabhaparacu",
-  "lang": "te",
+  "id": "lex:fr:simplifier",
+  "lang": "fr",
   "lemma": {
-   "form": "సులభపరచు",
-   "script": "Telu",
-   "translit": "sulabhaparacu",
+   "form": "simplifier",
+   "script": "Latn",
+   "translit": "simplifier",
    "ipa": null
   },
   "pos": "verb",
-  "register": "mixed",
+  "register": "L",
   "concept_id": "concept:SIMPLIFY",
   "morphology": {
-   "stem_form": "సులభం",
+   "stem_form": "simple",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-parachu",
+     "affix_id": "affix:fr:-ifier",
      "function_id": "fn:CAUS"
     }
    ],
@@ -3421,46 +3436,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:simplifier",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:saral-banana",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:elimaippatuttu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sulabhaparacu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:balaparacu",
-  "lang": "te",
+  "id": "lex:fr:fortifier",
+  "lang": "fr",
   "lemma": {
-   "form": "బలపరచు",
-   "script": "Telu",
-   "translit": "balaparacu",
+   "form": "fortifier",
+   "script": "Latn",
+   "translit": "fortifier",
    "ipa": null
   },
   "pos": "verb",
-  "register": "mixed",
+  "register": "L",
   "concept_id": "concept:STRENGTHEN",
   "morphology": {
-   "stem_form": "బలం",
+   "stem_form": "fort",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-parachu",
+     "affix_id": "affix:fr:-ifier",
      "function_id": "fn:CAUS"
     }
    ],
@@ -3474,50 +3489,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:fortifier",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:mazbut-karna",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:valuppatuttu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balaparacu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cupincu",
-  "lang": "te",
+  "id": "lex:fr:montrer",
+  "lang": "fr",
   "lemma": {
-   "form": "చూపించు",
-   "script": "Telu",
-   "translit": "cūpiñcu",
+   "form": "montrer",
+   "script": "Latn",
+   "translit": "montrer",
    "ipa": null
   },
   "pos": "verb",
   "register": "N",
   "concept_id": "concept:SHOW",
   "morphology": {
-   "stem_form": "చూచు",
+   "stem_form": "montrer",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-inchu",
-     "function_id": "fn:CAUS"
-    }
-   ],
-   "schema": "STEM+CAUS",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3527,50 +3537,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:montrer",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:dikhana",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kattu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cupincu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:tinipincu",
-  "lang": "te",
+  "id": "lex:fr:nourrir",
+  "lang": "fr",
   "lemma": {
-   "form": "తినిపించు",
-   "script": "Telu",
-   "translit": "tinipiñcu",
+   "form": "nourrir",
+   "script": "Latn",
+   "translit": "nourrir",
    "ipa": null
   },
   "pos": "verb",
   "register": "N",
   "concept_id": "concept:FEED",
   "morphology": {
-   "stem_form": "తిను",
+   "stem_form": "nourrir",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-inchu",
-     "function_id": "fn:CAUS"
-    }
-   ],
-   "schema": "STEM+CAUS",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3580,46 +3585,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:nourrir",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:khilana",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:uttu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tinipincu",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "-piñcu allomorph.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:adhunikikarincu",
-  "lang": "te",
+  "id": "lex:fr:moderniser",
+  "lang": "fr",
   "lemma": {
-   "form": "ఆధునికీకరించు",
-   "script": "Telu",
-   "translit": "ādhunikīkariñcu",
+   "form": "moderniser",
+   "script": "Latn",
+   "translit": "moderniser",
    "ipa": null
   },
   "pos": "verb",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:MODERNIZE",
   "morphology": {
-   "stem_form": "ఆధునిక",
+   "stem_form": "moderne",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-inchu",
+     "affix_id": "affix:fr:-iser",
      "function_id": "fn:CAUS"
     }
    ],
@@ -3633,46 +3638,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:moderniser",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:adhunik-banana",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:navinappatuttu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:adhunikikarincu",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Sanskritic -īkar- + -iñcu.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:samyavadam",
-  "lang": "te",
+  "id": "lex:fr:socialisme",
+  "lang": "fr",
   "lemma": {
-   "form": "సామ్యవాదం",
-   "script": "Telu",
-   "translit": "sāmyavādaṁ",
+   "form": "socialisme",
+   "script": "Latn",
+   "translit": "socialisme",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:SOCIALISM",
   "morphology": {
-   "stem_form": "సామ్య",
+   "stem_form": "social",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-vadam",
+     "affix_id": "affix:fr:-isme",
      "function_id": "fn:DOCT"
     }
    ],
@@ -3686,46 +3691,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:socialisme",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:samajvad",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:cocalicam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samyavadam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jatiyavadam",
-  "lang": "te",
+  "id": "lex:fr:nationalisme",
+  "lang": "fr",
   "lemma": {
-   "form": "జాతీయవాదం",
-   "script": "Telu",
-   "translit": "jātīyavādaṁ",
+   "form": "nationalisme",
+   "script": "Latn",
+   "translit": "nationalisme",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:NATIONALISM",
   "morphology": {
-   "stem_form": "జాతీయ",
+   "stem_form": "national",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-vadam",
+     "affix_id": "affix:fr:-isme",
      "function_id": "fn:DOCT"
     }
    ],
@@ -3739,50 +3744,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:nationalisme",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:rastravad",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:teciyavatam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyavadam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:bhasasastram",
-  "lang": "te",
+  "id": "lex:fr:linguistique",
+  "lang": "fr",
   "lemma": {
-   "form": "భాషాశాస్త్రం",
-   "script": "Telu",
-   "translit": "bhāṣāśāstraṁ",
+   "form": "linguistique",
+   "script": "Latn",
+   "translit": "linguistique",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:LINGUISTICS",
   "morphology": {
-   "stem_form": "భాష",
+   "stem_form": "linguistique",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-sastram",
-     "function_id": "fn:FIELD"
-    }
-   ],
-   "schema": "STEM+FIELD",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3792,46 +3792,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:linguistique",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:bhasavijnan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:moliyiyal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:bhasasastram",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "A nominalised adjective, like English -ics.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jivasastram",
-  "lang": "te",
+  "id": "lex:fr:biologie",
+  "lang": "fr",
   "lemma": {
-   "form": "జీవశాస్త్రం",
-   "script": "Telu",
-   "translit": "jīvaśāstraṁ",
+   "form": "biologie",
+   "script": "Latn",
+   "translit": "biologie",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:BIOLOGY",
   "morphology": {
-   "stem_form": "జీవ",
+   "stem_form": "bio",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-sastram",
+     "affix_id": "affix:fr:-logie",
      "function_id": "fn:FIELD"
     }
    ],
@@ -3845,50 +3845,45 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:biologie",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:jivavijnan",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:uyiriyal",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jivasastram",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pathasala",
-  "lang": "te",
+  "id": "lex:fr:ecole",
+  "lang": "fr",
   "lemma": {
-   "form": "పాఠశాల",
-   "script": "Telu",
-   "translit": "pāṭhaśāla",
+   "form": "école",
+   "script": "Latn",
+   "translit": "école",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:SCHOOL",
   "morphology": {
-   "stem_form": "పాఠ",
+   "stem_form": "école",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-sala",
-     "function_id": "fn:COLL"
-    }
-   ],
-   "schema": "STEM+COLL",
+   "affixes": [],
+   "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [],
@@ -3898,55 +3893,53 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:ecole",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:pathsala",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:pallikkutam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pathasala",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:granthalayam",
-  "lang": "te",
+  "id": "lex:fr:bibliotheque",
+  "lang": "fr",
   "lemma": {
-   "form": "గ్రంథాలయం",
-   "script": "Telu",
-   "translit": "granthālayaṁ",
+   "form": "bibliothèque",
+   "script": "Latn",
+   "translit": "bibliothèque",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:LIBRARY",
   "morphology": {
-   "stem_form": "గ్రంథ",
+   "stem_form": "bibliothèque",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:library-la-fr"
+  ],
   "aligned": [
    {
     "entry_id": "lex:en:library",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:bibliotheque",
     "relation": "TRANSLATION"
    },
    {
@@ -3956,32 +3949,36 @@
    {
     "entry_id": "lex:ta:nulakam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:granthalayam",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "-ālaya outside the v0.1 affix inventory.",
+  "notes": "From Greek via Latin. A false friend: French librairie is a bookshop.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:davakhana",
-  "lang": "te",
+  "id": "lex:fr:clinique",
+  "lang": "fr",
   "lemma": {
-   "form": "దవాఖానా",
-   "script": "Telu",
-   "translit": "davākhānā",
+   "form": "clinique",
+   "script": "Latn",
+   "translit": "clinique",
    "ipa": null
   },
   "pos": "noun",
-  "register": "P",
+  "register": "L",
   "concept_id": "concept:CLINIC",
   "morphology": {
-   "stem_form": "దవాఖానా",
+   "stem_form": "clinique",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -3994,46 +3991,140 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:clinique",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:davaxana",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:maruttuvamanai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:davakhana",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Perso-Arabic loan common in Telangana Telugu; borrowed whole.",
+  "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pillalanti",
-  "lang": "te",
+  "id": "lex:fr:livret",
+  "lang": "fr",
   "lemma": {
-   "form": "పిల్లలాంటి",
-   "script": "Telu",
-   "translit": "pillalāṇṭi",
+   "form": "livret",
+   "script": "Latn",
+   "translit": "livret",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:BOOKLET",
+  "morphology": {
+   "stem_form": "livre",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-et",
+     "function_id": "fn:DIM"
+    }
+   ],
+   "schema": "STEM+DIM",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:booklet",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:pustika",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cirunul",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:caneton",
+  "lang": "fr",
+  "lemma": {
+   "form": "caneton",
+   "script": "Latn",
+   "translit": "caneton",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:DUCKLING",
+  "morphology": {
+   "stem_form": "cane",
+   "stem_ref": null,
+   "affixes": [
+    {
+     "affix_id": "affix:fr:-on",
+     "function_id": "fn:DIM"
+    }
+   ],
+   "schema": "STEM+DIM",
+   "segmentation_confidence": 0.9
+  },
+  "etymology": [],
+  "aligned": [
+   {
+    "entry_id": "lex:en:duckling",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vattukkutti",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "-eton allomorph.",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:enfantin",
+  "lang": "fr",
+  "lemma": {
+   "form": "enfantin",
+   "script": "Latn",
+   "translit": "enfantin",
    "ipa": null
   },
   "pos": "adjective",
   "register": "N",
   "concept_id": "concept:CHILDISH",
   "morphology": {
-   "stem_form": "పిల్ల",
+   "stem_form": "enfant",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-lanti",
+     "affix_id": "affix:fr:-in",
      "function_id": "fn:PEJ"
     }
    ],
@@ -4047,46 +4138,46 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:enfantin",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:baccom-sa",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kulantaittanamana",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pillalanti",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "Neutral 'child-like'; the pejorative shading is contextual.",
+  "notes": "Child-like; puéril is the stronger pejorative.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pasupulanti",
-  "lang": "te",
+  "id": "lex:fr:jaunatre",
+  "lang": "fr",
   "lemma": {
-   "form": "పసుపులాంటి",
-   "script": "Telu",
-   "translit": "pasupulāṇṭi",
+   "form": "jaunâtre",
+   "script": "Latn",
+   "translit": "jaunâtre",
    "ipa": null
   },
   "pos": "adjective",
   "register": "N",
   "concept_id": "concept:YELLOWISH",
   "morphology": {
-   "stem_form": "పసుపు",
+   "stem_form": "jaune",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-lanti",
+     "affix_id": "affix:fr:-atre",
      "function_id": "fn:PEJ"
     }
    ],
@@ -4100,60 +4191,56 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:jaunatre",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:pila-sa",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:mancal-ponra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pasupulanti",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jatiyamaina",
-  "lang": "te",
+  "id": "lex:fr:national",
+  "lang": "fr",
   "lemma": {
-   "form": "జాతీయమైన",
-   "script": "Telu",
-   "translit": "jātīyamaina",
+   "form": "national",
+   "script": "Latn",
+   "translit": "national",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:NATIONAL",
   "morphology": {
-   "stem_form": "జాతి",
+   "stem_form": "nation",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-aina",
+     "affix_id": "affix:fr:-al",
      "function_id": "fn:ADJ"
     }
    ],
    "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:national",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:national",
     "relation": "TRANSLATION"
    },
    {
@@ -4163,50 +4250,50 @@
    {
     "entry_id": "lex:ta:teciya",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:sastriyamaina",
-  "lang": "te",
+  "id": "lex:fr:scientifique",
+  "lang": "fr",
   "lemma": {
-   "form": "శాస్త్రీయమైన",
-   "script": "Telu",
-   "translit": "śāstrīyamaina",
+   "form": "scientifique",
+   "script": "Latn",
+   "translit": "scientifique",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:SCIENTIFIC",
   "morphology": {
-   "stem_form": "శాస్త్రం",
+   "stem_form": "science",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-aina",
+     "affix_id": "affix:fr:-ique",
      "function_id": "fn:ADJ"
     }
    ],
    "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "segmentation_confidence": 0.9
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:scientific",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:scientifique",
     "relation": "TRANSLATION"
    },
    {
@@ -4216,50 +4303,45 @@
    {
     "entry_id": "lex:ta:ariviyal-carnta",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sastriyamaina",
+    "relation": "TRANSLATION"
    }
   ],
-  "notes": "",
+  "notes": "-ifique allomorph.",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:prasiddhamaina",
-  "lang": "te",
+  "id": "lex:fr:celebre",
+  "lang": "fr",
   "lemma": {
-   "form": "ప్రసిద్ధమైన",
-   "script": "Telu",
-   "translit": "prasiddhamaina",
+   "form": "célèbre",
+   "script": "Latn",
+   "translit": "célèbre",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:FAMOUS",
   "morphology": {
-   "stem_form": "ప్రసిద్ధ",
+   "stem_form": "célèbre",
    "stem_ref": null,
-   "affixes": [
-    {
-     "affix_id": "affix:te:-aina",
-     "function_id": "fn:ADJ"
-    }
-   ],
-   "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:famous",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:celebre",
     "relation": "TRANSLATION"
    },
    {
@@ -4269,50 +4351,50 @@
    {
     "entry_id": "lex:ta:pukalperra",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:prasiddhamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pramadamaina",
-  "lang": "te",
+  "id": "lex:fr:dangereux",
+  "lang": "fr",
   "lemma": {
-   "form": "ప్రమాదమైన",
-   "script": "Telu",
-   "translit": "pramādamaina",
+   "form": "dangereux",
+   "script": "Latn",
+   "translit": "dangereux",
    "ipa": null
   },
   "pos": "adjective",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:DANGEROUS",
   "morphology": {
-   "stem_form": "ప్రమాదం",
+   "stem_form": "danger",
    "stem_ref": null,
    "affixes": [
     {
-     "affix_id": "affix:te:-aina",
+     "affix_id": "affix:fr:-eux",
      "function_id": "fn:ADJ"
     }
    ],
    "schema": "STEM+ADJ",
-   "segmentation_confidence": 0.8
+   "segmentation_confidence": 1.0
   },
   "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:dangerous",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:dangereux",
     "relation": "TRANSLATION"
    },
    {
@@ -4322,83 +4404,88 @@
    {
     "entry_id": "lex:ta:apattana",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pramadamaina",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:amma",
-  "lang": "te",
+  "id": "lex:fr:mere",
+  "lang": "fr",
   "lemma": {
-   "form": "అమ్మ",
-   "script": "Telu",
-   "translit": "amma",
+   "form": "mère",
+   "script": "Latn",
+   "translit": "mère",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:MOTHER",
   "morphology": {
-   "stem_form": "అమ్మ",
+   "stem_form": "mère",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:mother-pdr-te",
-   "edge:mother-cog-ta-te"
+   "edge:mother-la-fr",
+   "edge:mother-cog-fr-en",
+   "edge:mother-cog-fr-hi"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:mother",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:mere",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:mata",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:amma",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:amma",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nanna",
-  "lang": "te",
+  "id": "lex:fr:pere",
+  "lang": "fr",
   "lemma": {
-   "form": "నాన్న",
-   "script": "Telu",
-   "translit": "nānna",
+   "form": "père",
+   "script": "Latn",
+   "translit": "père",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:FATHER",
   "morphology": {
-   "stem_form": "నాన్న",
+   "stem_form": "père",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -4411,262 +4498,258 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:pere",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:pita",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:appa",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nanna",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:peru",
-  "lang": "te",
+  "id": "lex:fr:nom",
+  "lang": "fr",
   "lemma": {
-   "form": "పేరు",
-   "script": "Telu",
-   "translit": "pēru",
+   "form": "nom",
+   "script": "Latn",
+   "translit": "nom",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:NAME",
   "morphology": {
-   "stem_form": "పేరు",
+   "stem_form": "nom",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:name-pdr-te",
-   "edge:name-cog-ta-te"
+   "edge:name-la-fr",
+   "edge:name-cog-fr-en",
+   "edge:name-cog-fr-hi"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:name",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:nom",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:nam",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:peyar",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:peru",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pallu",
-  "lang": "te",
+  "id": "lex:fr:dent",
+  "lang": "fr",
   "lemma": {
-   "form": "పల్లు",
-   "script": "Telu",
-   "translit": "pallu",
+   "form": "dent",
+   "script": "Latn",
+   "translit": "dent",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:TOOTH",
   "morphology": {
-   "stem_form": "పల్లు",
+   "stem_form": "dent",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:tooth-pdr-te",
-   "edge:tooth-cog-ta-te"
+   "edge:tooth-la-fr",
+   "edge:tooth-cog-fr-en"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:tooth",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:dent",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:dat",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:pal",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pallu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:mudu",
-  "lang": "te",
+  "id": "lex:fr:trois",
+  "lang": "fr",
   "lemma": {
-   "form": "మూడు",
-   "script": "Telu",
-   "translit": "mūḍu",
+   "form": "trois",
+   "script": "Latn",
+   "translit": "trois",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:THREE",
   "morphology": {
-   "stem_form": "మూడు",
+   "stem_form": "trois",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:three-pdr-te",
-   "edge:three-cog-ta-te"
+   "edge:three-la-fr",
+   "edge:three-cog-fr-en"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:three",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:trois",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:tin",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:munru",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:rendu",
-  "lang": "te",
+  "id": "lex:fr:deux",
+  "lang": "fr",
   "lemma": {
-   "form": "రెండు",
-   "script": "Telu",
-   "translit": "reṇḍu",
+   "form": "deux",
+   "script": "Latn",
+   "translit": "deux",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:TWO",
   "morphology": {
-   "stem_form": "రెండు",
+   "stem_form": "deux",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:two-pdr-te",
-   "edge:two-cog-ta-te"
+   "edge:two-la-fr",
+   "edge:two-cog-fr-en"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:two",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:deux",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:do",
-    "relation": "TRANSLATION"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:irantu",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rendu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:niru",
-  "lang": "te",
+  "id": "lex:fr:eau",
+  "lang": "fr",
   "lemma": {
-   "form": "నీరు",
-   "script": "Telu",
-   "translit": "nīru",
+   "form": "eau",
+   "script": "Latn",
+   "translit": "eau",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:WATER",
   "morphology": {
-   "stem_form": "నీరు",
+   "stem_form": "eau",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:water-pdr-te",
-   "edge:water-cog-ta-te"
+   "edge:water-la-fr"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:water",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:eau",
     "relation": "TRANSLATION"
    },
    {
@@ -4675,46 +4758,48 @@
    },
    {
     "entry_id": "lex:ta:nir",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:niru",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nippu",
-  "lang": "te",
+  "id": "lex:fr:feu",
+  "lang": "fr",
   "lemma": {
-   "form": "నిప్పు",
-   "script": "Telu",
-   "translit": "nippu",
+   "form": "feu",
+   "script": "Latn",
+   "translit": "feu",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:FIRE",
   "morphology": {
-   "stem_form": "నిప్పు",
+   "stem_form": "feu",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:fire-la-fr"
+  ],
   "aligned": [
    {
     "entry_id": "lex:en:fire",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:feu",
     "relation": "TRANSLATION"
    },
    {
@@ -4724,47 +4809,45 @@
    {
     "entry_id": "lex:ta:neruppu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nippu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kukka",
-  "lang": "te",
+  "id": "lex:fr:chien",
+  "lang": "fr",
   "lemma": {
-   "form": "కుక్క",
-   "script": "Telu",
-   "translit": "kukka",
+   "form": "chien",
+   "script": "Latn",
+   "translit": "chien",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:DOG",
   "morphology": {
-   "stem_form": "కుక్క",
+   "stem_form": "chien",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [
-   "edge:dog-areal-te"
-  ],
+  "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:dog",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:chien",
     "relation": "TRANSLATION"
    },
    {
@@ -4774,47 +4857,45 @@
    {
     "entry_id": "lex:ta:nay",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kukka",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:illu",
-  "lang": "te",
+  "id": "lex:fr:maison",
+  "lang": "fr",
   "lemma": {
-   "form": "ఇల్లు",
-   "script": "Telu",
-   "translit": "illu",
+   "form": "maison",
+   "script": "Latn",
+   "translit": "maison",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:HOUSE",
   "morphology": {
-   "stem_form": "ఇల్లు",
+   "stem_form": "maison",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [
-   "edge:house-pdr-te"
-  ],
+  "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:house",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:maison",
     "relation": "TRANSLATION"
    },
    {
@@ -4824,47 +4905,47 @@
    {
     "entry_id": "lex:ta:vitu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:illu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:pustakam",
-  "lang": "te",
+  "id": "lex:fr:livre",
+  "lang": "fr",
   "lemma": {
-   "form": "పుస్తకం",
-   "script": "Telu",
-   "translit": "pustakaṁ",
+   "form": "livre",
+   "script": "Latn",
+   "translit": "livre",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:BOOK",
   "morphology": {
-   "stem_form": "పుస్తకం",
+   "stem_form": "livre",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:book-skt-te"
+   "edge:book-la-fr"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:book",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:livre",
     "relation": "TRANSLATION"
    },
    {
@@ -4873,52 +4954,52 @@
    },
    {
     "entry_id": "lex:hi:pustak",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:puttakam",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pustakam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cakkera",
-  "lang": "te",
+  "id": "lex:fr:sucre",
+  "lang": "fr",
   "lemma": {
-   "form": "చక్కెర",
-   "script": "Telu",
-   "translit": "cakkera",
+   "form": "sucre",
+   "script": "Latn",
+   "translit": "sucre",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:SUGAR",
   "morphology": {
-   "stem_form": "చక్కెర",
+   "stem_form": "sucre",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:sugar-ia-te"
+   "edge:sugar-of-fr"
   ],
   "aligned": [
    {
     "entry_id": "lex:en:sugar",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:sucre",
     "relation": "TRANSLATION"
    },
    {
@@ -4927,44 +5008,49 @@
    },
    {
     "entry_id": "lex:hi:sakkar",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:carkkarai",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cakkera",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:raju",
-  "lang": "te",
+  "id": "lex:fr:roi",
+  "lang": "fr",
   "lemma": {
-   "form": "రాజు",
-   "script": "Telu",
-   "translit": "rāju",
+   "form": "roi",
+   "script": "Latn",
+   "translit": "roi",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:KING",
   "morphology": {
-   "stem_form": "రాజు",
+   "stem_form": "roi",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:king-skt-te"
+   "edge:king-la-fr",
+   "edge:king-cog-fr-hi"
   ],
   "aligned": [
    {
@@ -4972,57 +5058,51 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:roi",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:raja",
-    "relation": "SHARED_LOAN"
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:ta:aracan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:raju",
     "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:nidra",
-  "lang": "te",
+  "id": "lex:fr:sommeil",
+  "lang": "fr",
   "lemma": {
-   "form": "నిద్ర",
-   "script": "Telu",
-   "translit": "nidra",
+   "form": "sommeil",
+   "script": "Latn",
+   "translit": "sommeil",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:SLEEP",
   "morphology": {
-   "stem_form": "నిద్ర",
+   "stem_form": "sommeil",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [
-   "edge:sleep-skt-te"
-  ],
+  "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:sleep",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:sommeil",
     "relation": "TRANSLATION"
    },
    {
@@ -5032,32 +5112,36 @@
    {
     "entry_id": "lex:ta:tukkam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nidra",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:jnapakam",
-  "lang": "te",
+  "id": "lex:fr:memoire",
+  "lang": "fr",
   "lemma": {
-   "form": "జ్ఞాపకం",
-   "script": "Telu",
-   "translit": "jñāpakaṁ",
+   "form": "mémoire",
+   "script": "Latn",
+   "translit": "mémoire",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "L",
   "concept_id": "concept:MEMORY",
   "morphology": {
-   "stem_form": "జ్ఞాపకం",
+   "stem_form": "mémoire",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5070,49 +5154,49 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:memoire",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:yad",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:ninaivu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jnapakam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:anandam",
-  "lang": "te",
+  "id": "lex:fr:joie",
+  "lang": "fr",
   "lemma": {
-   "form": "ఆనందం",
-   "script": "Telu",
-   "translit": "ānandaṁ",
+   "form": "joie",
+   "script": "Latn",
+   "translit": "joie",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:JOY",
   "morphology": {
-   "stem_form": "ఆనందం",
+   "stem_form": "joie",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
   "etymology": [
-   "edge:joy-skt-te"
+   "edge:joy-la-fr"
   ],
   "aligned": [
    {
@@ -5120,42 +5204,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:joie",
+    "entry_id": "lex:hi:anand",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:hi:anand",
-    "relation": "SHARED_LOAN"
+    "entry_id": "lex:ta:anantam",
+    "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:ta:anantam",
-    "relation": "SHARED_LOAN"
+    "entry_id": "lex:te:anandam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kopam",
-  "lang": "te",
+  "id": "lex:fr:colere",
+  "lang": "fr",
   "lemma": {
-   "form": "కోపం",
-   "script": "Telu",
-   "translit": "kōpaṁ",
+   "form": "colère",
+   "script": "Latn",
+   "translit": "colère",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:ANGER",
   "morphology": {
-   "stem_form": "కోపం",
+   "stem_form": "colère",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5168,93 +5252,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:colere",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:gussa",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:kopam",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kopam",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:kannu",
-  "lang": "te",
+  "id": "lex:fr:oeil",
+  "lang": "fr",
   "lemma": {
-   "form": "కన్ను",
-   "script": "Telu",
-   "translit": "kannu",
+   "form": "œil",
+   "script": "Latn",
+   "translit": "œil",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:EYE",
   "morphology": {
-   "stem_form": "కన్ను",
-   "stem_ref": null,
-   "affixes": [],
-   "schema": "SIMPLEX",
-   "segmentation_confidence": 1.0
-  },
-  "etymology": [
-   "edge:eye-pdr-te",
-   "edge:eye-cog-ta-te"
-  ],
-  "aligned": [
-   {
-    "entry_id": "lex:en:eye",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:oeil",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:hi:akh",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:ta:kan",
-    "relation": "COGNATE"
-   }
-  ],
-  "notes": "",
-  "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
-   "review_status": "draft",
-   "source_refs": [
-    "brown"
-   ]
-  }
- },
- {
-  "id": "lex:te:naksatram",
-  "lang": "te",
-  "lemma": {
-   "form": "నక్షత్రం",
-   "script": "Telu",
-   "translit": "nakṣatraṁ",
-   "ipa": null
-  },
-  "pos": "noun",
-  "register": "S",
-  "concept_id": "concept:STAR",
-  "morphology": {
-   "stem_form": "నక్షత్రం",
+   "stem_form": "œil",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5263,11 +5296,57 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:en:star",
+    "entry_id": "lex:en:eye",
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:etoile",
+    "entry_id": "lex:hi:akh",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kannu",
+    "relation": "TRANSLATION"
+   }
+  ],
+  "notes": "",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "lex:fr:etoile",
+  "lang": "fr",
+  "lemma": {
+   "form": "étoile",
+   "script": "Latn",
+   "translit": "étoile",
+   "ipa": null
+  },
+  "pos": "noun",
+  "register": "N",
+  "concept_id": "concept:STAR",
+  "morphology": {
+   "stem_form": "étoile",
+   "stem_ref": null,
+   "affixes": [],
+   "schema": "SIMPLEX",
+   "segmentation_confidence": 1.0
+  },
+  "etymology": [
+   "edge:star-la-fr"
+  ],
+  "aligned": [
+   {
+    "entry_id": "lex:en:star",
     "relation": "TRANSLATION"
    },
    {
@@ -5276,49 +5355,46 @@
    },
    {
     "entry_id": "lex:ta:natcattiram",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:naksatram",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:uru",
-  "lang": "te",
+  "id": "lex:fr:village",
+  "lang": "fr",
   "lemma": {
-   "form": "ఊరు",
-   "script": "Telu",
-   "translit": "ūru",
+   "form": "village",
+   "script": "Latn",
+   "translit": "village",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:VILLAGE",
   "morphology": {
-   "stem_form": "ఊరు",
+   "stem_form": "village",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [
-   "edge:village-pdr-te",
-   "edge:village-cog-ta-te"
-  ],
+  "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:village",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:village",
     "relation": "TRANSLATION"
    },
    {
@@ -5327,48 +5403,46 @@
    },
    {
     "entry_id": "lex:ta:ur",
-    "relation": "COGNATE"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:uru",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:candrudu",
-  "lang": "te",
+  "id": "lex:fr:lune",
+  "lang": "fr",
   "lemma": {
-   "form": "చంద్రుడు",
-   "script": "Telu",
-   "translit": "candruḍu",
+   "form": "lune",
+   "script": "Latn",
+   "translit": "lune",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:MOON",
   "morphology": {
-   "stem_form": "చంద్రుడు",
+   "stem_form": "lune",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [
-   "edge:moon-skt-te"
-  ],
+  "etymology": [],
   "aligned": [
    {
     "entry_id": "lex:en:moon",
-    "relation": "TRANSLATION"
-   },
-   {
-    "entry_id": "lex:fr:lune",
     "relation": "TRANSLATION"
    },
    {
@@ -5378,32 +5452,36 @@
    {
     "entry_id": "lex:ta:nila",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:candrudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:suryudu",
-  "lang": "te",
+  "id": "lex:fr:soleil",
+  "lang": "fr",
   "lemma": {
-   "form": "సూర్యుడు",
-   "script": "Telu",
-   "translit": "sūryuḍu",
+   "form": "soleil",
+   "script": "Latn",
+   "translit": "soleil",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:SUN",
   "morphology": {
-   "stem_form": "సూర్యుడు",
+   "stem_form": "soleil",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5416,42 +5494,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:soleil",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:suraj",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:curiyan",
-    "relation": "SHARED_LOAN"
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:suryudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:cepa",
-  "lang": "te",
+  "id": "lex:fr:poisson",
+  "lang": "fr",
   "lemma": {
-   "form": "చేప",
-   "script": "Telu",
-   "translit": "cēpa",
+   "form": "poisson",
+   "script": "Latn",
+   "translit": "poisson",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:FISH",
   "morphology": {
-   "stem_form": "చేప",
+   "stem_form": "poisson",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5464,42 +5542,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:poisson",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:machli",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:min",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cepa",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:vana",
-  "lang": "te",
+  "id": "lex:fr:pluie",
+  "lang": "fr",
   "lemma": {
-   "form": "వాన",
-   "script": "Telu",
-   "translit": "vāna",
+   "form": "pluie",
+   "script": "Latn",
+   "translit": "pluie",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:RAIN",
   "morphology": {
-   "stem_form": "వాన",
+   "stem_form": "pluie",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5512,42 +5590,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:pluie",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:baris",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:malai",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vana",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:daham",
-  "lang": "te",
+  "id": "lex:fr:soif",
+  "lang": "fr",
   "lemma": {
-   "form": "దాహం",
-   "script": "Telu",
-   "translit": "dāhaṁ",
+   "form": "soif",
+   "script": "Latn",
+   "translit": "soif",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:THIRST",
   "morphology": {
-   "stem_form": "దాహం",
+   "stem_form": "soif",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5560,42 +5638,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:soif",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:pyas",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:takam",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:daham",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:akali",
-  "lang": "te",
+  "id": "lex:fr:faim",
+  "lang": "fr",
   "lemma": {
-   "form": "ఆకలి",
-   "script": "Telu",
-   "translit": "ākali",
+   "form": "faim",
+   "script": "Latn",
+   "translit": "faim",
    "ipa": null
   },
   "pos": "noun",
   "register": "N",
   "concept_id": "concept:HUNGER",
   "morphology": {
-   "stem_form": "ఆకలి",
+   "stem_form": "faim",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5608,42 +5686,42 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:faim",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:bhukh",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:paci",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:akali",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  },
  {
-  "id": "lex:te:ratri",
-  "lang": "te",
+  "id": "lex:fr:nuit",
+  "lang": "fr",
   "lemma": {
-   "form": "రాత్రి",
-   "script": "Telu",
-   "translit": "rātri",
+   "form": "nuit",
+   "script": "Latn",
+   "translit": "nuit",
    "ipa": null
   },
   "pos": "noun",
-  "register": "S",
+  "register": "N",
   "concept_id": "concept:NIGHT",
   "morphology": {
-   "stem_form": "రాత్రి",
+   "stem_form": "nuit",
    "stem_ref": null,
    "affixes": [],
    "schema": "SIMPLEX",
@@ -5656,25 +5734,25 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:fr:nuit",
-    "relation": "TRANSLATION"
-   },
-   {
     "entry_id": "lex:hi:rat",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:ta:iravu",
     "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:ratri",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
   "provenance": {
-   "annotator": "suffeffix-v0.1",
-   "date": "2026-09-17",
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
    "review_status": "draft",
    "source_refs": [
-    "brown"
+    "tlfi"
    ]
   }
  }

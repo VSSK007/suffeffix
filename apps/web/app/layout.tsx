@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Anek_Latin, Anek_Devanagari, Anek_Telugu, IBM_Plex_Mono } from "next/font/google";
+import { Anek_Latin, Anek_Devanagari, Anek_Telugu, Anek_Tamil, IBM_Plex_Mono } from "next/font/google";
 import { CommandPalette } from "@/components/command-palette";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -9,11 +9,12 @@ import "./globals.css";
 /* One family across all three scripts: Anek Latin, Devanagari and Telugu share
    proportions and stroke. All fonts are self-hosted, so the site makes no third-party requests. */
 const latin = Anek_Latin({ subsets: ["latin", "latin-ext"], axes: ["wdth"], variable: "--font-latin", display: "swap" });
-/* Hindi and Telugu faces are not preloaded and carry only the weight axis. Google's per-script
+/* Hindi, Telugu and Tamil faces are not preloaded and carry only the weight axis. Google's per-script
    unicode-range means a page downloads them only when it actually shows Hindi or Telugu text.
    (Glyph subsetting was tried and rejected: see docs/DECISIONS.md, entry 12.) */
 const deva = Anek_Devanagari({ subsets: ["devanagari"], variable: "--font-deva", display: "swap", preload: false });
 const telu = Anek_Telugu({ subsets: ["telugu"], variable: "--font-telu", display: "swap", preload: false });
+const taml = Anek_Tamil({ subsets: ["tamil"], variable: "--font-taml", display: "swap", preload: false });
 const mono = IBM_Plex_Mono({ subsets: ["latin", "latin-ext"], weight: ["400", "500"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
@@ -22,10 +23,10 @@ export const metadata: Metadata = {
   description: SITE.description,
   applicationName: SITE.name,
   authors: [{ name: "Suffeffix contributors", url: SITE.repo }],
-  keywords: ["lexical knowledge graph", "morphology", "etymology", "Telugu", "Hindi", "English", "affixes", "computational linguistics", "Dravidian", "Indo-European"],
+  keywords: ["lexical knowledge graph", "morphology", "etymology", "Telugu", "Hindi", "English", "French", "Tamil", "THEFT framework", "affixes", "computational linguistics", "Dravidian", "Indo-European"],
   openGraph: {
     type: "website", siteName: SITE.name, url: SITE.url + "/", title: `${SITE.name} — ${SITE.tagline}`, description: SITE.description,
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suffeffix — one meaning, three languages, two families" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suffeffix — one meaning, five languages, two families" }],
   },
   twitter: { card: "summary_large_image", title: `${SITE.name} — ${SITE.tagline}`, description: SITE.description, images: ["/og.png"] },
   robots: { index: true, follow: true },
@@ -45,14 +46,14 @@ const themeInit = `try{var t=localStorage.getItem('theme');if(t==='light'||t==='
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "WebSite", name: SITE.name, url: SITE.url, description: SITE.description, inLanguage: ["en", "hi", "te"] },
+    { "@type": "WebSite", name: SITE.name, url: SITE.url, description: SITE.description, inLanguage: ["en", "fr", "hi", "te", "ta"] },
     { "@type": "Organization", name: SITE.name, url: SITE.url, logo: `${SITE.url}/icon-512.png`, sameAs: [SITE.repo] },
   ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${latin.variable} ${deva.variable} ${telu.variable} ${mono.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${latin.variable} ${deva.variable} ${telu.variable} ${taml.variable} ${mono.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

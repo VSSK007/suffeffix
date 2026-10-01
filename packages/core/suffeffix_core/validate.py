@@ -10,13 +10,15 @@ from dataclasses import dataclass, field
 
 from .schema import Dataset
 
+LANGS = {"en", "fr", "hi", "te", "ta"}
+
 _ID_PATTERNS = {
     "atom": re.compile(r"^atom:[A-Z_]+$"),
     "fn": re.compile(r"^fn:[A-Z]+$"),
     "eq": re.compile(r"^eq:[A-Z]+$"),
-    "affix": re.compile(r"^affix:(en|te|hi):\S+$"),
+    "affix": re.compile(r"^affix:(en|fr|hi|te|ta):\S+$"),
     "concept": re.compile(r"^concept:[A-Z_]+$"),
-    "lex": re.compile(r"^lex:(en|te|hi):[a-z0-9\-']+$"),
+    "lex": re.compile(r"^lex:(en|fr|hi|te|ta):[a-z0-9\-']+$"),
     "root": re.compile(r"^root:[a-z]+:\S+$"),
     "edge": re.compile(r"^edge:[a-z0-9\-:]+$"),
 }
@@ -70,8 +72,9 @@ def validate_dataset(ds: Dataset) -> Report:  # noqa: C901
                 r.err(f"id pattern violation ({pat_key}): {obj.id!r}")
 
     # --- dataset limits (spec §1.2) ---
-    if not (300 <= len(ds.entries) <= 500):
-        r.err(f"entry count {len(ds.entries)} outside 300–500")
+    # v0.2 (T.H.E.F.T., five languages): roughly 110–170 entries per language.
+    if not (300 <= len(ds.entries) <= 850):
+        r.err(f"entry count {len(ds.entries)} outside 300–850")
     if not (30 <= len(ds.atoms) <= 50):
         r.err(f"atom count {len(ds.atoms)} outside 30–50")
     if not (20 <= len(ds.affix_functions) <= 30):
@@ -79,7 +82,7 @@ def validate_dataset(ds: Dataset) -> Report:  # noqa: C901
 
     # --- languages ---
     langs = {e.lang for e in ds.entries} | {a.lang for a in ds.affixes}
-    bad = langs - {"en", "te", "hi"}
+    bad = langs - LANGS
     if bad:
         r.err(f"prohibited languages present: {bad}")
 
@@ -127,7 +130,7 @@ def validate_dataset(ds: Dataset) -> Report:  # noqa: C901
         covered = concept_langs[c.id]
         if not covered:
             r.err(f"{c.id}: referenced by no entries")
-        elif covered != {"en", "te", "hi"} and not c.partial_coverage:
+        elif covered != LANGS and not c.partial_coverage:
             r.err(f"{c.id}: covers only {sorted(covered)} but partial_coverage is false")
 
     # --- entries ---

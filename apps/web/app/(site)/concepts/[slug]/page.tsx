@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
-import { LANES } from "@/lib/lang";
+import { LANES, LANG_CODES } from "@/lib/lang";
 import { Triptych } from "@/components/triptych";
 import { EpiTag, FamilyDot } from "@/components/marks";
 import { pageMeta } from "@/lib/seo";
@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug: s } = await params;
   const r = await data.conceptBySlug(s);
   if (!r) return { title: "Meaning" };
-  const words = (["en", "hi", "te"] as const).flatMap((l) => r.lanes[l].map((e) => e.form)).join(", ");
-  return pageMeta({ title: r.gloss, description: `${r.gloss}: ${words}. The same meaning in English, Hindi and Telugu, with each word’s affixes and decomposition.`, path: `/concepts/${s}/` });
+  const words = LANG_CODES.flatMap((l) => r.lanes[l].map((e) => e.form)).join(", ");
+  return pageMeta({ title: r.gloss, description: `${r.gloss}: ${words}. The same meaning in English, French, Hindi, Telugu and Tamil, with each word’s affixes and decomposition.`, path: `/concepts/${s}/` });
 }
 
 export default async function ConceptPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -67,7 +67,7 @@ export default async function ConceptPage({ params }: { params: Promise<{ slug: 
                     <span className="mono text-[13.5px] font-medium w-28 shrink-0 group-hover:text-ie-ink">{id.replace("atom:", "")}</span>
                     <span className="text-[13.5px] text-muted">{a.definition}</span>
                     <span className="ml-auto text-[13px] text-ink-2 hidden sm:inline">
-                      {a.exponents.en} · {a.exponents.hi} · {a.exponents.te}
+                      {LANES.map((l) => a.exponents[l.code]).join(" · ")}
                     </span>
                   </Link>
                 </li>

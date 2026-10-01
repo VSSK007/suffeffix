@@ -4,6 +4,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { data } from "./data";
+import { LANG_CODES, type LangCode } from "./lang";
 
 const ROOT = path.join(process.cwd(), "..", "..");
 
@@ -32,7 +33,7 @@ function band(f: string): string {
 export interface Census {
   entries: number;
   reg: Record<string, { n: number; counts: Record<string, number>; examples: Record<string, string[]>; derived: number }>;
-  heat: { id: string; label: string; en: string[]; hi: string[]; te: string[] }[];
+  heat: ({ id: string; label: string } & Record<LangCode, string[]>)[];
   affixTotals: Record<string, number>;
   edgeTypes: { type: string; within: number; crosses: number; contested: number }[];
   crossExamples: string[];
@@ -50,7 +51,7 @@ export async function loadCensus(): Promise<Census> {
   const edges: RawEdge[] = JSON.parse(await fs.readFile(path.join(ROOT, "data", "etymology_edges.json"), "utf-8"));
 
   const reg: Census["reg"] = {};
-  for (const l of ["en", "hi", "te"]) {
+  for (const l of LANG_CODES) {
     const list = entries.filter((e) => e.lang === l);
     const counts: Record<string, number> = {};
     const examples: Record<string, string[]> = {};
@@ -62,16 +63,17 @@ export async function loadCensus(): Promise<Census> {
   }
 
   const label = new Map(functions.map((f) => [f.id, f.label]));
-  const rows = new Map<string, { id: string; label: string; en: string[]; hi: string[]; te: string[] }>();
+  const rows = new Map<string, Census["heat"][number]>();
   for (const a of affixes) {
     for (const f of a.functions) {
-      const r = rows.get(f) ?? { id: f, label: label.get(f) ?? f, en: [], hi: [], te: [] };
+      const r = rows.get(f) ?? { id: f, label: label.get(f) ?? f, ...(Object.fromEntries(LANG_CODES.map((l) => [l, [] as string[]])) as Record<LangCode, string[]>) };
       r[a.lang].push(a.form);
       rows.set(f, r);
     }
   }
+  const total = (r: Census["heat"][number]) => LANG_CODES.reduce((n, l) => n + r[l].length, 0);
   const heat = [...rows.values()].sort(
-    (a, b) => b.en.length + b.hi.length + b.te.length - (a.en.length + a.hi.length + a.te.length) || a.label.localeCompare(b.label),
+    (a, b) => total(b) - total(a) || a.label.localeCompare(b.label),
   );
 
   const types = new Map<string, { type: string; within: number; crosses: number; contested: number }>();
@@ -102,7 +104,7 @@ export async function loadCensus(): Promise<Census> {
   cache = {
     entries: meta.counts.entries,
     reg, heat,
-    affixTotals: { en: affixes.filter((a) => a.lang === "en").length, hi: affixes.filter((a) => a.lang === "hi").length, te: affixes.filter((a) => a.lang === "te").length },
+    affixTotals: Object.fromEntries(LANG_CODES.map((l) => [l, affixes.filter((a) => a.lang === l).length])),
     edgeTypes, crossExamples,
     edgeTotal: edges.length,
     contested: edges.filter((e) => e.status === "contested").length,

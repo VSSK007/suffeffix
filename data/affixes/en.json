@@ -59,6 +59,50 @@
    {
     "affix_id": "affix:hi:-apa",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -82,7 +126,7 @@
   "functions": [
    "fn:ST"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "mid",
   "allomorphs": [
    "-ty"
@@ -98,39 +142,83 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-tanam",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-tvam",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:te:-ta",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:te:-rikam",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-pan",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-ta",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-tva",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-i",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-apa",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -200,6 +288,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -271,6 +403,50 @@
    {
     "affix_id": "affix:hi:-apa",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -340,6 +516,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -452,6 +672,50 @@
    {
     "affix_id": "affix:hi:-vadi",
     "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (N vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
+    "note": "functional equivalent; register differs (N vs S)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -475,7 +739,7 @@
   "functions": [
    "fn:AG"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [],
   "attaches_to": [
@@ -490,43 +754,87 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-kudu",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:te:-vadu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-gadu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-karudu",
-    "note": "functional equivalent; register differs (E vs mixed)"
+    "note": "functional equivalent; register differs (L vs mixed)"
    },
    {
     "affix_id": "affix:te:-vadi",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-kar",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-vala",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-dar",
-    "note": "functional equivalent; register differs (E vs P)"
+    "note": "functional equivalent; register differs (L vs P)"
    },
    {
     "affix_id": "affix:hi:-gar",
-    "note": "functional equivalent; register differs (E vs P)"
+    "note": "functional equivalent; register differs (L vs P)"
    },
    {
     "affix_id": "affix:hi:-vadi",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (L vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
+    "note": "functional equivalent; register differs (L vs S)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -550,7 +858,7 @@
   "functions": [
    "fn:DOCT"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [],
   "attaches_to": [
@@ -564,11 +872,19 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-vadam",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-vad",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-isme",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-vatam",
+    "note": "functional equivalent; register differs (L vs S)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -634,6 +950,18 @@
    {
     "affix_id": "affix:hi:-dar",
     "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ulla",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-nirainta",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -691,6 +1019,30 @@
    {
     "affix_id": "affix:hi:be-",
     "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:fr:in-",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:des-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:e-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:mal-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-arra",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-illata",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -745,6 +1097,30 @@
    {
     "affix_id": "affix:hi:be-",
     "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:fr:in-",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:des-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:e-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:mal-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-arra",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-illata",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -768,7 +1144,7 @@
   "functions": [
    "fn:ABL"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [
    "-ible"
@@ -784,11 +1160,23 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-dagina",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-niya",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-able",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-kkutiya",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttakka",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -831,6 +1219,14 @@
    {
     "affix_id": "affix:hi:-purvak",
     "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-ment-adv",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-aka",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -874,6 +1270,18 @@
    {
     "affix_id": "affix:hi:-sa",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-atre",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-in",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ponra",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -897,7 +1305,7 @@
   "functions": [
    "fn:CAUS"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [
    "-ise"
@@ -912,15 +1320,31 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-inchu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-parachu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-a-caus",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ifier",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-iser",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ppatuttu",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttu",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -944,7 +1368,7 @@
   "functions": [
    "fn:CAUS"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "mid",
   "allomorphs": [
    "-fy"
@@ -959,15 +1383,31 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-inchu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-parachu",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-a-caus",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ifier",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-iser",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ppatuttu",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttu",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1012,6 +1452,22 @@
    {
     "affix_id": "affix:hi:-a-caus",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ifier",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-iser",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-ppatuttu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttu",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1035,7 +1491,7 @@
   "functions": [
    "fn:EV"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [
    "-sion",
@@ -1050,23 +1506,51 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-dam",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-ta-verbal",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-ai",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-avat",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-ahat",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ure",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ment",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-tion",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-tal",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-kkam",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1090,7 +1574,7 @@
   "functions": [
    "fn:EV"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "mid",
   "allomorphs": [],
   "attaches_to": [
@@ -1103,23 +1587,51 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-dam",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-ta-verbal",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-ai",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-avat",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-ahat",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ure",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ment",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-tion",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-tal",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-kkam",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1175,6 +1687,34 @@
    {
     "affix_id": "affix:hi:-ahat",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ure",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ment",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-tion",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tal",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-kkam",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1198,7 +1738,7 @@
   "functions": [
    "fn:ADJ"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [
    "-ical"
@@ -1212,15 +1752,43 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-aina",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-iya",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-ik",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ique",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-al",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-in",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ana",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-iya",
+    "note": "functional equivalent; register differs (L vs S)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1244,7 +1812,7 @@
   "functions": [
    "fn:ADJ"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [],
   "attaches_to": [
@@ -1256,15 +1824,43 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-aina",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:hi:-iya",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-ik",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ique",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-al",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-in",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ana",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-iya",
+    "note": "functional equivalent; register differs (L vs S)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1289,7 +1885,7 @@
    "fn:ADJ",
    "fn:POS"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "mid",
   "allomorphs": [],
   "attaches_to": [
@@ -1302,31 +1898,43 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-gala",
-    "note": "functional equivalent; register differs (E vs N)"
+    "note": "functional equivalent; register differs (L vs N)"
    },
    {
     "affix_id": "affix:te:-mayam",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:te:-vantudu",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-van",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-purn",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-may",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-dar",
-    "note": "functional equivalent; register differs (E vs P)"
+    "note": "functional equivalent; register differs (L vs P)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ulla",
+    "note": "functional equivalent; register differs (L vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nirainta",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1350,7 +1958,7 @@
   "functions": [
    "fn:DIM"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "mid",
   "allomorphs": [],
   "attaches_to": [
@@ -1412,7 +2020,7 @@
   "functions": [
    "fn:FEM"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "low",
   "allomorphs": [],
   "attaches_to": [
@@ -1443,7 +2051,7 @@
   "functions": [
    "fn:FIELD"
   ],
-  "register": "E",
+  "register": "L",
   "productivity": "high",
   "allomorphs": [
    "-logy"
@@ -1457,11 +2065,19 @@
   "equivalents": [
    {
     "affix_id": "affix:te:-sastram",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
    },
    {
     "affix_id": "affix:hi:-vijnan",
-    "note": "functional equivalent; register differs (E vs S)"
+    "note": "functional equivalent; register differs (L vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-logie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-iyal",
+    "note": "functional equivalent; register differs (L vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",

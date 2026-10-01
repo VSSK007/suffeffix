@@ -16,7 +16,18 @@
    "affix:hi:-ta",
    "affix:hi:-tva",
    "affix:hi:-i",
-   "affix:hi:-apa"
+   "affix:hi:-apa",
+   "affix:fr:-ite",
+   "affix:fr:-te",
+   "affix:fr:-esse",
+   "affix:fr:-eur",
+   "affix:fr:-ie",
+   "affix:fr:-itude",
+   "affix:fr:-ance",
+   "affix:ta:-mai",
+   "affix:ta:-tanam",
+   "affix:ta:-ttuvam",
+   "affix:ta:-cci"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -35,7 +46,18 @@
    "affix:hi:-vala",
    "affix:hi:-dar",
    "affix:hi:-gar",
-   "affix:hi:-vadi"
+   "affix:hi:-vadi",
+   "affix:fr:-eur-ag",
+   "affix:fr:-iste",
+   "affix:fr:-ien",
+   "affix:fr:-ant",
+   "affix:fr:-ier",
+   "affix:ta:-ali",
+   "affix:ta:-akar",
+   "affix:ta:-nar",
+   "affix:ta:-avar",
+   "affix:ta:-karar",
+   "affix:ta:-vati"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -51,7 +73,10 @@
    "affix:hi:-van",
    "affix:hi:-purn",
    "affix:hi:-may",
-   "affix:hi:-dar"
+   "affix:hi:-dar",
+   "affix:fr:-eux",
+   "affix:ta:-ulla",
+   "affix:ta:-nirainta"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -65,7 +90,13 @@
    "affix:te:nir-",
    "affix:hi:-hin",
    "affix:hi:nir-",
-   "affix:hi:be-"
+   "affix:hi:be-",
+   "affix:fr:in-",
+   "affix:fr:des-",
+   "affix:fr:e-",
+   "affix:fr:mal-",
+   "affix:ta:-arra",
+   "affix:ta:-illata"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -75,7 +106,10 @@
   "members": [
    "affix:en:-able",
    "affix:te:-dagina",
-   "affix:hi:-niya"
+   "affix:hi:-niya",
+   "affix:fr:-able",
+   "affix:ta:-kkutiya",
+   "affix:ta:-ttakka"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -85,7 +119,9 @@
   "members": [
    "affix:en:-ly",
    "affix:te:-ga",
-   "affix:hi:-purvak"
+   "affix:hi:-purvak",
+   "affix:fr:-ment-adv",
+   "affix:ta:-aka"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -98,7 +134,11 @@
    "affix:en:-en",
    "affix:te:-inchu",
    "affix:te:-parachu",
-   "affix:hi:-a-caus"
+   "affix:hi:-a-caus",
+   "affix:fr:-ifier",
+   "affix:fr:-iser",
+   "affix:ta:-ppatuttu",
+   "affix:ta:-ttu"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -113,7 +153,14 @@
    "affix:te:-ta-verbal",
    "affix:hi:-ai",
    "affix:hi:-avat",
-   "affix:hi:-ahat"
+   "affix:hi:-ahat",
+   "affix:fr:-ance",
+   "affix:fr:-ure",
+   "affix:fr:-ment",
+   "affix:fr:-tion",
+   "affix:ta:-cci",
+   "affix:ta:-tal",
+   "affix:ta:-kkam"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -123,7 +170,9 @@
   "members": [
    "affix:en:-ism",
    "affix:te:-vadam",
-   "affix:hi:-vad"
+   "affix:hi:-vad",
+   "affix:fr:-isme",
+   "affix:ta:-vatam"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -133,7 +182,9 @@
   "members": [
    "affix:en:-ology",
    "affix:te:-sastram",
-   "affix:hi:-vijnan"
+   "affix:hi:-vijnan",
+   "affix:fr:-logie",
+   "affix:ta:-iyal"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -143,7 +194,11 @@
   "members": [
    "affix:te:-sala",
    "affix:hi:-khana",
-   "affix:hi:-shala"
+   "affix:hi:-shala",
+   "affix:fr:-erie",
+   "affix:ta:-akam",
+   "affix:ta:-kkutam",
+   "affix:ta:-manai"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -153,7 +208,10 @@
   "members": [
    "affix:en:-ish",
    "affix:te:-lanti",
-   "affix:hi:-sa"
+   "affix:hi:-sa",
+   "affix:fr:-atre",
+   "affix:fr:-in",
+   "affix:ta:-ponra"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  },
@@ -165,7 +223,14 @@
    "affix:en:-al",
    "affix:te:-aina",
    "affix:hi:-iya",
-   "affix:hi:-ik"
+   "affix:hi:-ik",
+   "affix:fr:-ant",
+   "affix:fr:-eux",
+   "affix:fr:-ique",
+   "affix:fr:-al",
+   "affix:fr:-in",
+   "affix:ta:-ana",
+   "affix:ta:-iya"
   ],
   "notes": "Members are functional equivalents whose distribution, register and productivity differ; the grouping is an engineering alignment, not a claim of interchangeability. [ENGINEERING]"
  }

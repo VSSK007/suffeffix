@@ -9,7 +9,7 @@ const COLS: { title: string; links: [string, string, boolean?][] }[] = [
   },
   {
     title: "Research",
-    links: [["Technical report v0.1", "/research/suffeffix-v0-1/"], ["Dataset & downloads", "/data/"], ["Decision log", "/docs/DECISIONS/"], ["Roadmap", "/docs/ROADMAP/"]],
+    links: [["Technical report v0.2", "/research/suffeffix-v0-2/"], ["Dataset & downloads", "/data/"], ["Decision log", "/docs/DECISIONS/"], ["Roadmap", "/docs/ROADMAP/"]],
   },
   {
     title: "Project",
@@ -29,9 +29,9 @@ export function SiteFooter() {
           </div>
           <p className="text-[14px] text-muted max-w-[40ch] leading-relaxed">
             An explainable lexical knowledge graph for morphology, semantic decomposition, etymology and
-            affix alignment across English, Hindi and Telugu.
+            affix alignment across Telugu, Hindi, English, French and Tamil.
           </p>
-          <p className="kicker">v0.1 · September 2026 · all records draft</p>
+          <p className="kicker">v0.2 · T.H.E.F.T. · October 2026 · all records draft</p>
         </div>
         {COLS.map((c) => (
           <nav key={c.title} aria-label={c.title} className="text-[14px]">

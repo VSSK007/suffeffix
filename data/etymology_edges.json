@@ -2453,5 +2453,2000 @@
     "cdial"
    ]
   }
+ },
+ {
+  "id": "edge:mother-pie-la",
+  "from": {
+   "node_ref": "root:pie:mehter",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*méh₂tēr",
+   "gloss": "mother"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "māter",
+   "gloss": "mother"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:mother-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "māter",
+   "gloss": "mother"
+  },
+  "to": {
+   "node_ref": "lex:fr:mere",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "mère",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:mother-cog-fr-en",
+  "from": {
+   "node_ref": "lex:fr:mere",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "mère",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:en:mother",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "mother",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:mother-cog-fr-hi",
+  "from": {
+   "node_ref": "lex:fr:mere",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "mère",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:hi:mata",
+   "lang_or_family": "hi",
+   "family": "IE:Indo-Aryan",
+   "form": "माता",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-pie-la",
+  "from": {
+   "node_ref": "root:pie:hnomn",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*h₁nómn̥",
+   "gloss": "name"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "nōmen",
+   "gloss": "name"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.8,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "nōmen",
+   "gloss": "name"
+  },
+  "to": {
+   "node_ref": "lex:fr:nom",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "nom",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-cog-fr-en",
+  "from": {
+   "node_ref": "lex:fr:nom",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "nom",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:en:name",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "name",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-cog-fr-hi",
+  "from": {
+   "node_ref": "lex:fr:nom",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "nom",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:hi:nam",
+   "lang_or_family": "hi",
+   "family": "IE:Indo-Aryan",
+   "form": "नाम",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-pie-la",
+  "from": {
+   "node_ref": "root:pie:trejes",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*tréyes",
+   "gloss": "three"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "trēs",
+   "gloss": "three"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "trēs",
+   "gloss": "three"
+  },
+  "to": {
+   "node_ref": "lex:fr:trois",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "trois",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-cog-fr-en",
+  "from": {
+   "node_ref": "lex:fr:trois",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "trois",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:en:three",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "three",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:tooth-pie-la",
+  "from": {
+   "node_ref": "root:pie:hdont",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*h₃dónts",
+   "gloss": "tooth"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "dēns, dentem",
+   "gloss": "tooth"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:tooth-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "dēns, dentem",
+   "gloss": "tooth"
+  },
+  "to": {
+   "node_ref": "lex:fr:dent",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "dent",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:tooth-cog-fr-en",
+  "from": {
+   "node_ref": "lex:fr:dent",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "dent",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:en:tooth",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "tooth",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.8,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-pie-la",
+  "from": {
+   "node_ref": "root:pie:dwoh",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*dwóh₁",
+   "gloss": "two"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "duo",
+   "gloss": "two"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "duo",
+   "gloss": "two"
+  },
+  "to": {
+   "node_ref": "lex:fr:deux",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "deux",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-cog-fr-en",
+  "from": {
+   "node_ref": "lex:fr:deux",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "deux",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:en:two",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "two",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:star-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "stēlla",
+   "gloss": "star"
+  },
+  "to": {
+   "node_ref": "lex:fr:etoile",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "étoile",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:star-pie-la",
+  "from": {
+   "node_ref": "root:pie:hster",
+   "lang_or_family": "Reconstructed:PIE",
+   "family": "Reconstructed:PIE",
+   "form": "*h₂stḗr",
+   "gloss": "star"
+  },
+  "to": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "stēlla",
+   "gloss": "star"
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.75,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:king-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "rēx, rēgālis",
+   "gloss": "king; royal"
+  },
+  "to": {
+   "node_ref": "lex:fr:roi",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "roi",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:king-cog-fr-hi",
+  "from": {
+   "node_ref": "lex:fr:roi",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "roi",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:hi:raja",
+   "lang_or_family": "hi",
+   "family": "IE:Indo-Aryan",
+   "form": "राजा",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "watkins"
+  ],
+  "confidence": 0.75,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "watkins"
+   ]
+  }
+ },
+ {
+  "id": "edge:sugar-of-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "sucre",
+   "gloss": "sugar"
+  },
+  "to": {
+   "node_ref": "lex:fr:sucre",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "sucre",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:book-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "liber",
+   "gloss": "inner bark of a tree; book"
+  },
+  "to": {
+   "node_ref": "lex:fr:livre",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "livre",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "METONYMY"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:water-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "aqua",
+   "gloss": "water"
+  },
+  "to": {
+   "node_ref": "lex:fr:eau",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "eau",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:fire-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "focus",
+   "gloss": "hearth"
+  },
+  "to": {
+   "node_ref": "lex:fr:feu",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "feu",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "METONYMY"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:joy-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "gaudia",
+   "gloss": "joys"
+  },
+  "to": {
+   "node_ref": "lex:fr:joie",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "joie",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:library-la-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Latin",
+   "family": "IE:Romance",
+   "form": "bibliothēca",
+   "gloss": "book-repository"
+  },
+  "to": {
+   "node_ref": "lex:fr:bibliotheque",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "bibliothèque",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:joy-of-en",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "joie",
+   "gloss": "joy"
+  },
+  "to": {
+   "node_ref": "lex:en:joy",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "joy",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "oed"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "edge:beauty-of-en",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "biauté",
+   "gloss": "beauty"
+  },
+  "to": {
+   "node_ref": "lex:en:beauty",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "beauty",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "oed"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "edge:beauty-of-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "biauté",
+   "gloss": "beauty"
+  },
+  "to": {
+   "node_ref": "lex:fr:beaute",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "beauté",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:merchant-of-en",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "marchant",
+   "gloss": "merchant"
+  },
+  "to": {
+   "node_ref": "lex:en:merchant",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "merchant",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "oed"
+  ],
+  "confidence": 0.9,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "edge:merchant-of-fr",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Old French",
+   "family": "IE:Romance",
+   "form": "marchant",
+   "gloss": "merchant"
+  },
+  "to": {
+   "node_ref": "lex:fr:marchand",
+   "lang_or_family": "fr",
+   "family": "IE:Romance",
+   "form": "marchand",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "tlfi"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "tlfi"
+   ]
+  }
+ },
+ {
+  "id": "edge:library-an-en",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Anglo-Norman",
+   "family": "IE:Romance",
+   "form": "librarie",
+   "gloss": "collection of books"
+  },
+  "to": {
+   "node_ref": "lex:en:library",
+   "lang_or_family": "en",
+   "family": "IE:Germanic",
+   "form": "library",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "oed"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "oed"
+   ]
+  }
+ },
+ {
+  "id": "edge:mother-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:amma",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*amma",
+   "gloss": "mother (nursery word)"
+  },
+  "to": {
+   "node_ref": "lex:ta:amma",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "அம்மா",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "krishnamurti"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "krishnamurti"
+   ]
+  }
+ },
+ {
+  "id": "edge:mother-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:amma",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "அம்மா",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:amma",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "అమ్మ",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "krishnamurti"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "krishnamurti"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:peyar",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*peyar",
+   "gloss": "name"
+  },
+  "to": {
+   "node_ref": "lex:ta:peyar",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "பெயர்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:name-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:peyar",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "பெயர்",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:peru",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "పేరు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:tooth-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:pal",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*pal",
+   "gloss": "tooth"
+  },
+  "to": {
+   "node_ref": "lex:ta:pal",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "பல்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:tooth-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:pal",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "பல்",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:pallu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "పల్లు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:water-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:nir",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*nīr",
+   "gloss": "water"
+  },
+  "to": {
+   "node_ref": "lex:ta:nir",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "நீர்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:water-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:nir",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "நீர்",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:niru",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "నీరు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:eye-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:kan",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*kaṇ",
+   "gloss": "eye"
+  },
+  "to": {
+   "node_ref": "lex:ta:kan",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "கண்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:eye-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:kan",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "கண்",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:kannu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "కన్ను",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:village-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:ur",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*ūr",
+   "gloss": "village"
+  },
+  "to": {
+   "node_ref": "lex:ta:ur",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "ஊர்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:village-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:ur",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "ஊர்",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:uru",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "ఊరు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:munru",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*mūnṯu",
+   "gloss": "three"
+  },
+  "to": {
+   "node_ref": "lex:ta:munru",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "மூன்று",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-pdr-te",
+  "from": {
+   "node_ref": "root:pdr:munru",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*mūnṯu",
+   "gloss": "three"
+  },
+  "to": {
+   "node_ref": "lex:te:mudu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "మూడు",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:three-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:munru",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "மூன்று",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:mudu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "మూడు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:irantu",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*iraṇṭu",
+   "gloss": "two"
+  },
+  "to": {
+   "node_ref": "lex:ta:irantu",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "இரண்டு",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-pdr-te",
+  "from": {
+   "node_ref": "root:pdr:irantu",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*iraṇṭu",
+   "gloss": "two"
+  },
+  "to": {
+   "node_ref": "lex:te:rendu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "రెండు",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:two-cog-ta-te",
+  "from": {
+   "node_ref": "lex:ta:irantu",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "இரண்டு",
+   "gloss": ""
+  },
+  "to": {
+   "node_ref": "lex:te:rendu",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "రెండు",
+   "gloss": ""
+  },
+  "type": "COGNATE",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:dog-pdr-ta",
+  "from": {
+   "node_ref": "root:pdr:nay",
+   "lang_or_family": "Reconstructed:Proto-Dravidian",
+   "family": "Reconstructed:Proto-Dravidian",
+   "form": "*nāy",
+   "gloss": "dog"
+  },
+  "to": {
+   "node_ref": "lex:ta:nay",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "நாய்",
+   "gloss": ""
+  },
+  "type": "INHERITED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "dedr"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "dedr"
+   ]
+  }
+ },
+ {
+  "id": "edge:sugar-skt-ta",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Sanskrit",
+   "family": "IE:Indo-Aryan",
+   "form": "शर्करा śarkarā",
+   "gloss": "sugar"
+  },
+  "to": {
+   "node_ref": "lex:ta:carkkarai",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "சர்க்கரை",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "madras_tl"
+  ],
+  "confidence": 0.7,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "madras_tl"
+   ]
+  }
+ },
+ {
+  "id": "edge:book-skt-ta",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Sanskrit",
+   "family": "IE:Indo-Aryan",
+   "form": "पुस्तक pustaka",
+   "gloss": "book, manuscript"
+  },
+  "to": {
+   "node_ref": "lex:ta:puttakam",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "புத்தகம்",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "madras_tl"
+  ],
+  "confidence": 0.8,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "madras_tl"
+   ]
+  }
+ },
+ {
+  "id": "edge:joy-skt-hi",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Sanskrit",
+   "family": "IE:Indo-Aryan",
+   "form": "आनन्द ānanda",
+   "gloss": "joy, bliss"
+  },
+  "to": {
+   "node_ref": "lex:hi:anand",
+   "lang_or_family": "hi",
+   "family": "IE:Indo-Aryan",
+   "form": "आनंद",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "mw"
+  ],
+  "confidence": 0.85,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "mw"
+   ]
+  }
+ },
+ {
+  "id": "edge:joy-skt-te",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Sanskrit",
+   "family": "IE:Indo-Aryan",
+   "form": "आनन्द ānanda",
+   "gloss": "joy, bliss"
+  },
+  "to": {
+   "node_ref": "lex:te:anandam",
+   "lang_or_family": "te",
+   "family": "Dravidian:South-Central",
+   "form": "ఆనందం",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "brown"
+  ],
+  "confidence": 0.8,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "brown"
+   ]
+  }
+ },
+ {
+  "id": "edge:joy-skt-ta",
+  "from": {
+   "node_ref": null,
+   "lang_or_family": "Sanskrit",
+   "family": "IE:Indo-Aryan",
+   "form": "आनन्द ānanda",
+   "gloss": "joy, bliss"
+  },
+  "to": {
+   "node_ref": "lex:ta:anantam",
+   "lang_or_family": "ta",
+   "family": "Dravidian:South",
+   "form": "ஆனந்தம்",
+   "gloss": ""
+  },
+  "type": "BORROWED",
+  "drift": [
+   "NONE"
+  ],
+  "date_range": null,
+  "source_ref": [
+   "madras_tl"
+  ],
+  "confidence": 0.8,
+  "status": "accepted",
+  "provenance": {
+   "annotator": "suffeffix-v0.2",
+   "date": "2026-10-01",
+   "review_status": "draft",
+   "source_refs": [
+    "madras_tl"
+   ]
+  }
  }
 ]

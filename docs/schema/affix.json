@@ -65,8 +65,10 @@
     "lang": {
       "enum": [
         "en",
+        "fr",
+        "hi",
         "te",
-        "hi"
+        "ta"
       ],
       "title": "Lang",
       "type": "string"
@@ -106,6 +108,7 @@
         "S",
         "P",
         "E",
+        "L",
         "mixed"
       ],
       "title": "Register",

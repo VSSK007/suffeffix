@@ -9,22 +9,22 @@
 | `data/atoms.json` | semantic atoms | 30–50 |
 | `data/affix_functions.json` | cross-lingual affix functions | 20–30 |
 | `data/equivalence_classes.json` | affix equivalence classes | one per function used cross-lingually |
-| `data/affixes/{en,te,hi}.json` | affix inventories | ~25–40 per language |
+| `data/affixes/{en,fr,hi,te,ta}.json` | affix inventories | ~25–40 per language |
 | `data/concepts.json` | concept-aligned senses | ~120–160 |
-| `data/entries/{en,te,hi}.json` | lexical entries | 300–500 total |
+| `data/entries/{en,fr,hi,te,ta}.json` | lexical entries | 300–850 total |
 | `data/roots.json` | reconstructed/ancient roots | as needed |
 | `data/etymology_edges.json` | typed, sourced etymology edges | every edge has `source_ref` |
 | `data/sources.json` | full bibliography for every `source_ref` key | complete |
 
 ## Hard research-integrity rules
 
-1. **Two families.** Telugu is Dravidian (South-Central); Hindi (IE: Indo-Aryan) and English (IE: Germanic) are Indo-European. **No COGNATE or INHERITED edge may cross a top-level family boundary** — the validator rejects it. Telugu↔Hindi/English links are BORROWED, SHARED_LOAN alignment, or CALQUE only. English↔Hindi genuine cognates (name/नाम, mother/माता, three/तीन, tooth/दाँत) are allowed and sourced. `[ESTABLISHED]`
-2. **Register.** `N` native/inherited (tadbhava for Hindi), `S` Sanskritic/tatsama, `P` Perso-Arabic, `E` English loan, `mixed`. For English entries the enum is reused as an `ENGINEERING` convention: `N` = Germanic stratum, `E` = learned Latinate/Greek stratum. Equivalence display prefers register-matched pairs.
+1. **Two families (T.H.E.F.T.).** Telugu (South-Central) and Tamil (South) are Dravidian; English (IE: Germanic), French (IE: Romance) and Hindi (IE: Indo-Aryan) are Indo-European. **No COGNATE or INHERITED edge may cross a top-level family boundary** — the validator rejects it. Cross-family links are BORROWED, SHARED_LOAN alignment, or CALQUE only. Genuine cognates within a family (mother/mère/माता, name/nom/नाम; Telugu మూడు/Tamil மூன்று, నీరు/நீர்) are allowed and sourced. `[ESTABLISHED]`
+2. **Register.** `N` native/inherited (tadbhava; French *mots populaires*; English Germanic stratum), `S` Sanskritic/tatsama, `P` Perso-Arabic, `L` learned Latin/Greek stratum (English and French *mots savants*), `E` English loan, `mixed`. Treating `L` as the European counterpart of `S` is an `ENGINEERING` convention (DECISIONS 13). Equivalence display prefers register-matched pairs.
 3. **Confidence & sources.** Every etymology edge: `source_ref` + `confidence` ∈ [0,1]. Wiktionary-only ⇒ ≤ 0.6. No invented DEDR/CDIAL numbers; a work cited without a number caps confidence at 0.7. Contested edges: `status: "contested"`, badge in UI, never silently resolved.
 4. **Atoms are an engineering interlingua, not a theory of human cognition.** NSM-prime atoms are `ESTABLISHED` (as NSM primes, per Wierzbicka/Goddard); added atoms are `ENGINEERING`.
 5. Everything ships `review_status: "draft"` unless anchored to a cited reference work; the landing page shows honest counts.
 
-## Concept selection (~130, concept-aligned across en/te/hi)
+## Concept selection (115, concept-aligned across en/fr/hi/te/ta)
 
 Showcase categories: abstract states (goodness, childhood, loneliness, madness, old age, truth, freedom, humanity, friendship, kingship…), agents (teacher, worker, artist, farmer, merchant, singer…), privatives (hopeless, fearless, shameless, useless, homeless…), possessives (hopeful, useful, powerful, beautiful…), ability (readable, drinkable…), adverbs (quickly, slowly…), causatives (simplify, strengthen…), doctrines (socialism, nationalism…), places/fields (library, school, linguistics…), and an etymology-demo basic-vocabulary set (mother, father, name, tooth, three, water, fire, dog, house, book, sugar, king, sleep, memory, joy, anger…).
 

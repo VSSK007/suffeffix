@@ -10,17 +10,17 @@ export const metadata = pageMeta({
 const ITEMS: { kind: string; date: string; title: string; blurb: string; href: string; status?: string }[] = [
   {
     kind: "Technical report",
-    date: "September 2026",
+    date: "October 2026",
     title: "Suffeffix: an explainable lexical knowledge graph for morphology, semantic decomposition, etymology and affix alignment",
     blurb:
-      "The schema, the family-boundary constraint, how explanations are generated and traced, and what the v0.1 dataset does and does not show — with six interactive figures and an explicit limitations section.",
-    href: "/research/suffeffix-v0-1/",
+      "The T.H.E.F.T. framework — Telugu, Hindi, English, French and Tamil — the schema, the family-boundary constraint, how explanations are generated and traced, and what the v0.2 dataset does and does not show.",
+    href: "/research/suffeffix-v0-2/",
   },
   {
     kind: "Dataset",
-    date: "September 2026",
-    title: "Suffeffix dataset v0.1",
-    blurb: "338 words, 115 meanings, 85 affixes, 50 atoms and 70 sourced etymology edges as CSV and JSON, with JSON Schemas, checksums and a data card.",
+    date: "October 2026",
+    title: "Suffeffix dataset v0.2",
+    blurb: "564 words in five languages, 115 meanings, 151 affixes, 50 atoms and 127 sourced etymology edges as CSV and JSON, with JSON Schemas, checksums and a data card.",
     href: "/data/",
   },
   {
@@ -34,7 +34,7 @@ const ITEMS: { kind: string; date: string; title: string; blurb: string; href: s
     kind: "Roadmap",
     date: "Ongoing",
     title: "What comes next, and what is deliberately absent",
-    blurb: "French and Tamil, a larger lexicon, external review — and the features v0.1 refuses to build.",
+    blurb: "A larger lexicon, external review, entry numbers checked against printed volumes — and the features Suffeffix refuses to build.",
     href: "/docs/ROADMAP/",
   },
 ];

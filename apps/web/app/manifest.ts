@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Suffeffix — an explainable lexical knowledge graph",
     short_name: "Suffeffix",
-    description: "Morphology, semantic decomposition, etymology and affix alignment for English, Hindi and Telugu.",
+    description: "Morphology, semantic decomposition, etymology and affix alignment for Telugu, Hindi, English, French and Tamil.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

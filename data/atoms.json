@@ -7,8 +7,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "I",
+   "fr": "je",
+   "hi": "मैं",
    "te": "నేను",
-   "hi": "मैं"
+   "ta": "நான்"
   },
   "related": []
  },
@@ -20,8 +22,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "you",
+   "fr": "tu",
+   "hi": "तुम",
    "te": "నువ్వు",
-   "hi": "तुम"
+   "ta": "நீ"
   },
   "related": []
  },
@@ -33,8 +37,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "someone",
+   "fr": "quelqu'un",
+   "hi": "कोई",
    "te": "ఎవరో",
-   "hi": "कोई"
+   "ta": "யாரோ"
   },
   "related": []
  },
@@ -46,8 +52,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "something",
+   "fr": "quelque chose",
+   "hi": "कुछ",
    "te": "ఏదో",
-   "hi": "कुछ"
+   "ta": "ஏதோ"
   },
   "related": []
  },
@@ -59,8 +67,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "people",
+   "fr": "gens",
+   "hi": "लोग",
    "te": "ప్రజలు",
-   "hi": "लोग"
+   "ta": "மக்கள்"
   },
   "related": [
    {
@@ -77,8 +87,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "body",
+   "fr": "corps",
+   "hi": "शरीर",
    "te": "శరీరం",
-   "hi": "शरीर"
+   "ta": "உடல்"
   },
   "related": []
  },
@@ -90,8 +102,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "part",
+   "fr": "partie",
+   "hi": "हिस्सा",
    "te": "భాగం",
-   "hi": "हिस्सा"
+   "ta": "பகுதி"
   },
   "related": []
  },
@@ -103,8 +117,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "one",
+   "fr": "un",
+   "hi": "एक",
    "te": "ఒకటి",
-   "hi": "एक"
+   "ta": "ஒன்று"
   },
   "related": []
  },
@@ -116,8 +132,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "two",
+   "fr": "deux",
+   "hi": "दो",
    "te": "రెండు",
-   "hi": "दो"
+   "ta": "இரண்டு"
   },
   "related": []
  },
@@ -129,8 +147,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "many",
+   "fr": "beaucoup",
+   "hi": "बहुत",
    "te": "చాలా",
-   "hi": "बहुत"
+   "ta": "பல"
   },
   "related": []
  },
@@ -142,8 +162,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "all",
+   "fr": "tout",
+   "hi": "सब",
    "te": "అన్నీ",
-   "hi": "सब"
+   "ta": "எல்லாம்"
   },
   "related": []
  },
@@ -155,8 +177,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "good",
+   "fr": "bon",
+   "hi": "अच्छा",
    "te": "మంచి",
-   "hi": "अच्छा"
+   "ta": "நல்ல"
   },
   "related": [
    {
@@ -173,8 +197,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "bad",
+   "fr": "mauvais",
+   "hi": "बुरा",
    "te": "చెడు",
-   "hi": "बुरा"
+   "ta": "கெட்ட"
   },
   "related": [
    {
@@ -191,8 +217,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "big",
+   "fr": "grand",
+   "hi": "बड़ा",
    "te": "పెద్ద",
-   "hi": "बड़ा"
+   "ta": "பெரிய"
   },
   "related": [
    {
@@ -209,8 +237,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "small",
+   "fr": "petit",
+   "hi": "छोटा",
    "te": "చిన్న",
-   "hi": "छोटा"
+   "ta": "சிறிய"
   },
   "related": [
    {
@@ -227,8 +257,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "do",
+   "fr": "faire",
+   "hi": "करना",
    "te": "చేయు",
-   "hi": "करना"
+   "ta": "செய்"
   },
   "related": []
  },
@@ -240,8 +272,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "happen",
+   "fr": "arriver",
+   "hi": "होना",
    "te": "జరుగు",
-   "hi": "होना"
+   "ta": "நட"
   },
   "related": []
  },
@@ -253,8 +287,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "move",
+   "fr": "bouger",
+   "hi": "हिलना",
    "te": "కదులు",
-   "hi": "हिलना"
+   "ta": "நகர்"
   },
   "related": []
  },
@@ -266,8 +302,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "say",
+   "fr": "dire",
+   "hi": "कहना",
    "te": "చెప్పు",
-   "hi": "कहना"
+   "ta": "சொல்"
   },
   "related": []
  },
@@ -279,8 +317,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "think",
+   "fr": "penser",
+   "hi": "सोचना",
    "te": "అనుకొను",
-   "hi": "सोचना"
+   "ta": "நினை"
   },
   "related": []
  },
@@ -292,8 +332,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "know",
+   "fr": "savoir",
+   "hi": "जानना",
    "te": "తెలుసు",
-   "hi": "जानना"
+   "ta": "அறி"
   },
   "related": []
  },
@@ -305,8 +347,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "want",
+   "fr": "vouloir",
+   "hi": "चाहना",
    "te": "కావాలి",
-   "hi": "चाहना"
+   "ta": "வேண்டு"
   },
   "related": []
  },
@@ -318,8 +362,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "feel",
+   "fr": "sentir",
+   "hi": "महसूस करना",
    "te": "అనిపించు",
-   "hi": "महसूस करना"
+   "ta": "உணர்"
   },
   "related": []
  },
@@ -331,8 +377,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "see",
+   "fr": "voir",
+   "hi": "देखना",
    "te": "చూచు",
-   "hi": "देखना"
+   "ta": "பார்"
   },
   "related": []
  },
@@ -344,8 +392,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "hear",
+   "fr": "entendre",
+   "hi": "सुनना",
    "te": "విను",
-   "hi": "सुनना"
+   "ta": "கேள்"
   },
   "related": []
  },
@@ -357,8 +407,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "live",
+   "fr": "vivre",
+   "hi": "जीना",
    "te": "బతుకు",
-   "hi": "जीना"
+   "ta": "வாழ்"
   },
   "related": [
    {
@@ -375,8 +427,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "die",
+   "fr": "mourir",
+   "hi": "मरना",
    "te": "చచ్చు",
-   "hi": "मरना"
+   "ta": "சா"
   },
   "related": [
    {
@@ -393,8 +447,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "true",
+   "fr": "vrai",
+   "hi": "सच",
    "te": "నిజం",
-   "hi": "सच"
+   "ta": "உண்மை"
   },
   "related": []
  },
@@ -406,8 +462,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "not",
+   "fr": "ne pas",
+   "hi": "नहीं",
    "te": "కాదు",
-   "hi": "नहीं"
+   "ta": "இல்லை"
   },
   "related": []
  },
@@ -419,8 +477,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "before",
+   "fr": "avant",
+   "hi": "पहले",
    "te": "ముందు",
-   "hi": "पहले"
+   "ta": "முன்"
   },
   "related": [
    {
@@ -437,8 +497,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "after",
+   "fr": "après",
+   "hi": "बाद",
    "te": "తరువాత",
-   "hi": "बाद"
+   "ta": "பின்"
   },
   "related": [
    {
@@ -455,8 +517,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "now",
+   "fr": "maintenant",
+   "hi": "अब",
    "te": "ఇప్పుడు",
-   "hi": "अब"
+   "ta": "இப்போது"
   },
   "related": []
  },
@@ -468,8 +532,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "where",
+   "fr": "où",
+   "hi": "कहाँ",
    "te": "ఎక్కడ",
-   "hi": "कहाँ"
+   "ta": "எங்கே"
   },
   "related": []
  },
@@ -481,8 +547,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "above",
+   "fr": "au-dessus",
+   "hi": "ऊपर",
    "te": "పైన",
-   "hi": "ऊपर"
+   "ta": "மேலே"
   },
   "related": [
    {
@@ -499,8 +567,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "below",
+   "fr": "au-dessous",
+   "hi": "नीचे",
    "te": "కింద",
-   "hi": "नीचे"
+   "ta": "கீழே"
   },
   "related": [
    {
@@ -517,8 +587,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "near",
+   "fr": "près",
+   "hi": "पास",
    "te": "దగ్గర",
-   "hi": "पास"
+   "ta": "அருகில்"
   },
   "related": [
    {
@@ -535,8 +607,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "far",
+   "fr": "loin",
+   "hi": "दूर",
    "te": "దూరం",
-   "hi": "दूर"
+   "ta": "தூரம்"
   },
   "related": [
    {
@@ -553,8 +627,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "because",
+   "fr": "parce que",
+   "hi": "क्योंकि",
    "te": "ఎందుకంటే",
-   "hi": "क्योंकि"
+   "ta": "ஏனென்றால்"
   },
   "related": []
  },
@@ -566,8 +642,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "like",
+   "fr": "comme",
+   "hi": "जैसा",
    "te": "లాగా",
-   "hi": "जैसा"
+   "ta": "போல"
   },
   "related": []
  },
@@ -579,8 +657,10 @@
   "nsm_prime": true,
   "exponents": {
    "en": "have",
+   "fr": "avoir",
+   "hi": "होना",
    "te": "ఉంది",
-   "hi": "होना"
+   "ta": "உண்டு"
   },
   "related": []
  },
@@ -592,8 +672,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "child",
+   "fr": "enfant",
+   "hi": "बच्चा",
    "te": "పిల్ల",
-   "hi": "बच्चा"
+   "ta": "குழந்தை"
   },
   "related": [
    {
@@ -610,8 +692,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "old",
+   "fr": "vieux",
+   "hi": "बूढ़ा",
    "te": "ముసలి",
-   "hi": "बूढ़ा"
+   "ta": "முதிய"
   },
   "related": [
    {
@@ -628,8 +712,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "fear",
+   "fr": "peur",
+   "hi": "डर",
    "te": "భయం",
-   "hi": "डर"
+   "ta": "பயம்"
   },
   "related": [
    {
@@ -646,8 +732,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "joy",
+   "fr": "joie",
+   "hi": "आनंद",
    "te": "ఆనందం",
-   "hi": "आनंद"
+   "ta": "மகிழ்ச்சி"
   },
   "related": [
    {
@@ -664,8 +752,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "anger",
+   "fr": "colère",
+   "hi": "गुस्सा",
    "te": "కోపం",
-   "hi": "गुस्सा"
+   "ta": "கோபம்"
   },
   "related": [
    {
@@ -682,8 +772,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "shame",
+   "fr": "honte",
+   "hi": "शर्म",
    "te": "సిగ్గు",
-   "hi": "शर्म"
+   "ta": "வெட்கம்"
   },
   "related": [
    {
@@ -700,8 +792,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "work",
+   "fr": "travail",
+   "hi": "काम",
    "te": "పని",
-   "hi": "काम"
+   "ta": "வேலை"
   },
   "related": []
  },
@@ -713,8 +807,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "teach",
+   "fr": "enseigner",
+   "hi": "सिखाना",
    "te": "నేర్పు",
-   "hi": "सिखाना"
+   "ta": "கற்பி"
   },
   "related": [
    {
@@ -731,8 +827,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "text",
+   "fr": "texte",
+   "hi": "लेख",
    "te": "రాత",
-   "hi": "लेख"
+   "ta": "உரை"
   },
   "related": []
  },
@@ -744,8 +842,10 @@
   "nsm_prime": false,
   "exponents": {
    "en": "name",
+   "fr": "nom",
+   "hi": "नाम",
    "te": "పేరు",
-   "hi": "नाम"
+   "ta": "பெயர்"
   },
   "related": []
  }

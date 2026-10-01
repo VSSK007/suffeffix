@@ -38,7 +38,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English goodness (translation equivalent); Hindi अच्छाई (acchāī) (translation equivalent).",
+    "text": "Aligned forms: English goodness (translation equivalent); French bonté (translation equivalent); Hindi अच्छाई (acchāī) (translation equivalent); Tamil நன்மை (naṉmai) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -108,7 +108,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English childhood (translation equivalent); Telugu పిల్లతనం (pillatanaṁ) (translation equivalent).",
+    "text": "Aligned forms: English childhood (translation equivalent); French enfance (translation equivalent); Tamil குழந்தைப்பருவம் (kuḻantaipparuvam) (translation equivalent); Telugu పిల్లతనం (pillatanaṁ) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -168,7 +168,7 @@
     ]
    },
    {
-    "text": "Aligned forms: Hindi निराश (nirāś) (translation equivalent); Telugu ఆశలేని (āśalēni) (translation equivalent).",
+    "text": "Aligned forms: French désespéré (translation equivalent); Hindi निराश (nirāś) (translation equivalent); Tamil நம்பிக்கையற்ற (nampikkaiyaṟṟa) (translation equivalent); Telugu ఆశలేని (āśalēni) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -238,7 +238,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English sugar (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
+    "text": "Aligned forms: English sugar (translation equivalent); French sucre (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Tamil சர்க்கரை (carkkarai) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -308,7 +308,7 @@
     ]
    },
    {
-    "text": "Aligned forms: Hindi चीनी (cīnī) (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
+    "text": "Aligned forms: French sucre (translation equivalent); Hindi चीनी (cīnī) (translation equivalent); Hindi शक्कर (śakkar) (translation equivalent); Tamil சர்க்கரை (carkkarai) (translation equivalent); Telugu చక్కెర (cakkera) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -368,7 +368,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English book (translation equivalent); Hindi किताब (kitāb) (translation equivalent); Hindi पुस्तक (pustak) (shared loan (both borrowed from the same source)).",
+    "text": "Aligned forms: English book (translation equivalent); French livre (translation equivalent); Hindi किताब (kitāb) (translation equivalent); Hindi पुस्तक (pustak) (shared loan (both borrowed from the same source)); Tamil புத்தகம் (puttakam) (shared loan (both borrowed from the same source)).",
     "trace": [
      {
       "kind": "rule",
@@ -428,7 +428,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English book (translation equivalent); Hindi पुस्तक (pustak) (translation equivalent); Telugu పుస్తకం (pustakaṁ) (translation equivalent).",
+    "text": "Aligned forms: English book (translation equivalent); French livre (translation equivalent); Hindi पुस्तक (pustak) (translation equivalent); Tamil புத்தகம் (puttakam) (translation equivalent); Telugu పుస్తకం (pustakaṁ) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -498,7 +498,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English loneliness (translation equivalent); Telugu ఒంటరితనం (oṇṭaritanaṁ) (translation equivalent).",
+    "text": "Aligned forms: English loneliness (translation equivalent); French solitude (translation equivalent); Tamil தனிமை (taṉimai) (translation equivalent); Telugu ఒంటరితనం (oṇṭaritanaṁ) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -568,7 +568,7 @@
     ]
    },
    {
-    "text": "Aligned forms: English loneliness (translation equivalent); Hindi अकेलापन (akelāpan) (translation equivalent).",
+    "text": "Aligned forms: English loneliness (translation equivalent); French solitude (translation equivalent); Hindi अकेलापन (akelāpan) (translation equivalent); Tamil தனிமை (taṉimai) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",
@@ -618,7 +618,7 @@
     ]
    },
    {
-    "text": "Aligned forms: Hindi शिक्षक (śikṣak) (translation equivalent); Telugu అధ్యాపకుడు (adhyāpakuḍu) (translation equivalent).",
+    "text": "Aligned forms: French enseignant (translation equivalent); Hindi शिक्षक (śikṣak) (translation equivalent); Tamil ஆசிரியர் (āciriyar) (translation equivalent); Telugu అధ్యాపకుడు (adhyāpakuḍu) (translation equivalent).",
     "trace": [
      {
       "kind": "rule",

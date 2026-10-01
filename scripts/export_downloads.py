@@ -24,7 +24,7 @@ from suffeffix_core.load import load_dataset  # noqa: E402
 from suffeffix_core.schema import pretty_structure  # noqa: E402
 from suffeffix_core.validate import validate_dataset  # noqa: E402
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 OUT = ROOT / "apps" / "web" / "public" / "data"
 
 
@@ -37,7 +37,7 @@ def band(family: str) -> str:
 
 
 def write_csv(path: Path, header: list[str], rows: list[list]) -> int:
-    # utf-8-sig so Excel opens Devanagari and Telugu correctly
+    # utf-8-sig so Excel opens Devanagari, Telugu and Tamil correctly
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
         w.writerow(header)
@@ -93,9 +93,9 @@ def main() -> None:
     )
     rows_count["atoms.csv"] = write_csv(
         OUT / "atoms.csv",
-        ["id", "category", "definition", "nsm_prime", "english", "hindi", "telugu", "epistemic_status"],
-        [[a.id, a.category, a.definition, a.nsm_prime, a.exponents.en, a.exponents.hi, a.exponents.te,
-          a.epistemic_status] for a in ds.atoms],
+        ["id", "category", "definition", "nsm_prime", "english", "french", "hindi", "telugu", "tamil", "epistemic_status"],
+        [[a.id, a.category, a.definition, a.nsm_prime, a.exponents.en, a.exponents.fr, a.exponents.hi, a.exponents.te,
+          a.exponents.ta, a.epistemic_status] for a in ds.atoms],
     )
     rows_count["concepts.csv"] = write_csv(
         OUT / "concepts.csv",
@@ -126,10 +126,10 @@ def main() -> None:
     (OUT / "README.txt").write_text(
         f"Suffeffix dataset v{VERSION}\n"
         "An explainable lexical knowledge graph: morphology, semantic decomposition, etymology and\n"
-        "affix alignment for English, Hindi and Telugu.\n\n"
-        "Licence: CC BY-SA 4.0 (see LICENSE.txt). Cite: https://suffeffix.com/research/suffeffix-v0-1/#cite\n"
+        "affix alignment for Telugu, Hindi, English, French and Tamil (the T.H.E.F.T. framework).\n\n"
+        "Licence: CC BY-SA 4.0 (see LICENSE.txt). Cite: https://suffeffix.com/research/suffeffix-v0-2/#cite\n"
         "Status: every record is review_status=draft unless stated otherwise in the file.\n"
-        "CSV files are UTF-8 with a byte-order mark so spreadsheets open Devanagari and Telugu correctly.\n"
+        "CSV files are UTF-8 with a byte-order mark so spreadsheets open Devanagari, Telugu and Tamil script correctly.\n"
         "List-valued columns use ';' between items; affix uses are 'affix_id|function_id'.\n"
         "SHA256SUMS.txt lists a checksum for every file.\n",
         encoding="utf-8",

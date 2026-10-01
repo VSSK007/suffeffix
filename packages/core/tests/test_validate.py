@@ -19,7 +19,7 @@ def test_dataset_is_valid(dataset):
 
 
 def test_counts_within_limits(dataset):
-    assert 300 <= len(dataset.entries) <= 500
+    assert 300 <= len(dataset.entries) <= 850
     assert 30 <= len(dataset.atoms) <= 50
     assert 20 <= len(dataset.affix_functions) <= 30
 
@@ -47,7 +47,7 @@ def test_wiktionary_only_confidence_cap(dataset):
 
 
 def test_no_prohibited_languages(dataset):
-    assert {e.lang for e in dataset.entries} <= {"en", "te", "hi"}
+    assert {e.lang for e in dataset.entries} == {"en", "fr", "hi", "te", "ta"}
 
 
 def test_every_edge_has_source(dataset):

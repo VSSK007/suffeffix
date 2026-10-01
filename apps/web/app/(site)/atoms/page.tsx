@@ -2,7 +2,7 @@ import { data } from "@/lib/data";
 import { AtomTable } from "@/components/atom-table";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta({ title: "Semantic atoms", description: "The closed inventory of fifty semantic atoms — an engineering interlingua seeded from NSM primes — with exponents in English, Hindi and Telugu.", path: "/atoms/" });
+export const metadata = pageMeta({ title: "Semantic atoms", description: "The closed inventory of fifty semantic atoms — an engineering interlingua seeded from NSM primes — with exponents in English, French, Hindi, Telugu and Tamil.", path: "/atoms/" });
 
 export default async function AtomsPage() {
   const [atoms, concepts] = await Promise.all([data.atoms(), data.concepts()]);

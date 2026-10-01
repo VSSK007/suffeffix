@@ -7,7 +7,7 @@ const EPI: Record<string, { color: string; gloss: string }> = {
   ESTABLISHED: { color: "var(--est)", gloss: "citable from reference works" },
   ENGINEERING: { color: "var(--eng)", gloss: "an implementation abstraction, not a linguistic claim" },
   HYPOTHESIS: { color: "var(--hyp)", gloss: "plausible and testable, not yet demonstrated" },
-  FUTURE: { color: "var(--fut)", gloss: "out of scope for v0.1" },
+  FUTURE: { color: "var(--fut)", gloss: "out of scope for this release" },
 };
 
 function Tag({ color, children, title }: { color: string; children: React.ReactNode; title?: string }) {

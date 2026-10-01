@@ -1,4 +1,4 @@
-# Suffeffix v0.1 — Architecture
+# Suffeffix — Architecture
 
 > **Suffeffix is an explainable lexical knowledge graph that jointly represents morphology, semantic decomposition, etymology, and affix alignment.**
 

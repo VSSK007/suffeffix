@@ -9,23 +9,24 @@ the same payloads and cannot disagree.
 
 Suffeffix presents a piece of research, so it is laid out like one: large editorial type, generous space, figures with
 numbers and captions, explicit limitations, a citation block. It is also built around its subject — one meaning landing
-in three languages and two families.
+in five languages and two families.
 
-- **Lanes.** Wherever words appear, the order is fixed: **English | Hindi ‖ Telugu**. The two Indo-European languages
-  sit together; a dashed gutter separates Dravidian Telugu. The family boundary — the one hard constraint in the
+- **Lanes.** Wherever words appear, the order is fixed: **English | French | Hindi ‖ Telugu | Tamil**. The three
+  Indo-European languages sit together; a dashed gutter separates the Dravidian pair. Lanes are rendered by
+  `components/lane-row.tsx` from `LANES` in `lib/lang.ts`; below 1024 px they stack. The family boundary — the one hard constraint in the
   dataset — is part of the layout, not a footnote.
 - **Two data hues, nothing else.** Ultramarine (`--ie`) means Indo-European; turmeric (`--dr`) means Dravidian. Chips,
   family dots, lane headers, etymology bands and the logo use them in that sense only. Everything else is ink on a crisp
   white (or near-black) ground. Contested is the only other loud colour.
-- **Type.** One family across all three scripts: Anek Latin, Anek Devanagari and Anek Telugu, self-hosted via
+- **Type.** One family across all four scripts: Anek Latin, Anek Devanagari, Anek Telugu and Anek Tamil, self-hosted via
   `next/font`. Display type uses Anek's width axis (`.display`, `.h-xl`, `.h-lg`); IBM Plex Mono carries identifiers,
-  transliterations and traces. Hindi and Telugu text carries a `lang` attribute so screen readers and browsers choose
+  transliterations and traces. French, Hindi, Telugu and Tamil text carries a `lang` attribute so screen readers and browsers choose
   the right voice and font.
 - **The mark.** An "ff" — the pair that appears twice in su·ff·e·ff·ix — sharing one crossbar that changes colour across a small seam, from
   the Indo-European blue to the Dravidian amber: a single line crossing the family boundary. The wordmark is live text in
   Anek Latin (width 112, weight 650) with each "ff" joined by a continuous crossbar. Source files and usage rules are in
   `brand/`.
-- **The triptych** (`components/triptych.tsx`) is the signature object: one meaning's words in three lanes, each affix
+- **The triptych** (`components/triptych.tsx`) is the signature object: one meaning's words in five lanes, each affix
   placed on the row of its *function*, so functionally equivalent affixes line up horizontally. Alignment is shown by
   position.
 - **Figures** (`components/figure.tsx`, `figures.tsx`) are numbered, captioned and interactive: hover/focus readouts that
@@ -42,10 +43,10 @@ in three languages and two families.
 
 | Route | View |
 |---|---|
-| `/` | thesis, a live one-meaning-three-languages demonstration (pausable), numbers, featured research, four ways in |
-| `/research/`, `/research/suffeffix-v0-1/` | the technical report: abstract, six interactive figures, limitations, data statement, citation, references |
+| `/` | thesis, a live one-meaning-five-languages demonstration (pausable), numbers, featured research, four ways in |
+| `/research/`, `/research/suffeffix-v0-2/` | the technical report (v0-1 is a superseded notice): abstract, six interactive figures, limitations, data statement, citation, references |
 | `/data/` | the dataset release: files with sizes, row counts and SHA-256, column guide, verification, release notes |
-| `/lexicon/` | the **Concordance**: all meanings × three lanes, filter by text, function, derived-in-all-three |
+| `/lexicon/` | the **Concordance**: all meanings × five lanes, filter by text, function, derived-in-all-five |
 | `/concepts/[slug]/` | one meaning: triptych, decomposition, atoms, each word |
 | `/lexicon/[lang]/[slug]/` | one word: morpheme equation, its triptych, traced explanation, etymology, facts rail |
 | `/affixes/`, `/affixes/[lang]/[slug]/` | the **Affix Atlas** (function × lane, rows expand to real example words) and one affix |

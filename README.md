@@ -1,12 +1,16 @@
-# Suffeffix v0.1
+# Suffeffix v0.2 — the T.H.E.F.T. framework
 
 > **Suffeffix is an explainable lexical knowledge graph that jointly represents morphology, semantic decomposition, etymology, and affix alignment.**
 
-A morphology explorer, semantic decomposition system, affix-alignment framework, and etymology-aware lexical knowledge graph for **English, Telugu, and Hindi**. It is not a translator, a chatbot, a language model, or a dictionary clone — and it contains no AI inference of any kind.
+A morphology explorer, semantic decomposition system, affix-alignment framework, and etymology-aware lexical knowledge graph for five languages: **T**elugu, **H**indi, **E**nglish, **F**rench and **T**amil — the T.H.E.F.T. framework. It is not a translator, a chatbot, a language model, or a dictionary clone — and it contains no AI inference of any kind.
 
 ## The two-family constraint
 
-Telugu is **Dravidian**; Hindi (Indo-Aryan) and English (Germanic) are **Indo-European**. There are no cognates between Telugu and either Hindi or English — only borrowing links them (mostly via Sanskrit, Perso-Arabic vocabulary, and English). The validator **rejects** any cognate/inheritance edge crossing a top-level family boundary. English↔Hindi genuine cognates (*name*/नाम, *mother*/माता, *three*/तीन, *tooth*/दाँत) are allowed and sourced.
+Telugu and Tamil are **Dravidian**; English (Germanic), French (Romance) and Hindi (Indo-Aryan) are **Indo-European**. There are no cognates across that line — only borrowing links the families (mostly via Sanskrit, Perso-Arabic vocabulary, and English). The validator **rejects** any cognate/inheritance edge crossing a top-level family boundary. Genuine cognates within a family are allowed and sourced: *mother*/*mère*/माता, *name*/*nom*/नाम within Indo-European; Telugu మూడు / Tamil மூன்று ‘three’, నీరు/நீர் ‘water’ within Dravidian.
+
+## The T.H.E.F.T. framework
+
+The five languages are chosen so each relation the graph models has a contrasting pair: Telugu and Tamil (one family, two answers to Sanskrit — గ్రంథాలయం against நூலகம் ‘library’); English and French (one long loan — Old French *joie* → *joy*); English, French and Hindi (distant Indo-European cognacy); and Sanskrit and Latin as parallel classical donors (tatsama/tadbhava beside French learned/popular doublets, *humanité* -ité against *bonté* -té). The name is the thesis: inside a family words are inherited; across it they can only be taken. See `/about/#theft` and §2 of the technical report.
 
 ## Epistemic key
 
@@ -15,7 +19,7 @@ Telugu is **Dravidian**; Hindi (Indo-Aryan) and English (Germanic) are **Indo-Eu
 | `ESTABLISHED` | standard linguistic knowledge citable from reference works |
 | `ENGINEERING` | an abstraction chosen for implementation convenience, not a linguistic claim |
 | `HYPOTHESIS` | plausible, testable, not yet demonstrated |
-| `FUTURE` | out of scope for v0.1 |
+| `FUTURE` | out of scope for this release |
 
 Every etymology edge carries `source_ref` and `confidence`; contested etymologies stay contested and are badged. Explanations are generated deterministically from the graph, each sentence with a trace — never freehand, never authoritative. **Semantic atoms are an engineering interlingua, not a theory of human cognition.**
 
@@ -60,4 +64,4 @@ See `CITATION.cff`. Code is Apache-2.0; the dataset in `data/` is CC BY-SA 4.0 (
 3. Run `make validate && make test`.
 4. In the PR, cite the reference work and page/entry so a reviewer can promote `review_status` from `draft` to `reviewed`. Contested facts stay `contested`.
 
-See `CONTRIBUTING.md` for details and `docs/ROADMAP.md` for deferred work (French, Tamil, neologism engine, analogy playground, larger lexicon, external review).
+See `CONTRIBUTING.md` for details and `docs/ROADMAP.md` for deferred work (neologism engine, analogy playground, larger lexicon, external review).

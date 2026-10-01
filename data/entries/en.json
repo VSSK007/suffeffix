@@ -26,11 +26,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:mancitanam",
+    "entry_id": "lex:fr:bonte",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:acchai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nanmai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mancitanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -71,11 +79,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:pillatanam",
+    "entry_id": "lex:fr:enfance",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bacpan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kulantaipparuvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pillatanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -116,11 +132,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:ontaritanam",
+    "entry_id": "lex:fr:solitude",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:akelapan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:tanimai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:ontaritanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -161,11 +185,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:piccitanam",
+    "entry_id": "lex:fr:folie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pagalpan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:paittiyam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:piccitanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -201,11 +233,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:musalitanam",
+    "entry_id": "lex:fr:vieillesse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:burhapa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:mutumai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:musalitanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -246,11 +286,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nijam",
+    "entry_id": "lex:fr:verite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:saccai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:unmai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nijam",
     "relation": "TRANSLATION"
    }
   ],
@@ -291,11 +339,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sveccha",
+    "entry_id": "lex:fr:liberte",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:azadi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cutantiram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sveccha",
     "relation": "TRANSLATION"
    }
   ],
@@ -319,7 +375,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:HUMANITY",
   "morphology": {
    "stem_form": "human",
@@ -336,11 +392,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:manavatvam",
+    "entry_id": "lex:fr:humanite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:manavta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:manitattuvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:manavatvam",
     "relation": "TRANSLATION"
    }
   ],
@@ -381,11 +445,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nayakatvam",
+    "entry_id": "lex:fr:leadership",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:netrtva",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:talaimai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nayakatvam",
     "relation": "TRANSLATION"
    }
   ],
@@ -426,11 +498,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sneham",
+    "entry_id": "lex:fr:amitie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:dosti",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:natpu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sneham",
     "relation": "TRANSLATION"
    }
   ],
@@ -471,11 +551,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:rajarikam",
+    "entry_id": "lex:fr:royaute",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:rajatva",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:aracatci",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rajarikam",
     "relation": "TRANSLATION"
    }
   ],
@@ -516,11 +604,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:tiyadanam",
+    "entry_id": "lex:fr:douceur",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:mithapan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:inimai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tiyadanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -544,7 +640,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:BEAUTY",
   "morphology": {
    "stem_form": "beauty",
@@ -553,14 +649,24 @@
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:beauty-of-en"
+  ],
   "aligned": [
    {
-    "entry_id": "lex:te:andam",
+    "entry_id": "lex:fr:beaute",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:sundarta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:alaku",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:andam",
     "relation": "TRANSLATION"
    }
   ],
@@ -601,11 +707,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:balahinata",
+    "entry_id": "lex:fr:faiblesse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:kamzori",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:palavinam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balahinata",
     "relation": "TRANSLATION"
    }
   ],
@@ -646,11 +760,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:goppatanam",
+    "entry_id": "lex:fr:grandeur",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:mahanta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:perumai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:goppatanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -691,11 +813,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kottadanam",
+    "entry_id": "lex:fr:nouveaute",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:nayapan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:putumai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kottadanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -719,7 +849,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:EQUALITY",
   "morphology": {
    "stem_form": "equal",
@@ -736,11 +866,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:samanatvam",
+    "entry_id": "lex:fr:egalite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:samanta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:camattuvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samanatvam",
     "relation": "TRANSLATION"
    }
   ],
@@ -764,7 +902,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:UNITY",
   "morphology": {
    "stem_form": "unity",
@@ -781,11 +919,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:aikyata",
+    "entry_id": "lex:fr:unite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:ekta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:orrumai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:aikyata",
     "relation": "TRANSLATION"
    }
   ],
@@ -809,7 +955,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:HONESTY",
   "morphology": {
    "stem_form": "honest",
@@ -821,11 +967,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nijayiti",
+    "entry_id": "lex:fr:honnetete",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:imandari",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nermai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nijayiti",
     "relation": "TRANSLATION"
    }
   ],
@@ -866,11 +1020,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sodaratvam",
+    "entry_id": "lex:fr:fraternite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bhaicara",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cakotarattuvam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sodaratvam",
     "relation": "TRANSLATION"
    }
   ],
@@ -911,11 +1073,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:matrtvam",
+    "entry_id": "lex:fr:maternite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:matrtva",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:taymai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:matrtvam",
     "relation": "TRANSLATION"
    }
   ],
@@ -956,11 +1126,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jnanam",
+    "entry_id": "lex:fr:sagesse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:samajhdari",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:arivu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jnanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1001,11 +1179,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:santosam",
+    "entry_id": "lex:fr:bonheur",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:xusi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:makilcci",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:santosam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1046,11 +1232,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:duhkham",
+    "entry_id": "lex:fr:tristesse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:udasi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:varuttam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:duhkham",
     "relation": "TRANSLATION"
    }
   ],
@@ -1091,11 +1285,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:somaritanam",
+    "entry_id": "lex:fr:paresse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:susti",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:compal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:somaritanam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1136,11 +1338,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jabbu",
+    "entry_id": "lex:fr:maladie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bimari",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:noy",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jabbu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1181,11 +1391,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:daya",
+    "entry_id": "lex:fr:gentillesse",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:meharbani",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:irakkam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:daya",
     "relation": "TRANSLATION"
    }
   ],
@@ -1226,11 +1444,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:telivi",
+    "entry_id": "lex:fr:habilete",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:calaki",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:putticalittanam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:telivi",
     "relation": "TRANSLATION"
    }
   ],
@@ -1254,7 +1480,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:NERVOUSNESS",
   "morphology": {
    "stem_form": "nervous",
@@ -1271,11 +1497,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kangaru",
+    "entry_id": "lex:fr:nervosite",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:ghabrahat",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:patarram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kangaru",
     "relation": "TRANSLATION"
    }
   ],
@@ -1316,11 +1550,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:cadavadam",
+    "entry_id": "lex:fr:lecture",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:parhai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:patittal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cadavadam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1361,11 +1603,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:rayadam",
+    "entry_id": "lex:fr:ecriture",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:likhai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:elututal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rayadam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1406,11 +1656,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:padadam",
+    "entry_id": "lex:fr:chant",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:gayan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:patutal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:padadam",
     "relation": "TRANSLATION"
    }
   ],
@@ -1434,7 +1692,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:DECORATION",
   "morphology": {
    "stem_form": "decorate",
@@ -1451,11 +1709,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:alankarana",
+    "entry_id": "lex:fr:decoration",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:sajavat",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:alankaram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:alankarana",
     "relation": "TRANSLATION"
    }
   ],
@@ -1479,7 +1745,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:MOVEMENT",
   "morphology": {
    "stem_form": "move",
@@ -1496,11 +1762,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kadalika",
+    "entry_id": "lex:fr:mouvement",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:halcal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:iyakkam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kadalika",
     "relation": "TRANSLATION"
    }
   ],
@@ -1524,7 +1798,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:PAYMENT",
   "morphology": {
    "stem_form": "pay",
@@ -1541,11 +1815,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:cellimpu",
+    "entry_id": "lex:fr:paiement",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bhugtan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:celuttutal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cellimpu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1586,11 +1868,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:adhyapakudu",
+    "entry_id": "lex:fr:enseignant",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:siksak",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:aciriyar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:adhyapakudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1631,11 +1921,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:panivadu",
+    "entry_id": "lex:fr:travailleur",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:mazdur",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:tolilali",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:panivadu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1659,7 +1957,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:ARTIST",
   "morphology": {
    "stem_form": "art",
@@ -1676,11 +1974,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kalakarudu",
+    "entry_id": "lex:fr:artiste",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:kalakar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kalainar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kalakarudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1721,11 +2027,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:raitu",
+    "entry_id": "lex:fr:fermier",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:kisan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:ulavar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:raitu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1749,7 +2063,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:MERCHANT",
   "morphology": {
    "stem_form": "merchant",
@@ -1758,14 +2072,24 @@
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:merchant-of-en"
+  ],
   "aligned": [
    {
-    "entry_id": "lex:te:vyapari",
+    "entry_id": "lex:fr:marchand",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:vyapari",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vanikar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vyapari",
     "relation": "TRANSLATION"
    }
   ],
@@ -1801,11 +2125,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:dukanadarudu",
+    "entry_id": "lex:fr:boutiquier",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:dukandar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kataikkarar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:dukanadarudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1846,11 +2178,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:patagadu",
+    "entry_id": "lex:fr:chanteur",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:gayak",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:patakar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:patagadu",
     "relation": "TRANSLATION"
    }
   ],
@@ -1874,7 +2214,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:SOCIALIST_P",
   "morphology": {
    "stem_form": "social",
@@ -1891,11 +2231,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:samyavadi",
+    "entry_id": "lex:fr:socialiste",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:samajvadi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cocalist",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samyavadi",
     "relation": "TRANSLATION"
    }
   ],
@@ -1919,7 +2267,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:NATIONALIST_P",
   "morphology": {
    "stem_form": "nation",
@@ -1936,11 +2284,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jatiyavadi",
+    "entry_id": "lex:fr:nationaliste",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:rastravadi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:teciyavati",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyavadi",
     "relation": "TRANSLATION"
    }
   ],
@@ -1964,7 +2320,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:MAGICIAN",
   "morphology": {
    "stem_form": "magic",
@@ -1976,11 +2332,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:mantrikudu",
+    "entry_id": "lex:fr:magicien",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:jadugar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:mantiravati",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mantrikudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -2004,7 +2368,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:LIONESS",
   "morphology": {
    "stem_form": "lion",
@@ -2019,7 +2383,12 @@
    "segmentation_confidence": 1.0
   },
   "etymology": [],
-  "aligned": [],
+  "aligned": [
+   {
+    "entry_id": "lex:fr:lionne",
+    "relation": "TRANSLATION"
+   }
+  ],
   "notes": "",
   "provenance": {
    "annotator": "suffeffix-v0.1",
@@ -2057,11 +2426,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:asaleni",
+    "entry_id": "lex:fr:desespere",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:niras",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nampikkaiyarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:asaleni",
     "relation": "TRANSLATION"
    }
   ],
@@ -2102,11 +2479,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:bhayamleni",
+    "entry_id": "lex:fr:intrepide",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:nirbhay",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:accamarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:bhayamleni",
     "relation": "TRANSLATION"
    }
   ],
@@ -2147,11 +2532,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sigguleni",
+    "entry_id": "lex:fr:ehonte",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:besarm",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vetkamillata",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sigguleni",
     "relation": "TRANSLATION"
    }
   ],
@@ -2192,11 +2585,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:vyartham",
+    "entry_id": "lex:fr:inutile",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bekar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:payanarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vyartham",
     "relation": "TRANSLATION"
    }
   ],
@@ -2237,11 +2638,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:illuleni",
+    "entry_id": "lex:fr:sans-abri",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:beghar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vitarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:illuleni",
     "relation": "TRANSLATION"
    }
   ],
@@ -2282,11 +2691,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nirjivam",
+    "entry_id": "lex:fr:inanime",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:nirjiv",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:uyirarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nirjivam",
     "relation": "TRANSLATION"
    }
   ],
@@ -2327,11 +2744,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:duhkhamaina",
+    "entry_id": "lex:fr:malheureux",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:naxus",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:makilcciyarra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:duhkhamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2372,11 +2797,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:asagala",
+    "entry_id": "lex:fr:plein-d'espoir",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:asavan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nampikkaiyulla",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:asagala",
     "relation": "TRANSLATION"
    }
   ],
@@ -2417,11 +2850,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:upayogakaram",
+    "entry_id": "lex:fr:utile",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:upyogi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:payanulla",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:upayogakaram",
     "relation": "TRANSLATION"
    }
   ],
@@ -2445,7 +2886,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:POWERFUL",
   "morphology": {
    "stem_form": "power",
@@ -2462,11 +2903,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:balavantudu",
+    "entry_id": "lex:fr:puissant",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:balvan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:valimaiyana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balavantudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -2490,7 +2939,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:BEAUTIFUL",
   "morphology": {
    "stem_form": "beauty",
@@ -2507,11 +2956,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:andamaina",
+    "entry_id": "lex:fr:beau",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:sundar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:alakana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:andamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2552,11 +3009,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:santosamaina",
+    "entry_id": "lex:fr:joyeux",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:anandmay",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:makilcciyana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:santosamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2580,7 +3045,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:COMPASSIONATE",
   "morphology": {
    "stem_form": "compassion",
@@ -2592,11 +3057,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:dayagala",
+    "entry_id": "lex:fr:compatissant",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:dayavan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:irakkamulla",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:dayagala",
     "relation": "TRANSLATION"
    }
   ],
@@ -2636,6 +3109,10 @@
     "relation": "TRANSLATION"
    },
    {
+    "entry_id": "lex:ta:nampikkai-nirainta",
+    "relation": "TRANSLATION"
+   },
+   {
     "entry_id": "lex:te:asamayam",
     "relation": "TRANSLATION"
    }
@@ -2660,7 +3137,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:READABLE",
   "morphology": {
    "stem_form": "read",
@@ -2677,11 +3154,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:cadavadagina",
+    "entry_id": "lex:fr:lisible",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pathaniya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:patikkakkutiya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cadavadagina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2705,7 +3190,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:DRINKABLE",
   "morphology": {
    "stem_form": "drink",
@@ -2722,11 +3207,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:tagadagina",
+    "entry_id": "lex:fr:buvable",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:peya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kutikkattakka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tagadagina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2750,7 +3243,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:RESPECTABLE",
   "morphology": {
    "stem_form": "respect",
@@ -2767,11 +3260,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:gauravincadagina",
+    "entry_id": "lex:fr:respectable",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:mananiya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:matikkattakka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:gauravincadagina",
     "relation": "TRANSLATION"
    }
   ],
@@ -2812,11 +3313,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:vegamga",
+    "entry_id": "lex:fr:rapidement",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:jaldi",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vekamaka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vegamga",
     "relation": "TRANSLATION"
    }
   ],
@@ -2857,11 +3366,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nemmadiga",
+    "entry_id": "lex:fr:lentement",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:dhire",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:metuvaka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nemmadiga",
     "relation": "TRANSLATION"
    }
   ],
@@ -2906,11 +3423,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jagrattaga",
+    "entry_id": "lex:fr:soigneusement",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:savdhanipurvak",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kavanamaka",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jagrattaga",
     "relation": "TRANSLATION"
    }
   ],
@@ -2934,7 +3459,7 @@
    "ipa": null
   },
   "pos": "verb",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:SIMPLIFY",
   "morphology": {
    "stem_form": "simple",
@@ -2951,11 +3476,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sulabhaparacu",
+    "entry_id": "lex:fr:simplifier",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:saral-banana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:elimaippatuttu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sulabhaparacu",
     "relation": "TRANSLATION"
    }
   ],
@@ -2996,11 +3529,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:balaparacu",
+    "entry_id": "lex:fr:fortifier",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:mazbut-karna",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:valuppatuttu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:balaparacu",
     "relation": "TRANSLATION"
    }
   ],
@@ -3036,11 +3577,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:cupincu",
+    "entry_id": "lex:fr:montrer",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:dikhana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kattu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cupincu",
     "relation": "TRANSLATION"
    }
   ],
@@ -3076,11 +3625,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:tinipincu",
+    "entry_id": "lex:fr:nourrir",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:khilana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:uttu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:tinipincu",
     "relation": "TRANSLATION"
    }
   ],
@@ -3104,7 +3661,7 @@
    "ipa": null
   },
   "pos": "verb",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:MODERNIZE",
   "morphology": {
    "stem_form": "modern",
@@ -3121,11 +3678,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:adhunikikarincu",
+    "entry_id": "lex:fr:moderniser",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:adhunik-banana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:navinappatuttu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:adhunikikarincu",
     "relation": "TRANSLATION"
    }
   ],
@@ -3149,7 +3714,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:SOCIALISM",
   "morphology": {
    "stem_form": "social",
@@ -3166,11 +3731,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:samyavadam",
+    "entry_id": "lex:fr:socialisme",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:samajvad",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cocalicam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:samyavadam",
     "relation": "TRANSLATION"
    }
   ],
@@ -3194,7 +3767,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:NATIONALISM",
   "morphology": {
    "stem_form": "nation",
@@ -3211,11 +3784,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jatiyavadam",
+    "entry_id": "lex:fr:nationalisme",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:rastravad",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:teciyavatam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyavadam",
     "relation": "TRANSLATION"
    }
   ],
@@ -3239,7 +3820,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:LINGUISTICS",
   "morphology": {
    "stem_form": "linguistics",
@@ -3251,11 +3832,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:bhasasastram",
+    "entry_id": "lex:fr:linguistique",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bhasavijnan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:moliyiyal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:bhasasastram",
     "relation": "TRANSLATION"
    }
   ],
@@ -3279,7 +3868,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:BIOLOGY",
   "morphology": {
    "stem_form": "bio",
@@ -3296,11 +3885,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jivasastram",
+    "entry_id": "lex:fr:biologie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:jivavijnan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:uyiriyal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jivasastram",
     "relation": "TRANSLATION"
    }
   ],
@@ -3324,7 +3921,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:SCHOOL",
   "morphology": {
    "stem_form": "school",
@@ -3336,11 +3933,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:pathasala",
+    "entry_id": "lex:fr:ecole",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pathsala",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:pallikkutam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pathasala",
     "relation": "TRANSLATION"
    }
   ],
@@ -3364,7 +3969,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:LIBRARY",
   "morphology": {
    "stem_form": "library",
@@ -3373,14 +3978,24 @@
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:library-an-en"
+  ],
   "aligned": [
    {
-    "entry_id": "lex:te:granthalayam",
+    "entry_id": "lex:fr:bibliotheque",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pustakalay",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nulakam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:granthalayam",
     "relation": "TRANSLATION"
    }
   ],
@@ -3404,7 +4019,7 @@
    "ipa": null
   },
   "pos": "noun",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:CLINIC",
   "morphology": {
    "stem_form": "clinic",
@@ -3416,11 +4031,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:davakhana",
+    "entry_id": "lex:fr:clinique",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:davaxana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:maruttuvamanai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:davakhana",
     "relation": "TRANSLATION"
    }
   ],
@@ -3461,7 +4084,15 @@
   "etymology": [],
   "aligned": [
    {
+    "entry_id": "lex:fr:livret",
+    "relation": "TRANSLATION"
+   },
+   {
     "entry_id": "lex:hi:pustika",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:cirunul",
     "relation": "TRANSLATION"
    }
   ],
@@ -3500,7 +4131,16 @@
    "segmentation_confidence": 1.0
   },
   "etymology": [],
-  "aligned": [],
+  "aligned": [
+   {
+    "entry_id": "lex:fr:caneton",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vattukkutti",
+    "relation": "TRANSLATION"
+   }
+  ],
   "notes": "",
   "provenance": {
    "annotator": "suffeffix-v0.1",
@@ -3538,11 +4178,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:pillalanti",
+    "entry_id": "lex:fr:enfantin",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:baccom-sa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kulantaittanamana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pillalanti",
     "relation": "TRANSLATION"
    }
   ],
@@ -3583,11 +4231,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:pasupulanti",
+    "entry_id": "lex:fr:jaunatre",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pila-sa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:mancal-ponra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pasupulanti",
     "relation": "TRANSLATION"
    }
   ],
@@ -3611,7 +4267,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:NATIONAL",
   "morphology": {
    "stem_form": "nation",
@@ -3628,11 +4284,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jatiyamaina",
+    "entry_id": "lex:fr:national",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:rastriya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:teciya",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jatiyamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -3656,7 +4320,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:SCIENTIFIC",
   "morphology": {
    "stem_form": "science",
@@ -3673,11 +4337,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:sastriyamaina",
+    "entry_id": "lex:fr:scientifique",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:vaijnanik",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:ariviyal-carnta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:sastriyamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -3701,7 +4373,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:FAMOUS",
   "morphology": {
    "stem_form": "fame",
@@ -3718,11 +4390,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:prasiddhamaina",
+    "entry_id": "lex:fr:celebre",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:prasiddh",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:pukalperra",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:prasiddhamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -3746,7 +4426,7 @@
    "ipa": null
   },
   "pos": "adjective",
-  "register": "E",
+  "register": "L",
   "concept_id": "concept:DANGEROUS",
   "morphology": {
    "stem_form": "danger",
@@ -3763,11 +4443,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:pramadamaina",
+    "entry_id": "lex:fr:dangereux",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:xatarnak",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:apattana",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pramadamaina",
     "relation": "TRANSLATION"
    }
   ],
@@ -3802,16 +4490,25 @@
   },
   "etymology": [
    "edge:mother-oe-en",
-   "edge:mother-cog"
+   "edge:mother-cog",
+   "edge:mother-cog-fr-en"
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:amma",
-    "relation": "TRANSLATION"
+    "entry_id": "lex:fr:mere",
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:mata",
     "relation": "COGNATE"
+   },
+   {
+    "entry_id": "lex:ta:amma",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:amma",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
@@ -3846,11 +4543,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nanna",
+    "entry_id": "lex:fr:pere",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pita",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:appa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nanna",
     "relation": "TRANSLATION"
    }
   ],
@@ -3885,16 +4590,25 @@
   },
   "etymology": [
    "edge:name-pie-en",
-   "edge:name-cog"
+   "edge:name-cog",
+   "edge:name-cog-fr-en"
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:peru",
-    "relation": "TRANSLATION"
+    "entry_id": "lex:fr:nom",
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:nam",
     "relation": "COGNATE"
+   },
+   {
+    "entry_id": "lex:ta:peyar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:peru",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
@@ -3928,16 +4642,25 @@
   },
   "etymology": [
    "edge:tooth-pie-en",
-   "edge:tooth-cog"
+   "edge:tooth-cog",
+   "edge:tooth-cog-fr-en"
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:pallu",
-    "relation": "TRANSLATION"
+    "entry_id": "lex:fr:dent",
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:dat",
     "relation": "COGNATE"
+   },
+   {
+    "entry_id": "lex:ta:pal",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pallu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
@@ -3971,16 +4694,25 @@
   },
   "etymology": [
    "edge:three-pie-en",
-   "edge:three-cog"
+   "edge:three-cog",
+   "edge:three-cog-fr-en"
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:mudu",
-    "relation": "TRANSLATION"
+    "entry_id": "lex:fr:trois",
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:tin",
     "relation": "COGNATE"
+   },
+   {
+    "entry_id": "lex:ta:munru",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:mudu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
@@ -4014,16 +4746,25 @@
   },
   "etymology": [
    "edge:two-pie-en",
-   "edge:two-cog"
+   "edge:two-cog",
+   "edge:two-cog-fr-en"
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:rendu",
-    "relation": "TRANSLATION"
+    "entry_id": "lex:fr:deux",
+    "relation": "COGNATE"
    },
    {
     "entry_id": "lex:hi:do",
     "relation": "COGNATE"
+   },
+   {
+    "entry_id": "lex:ta:irantu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:rendu",
+    "relation": "TRANSLATION"
    }
   ],
   "notes": "",
@@ -4058,11 +4799,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:niru",
+    "entry_id": "lex:fr:eau",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pani",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nir",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:niru",
     "relation": "TRANSLATION"
    }
   ],
@@ -4098,11 +4847,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nippu",
+    "entry_id": "lex:fr:feu",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:ag",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:neruppu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nippu",
     "relation": "TRANSLATION"
    }
   ],
@@ -4140,11 +4897,19 @@
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:kukka",
+    "entry_id": "lex:fr:chien",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:kutta",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nay",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kukka",
     "relation": "TRANSLATION"
    }
   ],
@@ -4180,11 +4945,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:illu",
+    "entry_id": "lex:fr:maison",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:ghar",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:vitu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:illu",
     "relation": "TRANSLATION"
    }
   ],
@@ -4222,7 +4995,7 @@
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:pustakam",
+    "entry_id": "lex:fr:livre",
     "relation": "TRANSLATION"
    },
    {
@@ -4231,6 +5004,14 @@
    },
    {
     "entry_id": "lex:hi:pustak",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:puttakam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:pustakam",
     "relation": "TRANSLATION"
    }
   ],
@@ -4268,7 +5049,11 @@
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:cakkera",
+    "entry_id": "lex:fr:sucre",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:hi:cini",
     "relation": "TRANSLATION"
    },
    {
@@ -4276,7 +5061,11 @@
     "relation": "TRANSLATION"
    },
    {
-    "entry_id": "lex:hi:cini",
+    "entry_id": "lex:ta:carkkarai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cakkera",
     "relation": "TRANSLATION"
    }
   ],
@@ -4314,11 +5103,19 @@
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:raju",
+    "entry_id": "lex:fr:roi",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:raja",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:aracan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:raju",
     "relation": "TRANSLATION"
    }
   ],
@@ -4354,11 +5151,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:nidra",
+    "entry_id": "lex:fr:sommeil",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:nid",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:tukkam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:nidra",
     "relation": "TRANSLATION"
    }
   ],
@@ -4394,11 +5199,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:jnapakam",
+    "entry_id": "lex:fr:memoire",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:yad",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:ninaivu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:jnapakam",
     "relation": "TRANSLATION"
    }
   ],
@@ -4431,14 +5244,24 @@
    "schema": "SIMPLEX",
    "segmentation_confidence": 1.0
   },
-  "etymology": [],
+  "etymology": [
+   "edge:joy-of-en"
+  ],
   "aligned": [
    {
-    "entry_id": "lex:te:anandam",
+    "entry_id": "lex:fr:joie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:anand",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:anantam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:anandam",
     "relation": "TRANSLATION"
    }
   ],
@@ -4474,11 +5297,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kopam",
+    "entry_id": "lex:fr:colere",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:gussa",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kopam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kopam",
     "relation": "TRANSLATION"
    }
   ],
@@ -4514,11 +5345,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:kannu",
+    "entry_id": "lex:fr:oeil",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:akh",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:kan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:kannu",
     "relation": "TRANSLATION"
    }
   ],
@@ -4557,11 +5396,19 @@
   ],
   "aligned": [
    {
-    "entry_id": "lex:te:naksatram",
+    "entry_id": "lex:fr:etoile",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:tara",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:natcattiram",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:naksatram",
     "relation": "TRANSLATION"
    }
   ],
@@ -4597,11 +5444,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:uru",
+    "entry_id": "lex:fr:village",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:gav",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:ur",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:uru",
     "relation": "TRANSLATION"
    }
   ],
@@ -4637,11 +5492,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:candrudu",
+    "entry_id": "lex:fr:lune",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:cad",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:nila",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:candrudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -4677,11 +5540,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:suryudu",
+    "entry_id": "lex:fr:soleil",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:suraj",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:curiyan",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:suryudu",
     "relation": "TRANSLATION"
    }
   ],
@@ -4717,11 +5588,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:cepa",
+    "entry_id": "lex:fr:poisson",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:machli",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:min",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:cepa",
     "relation": "TRANSLATION"
    }
   ],
@@ -4757,11 +5636,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:vana",
+    "entry_id": "lex:fr:pluie",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:baris",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:malai",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:vana",
     "relation": "TRANSLATION"
    }
   ],
@@ -4797,11 +5684,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:daham",
+    "entry_id": "lex:fr:soif",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:pyas",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:takam",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:daham",
     "relation": "TRANSLATION"
    }
   ],
@@ -4837,11 +5732,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:akali",
+    "entry_id": "lex:fr:faim",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:bhukh",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:paci",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:akali",
     "relation": "TRANSLATION"
    }
   ],
@@ -4877,11 +5780,19 @@
   "etymology": [],
   "aligned": [
    {
-    "entry_id": "lex:te:ratri",
+    "entry_id": "lex:fr:nuit",
     "relation": "TRANSLATION"
    },
    {
     "entry_id": "lex:hi:rat",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:ta:iravu",
+    "relation": "TRANSLATION"
+   },
+   {
+    "entry_id": "lex:te:ratri",
     "relation": "TRANSLATION"
    }
   ],

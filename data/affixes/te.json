@@ -33,7 +33,7 @@
    },
    {
     "affix_id": "affix:en:-ity",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-hood",
@@ -65,6 +65,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -110,7 +154,7 @@
    },
    {
     "affix_id": "affix:en:-ity",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:en:-hood",
@@ -142,6 +186,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "functional equivalent; register differs (S vs N)"
    }
   ],
@@ -184,7 +272,7 @@
    },
    {
     "affix_id": "affix:en:-ity",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:en:-hood",
@@ -216,6 +304,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "functional equivalent; register differs (S vs N)"
    }
   ],
@@ -259,7 +391,7 @@
    },
    {
     "affix_id": "affix:en:-ity",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-hood",
@@ -291,6 +423,50 @@
    },
    {
     "affix_id": "affix:hi:-apa",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ite",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-te",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-esse",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ie",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-itude",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-mai",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tanam",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttuvam",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -332,11 +508,11 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-tion",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ment",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ing",
@@ -352,6 +528,34 @@
    },
    {
     "affix_id": "affix:hi:-ahat",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ure",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ment",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-tion",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tal",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-kkam",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -387,11 +591,11 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-tion",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ment",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ing",
@@ -407,6 +611,34 @@
    },
    {
     "affix_id": "affix:hi:-ahat",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ance",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ure",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ment",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-tion",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-cci",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-tal",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-kkam",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -451,7 +683,7 @@
    },
    {
     "affix_id": "affix:en:-ist",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-kar",
@@ -471,6 +703,50 @@
    },
    {
     "affix_id": "affix:hi:-vadi",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (S vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -545,7 +821,7 @@
    },
    {
     "affix_id": "affix:en:-ist",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:hi:-kar",
@@ -565,6 +841,50 @@
    },
    {
     "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (N vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
     "note": "functional equivalent; register differs (N vs S)"
    }
   ],
@@ -635,7 +955,7 @@
    },
    {
     "affix_id": "affix:en:-ist",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:hi:-kar",
@@ -655,6 +975,50 @@
    },
    {
     "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (N vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
     "note": "functional equivalent; register differs (N vs S)"
    }
   ],
@@ -697,7 +1061,7 @@
    },
    {
     "affix_id": "affix:en:-ist",
-    "note": "functional equivalent; register differs (mixed vs E)"
+    "note": "functional equivalent; register differs (mixed vs L)"
    },
    {
     "affix_id": "affix:hi:-kar",
@@ -717,6 +1081,50 @@
    },
    {
     "affix_id": "affix:hi:-vadi",
+    "note": "functional equivalent; register differs (mixed vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (mixed vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "functional equivalent; register differs (mixed vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
     "note": "functional equivalent; register differs (mixed vs S)"
    }
   ],
@@ -794,11 +1202,11 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-ic",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-al",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:hi:-iya",
@@ -806,6 +1214,34 @@
    },
    {
     "affix_id": "affix:hi:-ik",
+    "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ique",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-al",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-in",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ana",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-iya",
     "note": "functional equivalent; register differs (N vs S)"
    }
   ],
@@ -850,6 +1286,14 @@
    {
     "affix_id": "affix:hi:-purvak",
     "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-ment-adv",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-aka",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -890,7 +1334,7 @@
    },
    {
     "affix_id": "affix:en:-ous",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:hi:-van",
@@ -907,6 +1351,18 @@
    {
     "affix_id": "affix:hi:-dar",
     "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ulla",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-nirainta",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -946,7 +1402,7 @@
    },
    {
     "affix_id": "affix:en:-ous",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-van",
@@ -963,6 +1419,18 @@
    {
     "affix_id": "affix:hi:-dar",
     "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ulla",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nirainta",
+    "note": "functional equivalent; register differs (S vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1004,7 +1472,7 @@
    },
    {
     "affix_id": "affix:en:-ous",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-van",
@@ -1021,6 +1489,18 @@
    {
     "affix_id": "affix:hi:-dar",
     "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:fr:-eux",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ulla",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nirainta",
+    "note": "functional equivalent; register differs (S vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1076,6 +1556,30 @@
    {
     "affix_id": "affix:hi:be-",
     "note": "functional equivalent; register differs (N vs P)"
+   },
+   {
+    "affix_id": "affix:fr:in-",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:des-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:e-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:mal-",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-arra",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-illata",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1131,6 +1635,30 @@
    {
     "affix_id": "affix:hi:be-",
     "note": "functional equivalent; register differs (S vs P)"
+   },
+   {
+    "affix_id": "affix:fr:in-",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:des-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:e-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:mal-",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-arra",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-illata",
+    "note": "functional equivalent; register differs (S vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1168,11 +1696,23 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-able",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:hi:-niya",
     "note": "functional equivalent; register differs (N vs S)"
+   },
+   {
+    "affix_id": "affix:fr:-able",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-kkutiya",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttakka",
+    "note": "register-matched functional equivalent"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1212,11 +1752,11 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-ize",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ify",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-en",
@@ -1224,6 +1764,22 @@
    },
    {
     "affix_id": "affix:hi:-a-caus",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ifier",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-iser",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-ppatuttu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttu",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -1264,11 +1820,11 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-ize",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-ify",
-    "note": "functional equivalent; register differs (N vs E)"
+    "note": "functional equivalent; register differs (N vs L)"
    },
    {
     "affix_id": "affix:en:-en",
@@ -1276,6 +1832,22 @@
    },
    {
     "affix_id": "affix:hi:-a-caus",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-ifier",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-iser",
+    "note": "functional equivalent; register differs (N vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-ppatuttu",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ttu",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -1313,10 +1885,18 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-ism",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-vad",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-isme",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-vatam",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -1358,7 +1938,7 @@
    },
    {
     "affix_id": "affix:en:-ist",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-kar",
@@ -1378,6 +1958,50 @@
    },
    {
     "affix_id": "affix:hi:-vadi",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-eur-ag",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-iste",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:fr:-ien",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ant",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:fr:-ier",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-ali",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-akar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-nar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-avar",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-karar",
+    "note": "functional equivalent; register differs (S vs mixed)"
+   },
+   {
+    "affix_id": "affix:ta:-vati",
     "note": "register-matched functional equivalent"
    }
   ],
@@ -1415,11 +2039,19 @@
   "equivalents": [
    {
     "affix_id": "affix:en:-ology",
-    "note": "functional equivalent; register differs (S vs E)"
+    "note": "functional equivalent; register differs (S vs L)"
    },
    {
     "affix_id": "affix:hi:-vijnan",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-logie",
+    "note": "functional equivalent; register differs (S vs L)"
+   },
+   {
+    "affix_id": "affix:ta:-iyal",
+    "note": "functional equivalent; register differs (S vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1460,6 +2092,22 @@
    {
     "affix_id": "affix:hi:-shala",
     "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-erie",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-akam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-kkutam",
+    "note": "functional equivalent; register differs (S vs N)"
+   },
+   {
+    "affix_id": "affix:ta:-manai",
+    "note": "functional equivalent; register differs (S vs N)"
    }
   ],
   "epistemic_status": "ESTABLISHED",
@@ -1502,6 +2150,18 @@
    },
    {
     "affix_id": "affix:hi:-sa",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-atre",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:fr:-in",
+    "note": "register-matched functional equivalent"
+   },
+   {
+    "affix_id": "affix:ta:-ponra",
     "note": "register-matched functional equivalent"
    }
   ],

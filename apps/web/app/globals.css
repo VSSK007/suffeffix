@@ -11,7 +11,7 @@
 
 :root {
   color-scheme: light;
-  --font-sans: var(--font-latin), var(--font-deva), var(--font-telu), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: var(--font-latin), var(--font-deva), var(--font-telu), var(--font-taml), system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --bg: #ffffff;
   --surface: #f5f6f8;
@@ -127,7 +127,7 @@ p { text-wrap: pretty; }
 /* ── type ──────────────────────────────────────────────────────────────── */
 .display { font-variation-settings: "wdth" 118; letter-spacing: -0.02em; line-height: 1.02; font-weight: 650; }
 .wide { font-variation-settings: "wdth" 110; letter-spacing: -0.01em; }
-.mono { font-family: var(--font-mono), ui-monospace, monospace; }
+.mono { font-family: var(--font-mono), var(--font-latin), ui-monospace, monospace; }
 .tnum { font-variant-numeric: tabular-nums; }
 .kicker { font-family: var(--font-mono), monospace; font-size: 11px; line-height: 1.2; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .lede { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; color: var(--ink-2); }
@@ -180,12 +180,15 @@ p { text-wrap: pretty; }
 .chip-ie { background: var(--ie-wash); color: var(--ie-ink); border: 1.5px solid color-mix(in srgb, var(--ie) 32%, transparent); }
 .chip-dr { background: var(--dr-wash); color: var(--dr-ink); border: 1.5px solid color-mix(in srgb, var(--dr) 40%, transparent); }
 
-/* ── lanes: English | Hindi ‖ Telugu ───────────────────────────────────── */
-.lanes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 2.25rem minmax(0, 1fr); }
-.lanes-labelled { display: grid; grid-template-columns: 10rem minmax(0, 1fr) minmax(0, 1fr) 2.25rem minmax(0, 1fr); }
+/* ── lanes: English | French | Hindi ‖ Telugu | Tamil ─────────────────── */
+.lanes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 2rem repeat(2, minmax(0, 1fr)); }
+.lanes-labelled { display: grid; grid-template-columns: 8.5rem repeat(3, minmax(0, 1fr)) 2rem repeat(2, minmax(0, 1fr)); }
+.lanes > *, .lanes-labelled > * { overflow-wrap: anywhere; }
 .gutter { position: relative; }
+.mini-gutter { position: relative; }
+.mini-gutter::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1.5px dashed var(--line-2); }
 .gutter::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1.5px dashed var(--line-2); }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .lanes, .lanes-labelled { grid-template-columns: minmax(0, 1fr); }
   .gutter { height: 1.1rem; }
   .gutter::before { top: 50%; bottom: auto; left: 0; right: 0; border-left: 0; border-top: 1.5px dashed var(--line-2); }

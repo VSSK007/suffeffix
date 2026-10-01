@@ -73,11 +73,11 @@ export default async function EntryPage({ params }: { params: Promise<{ lang: st
             )}
           </header>
 
-          {/* ── the same meaning, three lanes ────────────────────── */}
+          {/* ── the same meaning, five lanes ─────────────────────── */}
           {row && (
             <section>
               <div className="flex flex-wrap items-baseline justify-between gap-3 mb-4">
-                <h2 className="wide text-[21px] font-semibold">The same meaning in all three languages</h2>
+                <h2 className="wide text-[21px] font-semibold">The same meaning in all five languages</h2>
                 <Link href={slug.conceptHref(row.id)} className="text-[13px] text-ie-ink hover:underline underline-offset-4">
                   Open the meaning →
                 </Link>

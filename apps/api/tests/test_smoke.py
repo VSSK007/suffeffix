@@ -77,7 +77,7 @@ def test_etymology_graph(client):
 
 def test_concept(client):
     r = client.get("/v0/concepts/concept:GOODNESS")
-    assert r.status_code == 200 and len(r.json()["entries"]) == 3
+    assert r.status_code == 200 and len(r.json()["entries"]) == 5
 
 
 def test_meta(client):

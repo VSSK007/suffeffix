@@ -121,7 +121,7 @@ bash deploy/deploy.sh deploy@YOUR_SERVER_IP rollback
 curl -I https://suffeffix.com/            # 200, with Strict-Transport-Security and Content-Security-Policy
 curl -I http://suffeffix.com/             # 301 to https://suffeffix.com/
 curl -I https://www.suffeffix.com/        # 301 to https://suffeffix.com/
-curl -I https://suffeffix.com/data/suffeffix-v0.1.0.zip   # 200, Access-Control-Allow-Origin: *
+curl -I https://suffeffix.com/data/suffeffix-v0.2.0.zip   # 200, Access-Control-Allow-Origin: *
 curl -I https://suffeffix.com/nope/       # 404
 ```
 

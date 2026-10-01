@@ -8,7 +8,7 @@ import type {
   Affix, AffixDetail, AffixFunction, Atom, AtomDetail, EntryDetail,
   EntrySummary, EqClassResolved, EtymologyGraph, Meta,
 } from "./api";
-import type { LangCode } from "./lang";
+import { LANG_CODES, type LangCode } from "./lang";
 import { conceptSlug, type ConceptRow, type LaneEntry, type Relation } from "./model";
 
 const DIR = path.join(process.cwd(), ".sitedata");
@@ -62,11 +62,11 @@ async function buildConcepts(): Promise<ConceptRow[]> {
   for (const [id, list] of byConcept) {
     const c = list[0].concept;
     if (!c) continue;
-    const lanes: Record<LangCode, LaneEntry[]> = { en: [], hi: [], te: [] };
+    const lanes = Object.fromEntries(LANG_CODES.map((l) => [l, [] as LaneEntry[]])) as Record<LangCode, LaneEntry[]>;
     for (const d of list) lanes[d.entry.lang as LangCode].push(laneEntry(d));
     for (const k of Object.keys(lanes) as LangCode[]) lanes[k].sort((a, b) => a.id.localeCompare(b.id));
     const functions: string[] = [];
-    for (const k of ["en", "hi", "te"] as LangCode[]) {
+    for (const k of LANG_CODES) {
       for (const e of lanes[k]) for (const m of e.morphemes) if (!functions.includes(m.fnId)) functions.push(m.fnId);
     }
     const seen = new Set<string>();

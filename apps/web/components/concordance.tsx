@@ -2,13 +2,14 @@
 
 // The whole dataset as a parallel concordance: one row per meaning, one lane
 // per language. Filter by text (any script, transliteration, or gloss), by the
-// affix function a word uses, or to rows that are derived in all three.
+// affix function a word uses, or to rows that are derived in all five.
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { ConceptRow, LaneEntry } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANES, normalize, langAttr } from "@/lib/lang";
+import { LANES, chipClass, normalize, langAttr } from "@/lib/lang";
+import { LaneRow } from "./lane-row";
 import { FamilyDot } from "./marks";
 
 function Cell({ list, fn }: { list: LaneEntry[]; fn: string | null }) {
@@ -17,16 +18,16 @@ function Cell({ list, fn }: { list: LaneEntry[]; fn: string | null }) {
     <div className="space-y-1.5">
       {list.map((e) => (
         <div key={e.id} className="min-w-0">
-          <Link href={slug.entryHref(e.id)} lang={langAttr(e.lang)} className="text-[17px] font-medium hover:text-ie-ink transition-colors">
+          <Link href={slug.entryHref(e.id)} lang={langAttr(e.lang)} className="text-[16px] font-medium hover:text-ie-ink transition-colors">
             {e.form}
           </Link>
-          {e.form !== e.translit && <span className="mono text-[11px] text-faint ml-2">{e.translit}</span>}
+          {e.form !== e.translit && <span className="mono text-[11px] text-faint block">{e.translit}</span>}
           {e.morphemes.length > 0 && (
             <div className="flex flex-wrap gap-1 mt-1">
               {e.morphemes.map((m) => (
                 <span
                   key={m.affixId + m.fnId}
-                  className={`${e.lang === "te" ? "chip-dr" : "chip-ie"} rounded px-1.5 text-[11.5px] leading-[1.6]`}
+                  className={`${chipClass(e.lang)} rounded px-1.5 text-[11.5px] leading-[1.6]`}
                   style={fn && m.fnId !== fn ? { opacity: 0.4 } : undefined}
                 >
                   {m.form}
@@ -99,7 +100,7 @@ export function Concordance({
               onChange={(e) => setAllDerived(e.target.checked)}
               className="accent-[var(--ie)] w-4 h-4"
             />
-            Derived in all three languages
+            Derived in all five languages
           </label>
         </div>
         <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by affix function">
@@ -128,17 +129,15 @@ export function Concordance({
       </p>
 
       {/* header */}
-      <div className="lanes-labelled border-b-2 border-ink pb-2 hidden md:grid">
+      <div className="lanes-labelled border-b-2 border-ink pb-2 hidden lg:grid">
         <div className="text-[12px] font-semibold">Meaning</div>
-        {LANES.slice(0, 2).map((l) => (
-          <div key={l.code} className="px-4 text-[12px] font-semibold inline-flex items-center gap-2">
-            <FamilyDot lang={l.code} /> {l.name}
-          </div>
-        ))}
-        <div />
-        <div className="px-4 text-[12px] font-semibold inline-flex items-center gap-2">
-          <FamilyDot lang="te" /> Telugu
-        </div>
+        <LaneRow
+          render={(l) => (
+            <div className="px-3 text-[12px] font-semibold inline-flex items-center gap-2">
+              <FamilyDot lang={l.code} /> {l.name}
+            </div>
+          )}
+        />
       </div>
 
       {shown.length === 0 && (
@@ -154,21 +153,16 @@ export function Concordance({
               {r.gloss}
             </Link>
           </div>
-          {LANES.slice(0, 2).map((l) => (
-            <div key={l.code} className="py-3.5 md:px-4">
-              <span className="md:hidden inline-flex items-center gap-1.5 text-[11px] text-faint mb-1">
-                <FamilyDot lang={l.code} size={6} /> {l.name}
-              </span>
-              <Cell list={r.lanes[l.code]} fn={fn} />
-            </div>
-          ))}
-          <div className="gutter" aria-hidden="true" />
-          <div className="py-3.5 md:px-4">
-            <span className="md:hidden inline-flex items-center gap-1.5 text-[11px] text-faint mb-1">
-              <FamilyDot lang="te" size={6} /> Telugu
-            </span>
-            <Cell list={r.lanes.te} fn={fn} />
-          </div>
+          <LaneRow
+            render={(l) => (
+              <div className="py-3.5 lg:px-3">
+                <span className="lg:hidden inline-flex items-center gap-1.5 text-[11px] text-faint mb-1">
+                  <FamilyDot lang={l.code} size={6} /> {l.name}
+                </span>
+                <Cell list={r.lanes[l.code]} fn={fn} />
+              </div>
+            )}
+          />
         </div>
       ))}
     </div>

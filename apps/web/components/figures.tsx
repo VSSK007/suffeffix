@@ -5,11 +5,12 @@
 // labels that are dropped (never clipped) when they do not fit, a legend that
 // highlights its series, and a table twin supplied by <Figure>.
 
-import { createContext, useCallback, useContext, useLayoutEffect, useRef, useState } from "react";
+import { Fragment, createContext, useCallback, useContext, useLayoutEffect, useRef, useState } from "react";
 import type { Census } from "@/lib/census";
+import { DR_LANES, IE_LANES, LANES, LANG_CODES, LANG_NAME } from "@/lib/lang";
 import { Figure } from "./figure";
 
-const LANG: Record<string, string> = { en: "English", hi: "Hindi", te: "Telugu" };
+const LANG = LANG_NAME;
 const pct = (n: number, d: number) => Math.round((100 * n) / d);
 
 /* ── tooltip ─────────────────────────────────────────────────────────────── */
@@ -164,14 +165,17 @@ const SERIES = [
   { k: "N", name: "Native", v: "s1" },
   { k: "S", name: "Sanskritic", v: "s2" },
   { k: "P", name: "Perso-Arabic", v: "s3" },
-  { k: "E", name: "Learned (Latin, Greek)", short: "Learned", v: "s4" },
-  { k: "mixed", name: "Mixed", short: "Mixed", v: "neutral" },
+  { k: "L", name: "Learned (Latin, Greek)", short: "Learned", v: "s4" },
+  { k: "mixed", name: "Mixed or English loan", short: "Other", v: "neutral" },
 ] as const;
+// English loans (register E) are rare enough to share the neutral segment with mixed forms.
+const regCount = (r: Census["reg"][string], k: string) => (r.counts[k] ?? 0) + (k === "mixed" ? r.counts.E ?? 0 : 0);
+const regExamples = (r: Census["reg"][string], k: string) => [...(r.examples[k] ?? []), ...(k === "mixed" ? r.examples.E ?? [] : [])].slice(0, 4);
 
 export function RegisterFigure({ n, c, caption }: { n: number; c: Census; caption: React.ReactNode }) {
   const [hl, setHl] = useState<string | null>(null);
   const R = c.reg;
-  const share = (l: string, k: string) => pct(R[l].counts[k] ?? 0, R[l].n);
+  const share = (l: string, k: string) => pct(regCount(R[l], k), R[l].n);
 
   const row = (l: string) => (
     <div key={l} className="grid sm:grid-cols-[7.2rem_minmax(0,1fr)] items-center gap-x-4 gap-y-2 mb-3.5">
@@ -181,7 +185,7 @@ export function RegisterFigure({ n, c, caption }: { n: number; c: Census; captio
       </div>
       <div className="flex gap-[2px] h-6">
         {SERIES.map((s) => {
-          const count = R[l].counts[s.k];
+          const count = regCount(R[l], s.k);
           if (!count) return null;
           const p = pct(count, R[l].n);
           return (
@@ -194,7 +198,7 @@ export function RegisterFigure({ n, c, caption }: { n: number; c: Census; captio
               style={{ flex: `${count} 1 0`, opacity: hl && hl !== s.k ? 0.28 : 1 }}
               className="last:rounded-r-[4px]"
               label={`${LANG[l]}, ${s.name}: ${count} of ${R[l].n} words`}
-              tip={{ color: `var(--${s.v})`, value: `${count} words · ${p}%`, label: `${LANG[l]} · ${s.name}`, lines: [(R[l].examples[s.k] ?? []).join(" · ")] }}
+              tip={{ color: `var(--${s.v})`, value: `${count} words · ${p}%`, label: `${LANG[l]} · ${s.name}`, lines: [regExamples(R[l], s.k).join(" · ")] }}
             />
           );
         })}
@@ -207,24 +211,23 @@ export function RegisterFigure({ n, c, caption }: { n: number; c: Census; captio
       <Figure
         n={n}
         id="fig-register"
-        title={`Each language layers its vocabulary differently: Telugu is ${share("te", "S")}% Sanskritic, Hindi stacks three layers, English is ${share("en", "N")}% native`}
+        title={`Two Dravidian languages, two strategies: Telugu is ${share("te", "S")}% Sanskritic, Tamil ${share("ta", "S")}%; Hindi stacks three layers`}
         caption={caption}
         table={
           <Table
             head={["Language", ...SERIES.map((s) => s.name), "Words"]}
-            rows={["en", "hi", "te"].map((l) => [
-              LANG[l], ...SERIES.map((s) => (R[l].counts[s.k] ? `${R[l].counts[s.k]} (${pct(R[l].counts[s.k], R[l].n)}%)` : "—")), R[l].n,
+            rows={LANG_CODES.map((l) => [
+              LANG[l], ...SERIES.map((s) => (regCount(R[l], s.k) ? `${regCount(R[l], s.k)} (${pct(regCount(R[l], s.k), R[l].n)}%)` : "—")), R[l].n,
             ])}
           />
         }
       >
         <Legend items={SERIES.map((s) => ({ k: s.k, name: s.name, color: `var(--${s.v})` }))} onHover={setHl} />
         <p className="kicker mb-3">Indo-European</p>
-        {row("en")}
-        {row("hi")}
+        {IE_LANES.map((l) => row(l.code))}
         <div className="border-t-[1.5px] border-dashed border-line-2 my-5" />
         <p className="kicker mb-3">Dravidian</p>
-        {row("te")}
+        {DR_LANES.map((l) => row(l.code))}
       </Figure>
     </TipProvider>
   );
@@ -243,16 +246,16 @@ function HeatInner({ n, c, caption }: { n: number; c: Census; caption: React.Rea
   const bind = useBind();
   const H = c.heat, T = c.affixTotals;
   const agent = H.find((r) => r.id === "fn:AG");
-  const langs = ["en", "hi", "te"] as const;
+  const langs = LANG_CODES;
   return (
     <Figure
       n={n}
       id="fig-affixes"
-      title={agent ? `Agent suffixes: English ${agent.en.length}, Hindi ${agent.hi.length}, Telugu ${agent.te.length}` : "Affixes by function and language"}
+      title={agent ? `Agent suffixes: ${LANG_CODES.map((l) => `${LANG[l]} ${agent[l].length}`).join(", ")}` : "Affixes by function and language"}
       caption={caption}
       table={
         <table className="w-full text-[14px]" style={{ borderCollapse: "collapse" }}>
-          <thead><tr>{["Function", "English", "Hindi", "Telugu"].map((h) => <th key={h} className="py-2.5 pr-4 text-left font-semibold border-b-2 border-ink">{h}</th>)}</tr></thead>
+          <thead><tr>{["Function", ...LANG_CODES.map((l) => LANG[l])].map((h) => <th key={h} className="py-2.5 pr-4 text-left font-semibold border-b-2 border-ink">{h}</th>)}</tr></thead>
           <tbody>
             {H.map((r) => (
               <tr key={r.id}>
@@ -265,17 +268,18 @@ function HeatInner({ n, c, caption }: { n: number; c: Census; caption: React.Rea
       }
     >
       <div className="overflow-x-auto">
-        <div className="grid min-w-[560px] gap-[2px]" style={{ gridTemplateColumns: "minmax(8rem,13rem) repeat(2,minmax(0,1fr)) 1.4rem minmax(0,1fr)" }}>
+        <div className="grid min-w-[680px] gap-[2px]" style={{ gridTemplateColumns: "minmax(8rem,12rem) repeat(3,minmax(0,1fr)) 1.4rem repeat(2,minmax(0,1fr))" }}>
           <div />
-          <div className="kicker pb-2 pl-1.5" style={{ gridColumn: "2 / 4" }}>Indo-European</div>
+          <div className="kicker pb-2 pl-1.5" style={{ gridColumn: "2 / 5" }}>Indo-European</div>
           <div />
-          <div className="kicker pb-2 pl-1.5">Dravidian</div>
+          <div className="kicker pb-2 pl-1.5" style={{ gridColumn: "6 / 8" }}>Dravidian</div>
           <div />
-          {(["en", "hi"] as const).map((l) => (
-            <div key={l} className="pb-2 pl-1.5 text-[13px] font-semibold leading-tight">{LANG[l]}<span className="mono block text-[11px] font-normal text-muted mt-0.5">{T[l]} affixes</span></div>
+          {LANES.map((l) => (
+            <Fragment key={l.code}>
+              {l === DR_LANES[0] && <div />}
+              <div className="pb-2 pl-1.5 text-[13px] font-semibold leading-tight">{l.name}<span className="mono block text-[11px] font-normal text-muted mt-0.5">{T[l.code]} affixes</span></div>
+            </Fragment>
           ))}
-          <div />
-          <div className="pb-2 pl-1.5 text-[13px] font-semibold leading-tight">Telugu<span className="mono block text-[11px] font-normal text-muted mt-0.5">{T.te} affixes</span></div>
 
           {H.map((r) => (
             <HeatRow key={r.id} r={r} bind={bind} />
@@ -296,7 +300,7 @@ function HeatRow({ r, bind }: { r: Census["heat"][number]; bind: Bind }) {
   return (
     <>
       <div className="flex min-h-[30px] items-center pr-2.5 text-[13px] leading-tight text-ink-2">{r.label}</div>
-      {(["en", "hi", "te"] as const).map((l, i) => {
+      {LANG_CODES.map((l) => {
         const count = r[l].length;
         const cell = (
           <div
@@ -310,7 +314,7 @@ function HeatRow({ r, bind }: { r: Census["heat"][number]; bind: Bind }) {
             {count || "–"}
           </div>
         );
-        return i === 2 ? (
+        return l === DR_LANES[0].code ? (
           <span key={l} style={{ display: "contents" }}>
             <div className="ml-1/2 border-l-[1.5px] border-dashed border-line-2" style={{ marginLeft: "50%" }} />
             {cell}

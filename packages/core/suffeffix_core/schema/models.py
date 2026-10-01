@@ -14,7 +14,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 # --- Enums (Literals designed to grow; fr/ta are v0.2, see docs/ROADMAP.md) ---
 
-Lang = Literal["en", "te", "hi"]
+# T.H.E.F.T.: Telugu, Hindi, English, French, Tamil (v0.2). Two families:
+# Indo-European (en, fr, hi) and Dravidian (te, ta).
+Lang = Literal["en", "fr", "hi", "te", "ta"]
 
 Family = Literal[
     "IE:Germanic", "IE:Indo-Aryan", "IE:Romance", "IE:Iranian",
@@ -22,10 +24,10 @@ Family = Literal[
     "Semitic", "Reconstructed:PIE", "Reconstructed:Proto-Dravidian", "Other",
 ]
 
-# Register: N native/inherited, S Sanskritic/tatsama, P Perso-Arabic,
-# E English loan (for en itself, E marks the learned Latinate/Greek stratum —
-# an ENGINEERING reuse documented in docs/DATASET.md).
-Register = Literal["N", "S", "P", "E", "mixed"]
+# Register: N native/inherited (tadbhava; French mots populaires), S Sanskritic/tatsama,
+# P Perso-Arabic, E English loan, L learned Latin/Greek stratum (English and French
+# mots savants — the European counterpart of tatsama), mixed.
+Register = Literal["N", "S", "P", "E", "L", "mixed"]
 
 EpistemicStatus = Literal["ESTABLISHED", "ENGINEERING", "HYPOTHESIS", "FUTURE"]
 ReviewStatus = Literal["draft", "reviewed", "published"]
@@ -73,8 +75,10 @@ class Source(Base):
 
 class AtomExponents(Base):
     en: str
-    te: str
+    fr: str
     hi: str
+    te: str
+    ta: str
 
 
 class AtomRelation(Base):

@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
 import type { LangCode } from "@/lib/lang";
-import { LANES, LANG_NAME, REGISTER_NAME, langAttr } from "@/lib/lang";
+import { LANG_CODES, LANG_NAME, REGISTER_NAME, chipClass, langAttr } from "@/lib/lang";
+import { LaneRow } from "@/components/lane-row";
 import { EpiTag, FamilyDot, ReviewTag } from "@/components/marks";
 import { pageMeta } from "@/lib/seo";
 
@@ -34,11 +35,11 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
   const d = await data.affix(slug.affixId(lang, s));
   if (!d) notFound();
   const a = d.affix;
-  const fam = lang === "te" ? "chip-dr" : "chip-ie";
+  const fam = chipClass(lang);
   const prod = PRODUCTIVITY[a.productivity] ?? PRODUCTIVITY.mid;
   const details = await data.entryDetails();
 
-  const eqByLang: Record<LangCode, typeof d.equivalents> = { en: [], hi: [], te: [] };
+  const eqByLang = Object.fromEntries(LANG_CODES.map((l) => [l, [] as typeof d.equivalents])) as Record<LangCode, typeof d.equivalents>;
   for (const q of d.equivalents) eqByLang[q.affix.lang as LangCode].push(q);
 
   return (
@@ -112,7 +113,7 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
               const det = details[ex.id];
               return (
                 <Link key={ex.id} href={slug.entryHref(ex.id)} className="panel p-4 hover:border-line-2 transition-colors group">
-                  <div className="text-[21px] font-semibold group-hover:text-ie-ink">{ex.form}</div>
+                  <div lang={langAttr(ex.lang)} className="text-[21px] font-semibold group-hover:text-ie-ink">{ex.form}</div>
                   {ex.form !== ex.translit && <div className="mono text-[11.5px] text-faint">{ex.translit}</div>}
                   <div className="text-[13px] text-muted mt-2">{ex.gloss}</div>
                   {det && (
@@ -140,11 +141,7 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
           <h2 className="wide text-[21px] font-semibold mb-1">Does the same job elsewhere</h2>
           <p className="text-[13px] text-muted mb-5">Functional equivalents, placed in their lanes. Same register is noted; most differ.</p>
           <div className="lanes">
-            {LANES.slice(0, 2).map((l) => (
-              <Lane key={l.code} code={l.code} items={eqByLang[l.code]} self={a.lang === l.code ? a.form : null} />
-            ))}
-            <div className="gutter" aria-hidden="true" />
-            <Lane code="te" items={eqByLang.te} self={a.lang === "te" ? a.form : null} />
+            <LaneRow render={(l) => <Lane code={l.code} items={eqByLang[l.code]} self={a.lang === l.code ? a.form : null} />} />
           </div>
         </section>
       )}
@@ -154,7 +151,7 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
 
 function Lane({ code, items, self }: { code: LangCode; items: { affix: { id: string; form: string; translit: string }; note: string }[]; self: string | null }) {
   return (
-    <div className="py-2 md:px-4">
+    <div className="py-2 lg:px-3">
       <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-3">
         <FamilyDot lang={code} /> {LANG_NAME[code]}
       </p>
@@ -163,7 +160,7 @@ function Lane({ code, items, self }: { code: LangCode; items: { affix: { id: str
       <ul className="space-y-2.5">
         {items.map((q) => (
           <li key={q.affix.id}>
-            <Link href={slug.affixHref(q.affix.id)} className={`${code === "te" ? "chip-dr" : "chip-ie"} inline-block rounded-md px-2 py-0.5 text-[16px] hover:-translate-y-[1px] transition-transform`}>
+            <Link href={slug.affixHref(q.affix.id)} lang={langAttr(code)} className={`${chipClass(code)} inline-block rounded-md px-2 py-0.5 text-[16px] hover:-translate-y-[1px] transition-transform`}>
               {q.affix.form}
             </Link>
             <div className="text-[12px] text-muted mt-1">{q.note}</div>

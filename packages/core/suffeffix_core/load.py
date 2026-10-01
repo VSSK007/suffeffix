@@ -7,6 +7,9 @@ from pathlib import Path
 
 from .schema import Dataset
 
+# T.H.E.F.T. — Telugu, Hindi, English, French, Tamil
+LANGS = ("en", "fr", "hi", "te", "ta")
+
 
 def _read(path: Path) -> list:
     with path.open(encoding="utf-8") as f:
@@ -29,9 +32,9 @@ def load_dataset(data_dir: Path | None = None) -> Dataset:
         atoms=_read(d / "atoms.json"),
         affix_functions=_read(d / "affix_functions.json"),
         equivalence_classes=_read(d / "equivalence_classes.json"),
-        affixes=[a for lang in ("en", "te", "hi") for a in _read(d / "affixes" / f"{lang}.json")],
+        affixes=[a for lang in LANGS for a in _read(d / "affixes" / f"{lang}.json")],
         concepts=_read(d / "concepts.json"),
-        entries=[e for lang in ("en", "te", "hi") for e in _read(d / "entries" / f"{lang}.json")],
+        entries=[e for lang in LANGS for e in _read(d / "entries" / f"{lang}.json")],
         roots=_read(d / "roots.json"),
         etymology_edges=_read(d / "etymology_edges.json"),
         sources=_read(d / "sources.json"),

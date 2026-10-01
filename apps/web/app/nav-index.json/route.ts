@@ -2,7 +2,7 @@
 // Entries live in public/search-index.json (normalized by the Python exporter).
 
 import { data, slug } from "@/lib/data";
-import { LANG_NAME, normalize } from "@/lib/lang";
+import { LANG_CODES, LANG_NAME, normalize } from "@/lib/lang";
 
 export const dynamic = "force-static";
 
@@ -12,7 +12,7 @@ export async function GET() {
 
   const items = [
     ...concepts.map((c) => {
-      const forms = (["en", "hi", "te"] as const).flatMap((l) => c.lanes[l].map((e) => e.form));
+      const forms = LANG_CODES.flatMap((l) => c.lanes[l].map((e) => e.form));
       return {
         type: "concept" as const,
         href: slug.conceptHref(c.id),
@@ -32,8 +32,8 @@ export async function GET() {
       type: "atom" as const,
       href: slug.atomHref(a.id),
       title: a.id.replace("atom:", ""),
-      sub: `${a.exponents.en} · ${a.exponents.hi} · ${a.exponents.te}`,
-      keys: [normalize(a.id.replace("atom:", "")), normalize(a.exponents.en), normalize(a.exponents.hi), normalize(a.exponents.te)],
+      sub: LANG_CODES.map((l) => a.exponents[l]).join(" · "),
+      keys: [normalize(a.id.replace("atom:", "")), ...LANG_CODES.map((l) => normalize(a.exponents[l]))],
     })),
   ];
   return Response.json(items);

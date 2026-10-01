@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { LangCode } from "@/lib/lang";
-import { LANES, REGISTER_NAME, langAttr } from "@/lib/lang";
+import { REGISTER_NAME, chipClass, langAttr } from "@/lib/lang";
+import { LaneRow } from "./lane-row";
 import { slug } from "@/lib/model";
 import { FamilyDot } from "./marks";
 
@@ -35,7 +36,7 @@ function Chip({ a, lang }: { a: AffixLite; lang: LangCode }) {
     <Link
       href={slug.affixHref(a.id)}
       onClick={(e) => e.stopPropagation()}
-      className={`${lang === "te" ? "chip-dr" : "chip-ie"} inline-flex items-baseline gap-1 rounded-md px-2 py-0.5 text-[15px] hover:-translate-y-[1px] transition-transform`}
+      className={`${chipClass(lang)} inline-flex items-baseline gap-1 rounded-md px-2 py-0.5 text-[14px] hover:-translate-y-[1px] transition-transform`}
       style={dead ? { borderStyle: "dashed", fontStyle: "italic" } : undefined}
       title={`${a.translit} · ${REGISTER_NAME[a.register] ?? a.register} · productivity ${a.productivity}`}
     >
@@ -50,17 +51,15 @@ export function Atlas({ rows, initial }: { rows: AtlasRow[]; initial: string }) 
 
   return (
     <div>
-      <div className="lanes-labelled border-b-2 border-ink pb-2 hidden md:grid sticky top-14 z-10" style={{ background: "var(--bg)" }}>
+      <div className="lanes-labelled border-b-2 border-ink pb-2 hidden lg:grid sticky top-14 z-10" style={{ background: "var(--bg)" }}>
         <div className="text-[12px] font-semibold pt-2">Function</div>
-        {LANES.slice(0, 2).map((l) => (
-          <div key={l.code} className="px-4 pt-2 text-[12px] font-semibold inline-flex items-center gap-2">
-            <FamilyDot lang={l.code} /> {l.name}
-          </div>
-        ))}
-        <div />
-        <div className="px-4 pt-2 text-[12px] font-semibold inline-flex items-center gap-2">
-          <FamilyDot lang="te" /> Telugu
-        </div>
+        <LaneRow
+          render={(l) => (
+            <div className="px-3 pt-2 text-[12px] font-semibold inline-flex items-center gap-2">
+              <FamilyDot lang={l.code} /> {l.name}
+            </div>
+          )}
+        />
       </div>
 
       {rows.map((r) => {
@@ -94,25 +93,20 @@ export function Atlas({ rows, initial }: { rows: AtlasRow[]; initial: string }) 
                   <div className="mono text-[10.5px] text-faint mt-1">{r.id}</div>
                 </div>
               </div>
-              {LANES.slice(0, 2).map((l) => (
-                <div key={l.code} className="py-4 md:px-4 flex flex-wrap content-start gap-1.5">
-                  <span className="md:hidden w-full inline-flex items-center gap-1.5 text-[11px] text-faint">
-                    <FamilyDot lang={l.code} size={6} /> {l.name}
-                  </span>
-                  {r.cells[l.code].length ? r.cells[l.code].map((a) => <Chip key={a.id} a={a} lang={l.code} />) : <span className="text-faint">—</span>}
-                </div>
-              ))}
-              <div className="gutter" aria-hidden="true" />
-              <div className="py-4 md:px-4 flex flex-wrap content-start gap-1.5">
-                <span className="md:hidden w-full inline-flex items-center gap-1.5 text-[11px] text-faint">
-                  <FamilyDot lang="te" size={6} /> Telugu
-                </span>
-                {r.cells.te.length ? r.cells.te.map((a) => <Chip key={a.id} a={a} lang="te" />) : <span className="text-faint">—</span>}
-              </div>
+              <LaneRow
+                render={(l) => (
+                  <div className="py-4 lg:px-3 flex flex-wrap content-start gap-1.5">
+                    <span className="lg:hidden w-full inline-flex items-center gap-1.5 text-[11px] text-faint">
+                      <FamilyDot lang={l.code} size={6} /> {l.name}
+                    </span>
+                    {r.cells[l.code].length ? r.cells[l.code].map((a) => <Chip key={a.id} a={a} lang={l.code} />) : <span className="text-faint">—</span>}
+                  </div>
+                )}
+              />
             </div>
 
             {isOpen && (
-              <div className="rise pb-7 pt-1 md:pl-[10rem]">
+              <div className="rise pb-7 pt-1">
                 <div className="panel p-5 sm:p-6">
                   <p className="text-[14.5px] text-ink-2 max-w-[70ch]">{r.definition}</p>
                   {r.note && <p className="text-[12.5px] text-muted mt-2 max-w-[70ch]">{r.note}</p>}
@@ -127,15 +121,13 @@ export function Atlas({ rows, initial }: { rows: AtlasRow[]; initial: string }) 
                               {ex.gloss}
                             </Link>
                           </div>
-                          {(["en", "hi"] as const).map((l) => (
-                            <div key={l} className="py-2.5 md:px-4">
-                              <ExampleWord w={ex.lanes[l]} lang={l} />
-                            </div>
-                          ))}
-                          <div className="gutter" aria-hidden="true" />
-                          <div className="py-2.5 md:px-4">
-                            <ExampleWord w={ex.lanes.te} lang="te" />
-                          </div>
+                          <LaneRow
+                            render={(l) => (
+                              <div className="py-2.5 lg:px-3">
+                                <ExampleWord w={ex.lanes[l.code]} lang={l.code} />
+                              </div>
+                            )}
+                          />
                         </div>
                       ))}
                     </div>
@@ -159,7 +151,7 @@ function ExampleWord({ w, lang }: { w: ExampleRow["lanes"][LangCode]; lang: Lang
   return (
     <Link href={slug.entryHref(w.id)} className="group inline-flex flex-wrap items-baseline gap-x-2">
       <span lang={langAttr(lang)} className="text-[16px] font-medium group-hover:text-ie-ink">{w.form}</span>
-      <span className={`${lang === "te" ? "chip-dr" : "chip-ie"} rounded px-1.5 text-[11.5px]`}>{w.affix}</span>
+      <span lang={langAttr(lang)} className={`${chipClass(lang)} rounded px-1.5 text-[11.5px]`}>{w.affix}</span>
     </Link>
   );
 }

@@ -31,7 +31,7 @@ const GROUPS: { title: string; items: [string, string][] }[] = [
     items: [
       ["ROADMAP", "Deferred work — French, Tamil, a larger lexicon — and known limitations."],
       ["IMPLEMENTATION_PLAN", "Milestones and their acceptance criteria."],
-      ["LAUNCH_CHECKLIST", "What v0.1 verifies before shipping."],
+      ["LAUNCH_CHECKLIST", "What a release verifies before shipping."],
       ["REPO", "Repository layout and tooling."],
     ],
   },

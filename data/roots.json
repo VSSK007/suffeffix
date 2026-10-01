@@ -103,5 +103,26 @@
   "family": "Reconstructed:Proto-Dravidian",
   "gloss": "tooth",
   "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:munru",
+  "form": "*mūnṯu",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "three",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:irantu",
+  "form": "*iraṇṭu",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "two",
+  "source_ref": "dedr"
+ },
+ {
+  "id": "root:pdr:nay",
+  "form": "*nāy",
+  "family": "Reconstructed:Proto-Dravidian",
+  "gloss": "dog",
+  "source_ref": "dedr"
  }
 ]

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
 import { LANES, langAttr } from "@/lib/lang";
+import { LaneRow } from "@/components/lane-row";
 import { EpiTag, FamilyDot } from "@/components/marks";
 import { pageMeta } from "@/lib/seo";
 
@@ -13,7 +14,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
   const d = await data.atom(slug.atomId(name));
-  return pageMeta({ title: `${name} — semantic atom`, description: d ? `${name}: ${d.atom.definition}. Exponents — English ${d.atom.exponents.en}, Hindi ${d.atom.exponents.hi}, Telugu ${d.atom.exponents.te}.` : undefined, path: `/atoms/${name}/` });
+  return pageMeta({ title: `${name} — semantic atom`, description: d ? `${name}: ${d.atom.definition}. Exponents — ${LANES.map((l) => `${l.name} ${d.atom.exponents[l.code]}`).join(", ")}.` : undefined, path: `/atoms/${name}/` });
 }
 
 export default async function AtomPage({ params }: { params: Promise<{ name: string }> }) {
@@ -52,17 +53,14 @@ export default async function AtomPage({ params }: { params: Promise<{ name: str
       <section>
         <h2 className="wide text-[21px] font-semibold mb-4">How each language says it</h2>
         <div className="lanes panel py-5">
-          {LANES.slice(0, 2).map((l) => (
-            <div key={l.code} className="px-5 py-2">
-              <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-2"><FamilyDot lang={l.code} /> {l.name}</p>
-              <p lang={langAttr(l.code)} className="display text-[34px] font-semibold">{a.exponents[l.code]}</p>
-            </div>
-          ))}
-          <div className="gutter" aria-hidden="true" />
-          <div className="px-5 py-2">
-            <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-2"><FamilyDot lang="te" /> Telugu</p>
-            <p lang="te" className="display text-[34px] font-semibold">{a.exponents.te}</p>
-          </div>
+          <LaneRow
+            render={(l) => (
+              <div className="px-5 py-2">
+                <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-2"><FamilyDot lang={l.code} /> {l.name}</p>
+                <p lang={langAttr(l.code)} className="display text-[28px] font-semibold">{a.exponents[l.code]}</p>
+              </div>
+            )}
+          />
         </div>
       </section>
 
@@ -90,11 +88,11 @@ export default async function AtomPage({ params }: { params: Promise<{ name: str
                 <div className="text-[13.5px] text-ink-2">{c.gloss}</div>
                 <div className="mono text-[10.5px] text-faint mt-0.5 truncate">{c.structure}</div>
               </div>
-              {LANES.slice(0, 2).map((l) => (
-                <div key={l.code} className="md:px-4 text-[16px] font-medium">{c.lanes[l.code].map((e) => e.form).join(", ") || <span className="text-faint">—</span>}</div>
-              ))}
-              <div className="gutter" aria-hidden="true" />
-              <div className="md:px-4 text-[16px] font-medium">{c.lanes.te.map((e) => e.form).join(", ") || <span className="text-faint">—</span>}</div>
+              <LaneRow
+                render={(l) => (
+                  <div lang={langAttr(l.code)} className="lg:px-3 text-[15px] font-medium">{c.lanes[l.code].map((e) => e.form).join(", ") || <span className="text-faint">—</span>}</div>
+                )}
+              />
             </Link>
           ))}
         </div>

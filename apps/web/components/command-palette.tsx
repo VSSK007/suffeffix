@@ -7,7 +7,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { normalize } from "@/lib/lang";
+import { LANG_NAME, isDravidian, normalize } from "@/lib/lang";
 
 interface EntryRow {
   id: string; lang: string; form: string; translit: string; gloss: string;
@@ -16,7 +16,6 @@ interface EntryRow {
 interface NavRow { type: "concept" | "affix" | "atom"; href: string; title: string; sub: string; keys: string[] }
 interface Hit { group: string; href: string; title: string; sub: string; lang?: string; score: number }
 
-const LANG_NAME: Record<string, string> = { en: "English", hi: "Hindi", te: "Telugu" };
 const GROUP_ORDER = ["Words", "Meanings", "Affixes", "Atoms"];
 const GROUP_OF: Record<NavRow["type"], string> = { concept: "Meanings", affix: "Affixes", atom: "Atoms" };
 
@@ -198,7 +197,7 @@ export function CommandPalette() {
           {!failed && !entries && <p className="px-4 py-3 text-[14px] text-muted">Loading the index…</p>}
           {entries && q.trim() === "" && (
             <div className="px-4 py-3 text-[13.5px] text-muted space-y-3">
-              <p>Type in English, Hindi, Telugu, or Latin transliteration — <span className="mono text-ink-2">manchitanam</span> finds మంచితనం.</p>
+              <p>Type in English, French, Hindi, Telugu, Tamil, or Latin transliteration — <span className="mono text-ink-2">manchitanam</span> finds మంచితనం.</p>
               <div className="flex flex-wrap gap-1.5">
                 {["అమ్మ", "bacpan", "hopeless", "sugar", "state", "-less", "GOOD"].map((s) => (
                   <button key={s} onClick={() => setQ(s)} className="rounded-full border border-line px-2.5 py-1 text-[12.5px] hover:border-line-2 hover:text-ink">
@@ -231,7 +230,7 @@ export function CommandPalette() {
                   <span className="text-[12.5px] text-muted truncate">{h.sub}</span>
                   {h.lang && (
                     <span className="ml-auto inline-flex items-center gap-1.5 text-[11px] text-faint shrink-0">
-                      <span className="w-[7px] h-[7px] rounded-full" style={{ background: h.lang === "te" ? "var(--dr)" : "var(--ie)" }} />
+                      <span className="w-[7px] h-[7px] rounded-full" style={{ background: isDravidian(h.lang ?? "") ? "var(--dr)" : "var(--ie)" }} />
                       {LANG_NAME[h.lang]}
                     </span>
                   )}

@@ -7,19 +7,29 @@
           "title": "En",
           "type": "string"
         },
-        "te": {
-          "title": "Te",
+        "fr": {
+          "title": "Fr",
           "type": "string"
         },
         "hi": {
           "title": "Hi",
           "type": "string"
+        },
+        "te": {
+          "title": "Te",
+          "type": "string"
+        },
+        "ta": {
+          "title": "Ta",
+          "type": "string"
         }
       },
       "required": [
         "en",
+        "fr",
+        "hi",
         "te",
-        "hi"
+        "ta"
       ],
       "title": "AtomExponents",
       "type": "object"

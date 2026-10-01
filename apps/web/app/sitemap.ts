@@ -21,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     u("/", 1, "weekly"),
     u("/research/", 0.9),
-    u("/research/suffeffix-v0-1/", 0.9),
+    u("/research/suffeffix-v0-2/", 0.9),
     u("/data/", 0.9),
     u("/lexicon/", 0.8),
     u("/affixes/", 0.8),

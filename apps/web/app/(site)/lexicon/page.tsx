@@ -2,7 +2,7 @@ import { data } from "@/lib/data";
 import { Concordance } from "@/components/concordance";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta({ title: "Concordance", description: "Every meaning in the Suffeffix graph with its word in English, Hindi and Telugu side by side, filterable by the affix function each word uses.", path: "/lexicon/" });
+export const metadata = pageMeta({ title: "Concordance", description: "Every meaning in the Suffeffix graph with its word in English, French, Hindi, Telugu and Tamil side by side, filterable by the affix function each word uses.", path: "/lexicon/" });
 
 export default async function LexiconPage() {
   const [rows, functions, meta] = await Promise.all([data.concepts(), data.functions(), data.meta()]);
@@ -26,7 +26,7 @@ export default async function LexiconPage() {
         </div>
         <p className="text-[15px] leading-[1.7] text-ink-2 max-w-[54ch]">
           Every meaning in the graph, with its word in each language side by side. Affix tags carry their
-          function, so a row shows at a glance whether the three languages build the meaning the same way —
+          function, so a row shows at a glance whether the five languages build the meaning the same way —
           or whether one of them doesn’t derive it at all.
         </p>
       </header>

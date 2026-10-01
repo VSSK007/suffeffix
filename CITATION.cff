@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use Suffeffix, please cite it as below."
 title: "Suffeffix: an explainable lexical knowledge graph for morphology, semantic decomposition, etymology, and affix alignment"
-version: 0.1.0
-date-released: "2026-09-17"
+version: 0.2.0
+date-released: "2026-10-01"
 authors:
   - name: "Suffeffix contributors"
 license: Apache-2.0
@@ -13,4 +13,7 @@ keywords:
   - Telugu
   - Hindi
   - English
+  - French
+  - Tamil
+  - THEFT framework
   - lexical knowledge graph

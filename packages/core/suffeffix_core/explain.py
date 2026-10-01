@@ -13,8 +13,8 @@ from .schema import (
     Explanation, ExplanationSentence, LexicalEntry, TraceItem, pretty_structure,
 )
 
-_LANG_NAME = {"en": "English", "te": "Telugu", "hi": "Hindi"}
-_ART = {"en": "an", "te": "a", "hi": "a"}
+_LANG_NAME = {"en": "English", "fr": "French", "hi": "Hindi", "te": "Telugu", "ta": "Tamil"}
+_ART = {"en": "an", "fr": "a", "hi": "a", "te": "a", "ta": "a"}
 _REL_TEXT = {
     "TRANSLATION": "translation equivalent",
     "COGNATE": "cognate",

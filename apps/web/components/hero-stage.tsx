@@ -4,11 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { ConceptRow, LaneEntry } from "@/lib/model";
 import { slug } from "@/lib/model";
-import { LANES } from "@/lib/lang";
+import { LANES, langAttr, type LangCode } from "@/lib/lang";
+import { LaneRow } from "./lane-row";
 import { AffixChip, StemChip } from "./morphemes";
 import { FamilyDot } from "./marks";
-
-const LANG_ATTR: Record<string, string | undefined> = { en: undefined, hi: "hi", te: "te" };
 
 function Lane({ e, delay, animate }: { e: LaneEntry | undefined; delay: number; animate: boolean }) {
   if (!e) return <span className="text-faint">—</span>;
@@ -17,19 +16,19 @@ function Lane({ e, delay, animate }: { e: LaneEntry | undefined; delay: number; 
   return (
     <div className={animate ? "slide-in" : undefined} style={animate ? { animationDelay: `${delay}ms` } : undefined}>
       <Link href={slug.entryHref(e.id)} className="block group">
-        <span lang={LANG_ATTR[e.lang]} className="display block text-[clamp(32px,4.1vw,56px)] group-hover:text-ie-ink transition-colors">
+        <span lang={langAttr(e.lang)} className="display block text-[clamp(26px,2.2vw,34px)] group-hover:text-ie-ink transition-colors">
           {e.form}
         </span>
         {e.form !== e.translit && <span className="mono block text-[13px] text-muted mt-2">{e.translit}</span>}
       </Link>
-      <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2">
+      <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-2">
         {pre.map((m) => (
           <span key={m.affixId} className="inline-flex items-center gap-2">
             <AffixChip m={m} lang={e.lang} size="md" showFn={false} />
             <span className="text-faint text-[13px]">+</span>
           </span>
         ))}
-        <StemChip text={e.stem} size="md" lang={LANG_ATTR[e.lang]} />
+        <StemChip text={e.stem} size="md" lang={langAttr(e.lang)} />
         {post.map((m) => (
           <span key={m.affixId + m.fnId} className="inline-flex items-center gap-2">
             <span className="text-faint text-[13px]">+</span>
@@ -42,7 +41,7 @@ function Lane({ e, delay, animate }: { e: LaneEntry | undefined; delay: number; 
   );
 }
 
-/** The hero: one meaning landing in three languages, cycling through six.
+/** The hero: one meaning landing in five languages, cycling through six.
  *  Autoplay pauses on hover/focus, never starts under reduced motion, and has
  *  an explicit pause control (WCAG 2.2.2). */
 export function HeroStage({ rows }: { rows: ConceptRow[] }) {
@@ -64,11 +63,11 @@ export function HeroStage({ rows }: { rows: ConceptRow[] }) {
   }, [playing, hover, rows.length]);
 
   const row = rows[i];
-  const pick = (l: (typeof LANES)[number]["code"]) => row.lanes[l][0];
+  const pick = (l: LangCode) => row.lanes[l][0];
 
   return (
     <section
-      aria-label="One meaning in three languages"
+      aria-label="One meaning in five languages"
       className="panel p-6 sm:p-10 lg:p-12"
       onPointerEnter={() => setHover(true)}
       onPointerLeave={() => setHover(false)}
@@ -83,20 +82,15 @@ export function HeroStage({ rows }: { rows: ConceptRow[] }) {
         </p>
       </div>
 
-      <div key={row.id} className="lanes gap-y-10">
-        <div className="md:pr-6 min-w-0">
-          <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-4"><FamilyDot lang="en" /> English</p>
-          <Lane e={pick("en")} delay={0} animate={moved} />
-        </div>
-        <div className="md:px-2 min-w-0">
-          <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-4"><FamilyDot lang="hi" /> Hindi</p>
-          <Lane e={pick("hi")} delay={90} animate={moved} />
-        </div>
-        <div className="gutter" aria-hidden="true" />
-        <div className="md:pl-2 min-w-0">
-          <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-4"><FamilyDot lang="te" /> Telugu</p>
-          <Lane e={pick("te")} delay={180} animate={moved} />
-        </div>
+      <div key={row.id} className="lanes gap-y-8 lg:gap-x-5">
+        <LaneRow
+          render={(l) => (
+            <div className="min-w-0">
+              <p className="inline-flex items-center gap-2 text-[12.5px] font-semibold mb-4"><FamilyDot lang={l.code} /> {l.name}</p>
+              <Lane e={pick(l.code)} delay={LANES.indexOf(l) * 80} animate={moved} />
+            </div>
+          )}
+        />
       </div>
 
       <div className="mt-12 flex flex-wrap items-center gap-x-5 gap-y-4 border-t border-line pt-6">

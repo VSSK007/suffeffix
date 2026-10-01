@@ -1736,7 +1736,7 @@
    "atom:GOOD"
   ],
   "structure_status": "HYPOTHESIS",
-  "partial_coverage": false
+  "partial_coverage": true
  },
  {
   "id": "concept:READABLE",

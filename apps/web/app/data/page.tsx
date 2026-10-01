@@ -6,7 +6,7 @@ import { DATASET_BIBTEX } from "@/lib/cite";
 import { pageMeta, SITE } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Dataset v0.1",
+  title: "Dataset v0.2",
   description:
     "Download the Suffeffix dataset: CSV and JSON tables for words, affixes, etymology edges, atoms and concepts, with JSON Schemas, SHA-256 checksums and a data card. CC BY-SA 4.0.",
   path: "/data/",
@@ -22,7 +22,7 @@ const DESC: Record<string, string> = {
   "entries.csv": "One row per word: lemma, transliteration, register, meaning, stem, affix uses and review status.",
   "affixes.csv": "One row per affix: form, kind, the functions it performs, register, productivity and allomorphs.",
   "etymology_edges.csv": "One row per sourced etymology edge, with endpoints, families, type, drift, confidence, status and sources.",
-  "atoms.csv": "The fifty semantic atoms with their exponents in English, Hindi and Telugu.",
+  "atoms.csv": "The fifty semantic atoms with their exponents in English, French, Hindi, Telugu and Tamil.",
   "concepts.csv": "One row per meaning, with its atom decomposition and the status of that decomposition.",
   "sources.csv": "The bibliography every source key resolves to.",
   "README.txt": "Plain-text description of the release and its conventions.",
@@ -37,11 +37,11 @@ const COLUMNS: Record<string, [string, string][]> = {
     ["lang", "en, hi or te."],
     ["form · transliteration", "Lemma in native script, and its transliteration."],
     ["register", "N native, S Sanskritic, P Perso-Arabic, E learned (English: Latin and Greek), mixed."],
-    ["concept_id · meaning", "The meaning the word expresses; shared across the three languages."],
+    ["concept_id · meaning", "The meaning the word expresses; shared across the five languages."],
     ["stem · affixes · pattern", "The stem, and affix uses as affix_id|function_id pairs separated by ';'."],
     ["segmentation_confidence", "Annotator confidence in the segmentation, in [0, 1]."],
     ["etymology_edges", "Identifiers of etymology edges that begin or end at this word."],
-    ["review_status", "draft, reviewed or published. Every v0.1 record is draft."],
+    ["review_status", "draft, reviewed or published. Every v0.2 record is draft."],
   ],
   "etymology_edges.csv": [
     ["type", "INHERITED, COGNATE, BORROWED, CALQUE, DERIVED, COMPOUNDED, RECONSTRUCTED or REBORROWED."],
@@ -71,14 +71,14 @@ export default async function DataPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: "Suffeffix dataset v0.1",
+    name: `Suffeffix dataset v${m.version}`,
     description:
-      "A lexical knowledge graph of English, Hindi and Telugu: 338 words aligned across 115 meanings, with morphological analyses, affix functions, semantic decompositions and sourced etymology edges.",
+      `A lexical knowledge graph of Telugu, Hindi, English, French and Tamil (the T.H.E.F.T. framework): ${m.counts.entries} words aligned across ${m.counts.concepts} meanings, with morphological analyses, affix functions, semantic decompositions and sourced etymology edges.`,
     url: `${SITE.url}/data/`,
     version: m.version,
     license: "https://creativecommons.org/licenses/by-sa/4.0/",
     creator: { "@type": "Organization", name: "Suffeffix contributors" },
-    inLanguage: ["en", "hi", "te"],
+    inLanguage: ["en", "fr", "hi", "te", "ta"],
     isAccessibleForFree: true,
     distribution: m.files
       .filter((f) => f.name.endsWith(".csv") || f.name.endsWith(".zip") || f === bundle)
@@ -115,7 +115,7 @@ export default async function DataPage() {
         <div className="mt-9 flex flex-wrap gap-3">
           <a href={`/data/${zip.name}`} download className="btn btn-primary">Download everything · {bytes(zip.bytes)}</a>
           <a href={SITE.repo} className="btn btn-ghost">View the source data</a>
-          <Link href="/research/suffeffix-v0-1/" className="btn btn-ghost">Read the report</Link>
+          <Link href="/research/suffeffix-v0-2/" className="btn btn-ghost">Read the report</Link>
         </div>
 
         <dl className="mt-16 grid grid-cols-2 gap-y-8 border-t border-line pt-8 sm:grid-cols-4 lg:grid-cols-7">
@@ -133,7 +133,7 @@ export default async function DataPage() {
         <section className="mt-20" aria-labelledby="files-h">
           <h2 id="files-h" className="h-md mb-2">Files</h2>
           <p className="text-[15px] text-muted mb-8 max-w-[64ch]">
-            CSV files are UTF-8 with a byte-order mark so spreadsheets open Devanagari and Telugu correctly. List-valued
+            CSV files are UTF-8 with a byte-order mark so spreadsheets open Devanagari, Telugu and Tamil script correctly. List-valued
             columns use <code className="mono text-[13px]">;</code> between items.
           </p>
           <div className="hidden border-b-2 border-ink pb-2.5 text-[13px] font-semibold lg:grid lg:grid-cols-[minmax(0,1fr)_5rem_5.5rem_11rem] lg:gap-x-6">
@@ -204,9 +204,9 @@ export default async function DataPage() {
             <div className="border-t-2 border-ink pt-4">
               <p className="mono text-[13px] font-semibold">v{m.version} · {m.generated}</p>
               <p className="text-[15px] text-ink-2 leading-[1.7] mt-2 max-w-[56ch]">
-                Initial release: {m.counts.entries} words in English, Hindi and Telugu aligned across {m.counts.concepts} meanings;{" "}
+                The T.H.E.F.T. release adds French and Tamil: {m.counts.entries} words in Telugu, Hindi, English, French and Tamil aligned across {m.counts.concepts} meanings;{" "}
                 {m.counts.affixes} affixes in {m.counts.affix_functions} functions; {m.counts.atoms} semantic atoms;{" "}
-                {m.counts.etymology_edges} sourced etymology edges. The release is produced only if the dataset passes the full validator.
+                {m.counts.etymology_edges} sourced etymology edges. A new register, L, separates the learned Latin and Greek layer from English loans. The release is produced only if the dataset passes the full validator.
               </p>
             </div>
           </div>
