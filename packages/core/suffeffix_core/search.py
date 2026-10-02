@@ -27,7 +27,8 @@ def normalize(text: str) -> str:
         if unicodedata.combining(ch) and out and out[-1].isascii():
             continue
         out.append(ch)
-    return unicodedata.normalize("NFC", "".join(out))
+    # informal romanisation writes ISO c as "ch" (manchitanam for mañcitanaṁ)
+    return unicodedata.normalize("NFC", "".join(out)).replace("ch", "c")
 
 
 def search(index: GraphIndex, q: str, lang: str | None = None) -> list[tuple[LexicalEntry, int]]:

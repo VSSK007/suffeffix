@@ -46,5 +46,6 @@ export function normalize(text: string): string {
     if (/\p{M}/u.test(ch) && out.length > 0 && out.charCodeAt(out.length - 1) < 128) continue;
     out += ch;
   }
-  return out.normalize("NFC");
+  // informal romanisation writes ISO c as "ch" (manchitanam for mañcitanaṁ)
+  return out.normalize("NFC").replaceAll("ch", "c");
 }

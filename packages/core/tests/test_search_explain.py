@@ -60,3 +60,7 @@ def test_every_sentence_has_trace(index):
 def test_contested_edge_flagged_in_text(index):
     exp = explain(index, "lex:te:kukka")
     assert any("[contested]" in s.text for s in exp.sentences)
+
+
+def test_search_informal_ch_romanisation(index):
+    assert search(index, "manchitanam")[0][0].id == "lex:te:mancitanam"
