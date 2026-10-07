@@ -10,7 +10,15 @@
 # Before running: DNS A (and AAAA, if the VPS has IPv6) records for suffeffix.com and
 # www.suffeffix.com must already point at this server, or certificate issuance fails.
 # Safe to re-run: every step is idempotent, and nginx config is tested before every reload.
+#
+# SHARED SERVER: if this machine already hosts other sites, add SHARED_SERVER=1. It then
+#   - aborts unless nginx is already the web server on port 80 (so it cannot fight Apache/Docker),
+#   - does not touch the firewall (ufw), and
+#   - does not remove nginx's default site.
+# Only suffeffix's own files are written: /etc/nginx/sites-available/suffeffix.conf, the suffeffix
+# security-headers snippet, /var/www/suffeffix, /var/www/certbot and the deploy user.
 set -euo pipefail
+SHARED="${SHARED_SERVER:-0}"
 
 DOMAIN="suffeffix.com"
 WEBROOT="/var/www/suffeffix"
@@ -20,6 +28,13 @@ DEPLOY_USER="deploy"
 
 [[ $EUID -eq 0 ]] || { echo "run as root (sudo)"; exit 1; }
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+if [[ "$SHARED" == "1" ]]; then
+  echo "==> shared-server mode: checking that nginx owns port 80"
+  command -v nginx >/dev/null || { echo "nginx is not installed; refusing in shared-server mode"; exit 1; }
+  systemctl is-active --quiet nginx || { echo "nginx is not running; refusing in shared-server mode"; exit 1; }
+  nginx -t || { echo "the existing nginx config does not pass nginx -t; fix that first"; exit 1; }
+fi
 
 echo "==> packages"
 export DEBIAN_FRONTEND=noninteractive
@@ -46,16 +61,20 @@ if [[ ! -e "$WEBROOT/current" ]]; then
   chown -h "$DEPLOY_USER:$DEPLOY_USER" "$WEBROOT/current"
 fi
 
-echo "==> firewall (ssh + web only)"
-ufw allow OpenSSH
-ufw allow 'Nginx Full'
-ufw --force enable
+if [[ "$SHARED" == "1" ]]; then
+  echo "==> firewall: left untouched (shared server). Ports 22, 80 and 443 must already be open."
+else
+  echo "==> firewall (ssh + web only)"
+  ufw allow OpenSSH
+  ufw allow 'Nginx Full'
+  ufw --force enable
+fi
 
 echo "==> nginx: bootstrap (HTTP) config, to obtain the certificate"
 install -m 644 "$HERE/nginx/security-headers.conf" /etc/nginx/snippets/suffeffix-security-headers.conf
 install -m 644 "$HERE/nginx/bootstrap.conf" /etc/nginx/sites-available/suffeffix.conf
 ln -sfn /etc/nginx/sites-available/suffeffix.conf /etc/nginx/sites-enabled/suffeffix.conf
-rm -f /etc/nginx/sites-enabled/default
+[[ "$SHARED" == "1" ]] || rm -f /etc/nginx/sites-enabled/default
 nginx -t
 systemctl enable --now nginx
 systemctl reload nginx
