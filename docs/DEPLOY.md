@@ -69,6 +69,8 @@ sudo DEPLOY_PUBKEY="ssh-ed25519 AAAA... suffeffix-deploy" CERT_EMAIL="you@exampl
 
 Replace the `DEPLOY_PUBKEY` value with the single line inside `suffeffix_deploy.pub`.
 
+**Server already hosts other sites?** Add `SHARED_SERVER=1` to the command (before `bash`). The script then aborts unless nginx is running and passes `nginx -t`, does not touch `ufw`, keeps nginx's default site, and writes only suffeffix's own files (`sites-available/suffeffix.conf`, its headers snippet, `/var/www/suffeffix`, `/var/www/certbot`, the `deploy` user). Make sure ports 22, 80 and 443 are already open. Before running it, check what owns the web ports with `ss -tlnp | grep -E ':(80|443)'`; if it isn't nginx, do not run the script.
+
 The script installs nginx, certbot, ufw and rsync; creates the `deploy` user; sets up the web root; opens the firewall;
 obtains the certificate with an HTTP challenge; installs the final HTTPS config and a renewal hook. It is safe to re-run.
 
@@ -80,6 +82,18 @@ From your computer (this also records the server's key so later connections cann
 ssh -i ~/.ssh/suffeffix_deploy deploy@YOUR_SERVER_IP    # answer "yes", then `exit`
 ssh-keyscan YOUR_SERVER_IP                              # copy this output for step 6
 ```
+
+On Windows, the bundled `ssh-keyscan` can fail with `unsupported KEX method`. Get the host key from the server instead,
+over a login you already trust.
+
+Log in as `deploy`, then run this one line on the server (the host-key file is public):
+
+```sh
+echo "YOUR_SERVER_IP $(cut -d' ' -f1,2 /etc/ssh/ssh_host_ed25519_key.pub)"
+```
+
+It prints one line (`YOUR_SERVER_IP ssh-ed25519 AAAA…`); use it as `VPS_KNOWN_HOSTS`, then `exit` (do not type `yes` at the shell prompt: it runs a command that prints `y` forever). In PowerShell, write `~/.ssh/` as
+`$env:USERPROFILE\.ssh\` and create the folder first with `New-Item -ItemType Directory -Force`.
 
 ## Deploying
 
@@ -96,7 +110,7 @@ on every push to `main`. In GitHub → repository → **Settings → Secrets and
 | `VPS_USER` *(optional)* | defaults to `deploy` |
 | `VPS_PORT` *(optional)* | defaults to `22` |
 
-Until `VPS_HOST` and `VPS_SSH_KEY` exist the deploy step is skipped rather than failed. Then push to `main`, or run the
+Until `VPS_HOST` and `VPS_SSH_KEY` exist the deploy step is skipped rather than failed. **That means a green run does not prove a deploy happened:** open the run and check that the *Deploy over SSH* step is not marked skipped. Then push to `main`, or run the
 **deploy-vps** workflow by hand from the Actions tab.
 
 ### Manual
