@@ -39,7 +39,14 @@ OUT="$HERE/../apps/web/out"
 REL="$(date -u +%Y%m%d-%H%M%S)"
 echo "==> uploading release $REL ($(du -sh "$OUT" | cut -f1))"
 ssh_run "mkdir -p $WEBROOT/releases/$REL"
-rsync -az --delete --chmod=D755,F644 -e "ssh ${SSH_OPTS[*]}" "$OUT"/ "$TARGET:$WEBROOT/releases/$REL/"
+if command -v rsync >/dev/null 2>&1; then
+  rsync -az --delete --chmod=D755,F644 -e "ssh ${SSH_OPTS[*]}" "$OUT"/ "$TARGET:$WEBROOT/releases/$REL/"
+else
+  # No rsync (e.g. Git Bash on Windows): stream a tar archive over ssh instead.
+  echo "    (rsync not found; sending with tar over ssh)"
+  tar -C "$OUT" -cf - . | ssh "${SSH_OPTS[@]}" "$TARGET" "tar -xf - --no-same-owner -C $WEBROOT/releases/$REL"
+  ssh_run "find $WEBROOT/releases/$REL -type d -exec chmod 755 {} + && find $WEBROOT/releases/$REL -type f -exec chmod 644 {} +"
+fi
 
 echo "==> switching to $REL"
 ssh_run "set -e

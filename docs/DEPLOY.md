@@ -115,10 +115,12 @@ Until `VPS_HOST` and `VPS_SSH_KEY` exist the deploy step is skipped rather than 
 
 ### Manual
 
-Needs `rsync` on your machine (macOS/Linux have it; on Windows use WSL):
+Uses `rsync` when it is installed and otherwise streams the files with `tar` over `ssh`, so it also works from Git Bash on Windows with no extra software. Point it at your private key with `SSH_KEY`:
 
 ```sh
 make deploy HOST=deploy@YOUR_SERVER_IP      # builds, uploads, flips the symlink, checks the site
+# or, without make, after `make site` has built the site:
+SSH_KEY=~/.ssh/suffeffix_deploy bash deploy/deploy.sh deploy@YOUR_SERVER_IP
 ```
 
 ### Roll back
