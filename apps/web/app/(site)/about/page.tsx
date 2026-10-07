@@ -199,8 +199,9 @@ export default async function AboutPage() {
             </div>
           ))}
         </dl>
-        <p className="flex flex-wrap items-center gap-2">
-          Etymologies the literature disputes are stored <ContestedTag /> and never silently resolved.
+        <p>
+          Etymologies the literature disputes are stored <ContestedTag /> and never silently resolved: the claim stays,
+          with a low confidence and this badge, instead of a winner being picked for you.
         </p>
       </Row>
 
