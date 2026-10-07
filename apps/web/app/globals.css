@@ -101,8 +101,13 @@
 }
 
 * { box-sizing: border-box; }
+/* Grid and flex cells may shrink below their content, so a long code block scrolls inside its own box
+   instead of stretching the page sideways. */
+.grid > *, .lanes > *, .lanes-labelled > * { min-width: 0; }
+pre { max-width: 100%; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 20px); scroll-behavior: smooth; }
 body {
+  overflow-x: clip; /* safety net: the page itself never scrolls sideways (clip keeps sticky headers working) */
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans);
