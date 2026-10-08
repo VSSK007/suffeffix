@@ -56,7 +56,7 @@ export default async function EntryPage({ params }: { params: Promise<{ lang: st
             <span className="inline-flex items-center gap-2 text-[13px] font-medium text-muted mb-4">
               <FamilyDot lang={e.lang} /> {LANG_NAME[e.lang]} · {e.pos}
             </span>
-            <h1 lang={langAttr(e.lang)} className="display text-[52px] sm:text-[76px] font-semibold">{e.lemma.form}</h1>
+            <h1 lang={langAttr(e.lang)} className="display text-[clamp(32px,10vw,76px)] font-semibold">{e.lemma.form}</h1>
             <div className="mt-3 flex flex-wrap items-baseline gap-x-5 gap-y-1">
               {e.lemma.form !== e.lemma.translit && <span className="mono text-[17px] text-muted">{e.lemma.translit}</span>}
               {d.concept && <span className="text-[19px] text-ink-2">‘{d.concept.gloss}’</span>}

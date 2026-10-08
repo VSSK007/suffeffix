@@ -117,7 +117,7 @@ body {
   font-feature-settings: "kern";
   text-rendering: optimizeLegibility;
 }
-h1, h2, h3, h4 { text-wrap: balance; margin: 0; }
+h1, h2, h3, h4 { text-wrap: balance; margin: 0; overflow-wrap: anywhere; } /* a very long word breaks instead of widening the page */
 p { text-wrap: pretty; }
 ::selection { background: var(--ie-wash); color: var(--ink); }
 :focus-visible { outline: 2px solid var(--ie); outline-offset: 3px; border-radius: 4px; }
@@ -145,8 +145,9 @@ p { text-wrap: pretty; }
 .wordmark .ff { display: inline-block; letter-spacing: -0.07em; margin-right: 0.07em; }
 
 /* ── layout primitives ─────────────────────────────────────────────────── */
-.container { width: 100%; max-width: 1280px; margin-inline: auto; padding-inline: clamp(20px, 4vw, 48px); }
-.container-narrow { width: 100%; max-width: 920px; margin-inline: auto; padding-inline: clamp(20px, 4vw, 48px); }
+:root { --gutter: clamp(16px, 4vw, 48px); }
+.container { width: 100%; max-width: 1280px; margin-inline: auto; padding-inline: var(--gutter); }
+.container-narrow { width: 100%; max-width: 920px; margin-inline: auto; padding-inline: var(--gutter); }
 .band { padding-block: clamp(56px, 9vw, 120px); }
 .band-sm { padding-block: clamp(40px, 6vw, 72px); }
 .band-surface { background: var(--surface); }
@@ -231,7 +232,7 @@ p { text-wrap: pretty; }
 .prose-doc li { margin: 0.35rem 0; line-height: 1.7; }
 .prose-doc li::marker { color: var(--faint); }
 .prose-doc strong { color: var(--ink); font-weight: 620; }
-.prose-doc code { font-family: var(--font-mono), monospace; font-size: 0.86em; background: var(--sunk); padding: 0.1em 0.35em; border-radius: 4px; }
+.prose-doc code { overflow-wrap: anywhere; font-family: var(--font-mono), monospace; font-size: 0.86em; background: var(--sunk); padding: 0.1em 0.35em; border-radius: 4px; }
 .prose-doc pre { font-family: var(--font-mono), monospace; font-size: 12.5px; background: var(--sunk); padding: 1rem 1.1rem; border-radius: 12px; overflow-x: auto; margin: 1rem 0; line-height: 1.6; }
 .prose-doc pre code { background: transparent; padding: 0; }
 .prose-doc table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 14px; display: block; overflow-x: auto; }

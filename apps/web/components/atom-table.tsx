@@ -23,7 +23,7 @@ export function AtomTable({ atoms, usage }: { atoms: Atom[]; usage: Record<strin
   for (const c of CATEGORIES) for (const a of atoms.filter((x) => x.category === c)) number.set(a.id, ++n);
 
   return (
-    <div className="overflow-x-auto -mx-5 px-5 sm:mx-0 sm:px-0">
+    <div className="overflow-x-auto mx-[calc(-1*var(--gutter))] px-[var(--gutter)] sm:mx-0 sm:px-0">
       <div className="grid grid-cols-6 gap-2 min-w-[880px]">
         {CATEGORIES.map((c) => {
           const group = atoms.filter((a) => a.category === c);

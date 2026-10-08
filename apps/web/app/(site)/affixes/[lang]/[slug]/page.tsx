@@ -54,7 +54,7 @@ export default async function AffixPage({ params }: { params: Promise<{ lang: st
           <FamilyDot lang={a.lang} /> {LANG_NAME[a.lang]} {a.kind.replace("_", " ")}
         </span>
         <div className="flex flex-wrap items-center gap-5">
-          <h1 className={`${fam} display inline-block rounded-2xl px-6 py-3 text-[52px] sm:text-[68px] font-semibold`} lang={langAttr(a.lang)}>{a.form}</h1>
+          <h1 className={`${fam} display inline-block rounded-2xl px-6 py-3 text-[clamp(34px,10vw,68px)] font-semibold`} lang={langAttr(a.lang)}>{a.form}</h1>
           <div className="space-y-1.5">
             {a.translit !== a.form && <div className="mono text-[17px] text-muted">{a.translit}</div>}
             <div className="text-[19px] font-medium">{d.functions.map((f) => f.label).join(" · ")}</div>

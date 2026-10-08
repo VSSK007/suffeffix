@@ -109,7 +109,7 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-end">
           <div>
             <p className="kicker mb-3">Lineage · {LANG_NAME[entry.entry.lang]}</p>
-            <h1 className="display text-[44px] sm:text-[60px] font-semibold">{entry.entry.lemma.form}</h1>
+            <h1 className="display text-[clamp(30px,9vw,60px)] font-semibold">{entry.entry.lemma.form}</h1>
           </div>
           <div className="grid grid-cols-3 gap-4 max-w-md">
             {(

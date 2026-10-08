@@ -36,7 +36,7 @@ export function SiteHeader() {
       className="sticky top-0 z-40 border-b border-line"
       style={{ background: "color-mix(in srgb, var(--bg) 86%, transparent)", backdropFilter: "saturate(1.4) blur(14px)", WebkitBackdropFilter: "saturate(1.4) blur(14px)" }}
     >
-      <div className="container flex items-center gap-6" style={{ height: "var(--header-h)" }}>
+      <div className="container flex items-center gap-3 sm:gap-6" style={{ height: "var(--header-h)" }}>
         <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Suffeffix — home">
           <BrandMark size={30} />
           <Wordmark size={25} />
@@ -56,7 +56,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2.5">
+        <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
           <SearchTrigger />
           <ThemeToggle />
           <button

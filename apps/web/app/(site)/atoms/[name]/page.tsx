@@ -38,7 +38,7 @@ export default async function AtomPage({ params }: { params: Promise<{ name: str
             className="rounded-2xl px-7 py-5"
             style={{ background: a.nsm_prime ? "var(--surface)" : "transparent", border: `2px ${a.nsm_prime ? "solid" : "dashed"} var(--line-2)` }}
           >
-            <h1 className="mono text-[44px] sm:text-[56px] font-medium leading-none">{name}</h1>
+            <h1 className="mono text-[clamp(32px,10vw,56px)] font-medium leading-none">{name}</h1>
           </div>
           <div className="space-y-2 pb-1">
             <div className="flex flex-wrap gap-1.5">

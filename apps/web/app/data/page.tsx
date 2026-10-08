@@ -156,7 +156,7 @@ export default async function DataPage() {
                 <h3 className="mono text-[14px] font-semibold mb-4">{file}</h3>
                 <dl className="space-y-3">
                   {cols.map(([k, d]) => (
-                    <div key={k} className="grid grid-cols-[11.5rem_1fr] gap-x-4">
+                    <div key={k} className="grid grid-cols-1 sm:grid-cols-[11.5rem_1fr] gap-x-4 gap-y-0.5">
                       <dt className="mono text-[12.5px] text-ink-2 pt-0.5 break-words">{k}</dt>
                       <dd className="text-[14px] text-muted leading-snug">{d}</dd>
                     </div>
