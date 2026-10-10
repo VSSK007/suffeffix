@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
 import type { EtymologyGraph } from "@/lib/api";
 import { LANG_NAME } from "@/lib/lang";
-import { Confidence, ContestedTag, familyHue } from "@/components/marks";
+import { AcceptedTag, Confidence, ContestedTag, familyHue } from "@/components/marks";
 import { pageMeta } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -95,6 +95,7 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
   const { pos, key, bands, bandTop, height, width } = layout(g);
   const crossings = g.edges.filter((e) => bandOf(e.from.family) !== bandOf(e.to.family)).length;
   const contested = g.edges.filter((e) => e.status === "contested").length;
+  const accepted = g.edges.length - contested;
 
   return (
     <article className="space-y-12">
@@ -111,11 +112,12 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
             <p className="kicker mb-3">Lineage · {LANG_NAME[entry.entry.lang]}</p>
             <h1 className="display text-[clamp(30px,9vw,60px)] font-semibold">{entry.entry.lemma.form}</h1>
           </div>
-          <div className="grid grid-cols-3 gap-4 max-w-md">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-lg">
             {(
               [
                 [g.nodes.length, "forms"],
                 [crossings, crossings === 1 ? "borrowing across families" : "borrowings across families"],
+                [accepted, "accepted edges"],
                 [contested, "contested edges"],
               ] as [number, string][]
             ).map(([n, l]) => (
@@ -128,8 +130,8 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
         </div>
         <p className="text-[14.5px] leading-[1.7] text-ink-2 max-w-[70ch] mt-6">
           Each band is a language family. Inheritance and cognacy never leave their band — the validator
-          rejects any edge that tries — so every line crossing a band boundary is a borrowing. Dashed lines
-          are contested and left unresolved.
+          rejects any edge that tries — so every line crossing a band boundary is a borrowing. Solid lines
+          are accepted, where the reference works agree; dashed lines are contested and left unresolved.
         </p>
       </header>
 
@@ -251,7 +253,7 @@ export default async function EtymologyPage({ params }: { params: Promise<{ lang
                   <span className="font-medium" style={{ boxShadow: `inset 0 -2px 0 ${familyHue(e.to.family)}` }}>{e.to.form}</span>
                   <span className="text-[12px] text-faint">{LANG_NAME[e.to.lang_or_family] ?? e.to.lang_or_family}</span>
                   {cross && <span className="text-[11.5px] rounded-full border border-line px-2 text-muted">crosses families</span>}
-                  {e.status === "contested" && <ContestedTag />}
+                  {e.status === "contested" ? <ContestedTag /> : <AcceptedTag />}
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="mono text-[11.5px] text-muted">{e.source_ref.join(", ")}</span>

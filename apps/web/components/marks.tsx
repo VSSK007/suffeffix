@@ -50,6 +50,19 @@ export function RegisterTag({ register }: { register: string }) {
 
 /** Contested is the project's central honesty claim, so it is the one mark
  *  allowed a filled ground. */
+/** The counterpart of ContestedTag: sources agree, so the edge is stored as accepted. */
+export function AcceptedTag() {
+  return (
+    <span
+      className="inline-flex items-center gap-1 rounded-full px-2 py-[2px] text-[11px] font-medium leading-[1.35] whitespace-nowrap align-middle"
+      style={{ background: "color-mix(in srgb, var(--est) 15%, transparent)", color: "var(--est)" }}
+      title="Reference works agree; stored as accepted"
+    >
+      <span aria-hidden="true">✓</span> accepted
+    </span>
+  );
+}
+
 export function ContestedTag() {
   return (
     <span

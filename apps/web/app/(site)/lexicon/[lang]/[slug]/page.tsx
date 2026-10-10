@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { data, slug } from "@/lib/data";
 import { LANG_NAME, LANES, REGISTER_NAME, langAttr } from "@/lib/lang";
-import { Confidence, ContestedTag, EpiTag, FamilyDot, ReviewTag, familyHue } from "@/components/marks";
+import { AcceptedTag, Confidence, ContestedTag, EpiTag, FamilyDot, ReviewTag, familyHue } from "@/components/marks";
 import { Morphemes } from "@/components/morphemes";
 import { Triptych } from "@/components/triptych";
 import { ExplanationBlock } from "@/components/explanation";
@@ -114,7 +114,7 @@ export default async function EntryPage({ params }: { params: Promise<{ lang: st
                           {x.toLowerCase()}
                         </span>
                       ))}
-                      {ed.status === "contested" && <ContestedTag />}
+                      {ed.status === "contested" ? <ContestedTag /> : <AcceptedTag />}
                     </div>
                     <div className="flex items-center gap-4">
                       <span className="mono text-[11.5px] text-muted">{ed.source_ref.join(", ")}</span>

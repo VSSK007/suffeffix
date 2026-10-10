@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EpiTag, ContestedTag } from "@/components/marks";
+import { AcceptedTag, EpiTag, ContestedTag } from "@/components/marks";
 import { DR_LANES, IE_LANES, LANES } from "@/lib/lang";
 import { loadCensus } from "@/lib/census";
 import { FamilyDot } from "@/components/marks";
@@ -200,8 +200,9 @@ export default async function AboutPage() {
           ))}
         </dl>
         <p>
-          Etymologies the literature disputes are stored <ContestedTag /> and never silently resolved: the claim stays,
-          with a low confidence and this badge, instead of a winner being picked for you.
+          Every etymology link also carries one of two statuses. Where the reference works agree, it is stored{" "}
+          <AcceptedTag />. Where the literature disputes it, it is stored <ContestedTag /> and never silently resolved:
+          the claim stays, with a low confidence and this badge, instead of a winner being picked for you.
         </p>
       </Row>
 
